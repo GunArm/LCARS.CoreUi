@@ -1,0 +1,6 @@
+.vs
+[tT]humbs.db
+bin/
+obj/
+*.suo
+*.user
