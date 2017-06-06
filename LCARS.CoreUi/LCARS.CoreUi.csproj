@@ -51,6 +51,10 @@
     <Compile Include="Colors\LcarsColorManager.cs" />
     <Compile Include="Colors\LcarsColorSet.cs" />
     <Compile Include="Helpers\SettingsStore.cs" />
+    <Compile Include="Interfaces\IAlertable.cs" />
+    <Compile Include="Interfaces\IBeeping.cs" />
+    <Compile Include="Interfaces\IColorable.cs" />
+    <Compile Include="Interfaces\ILightweightControl.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
