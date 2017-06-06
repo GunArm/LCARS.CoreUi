@@ -30,6 +30,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Microsoft.VisualBasic" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Drawing" />
@@ -45,6 +46,7 @@
     <Compile Include="Enums\LcarsAlert.cs" />
     <Compile Include="Enums\LcarsArrowDirection.cs" />
     <Compile Include="Enums\LcarsColorStyles.cs" />
+    <Compile Include="LcarsColor.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
