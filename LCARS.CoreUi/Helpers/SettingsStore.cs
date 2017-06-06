@@ -1,5 +1,7 @@
 ﻿using Microsoft.VisualBasic;
 using System;
+using System.Collections.Generic;
+using System.Linq;
 
 namespace LCARS.CoreUi.Helpers
 {
@@ -20,6 +22,11 @@ namespace LCARS.CoreUi.Helpers
         public string Load(string section, string key, string defaultValue = null)
         {
             return Interaction.GetSetting(AppName, section, key, defaultValue);
+        }
+
+        public string[,] LoadAll(string section)
+        {
+            return Interaction.GetAllSettings(AppName, section);
         }
 
         /// <summary>
