@@ -34,7 +34,7 @@ namespace LCARS.UserControls.Colors
 
         public static LcarsColorSet FromCsv(string colorStringCsv)
         {
-            if (string.IsNullOrWhiteSpace(colorStringCsv) || colorStringCsv == "NONE")
+            if (string.IsNullOrWhiteSpace(colorStringCsv))
             {
                 throw new Exception("Color setting string not initialized");
             }

@@ -1,10 +1,12 @@
-﻿using Microsoft.VisualBasic;
+﻿using LCARS.UserControls.Helpers;
+using Microsoft.VisualBasic;
 
 namespace LCARS.UserControls.Colors
 {
     public class LcarsColorManager
     {
         private LcarsColorSet currentColorSet;
+        private SettingsStore persistentSettings = new SettingsStore("LCARS");
         public LcarsColorManager()
         {
             ReloadColors();
@@ -12,7 +14,13 @@ namespace LCARS.UserControls.Colors
 
         public void ReloadColors()
         {
-            string colorSettingCsv = Interaction.GetSetting("LCARS x32", "Colors", "ColorMap", "NONE");
+            string colorSettingCsv = persistentSettings.Load("Colors", "ColorMap");
+
+            if (string.IsNullOrWhiteSpace(colorSettingCsv))
+            {
+                currentColorSet = LcarsColorSet.FromDefaults();
+                return;
+            }
 
             LcarsColorSet holder;
             try

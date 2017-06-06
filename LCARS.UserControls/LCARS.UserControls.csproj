@@ -49,6 +49,7 @@
     <Compile Include="Enums\LcarsColorFunction.cs" />
     <Compile Include="Colors\LcarsColorManager.cs" />
     <Compile Include="Colors\LcarsColorSet.cs" />
+    <Compile Include="Helpers\SettingsStore.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
