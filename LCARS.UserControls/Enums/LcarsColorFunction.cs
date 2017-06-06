@@ -1,6 +1,6 @@
 ﻿namespace LCARS.UserControls.Enums
 {
-    public enum LcarsColorStyles
+    public enum LcarsColorFunction
     {
         FunctionUnavailable = 0,
         SystemFunction = 1,

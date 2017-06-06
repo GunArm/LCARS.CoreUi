@@ -4,6 +4,6 @@
     {
         Normal = 0,
         Red = 1,
-        White = 2
+        White = 2,
     }
 }

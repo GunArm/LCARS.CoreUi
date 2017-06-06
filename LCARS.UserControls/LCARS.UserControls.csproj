@@ -43,10 +43,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Enums\EnumExtensions.cs" />
     <Compile Include="Enums\LcarsAlert.cs" />
     <Compile Include="Enums\LcarsArrowDirection.cs" />
-    <Compile Include="Enums\LcarsColorStyles.cs" />
-    <Compile Include="LcarsColor.cs" />
+    <Compile Include="Enums\LcarsColorFunction.cs" />
+    <Compile Include="Colors\LcarsColorManager.cs" />
+    <Compile Include="Colors\LcarsColorSet.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
