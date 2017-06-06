@@ -42,11 +42,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Enums\LcarsAlert.cs" />
+    <Compile Include="Enums\LcarsArrowDirection.cs" />
+    <Compile Include="Enums\LcarsColorStyles.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Fonts\LCARS-full.TTF" />
-    <None Include="Fonts\LCARS-lite.TTF" />
+    <None Include="Assets\Fonts\LCARS-full.TTF" />
+    <None Include="Assets\Fonts\LCARS-lite.TTF" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
