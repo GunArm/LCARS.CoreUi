@@ -13,6 +13,6 @@ namespace LCARS.CoreUi.Interfaces
         /// <summary>
         /// Exposes LcarsColorManager class used by the control for color management
         /// </summary>
-        LcarsColorManager ColorsManager { get; set; }
+        LcarsColorManager ColorManager { get; set; }
     }
 }
