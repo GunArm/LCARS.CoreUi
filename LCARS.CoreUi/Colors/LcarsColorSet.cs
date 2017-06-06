@@ -1,9 +1,9 @@
-﻿using LCARS.UserControls.Enums;
+﻿using LCARS.CoreUi.Enums;
 using System;
 using System.Collections.Generic;
 using System.Drawing;
 
-namespace LCARS.UserControls.Colors
+namespace LCARS.CoreUi.Colors
 {
     public class LcarsColorSet
     {

@@ -7,8 +7,8 @@
     <ProjectGuid>{BA62254B-B9D9-4FE4-A64C-5BABA76DDD04}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>LCARS.UserControls</RootNamespace>
-    <AssemblyName>LCARS.UserControls</AssemblyName>
+    <RootNamespace>LCARS.CoreUi</RootNamespace>
+    <AssemblyName>LCARS.CoreUi</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>

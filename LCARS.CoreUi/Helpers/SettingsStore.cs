@@ -1,6 +1,6 @@
 ﻿using Microsoft.VisualBasic;
 
-namespace LCARS.UserControls.Helpers
+namespace LCARS.CoreUi.Helpers
 {
     public class SettingsStore
     {

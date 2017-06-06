@@ -1,7 +1,7 @@
-﻿using LCARS.UserControls.Helpers;
+﻿using LCARS.CoreUi.Helpers;
 using Microsoft.VisualBasic;
 
-namespace LCARS.UserControls.Colors
+namespace LCARS.CoreUi.Colors
 {
     public class LcarsColorManager
     {

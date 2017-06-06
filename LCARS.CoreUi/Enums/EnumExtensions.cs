@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace LCARS.UserControls.Enums
+namespace LCARS.CoreUi.Enums
 {
     /// <summary> Enum Extension Methods </summary>
     /// <typeparam name="T"> type of Enum </typeparam>

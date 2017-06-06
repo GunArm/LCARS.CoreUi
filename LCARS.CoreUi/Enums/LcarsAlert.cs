@@ -1,4 +1,4 @@
-﻿namespace LCARS.UserControls.Enums
+﻿namespace LCARS.CoreUi.Enums
 {
     public enum LcarsAlert
     {
