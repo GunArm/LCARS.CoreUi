@@ -44,7 +44,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Enums\LightweightEvents.cs" />
-    <Compile Include="Enums\EnumExtensions.cs" />
+    <Compile Include="Helpers\EnumExtensions.cs" />
     <Compile Include="Enums\LcarsAlert.cs" />
     <Compile Include="Enums\LcarsArrowDirection.cs" />
     <Compile Include="Enums\LcarsColorFunction.cs" />
