@@ -82,9 +82,8 @@ namespace LCARS.CoreUi.Colors
 
         public string ToCsv()
         {
-            int length = Enum<LcarsColorFunction>.Count;
-            var stringArray = new string[length];
-            for (int i = 0; i < length; i++) stringArray[i] = colorSet[(LcarsColorFunction)i];
+            var stringArray = new string[Enum<LcarsColorFunction>.Count];
+            for (int i = 0; i < stringArray.Length; i++) stringArray[i] = colorSet[(LcarsColorFunction)i];
             return string.Join(",", stringArray);
         }
     }
