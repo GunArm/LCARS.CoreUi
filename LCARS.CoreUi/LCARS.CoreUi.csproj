@@ -17,9 +17,10 @@
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
     <OutputPath>bin\Debug\</OutputPath>
-    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DefineConstants>TRACE;DEBUG</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
@@ -44,6 +45,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Enums\LightweightEvents.cs" />
+    <Compile Include="FontProvider.cs" />
     <Compile Include="Helpers\EnumExtensions.cs" />
     <Compile Include="Enums\LcarsAlert.cs" />
     <Compile Include="Enums\LcarsArrowDirection.cs" />
@@ -58,12 +60,60 @@
     <Compile Include="Interfaces\IBeeping.cs" />
     <Compile Include="Interfaces\IColorable.cs" />
     <Compile Include="Interfaces\ILightweightControl.cs" />
+    <Compile Include="Paths.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="StarDateMath.cs" />
   </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
-    <None Include="Assets\Fonts\LCARS-full.TTF" />
-    <None Include="Assets\Fonts\LCARS-lite.TTF" />
+    <None Include="Assets\Fonts\Alien\bajoran.ttf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Assets\Fonts\Alien\cardassian.ttf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Assets\Fonts\Alien\dominion.ttf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Assets\Fonts\Alien\fabrini.ttf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Assets\Fonts\Alien\ferengi.ttf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Assets\Fonts\Alien\klingon.ttf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Assets\Fonts\Alien\romulan.ttf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Assets\Fonts\Alien\tholian.ttf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Assets\Fonts\Alien\trill.ttf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Assets\Fonts\Alien\vulcan.ttf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Assets\Fonts\LCARS\lcars-full.ttf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Assets\Fonts\LCARS\lcars-lite.ttf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Assets\Fonts\Misc\tng_credits.ttf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Assets\Fonts\Misc\tng_monitors.ttf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Assets\Fonts\Misc\tng_title.ttf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Assets\Fonts\Misc\trekbats.ttf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
