@@ -1,10 +1,13 @@
 ﻿using LCARS.CoreUi.Helpers;
 using Microsoft.VisualBasic;
+using System;
 
 namespace LCARS.CoreUi.Colors
 {
     public class LcarsColorManager
     {
+        public event EventHandler ColorsUpdated;
+
         private LcarsColorSet currentColorSet;
         private SettingsStore persistentSettings = new SettingsStore("LCARS");
         public LcarsColorManager()
@@ -32,6 +35,8 @@ namespace LCARS.CoreUi.Colors
                 holder = LcarsColorSet.FromDefaults();
             }
             currentColorSet = holder;
+
+            ColorsUpdated?.Invoke(this, new EventArgs());
         }
 
         private void SetDefaultColors()
