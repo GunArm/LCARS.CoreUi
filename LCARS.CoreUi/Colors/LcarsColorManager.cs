@@ -1,4 +1,5 @@
-﻿using LCARS.CoreUi.Helpers;
+﻿using LCARS.CoreUi.Enums;
+using LCARS.CoreUi.Helpers;
 using Microsoft.VisualBasic;
 using System;
 
@@ -37,6 +38,11 @@ namespace LCARS.CoreUi.Colors
             currentColorSet = holder;
 
             ColorsUpdated?.Invoke(this, new EventArgs());
+        }
+
+        public System.Drawing.Color GetColor(LcarsColorFunction colorFunction)
+        {
+            return currentColorSet.GetFunctionNativeColor(colorFunction);
         }
 
         private void SetDefaultColors()

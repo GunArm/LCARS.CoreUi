@@ -10,7 +10,7 @@ namespace LCARS.CoreUi.Interfaces
         /// <remarks>
         /// Sets the actual alert status of the object
         /// </remarks>
-        LcarsAlert RedAlert { get; set; }
+        LcarsAlert AlertState { get; set; }
         /// <summary>
         /// The color to display if RedAlert is set to Custom
         /// </summary>
