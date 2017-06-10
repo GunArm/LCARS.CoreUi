@@ -1,22 +1,28 @@
-﻿using System;
+﻿using LCARS.CoreUi.Helpers;
+using System;
 using System.Collections.Generic;
 using System.Drawing;
 using System.Drawing.Text;
 using System.IO;
+using System.Linq;
 
-namespace LCARS.CoreUi
+namespace LCARS.CoreUi.Assets.Access
 {
     public static class FontProvider
     {
-        public static Dictionary<string, FontFamily> LcarsFonts { get; private set; }
-        public static Dictionary<string, FontFamily> AlienFonts { get; private set; }
-        public static Dictionary<string, FontFamily> MiscFonts { get; private set; }
+        private static Dictionary<string, FontFamily> lcarsFonts;
+        private static Dictionary<string, FontFamily> alienFonts;
+        private static Dictionary<string, FontFamily> miscFonts;
+
+        public static FontFamily LcarsLight { get { return lcarsFonts["lcars-lite"]; } }
+        public static FontFamily LcarsHeavy { get { return lcarsFonts["lcars-full"]; } }
+        public static FontFamily RandomAlien { get { return alienFonts.ElementAt(Randomizer.NextInt(0, alienFonts.Count)).Value; } }
 
         static FontProvider()
         {
-            LcarsFonts = GetFontCollection("LCARS");
-            AlienFonts = GetFontCollection("Alien");
-            MiscFonts = GetFontCollection("Misc");
+            lcarsFonts = GetFontCollection("LCARS");
+            alienFonts = GetFontCollection("Alien");
+            miscFonts = GetFontCollection("Misc");
         }
 
         private static Dictionary<string, FontFamily> GetFontCollection(string fontGroup)
@@ -32,7 +38,7 @@ namespace LCARS.CoreUi
 
                 var families = ReadFontFile(fontFilePath);
                 if (families.Length != 1) throw new Exception("Font file " + fontFilePath + " has more (or less) than one font");
-                fonts.Add(fontFilePath, families[0]);
+                fonts.Add(Path.GetFileNameWithoutExtension(fontFilePath), families[0]);
             }
             
             return fonts;

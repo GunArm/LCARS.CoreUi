@@ -45,7 +45,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Enums\LightweightEvents.cs" />
-    <Compile Include="FontProvider.cs" />
+    <Compile Include="Assets\Access\FontProvider.cs" />
     <Compile Include="Helpers\EnumExtensions.cs" />
     <Compile Include="Enums\LcarsAlert.cs" />
     <Compile Include="Enums\LcarsArrowDirection.cs" />
