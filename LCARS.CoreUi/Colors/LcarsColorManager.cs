@@ -10,6 +10,16 @@ namespace LCARS.CoreUi.Colors
         public event EventHandler ColorsUpdated;
 
         private LcarsColorSet currentColorSet;
+        public LcarsColorSet CurrentColorSet
+        {
+            get { return currentColorSet; }
+            set
+            {
+                currentColorSet = value;
+                ColorsUpdated?.Invoke(this, null);
+            }
+        }
+
         private SettingsStore persistentSettings = new SettingsStore("LCARS");
         public LcarsColorManager()
         {
@@ -37,7 +47,7 @@ namespace LCARS.CoreUi.Colors
             }
             currentColorSet = holder;
 
-            ColorsUpdated?.Invoke(this, new EventArgs());
+            ColorsUpdated?.Invoke(this, null);
         }
 
         public System.Drawing.Color GetColor(LcarsColorFunction colorFunction)
@@ -48,7 +58,7 @@ namespace LCARS.CoreUi.Colors
         private void SetDefaultColors()
         {
             currentColorSet = LcarsColorSet.FromDefaults();
-            Interaction.SaveSetting("LCARS x32", "Colors", "ColorMap", currentColorSet.ToCsv());
+            Interaction.SaveSetting("LCARS", "Colors", "ColorMap", currentColorSet.ToCsv());
         }
     }
 }

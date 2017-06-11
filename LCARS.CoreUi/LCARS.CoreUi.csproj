@@ -46,6 +46,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Access\SoundProvider.cs" />
+    <Compile Include="Enums\EllipsisModes.cs" />
     <Compile Include="Helpers\Randomizer.cs" />
     <Compile Include="Enums\LightweightEvents.cs" />
     <Compile Include="Assets\Access\FontProvider.cs" />
@@ -66,7 +67,20 @@
     <Compile Include="Paths.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="StarDateMath.cs" />
-    <Compile Include="UiElements\LCARSbuttonClass.cs">
+    <Compile Include="UiElements\LcarsButtonBaseDesigner.cs" />
+    <Compile Include="UiElements\LcarsButtonBase_ControlOverrides.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UiElements\LcarsButtonBase_Draw.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UiElements\LcarsButtonBase_Events.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UiElements\LcarsButtonBase_Properties.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UiElements\LcarsButtonBase.cs">
       <SubType>Component</SubType>
     </Compile>
   </ItemGroup>

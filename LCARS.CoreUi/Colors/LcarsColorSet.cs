@@ -68,6 +68,7 @@ namespace LCARS.CoreUi.Colors
 
         public void SetFunctionColor(LcarsColorFunction colorFunction, string color)
         {
+            // warning: directly calling an LcarsColorManager.CurrentColorSet.SetFunctionColor(.....) will not trigger redraw
             colorSet[colorFunction] = color;
         }
 

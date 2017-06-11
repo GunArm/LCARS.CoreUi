@@ -23,7 +23,7 @@ namespace LCARS.CoreUi.Helpers
 
         const int WM_COPYDATA = 0x4a;
         /// <summary>
-        /// Registers a new alert with LCARS x32, or returns the ID of the alert with the same name.
+        /// Registers a new alert with LCARS, or returns the ID of the alert with the same name.
         /// </summary>
         /// <param name="Name">The name your code will reference the alert by</param>
         /// <param name="AlertColor">Color the alert will use. Ignored if alert by the same name already exists.</param>
@@ -59,7 +59,7 @@ namespace LCARS.CoreUi.Helpers
         }
 
         /// <summary>
-        /// Registers a new alert with LCARS x32, or returns the ID of the alert with the same name.
+        /// Registers a new alert with LCARS, or returns the ID of the alert with the same name.
         /// </summary>
         /// <param name="Name">The name your code will reference the alert by</param>
         /// <param name="AlertColor">Color the alert will use as HTML-style color code. Ignored if alert by the same name already exists.</param>
@@ -109,7 +109,7 @@ namespace LCARS.CoreUi.Helpers
         }
 
         /// <summary>
-        /// Sends a message to LCARS x32 to activate the specified alert.
+        /// Sends a message to LCARS to activate the specified alert.
         /// </summary>
         /// <param name="ID">ID of alert to call</param>
         /// <param name="hwnd">Handle of calling object</param>
@@ -131,7 +131,7 @@ namespace LCARS.CoreUi.Helpers
         }
 
         /// <summary>
-        /// Sends a message to LCARS x32 to activate the specified alert.
+        /// Sends a message to LCARS to activate the specified alert.
         /// </summary>
         /// <param name="Name">Name of the alert to call</param>
         /// <param name="hwnd">Handle of the calling object</param>

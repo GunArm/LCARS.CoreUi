@@ -12,6 +12,6 @@
         /// <summary>
         /// Sets the beeping property of the control.
         /// </summary>
-        bool Beeping { get; set; }
+        bool DoesBeep { get; set; }
     }
 }

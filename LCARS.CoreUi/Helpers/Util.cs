@@ -21,7 +21,7 @@ namespace LCARS.CoreUi.Helpers
         public static void SetBeeping(System.Windows.Forms.Control Container, bool Beeping)
         {
             IBeeping temp = Container as IBeeping;
-            if (temp != null) temp.Beeping = Beeping;
+            if (temp != null) temp.DoesBeep = Beeping;
 
             foreach (System.Windows.Forms.Control myControl in Container.Controls)
             {
