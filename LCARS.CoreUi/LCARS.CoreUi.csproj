@@ -141,6 +141,9 @@
     <Compile Include="UiElements\Lightweight\LCFlatButton.cs" />
     <Compile Include="UiElements\Lightweight\LCHalfPillButton.cs" />
     <Compile Include="UiElements\Lightweight\LCStandardButton.cs" />
+    <Compile Include="UiElements\Controls\WindowlessContainer.cs">
+      <SubType>Component</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Sounds\ShortBeeps\207.wav">
