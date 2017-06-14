@@ -131,6 +131,9 @@
     <Compile Include="UiElements\LcarsForm.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="UiElements\Controls\Trackbar.cs">
+      <SubType>Component</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Sounds\ShortBeeps\207.wav">
