@@ -83,6 +83,12 @@
     <Compile Include="UiElements\Base\LcarsButtonBase.cs">
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="UiElements\Controls\ArrowButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UiElements\Controls\ComplexButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="UiElements\Controls\Elbow.cs">
       <SubType>Component</SubType>
     </Compile>
