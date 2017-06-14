@@ -110,6 +110,9 @@
     <Compile Include="UiElements\Controls\PieButton.cs">
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="UiElements\Controls\ProgressBar.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="UiElements\Controls\StandardButton.cs">
       <SubType>Component</SubType>
     </Compile>
