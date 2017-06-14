@@ -1,6 +1,7 @@
 ﻿using LCARS.CoreUi.Enums;
 using System.Collections.Generic;
 using System.Drawing;
+using System;
 
 namespace LCARS.CoreUi.UiElements.Base
 {
@@ -33,20 +34,7 @@ namespace LCARS.CoreUi.UiElements.Base
             Bitmap mybitmap = default(Bitmap);
             Graphics g = default(Graphics);
 
-            var alertColorMapping = new Dictionary<LcarsAlert, Color>()
-            {
-                {LcarsAlert.Normal, ColorManager.GetColor(colorFunction) },
-                {LcarsAlert.Red, Color.Red },
-                {LcarsAlert.White, Color.White},
-                {LcarsAlert.Yellow, Color.Yellow},
-                {LcarsAlert.Custom, customAlertColor},
-            };
-            Color drawColor = alertColorMapping[alertState];
-
-            // turn color white when pressed, unless already white, then turn it red
-            if (isPressed) drawColor = (drawColor == Color.White) ? Color.Red : Color.White;
-
-            SolidBrush myBrush = new SolidBrush(drawColor);
+            SolidBrush myBrush = new SolidBrush(GetButtonColor());
 
             mybitmap = new Bitmap(this.Size.Width, this.Size.Height);
             g = Graphics.FromImage(mybitmap);
@@ -64,6 +52,34 @@ namespace LCARS.CoreUi.UiElements.Base
             this.TextSize = (Size)new Point(this.Width - this.Height, this.Height);
             g.Dispose();
             return mybitmap;
+        }
+
+        protected Color GetButtonColor()
+        {
+            Color color;
+            switch(AlertState)
+            {
+                case LcarsAlert.Red:
+                    color = Color.Red;
+                    break;
+                case LcarsAlert.Yellow:
+                    color = Color.Yellow;
+                    break;
+                case LcarsAlert.White:
+                    color = Color.White;
+                    break;
+                case LcarsAlert.Custom:
+                    color = CustomAlertColor;
+                    break;
+                default:
+                    color = ColorManager.GetColor(ColorFunction);
+                    break;
+            }
+
+            // turn color white when pressed, unless already white, then turn it red
+            if (isPressed) color = (color == Color.White) ? Color.Red : Color.White;
+
+            return color;
         }
 
         private Bitmap DrawUnlitButton(Bitmap normal)

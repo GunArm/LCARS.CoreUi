@@ -69,24 +69,7 @@ namespace LCARS.CoreUi.UiElements.Controls
         {
             Bitmap mybitmap = null;
             Graphics g = null;
-            SolidBrush myBrush = new SolidBrush(ColorManager.GetColor(ColorFunction));
-
-            if (AlertState == LcarsAlert.Red)
-            {
-                myBrush = new SolidBrush(Color.Red);
-            }
-            else if (AlertState == LcarsAlert.White)
-            {
-                myBrush = new SolidBrush(Color.White);
-            }
-            else if (AlertState == LcarsAlert.Yellow)
-            {
-                myBrush = new SolidBrush(Color.Yellow);
-            }
-            else if (AlertState == LcarsAlert.Custom)
-            {
-                myBrush = new SolidBrush(CustomAlertColor);
-            }
+            SolidBrush myBrush = new SolidBrush(GetButtonColor());
 
             mybitmap = new Bitmap(Size.Width, Size.Height);
             g = Graphics.FromImage(mybitmap);

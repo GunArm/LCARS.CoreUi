@@ -171,26 +171,9 @@ namespace LCARS.CoreUi.UiElements.Controls
                 if (TextHeight > 0)
                 {
                     Graphics g = null;
-                    SolidBrush mybrush = new SolidBrush(ColorManager.GetColor(ColorFunction));
+                    SolidBrush mybrush = new SolidBrush(GetButtonColor());
                     Font myfont = new Font("LCARS", TextHeight, FontStyle.Regular, GraphicsUnit.Point);
                     int drawHeight = 0;
-
-                    if (AlertState == LcarsAlert.Red)
-                    {
-                        mybrush = new SolidBrush(Color.Red);
-                    }
-                    else if (AlertState == LcarsAlert.White)
-                    {
-                        mybrush = new SolidBrush(Color.White);
-                    }
-                    else if (AlertState == LcarsAlert.Yellow)
-                    {
-                        mybrush = new SolidBrush(Color.Yellow);
-                    }
-                    else if (AlertState == LcarsAlert.Custom)
-                    {
-                        mybrush = new SolidBrush(CustomAlertColor);
-                    }
 
                     if (fontDims.Height == 0)
                     {
