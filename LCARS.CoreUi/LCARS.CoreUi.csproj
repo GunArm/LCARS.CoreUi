@@ -86,6 +86,9 @@
     <Compile Include="UiElements\Controls\FlatButton.cs">
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="UiElements\Controls\HalfPillButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="UiElements\Controls\StandardButton.cs">
       <SubType>Component</SubType>
     </Compile>
