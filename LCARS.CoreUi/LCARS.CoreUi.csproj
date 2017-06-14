@@ -86,6 +86,9 @@
     <Compile Include="UiElements\Controls\StandardButton.cs">
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="UiElements\Controls\TextButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Sounds\ShortBeeps\207.wav">
