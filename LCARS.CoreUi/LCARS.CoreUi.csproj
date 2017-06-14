@@ -101,6 +101,9 @@
     <Compile Include="UiElements\Controls\LcarsLabel.cs">
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="UiElements\Controls\LcarsList.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="UiElements\Controls\LevelIndicator.cs">
       <SubType>Component</SubType>
     </Compile>
