@@ -9,7 +9,7 @@ using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace LCARS.CoreUi.UiElements
+namespace LCARS.CoreUi.UiElements.Base
 {
     public partial class LcarsButtonBase
     {

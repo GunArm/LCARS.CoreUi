@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Drawing;
 
-namespace LCARS.CoreUi.UiElements
+namespace LCARS.CoreUi.UiElements.Base
 {
     public partial class LcarsButtonBase
     {

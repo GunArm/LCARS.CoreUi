@@ -1,6 +1,6 @@
 ﻿using System.Windows.Forms.Design;
 
-namespace LCARS.CoreUi.UiElements
+namespace LCARS.CoreUi.UiElements.Base
 {
     public class LcarsButtonBaseDesigner : ControlDesigner
     {

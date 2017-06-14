@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace LCARS.CoreUi.UiElements
+namespace LCARS.CoreUi.UiElements.Base
 {
     public partial class LcarsButtonBase
     {

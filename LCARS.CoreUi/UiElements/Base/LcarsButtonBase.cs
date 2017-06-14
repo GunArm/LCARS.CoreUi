@@ -8,7 +8,7 @@ using System.Drawing;
 using System.Threading;
 using System.Windows.Forms;
 
-namespace LCARS.CoreUi.UiElements
+namespace LCARS.CoreUi.UiElements.Base
 {
     /// <summary>
     /// Generic LCARS button that all others inherit from
