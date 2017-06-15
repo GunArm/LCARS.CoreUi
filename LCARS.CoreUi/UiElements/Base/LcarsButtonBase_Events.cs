@@ -78,7 +78,6 @@ namespace LCARS.CoreUi.UiElements.Base
             DrawAllButtons();
         }
 
-       
         private void DoButtonActions(object sender, EventArgs e)
         {
             if (canClick) DoButtonDownActions();
