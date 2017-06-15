@@ -144,7 +144,7 @@ namespace LCARS.CoreUi.UiElements.Base
                     }
                     else
                     {
-                        flasher.Abort();
+                        if(flasher != null) flasher.Abort();
                     }
                 }
 
