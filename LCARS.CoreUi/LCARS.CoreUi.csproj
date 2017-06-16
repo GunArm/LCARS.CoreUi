@@ -48,6 +48,7 @@
     <Compile Include="Assets\Access\SoundProvider.cs" />
     <Compile Include="Enums\EllipsisModes.cs" />
     <Compile Include="Enums\LcarsButtonStyles.cs" />
+    <Compile Include="Enums\LcarsHalfPillButtonStyles.cs" />
     <Compile Include="Helpers\Randomizer.cs" />
     <Compile Include="Enums\LightweightEvents.cs" />
     <Compile Include="Assets\Access\FontProvider.cs" />
@@ -138,6 +139,7 @@
     <Compile Include="UiElements\Lightweight\LCArrowButton.cs" />
     <Compile Include="UiElements\Lightweight\LCComplexButton.cs" />
     <Compile Include="UiElements\Lightweight\LCFlatButton.cs" />
+    <Compile Include="UiElements\Lightweight\LCHalfPillButton.cs" />
     <Compile Include="UiElements\Lightweight\LCStandardButton.cs" />
   </ItemGroup>
   <ItemGroup>

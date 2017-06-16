@@ -43,9 +43,7 @@ namespace LCARS.CoreUi.UiElements.Controls
         #endregion
         
         #region " Properties "
-        LcarsButtonStyles buttonStyle = LcarsButtonStyles.PillRight;
-
-        public LcarsButtonStyles ButtonStyle
+        public LcarsHalfPillButtonStyles ButtonStyle
         {
             get { return buttonStyle; }
             set
@@ -54,14 +52,7 @@ namespace LCARS.CoreUi.UiElements.Controls
                 DrawAllButtons();
             }
         }
-        #endregion
-
-        #region " Structures "
-        public enum LcarsButtonStyles
-        {
-            PillRight = 0,
-            PillLeft = 1
-        }
+        LcarsHalfPillButtonStyles buttonStyle = LcarsHalfPillButtonStyles.Right;
         #endregion
 
         #region " Draw Half-Pill Button "
@@ -80,12 +71,12 @@ namespace LCARS.CoreUi.UiElements.Controls
 
             switch (buttonStyle)
             {
-                case LcarsButtonStyles.PillRight:
+                case LcarsHalfPillButtonStyles.Right:
                     g.FillRectangle(myBrush, 0, 0, Size.Width - (Size.Height / 2), Size.Height);
                     g.FillEllipse(myBrush, Size.Width - Size.Height, 0, Size.Height, Size.Height);
                     TextLocation = new Point(0, 0);
                     break;
-                case LcarsButtonStyles.PillLeft:
+                case LcarsHalfPillButtonStyles.Left:
                     g.FillRectangle(myBrush, Size.Height / 2, 0, Size.Width - (Size.Height / 2), Size.Height);
                     g.FillEllipse(myBrush, 0, 0, Size.Height, Size.Height);
                     TextLocation = new Point(Height / 2, 0);
