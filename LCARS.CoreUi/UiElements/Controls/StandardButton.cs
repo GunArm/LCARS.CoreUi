@@ -57,17 +57,6 @@ namespace LCARS.CoreUi.UiElements.Controls
             }
         }
         #endregion
-
-        #region " Structures "
-        public enum LcarsButtonStyles
-        {
-            Pill = 0,
-            RoundedSquare = 1,
-            RoundedSquareSlant = 2,
-            RoundedSquareBackSlant = 3
-        }
-        #endregion
-
         #region " Draw Standard Button "
         public override Bitmap DrawButton()
         {
