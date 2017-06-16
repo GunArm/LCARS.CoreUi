@@ -136,6 +136,7 @@
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="UiElements\Lightweight\LCArrowButton.cs" />
+    <Compile Include="UiElements\Lightweight\LCComplexButton.cs" />
     <Compile Include="UiElements\Lightweight\LCFlatButton.cs" />
     <Compile Include="UiElements\Lightweight\LCStandardButton.cs" />
   </ItemGroup>
