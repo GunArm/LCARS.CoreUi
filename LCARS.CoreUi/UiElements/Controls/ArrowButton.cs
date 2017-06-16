@@ -78,11 +78,8 @@ namespace LCARS.CoreUi.UiElements.Controls
         }
 
         [Browsable(false), EditorBrowsable(EditorBrowsableState.Never)]
-        public new object AutoEllipsis
-        {
-            get { return null; }
-            set { }
-        }
+        public new bool AutoEllipsis { get; set; }
+
         public LcarsArrowDirection ArrowDirection
         {
             get { return ArrowDir; }

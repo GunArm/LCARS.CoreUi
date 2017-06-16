@@ -134,6 +134,7 @@
     <Compile Include="UiElements\Controls\Trackbar.cs">
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="UiElements\Lightweight\LCArrowButton.cs" />
     <Compile Include="UiElements\Lightweight\LCFlatButton.cs" />
   </ItemGroup>
   <ItemGroup>
