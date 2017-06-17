@@ -88,6 +88,9 @@
     <Compile Include="UiElements\Controls\ArrowButton.cs">
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="UiElements\Controls\ButtonGrid.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="UiElements\Controls\ComplexButton.cs">
       <SubType>Component</SubType>
     </Compile>
