@@ -16,6 +16,12 @@ namespace LCARS.CoreUi.UiElements.Tabbing
     [DefaultEvent("SelectedTabChanged"), Designer(typeof(LcarsTabControlDesigner))]
     public class LcarsTabControl : Control
     {
+        private int pixelSpace = 6;
+        private int headingHeight = 20;
+        private int tabButtonWidth = 100;
+        private int tabButtonHeight = 35;
+        private int elbowExtraHeight = 55;  // extra 55 for length into button bar
+
         //In case it's not obvious, this is the elbow in the top right of the LcarsTabControl.
         Elbow elbow = new Elbow();
         //Likewise, this is the heading bar at the very top of the control
@@ -58,6 +64,8 @@ namespace LCARS.CoreUi.UiElements.Tabbing
         }
         private LcarsTabPage selectedTab;
 
+
+
         public LcarsTabControl()
         {
             tabPages = new LcarsTabPageCollection(this);
@@ -65,24 +73,13 @@ namespace LCARS.CoreUi.UiElements.Tabbing
             ParentChanged += LcarsTabControl_ParentChanged;
             InitializeComponent();
             //Create the controls that make up the tabcontrol.  
-            
-            //The heading above the tab area (very top),
-            myHeading.ButtonText = "";
-            myHeading.Width = Width - 126;
-            myHeading.Height = 20;
-            myHeading.Left = 0;
-            myHeading.Top = 0;
-            myHeading.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
-            myHeading.ColorFunction = LcarsColorFunction.LCARSDisplayOnly;
-            myHeading.ButtonTextAlign = ContentAlignment.BottomLeft;
-            Controls.Add(myHeading);
 
             //The elbow in the top right of the tabcontrol,
             elbow.ElbowStyle = LcarsElbowStyle.UpperRight;
-            elbow.ButtonHeight = 20;
-            elbow.ButtonWidth = 100;
-            elbow.Width = 120;
-            elbow.Height = 75;
+            elbow.ButtonHeight = headingHeight;
+            elbow.ButtonWidth = tabButtonWidth;
+            elbow.Width = elbow.ButtonWidth + 20; // extra 20 for curve
+            elbow.Height = elbow.ButtonHeight + elbowExtraHeight;
             elbow.Left = Width - elbow.Width;
             elbow.Top = 0;
             elbow.ButtonText = "TABS";
@@ -92,10 +89,21 @@ namespace LCARS.CoreUi.UiElements.Tabbing
             elbow.Anchor = AnchorStyles.Top | AnchorStyles.Right;
             Controls.Add(elbow);
 
+            //The heading above the tab area (very top),
+            myHeading.ButtonText = "";
+            myHeading.Width = Width - (elbow.Width + pixelSpace);
+            myHeading.Height = headingHeight;
+            myHeading.Left = 0;
+            myHeading.Top = 0;
+            myHeading.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
+            myHeading.ColorFunction = LcarsColorFunction.LCARSDisplayOnly;
+            myHeading.ButtonTextAlign = ContentAlignment.BottomLeft;
+            Controls.Add(myHeading);
+
             //And the panel that contains the buttons that act as the 'Tabs'.
-            tabButtonPanel.Width = 100;
-            tabButtonPanel.Height = Height - elbow.Bottom;
-            tabButtonPanel.Top = elbow.Bottom;
+            tabButtonPanel.Width = tabButtonWidth;
+            tabButtonPanel.Height = Height - (elbow.Bottom + pixelSpace);
+            tabButtonPanel.Top = elbow.Bottom + pixelSpace;
             tabButtonPanel.Left = Width - tabButtonPanel.Width;
             tabButtonPanel.BackColor = Color.Black;
             tabButtonPanel.Anchor = AnchorStyles.Top | AnchorStyles.Right;
@@ -117,7 +125,7 @@ namespace LCARS.CoreUi.UiElements.Tabbing
             SuspendLayout();
 
             BackColor = Color.Black;
-            Size = new System.Drawing.Size(400, 400);
+            Size = new Size(400, 400);
 
             //Ok, now we can allow the control to draw again.
             ResumeLayout(false);
@@ -147,9 +155,9 @@ namespace LCARS.CoreUi.UiElements.Tabbing
 
                 //Set the size of the tab equal to the area we want the tab to cover.  Basically,
                 //everwhere our heading, elbow, and buttonpanel are not.
-                mytab.Width = Width - 110;
-                mytab.Height = Height - 26;
-                mytab.Location = new Point(0, 26);
+                mytab.Width = Width - tabButtonPanel.Width - 10; // 10px spacing 
+                mytab.Height = Height - (myHeading.Height + pixelSpace);
+                mytab.Location = new Point(0, myHeading.Height + pixelSpace);
 
                 //Set the anchor so the tab will resize with the tabcontrol
                 mytab.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Bottom | AnchorStyles.Right;
@@ -157,8 +165,8 @@ namespace LCARS.CoreUi.UiElements.Tabbing
                 //Now that we have the tab added to the tab control, we need to create a button
                 //that will bring it to the front when the user clicks it.
                 FlatButton mybutton = new FlatButton();
-                mybutton.Width = 100;
-                mybutton.Height = 35;
+                mybutton.Width = tabButtonWidth;
+                mybutton.Height = tabButtonHeight;
                 mybutton.ButtonText = mytab.Text;
                 mybutton.ButtonTextAlign = ContentAlignment.BottomRight;
                 mybutton.ColorFunction = mytab.ColorFunction;
@@ -169,7 +177,7 @@ namespace LCARS.CoreUi.UiElements.Tabbing
                 mybutton.DoesBeep = false;
 
                 //position the button based on how many buttons are already there.
-                mybutton.Top = (tabButtonPanel.Controls.Count * 41) + 6;
+                mybutton.Top = tabButtonPanel.Controls.Count * (tabButtonHeight + pixelSpace);
                 mybutton.Left = 0;
 
                 //By setting the button's 'Tag' property to the Tab it is associated with,
@@ -183,14 +191,14 @@ namespace LCARS.CoreUi.UiElements.Tabbing
 
             //If there's any room left after all of tabs have been made, we need to fill the
             //empty space with another button that isn't clickable.
-            if ((tabButtonPanel.Controls.Count * 41) + 6 < tabButtonPanel.Height)
+            if ((tabButtonPanel.Controls.Count * 41) < tabButtonPanel.Height)
             {
                 FlatButton myButton = new FlatButton();
 
                 myButton.Width = 100;
 
                 //Start at the bottom of the last button
-                myButton.Top = (tabButtonPanel.Controls.Count * 41) + 6;
+                myButton.Top = tabButtonPanel.Controls.Count * (tabButtonHeight + pixelSpace);
 
                 //and end at the bottom of the tab control.
                 myButton.Height = tabButtonPanel.Height - myButton.Top;
@@ -344,7 +352,7 @@ namespace LCARS.CoreUi.UiElements.Tabbing
             tabButtonPanel.Left = Width - tabButtonPanel.Width;
             tabButtonPanel.Height = Height - tabButtonPanel.Top;
 
-            myHeading.Width = Width - 126;
+            myHeading.Width = Width - (elbow.Width + pixelSpace);
             myHeading.Top = 0;
             myHeading.Left = 0;
         }
