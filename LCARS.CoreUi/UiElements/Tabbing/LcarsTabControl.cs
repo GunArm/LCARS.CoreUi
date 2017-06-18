@@ -210,11 +210,12 @@ namespace LCARS.CoreUi.UiElements.Tabbing
                     case LcarsElbowStyle.UpperRight:
                     case LcarsElbowStyle.UpperLeft:
                         mybutton.Top = tabButtonPanel.Controls.Count * (tabButtonHeight + pixelSpace);
+                        mybutton.Anchor = AnchorStyles.Top | AnchorStyles.Right;
                         break;
                     case LcarsElbowStyle.LowerRight:
                     case LcarsElbowStyle.LowerLeft:
-                        // mybutton.Top = tabButtonPanel.Height - ((tabButtonPanel.Controls.Count + 1) * (tabButtonHeight + pixelSpace));
                         mybutton.Top = tabButtonPanel.Height - ((tabButtonPanel.Controls.Count + 1) * (tabButtonHeight + pixelSpace)) + pixelSpace;
+                        mybutton.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
                         break;
                 }
 
