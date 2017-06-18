@@ -103,7 +103,7 @@ namespace LCARS.CoreUi.UiElements.Dialogs
             elbow1.Size = new Size(80, 60);
             elbow1.ButtonHeight = 30;
             elbow1.ButtonWidth = 10;
-            elbow1.ElbowStyle = Elbow.LcarsElbowStyle.UpperLeft;
+            elbow1.ElbowStyle = LcarsElbowStyle.UpperLeft;
             elbow1.ColorFunction = colorFunction;
             elbow1.ButtonText = "";
 
@@ -114,7 +114,7 @@ namespace LCARS.CoreUi.UiElements.Dialogs
             elbow2.ButtonHeight = 15;
             elbow2.ButtonWidth = 10;
             elbow2.Clickable = false;
-            elbow2.ElbowStyle = Elbow.LcarsElbowStyle.LowerLeft;
+            elbow2.ElbowStyle = LcarsElbowStyle.LowerLeft;
             elbow2.ColorFunction = colorFunction;
             elbow2.ButtonText = "";
 

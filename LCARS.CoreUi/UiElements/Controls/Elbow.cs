@@ -1,4 +1,5 @@
-﻿using LCARS.CoreUi.UiElements.Base;
+﻿using LCARS.CoreUi.Enums;
+using LCARS.CoreUi.UiElements.Base;
 using System.ComponentModel;
 using System.Drawing;
 using System.Drawing.Drawing2D;
@@ -27,7 +28,7 @@ namespace LCARS.CoreUi.UiElements.Controls
             base.Dispose(disposing);
         }
 
-        private System.ComponentModel.IContainer components;
+        private IContainer components;
 
         [System.Diagnostics.DebuggerStepThrough()]
         private void InitializeComponent()
@@ -39,16 +40,6 @@ namespace LCARS.CoreUi.UiElements.Controls
             Name = "Elbow";
             Size = new Size(200, 100);
             ResumeLayout(false);
-        }
-        #endregion
-
-        #region " Structures "
-        public enum LcarsElbowStyle
-        {
-            UpperRight = 0,
-            LowerRight = 1,
-            UpperLeft = 2,
-            LowerLeft = 3
         }
         #endregion
 
@@ -178,25 +169,25 @@ namespace LCARS.CoreUi.UiElements.Controls
                 }
                 switch (p.ElbowStyle)
                 {
-                    case Elbow.LcarsElbowStyle.LowerLeft:
+                    case LcarsElbowStyle.LowerLeft:
                         s.Add(new SnapLine(SnapLineType.Top, p.Height - p.ButtonHeight, SnapLinePriority.Always));
                         s.Add(new SnapLine(SnapLineType.Right, p.Width - p.ButtonWidth, SnapLinePriority.Always));
                         s.Add(new SnapLine(SnapLineType.Horizontal, p.Height - p.ButtonHeight - p.Margin.Top, "Margin.Top", SnapLinePriority.Always));
                         s.Add(new SnapLine(SnapLineType.Vertical, p.Width - p.ButtonWidth + p.Margin.Right, "Margin.Right", SnapLinePriority.Always));
                         break;
-                    case Elbow.LcarsElbowStyle.LowerRight:
+                    case LcarsElbowStyle.LowerRight:
                         s.Add(new SnapLine(SnapLineType.Top, p.Height - p.ButtonHeight, SnapLinePriority.Always));
                         s.Add(new SnapLine(SnapLineType.Left, p.ButtonWidth, SnapLinePriority.Always));
                         s.Add(new SnapLine(SnapLineType.Horizontal, p.Height - p.ButtonHeight - p.Margin.Top, "Margin.Top", SnapLinePriority.Always));
                         s.Add(new SnapLine(SnapLineType.Vertical, p.ButtonWidth - p.Margin.Left, "Margin.Left", SnapLinePriority.Always));
                         break;
-                    case Elbow.LcarsElbowStyle.UpperLeft:
+                    case LcarsElbowStyle.UpperLeft:
                         s.Add(new SnapLine(SnapLineType.Bottom, p.ButtonHeight, SnapLinePriority.Always));
                         s.Add(new SnapLine(SnapLineType.Right, p.ButtonWidth, SnapLinePriority.Always));
                         s.Add(new SnapLine(SnapLineType.Horizontal, p.ButtonHeight + p.Margin.Bottom, "Margin.Bottom", SnapLinePriority.Always));
                         s.Add(new SnapLine(SnapLineType.Vertical, p.ButtonWidth + p.Margin.Right, "Margin.Right", SnapLinePriority.Always));
                         break;
-                    case Elbow.LcarsElbowStyle.UpperRight:
+                    case LcarsElbowStyle.UpperRight:
                         s.Add(new SnapLine(SnapLineType.Bottom, p.ButtonHeight, SnapLinePriority.Always));
                         s.Add(new SnapLine(SnapLineType.Left, p.Width - p.ButtonWidth, SnapLinePriority.Always));
                         s.Add(new SnapLine(SnapLineType.Horizontal, p.ButtonHeight + p.Margin.Bottom, "Margin.Bottom", SnapLinePriority.Always));

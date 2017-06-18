@@ -78,7 +78,7 @@ namespace LCARS.CoreUi.UiElements.Tabbing
             Controls.Add(myHeading);
 
             //The elbow in the top right of the tabcontrol,
-            topElbow.ElbowStyle = Elbow.LcarsElbowStyle.UpperRight;
+            topElbow.ElbowStyle = LcarsElbowStyle.UpperRight;
             topElbow.ButtonHeight = 20;
             topElbow.ButtonWidth = 100;
             topElbow.Width = 120;

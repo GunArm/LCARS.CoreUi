@@ -48,6 +48,7 @@
     <Compile Include="Assets\Access\SoundProvider.cs" />
     <Compile Include="Enums\EllipsisModes.cs" />
     <Compile Include="Enums\LcarsButtonStyles.cs" />
+    <Compile Include="Enums\LcarsElbowStyle.cs" />
     <Compile Include="Enums\LcarsHalfPillButtonStyles.cs" />
     <Compile Include="Helpers\Randomizer.cs" />
     <Compile Include="Enums\LightweightEvents.cs" />

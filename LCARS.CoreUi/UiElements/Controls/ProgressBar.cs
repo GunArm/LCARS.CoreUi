@@ -26,7 +26,7 @@ namespace LCARS.CoreUi.UiElements.Controls
             //Elbows
             topLeft.ColorFunction = colorFunction1;
             topLeft.Clickable = false;
-            topLeft.ElbowStyle = Elbow.LcarsElbowStyle.UpperLeft;
+            topLeft.ElbowStyle = LcarsElbowStyle.UpperLeft;
             topLeft.Text = "";
             topLeft.Top = 0;
             topLeft.Left = 0;
@@ -38,7 +38,7 @@ namespace LCARS.CoreUi.UiElements.Controls
 
             topRight.ColorFunction = colorFunction1;
             topRight.Clickable = false;
-            topRight.ElbowStyle = Elbow.LcarsElbowStyle.UpperRight;
+            topRight.ElbowStyle = LcarsElbowStyle.UpperRight;
             topRight.Text = "";
             topRight.Height = Spacing + vertical;
             topRight.Width = Spacing + horizontal;
@@ -50,7 +50,7 @@ namespace LCARS.CoreUi.UiElements.Controls
 
             bottomRight.ColorFunction = colorFunction1;
             bottomRight.Clickable = false;
-            bottomRight.ElbowStyle = Elbow.LcarsElbowStyle.LowerRight;
+            bottomRight.ElbowStyle = LcarsElbowStyle.LowerRight;
             bottomRight.Text = "";
             bottomRight.Height = Spacing + vertical;
             bottomRight.Width = Spacing + horizontal;
@@ -62,7 +62,7 @@ namespace LCARS.CoreUi.UiElements.Controls
 
             bottomLeft.ColorFunction = colorFunction1;
             bottomLeft.Clickable = false;
-            bottomLeft.ElbowStyle = Elbow.LcarsElbowStyle.LowerLeft;
+            bottomLeft.ElbowStyle = LcarsElbowStyle.LowerLeft;
             bottomLeft.Text = "";
             bottomLeft.Height = Spacing + vertical;
             bottomLeft.Width = Spacing + horizontal;
