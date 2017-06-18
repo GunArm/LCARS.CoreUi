@@ -64,7 +64,18 @@ namespace LCARS.CoreUi.UiElements.Tabbing
         }
         private LcarsTabPage selectedTab;
 
-
+        public LcarsElbowStyle ElbowStyle
+        {
+            get { return elbowStyle; }
+            set
+            {
+                if (elbowStyle == value) return;
+                elbowStyle = value;
+                TabPagesChanged();
+                LcarsTabControl_Resize(this, null);
+            }
+        }
+        private LcarsElbowStyle elbowStyle = LcarsElbowStyle.UpperRight;
 
         public LcarsTabControl()
         {
@@ -155,9 +166,25 @@ namespace LCARS.CoreUi.UiElements.Tabbing
 
                 //Set the size of the tab equal to the area we want the tab to cover.  Basically,
                 //everwhere our heading, elbow, and buttonpanel are not.
+
                 mytab.Width = Width - tabButtonPanel.Width - 10; // 10px spacing 
                 mytab.Height = Height - (myHeading.Height + pixelSpace);
-                mytab.Location = new Point(0, myHeading.Height + pixelSpace);
+
+                switch (elbowStyle)
+                {
+                    case LcarsElbowStyle.UpperRight:
+                        mytab.Location = new Point(0, myHeading.Height + pixelSpace);
+                        break;
+                    case LcarsElbowStyle.UpperLeft:
+                        mytab.Location = new Point(Width - mytab.Width, myHeading.Height + pixelSpace);
+                        break;
+                    case LcarsElbowStyle.LowerRight:
+                        mytab.Location = new Point(0, 0);
+                        break;
+                    case LcarsElbowStyle.LowerLeft:
+                        mytab.Location = new Point(Width - mytab.Width, 0);
+                        break;
+                }
 
                 //Set the anchor so the tab will resize with the tabcontrol
                 mytab.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Bottom | AnchorStyles.Right;
@@ -167,6 +194,7 @@ namespace LCARS.CoreUi.UiElements.Tabbing
                 FlatButton mybutton = new FlatButton();
                 mybutton.Width = tabButtonWidth;
                 mybutton.Height = tabButtonHeight;
+                mybutton.Left = 0;
                 mybutton.ButtonText = mytab.Text;
                 mybutton.ButtonTextAlign = ContentAlignment.BottomRight;
                 mybutton.ColorFunction = mytab.ColorFunction;
@@ -177,8 +205,18 @@ namespace LCARS.CoreUi.UiElements.Tabbing
                 mybutton.DoesBeep = false;
 
                 //position the button based on how many buttons are already there.
-                mybutton.Top = tabButtonPanel.Controls.Count * (tabButtonHeight + pixelSpace);
-                mybutton.Left = 0;
+                switch (elbowStyle)
+                {
+                    case LcarsElbowStyle.UpperRight:
+                    case LcarsElbowStyle.UpperLeft:
+                        mybutton.Top = tabButtonPanel.Controls.Count * (tabButtonHeight + pixelSpace);
+                        break;
+                    case LcarsElbowStyle.LowerRight:
+                    case LcarsElbowStyle.LowerLeft:
+                        // mybutton.Top = tabButtonPanel.Height - ((tabButtonPanel.Controls.Count + 1) * (tabButtonHeight + pixelSpace));
+                        mybutton.Top = tabButtonPanel.Height - ((tabButtonPanel.Controls.Count + 1) * (tabButtonHeight + pixelSpace)) + pixelSpace;
+                        break;
+                }
 
                 //By setting the button's 'Tag' property to the Tab it is associated with,
                 //we can easily tell what button goes with what tab.
@@ -191,32 +229,49 @@ namespace LCARS.CoreUi.UiElements.Tabbing
 
             //If there's any room left after all of tabs have been made, we need to fill the
             //empty space with another button that isn't clickable.
-            if ((tabButtonPanel.Controls.Count * 41) < tabButtonPanel.Height)
+            if ((tabButtonPanel.Controls.Count * (tabButtonHeight + pixelSpace)) < tabButtonPanel.Height)
             {
                 FlatButton myButton = new FlatButton();
 
-                myButton.Width = 100;
+                myButton.Width = tabButtonWidth;
 
-                //Start at the bottom of the last button
-                myButton.Top = tabButtonPanel.Controls.Count * (tabButtonHeight + pixelSpace);
-
-                //and end at the bottom of the tab control.
-                myButton.Height = tabButtonPanel.Height - myButton.Top;
+                switch (elbowStyle)
+                {
+                    case LcarsElbowStyle.UpperRight:
+                        myButton.Top = tabButtonPanel.Controls.Count * (tabButtonHeight + pixelSpace);
+                        myButton.Height = tabButtonPanel.Height - myButton.Top;
+                        myButton.ButtonTextAlign = ContentAlignment.BottomRight;
+                        myButton.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left;
+                        break;
+                    case LcarsElbowStyle.UpperLeft:
+                        myButton.Top = tabButtonPanel.Controls.Count * (tabButtonHeight + pixelSpace);
+                        myButton.Height = tabButtonPanel.Height - myButton.Top;
+                        myButton.ButtonTextAlign = ContentAlignment.BottomLeft;
+                        myButton.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Right;
+                        break;
+                    case LcarsElbowStyle.LowerRight:
+                        myButton.Top = 0;
+                        myButton.Height = tabButtonPanel.Height - (tabButtonPanel.Controls.Count * (tabButtonHeight + pixelSpace));
+                        myButton.ButtonTextAlign = ContentAlignment.TopRight;
+                        myButton.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Right;
+                        break;
+                    case LcarsElbowStyle.LowerLeft:
+                        myButton.Top = 0;
+                        myButton.Height = tabButtonPanel.Height - (tabButtonPanel.Controls.Count * (tabButtonHeight + pixelSpace));
+                        myButton.ButtonTextAlign = ContentAlignment.TopLeft;
+                        myButton.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Right;
+                        break;
+                }
 
                 myButton.ColorFunction = LcarsColorFunction.StaticTan;
                 myButton.Clickable = false;
-                myButton.ButtonTextAlign = ContentAlignment.BottomRight;
-
-                //have the button resize with the control.  We don't want it to get wider,
-                //that 100px so we leave AnchorStyles.Right out of the code.
-                myButton.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left;
                 tabButtonPanel.Controls.Add(myButton);
             }
 
             //If the "SelectedTab" property isn't set, then select the first tab added to the control.
             if (SelectedTab == null | TabPages.Contains(SelectedTab) == false)
             {
-                if (TabPages.Count > 0)  SelectedTab = TabPages[0];
+                if (TabPages.Count > 0) SelectedTab = TabPages[0];
                 else SelectedTab = null;
             }
 
@@ -224,7 +279,7 @@ namespace LCARS.CoreUi.UiElements.Tabbing
             //add tabs to the control.  This message is only shown if there are no tabs and the 
             //control is in 'Design Time' (not executing, but rather in the designer).
             if (TabPages.Count > 0) designerMessage.Visible = false;
-            else  designerMessage.Visible = true;
+            else designerMessage.Visible = true;
 
             //Bring the tab that is currently set as selected to the front.
             ChangeTab(selectedTab);
@@ -345,16 +400,74 @@ namespace LCARS.CoreUi.UiElements.Tabbing
 
             //For whatever reason, anchors alone weren't working, so I had to add code here to move
             //the main components of the LcarsTabControl whenever the control was resized.
-            elbow.Left = Width - elbow.Width;
-            elbow.Top = 0;
 
-            tabButtonPanel.Top = elbow.Bottom;
-            tabButtonPanel.Left = Width - tabButtonPanel.Width;
-            tabButtonPanel.Height = Height - tabButtonPanel.Top;
-
+            tabButtonPanel.Height = Height - (elbow.Height + pixelSpace);
             myHeading.Width = Width - (elbow.Width + pixelSpace);
-            myHeading.Top = 0;
-            myHeading.Left = 0;
+
+            elbow.ElbowStyle = elbowStyle;
+            switch (elbowStyle)
+            {
+                case LcarsElbowStyle.UpperRight:
+                    myHeading.Left = 0;
+                    myHeading.Top = 0;
+                    myHeading.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
+                    myHeading.ButtonTextAlign = ContentAlignment.BottomLeft;
+
+                    elbow.Left = Width - elbow.Width;
+                    elbow.Top = 0;
+                    elbow.ButtonTextAlign = ContentAlignment.BottomRight;
+                    elbow.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+
+                    tabButtonPanel.Top = elbow.Bottom + pixelSpace;
+                    tabButtonPanel.Left = Width - tabButtonPanel.Width;
+                    tabButtonPanel.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+                    break;
+                case LcarsElbowStyle.UpperLeft:
+                    myHeading.Left = Width - myHeading.Width;
+                    myHeading.Top = 0;
+                    myHeading.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
+                    myHeading.ButtonTextAlign = ContentAlignment.BottomRight;
+
+                    elbow.Left = 0;
+                    elbow.Top = 0;
+                    elbow.ButtonTextAlign = ContentAlignment.BottomLeft;
+                    elbow.Anchor = AnchorStyles.Top | AnchorStyles.Left;
+
+                    tabButtonPanel.Top = elbow.Bottom + pixelSpace;
+                    tabButtonPanel.Left = 0;
+                    tabButtonPanel.Anchor = AnchorStyles.Top | AnchorStyles.Left;
+                    break;
+                case LcarsElbowStyle.LowerRight:
+                    myHeading.Left = 0;
+                    myHeading.Top = Height - myHeading.Height;
+                    myHeading.Anchor = AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+                    myHeading.ButtonTextAlign = ContentAlignment.TopLeft;
+
+                    elbow.Left = Width - elbow.Width;
+                    elbow.Top = Height - elbow.Height;
+                    elbow.ButtonTextAlign = ContentAlignment.TopRight;
+                    elbow.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
+
+                    tabButtonPanel.Top = 0;
+                    tabButtonPanel.Left = Width - tabButtonPanel.Width;
+                    tabButtonPanel.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
+                    break;
+                case LcarsElbowStyle.LowerLeft:
+                    myHeading.Left = Width - myHeading.Width;
+                    myHeading.Top = Height - myHeading.Height;
+                    myHeading.Anchor = AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+                    myHeading.ButtonTextAlign = ContentAlignment.TopRight;
+
+                    elbow.Left = 0;
+                    elbow.Top = Height - elbow.Height;
+                    elbow.ButtonTextAlign = ContentAlignment.TopLeft;
+                    elbow.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
+
+                    tabButtonPanel.Top = 0;
+                    tabButtonPanel.Left = 0;
+                    tabButtonPanel.Anchor = AnchorStyles.Top | AnchorStyles.Left;
+                    break;
+            }
         }
     }
 }
