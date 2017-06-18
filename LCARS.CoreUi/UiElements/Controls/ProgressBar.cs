@@ -30,8 +30,8 @@ namespace LCARS.CoreUi.UiElements.Controls
             topLeft.Text = "";
             topLeft.Top = 0;
             topLeft.Left = 0;
-            topLeft.ButtonWidth = horizontal;
-            topLeft.ButtonHeight = vertical;
+            topLeft.VerticalBarWidth = horizontal;
+            topLeft.HorizantalBarHeight = vertical;
             topLeft.Height = Spacing + vertical;
             topLeft.Width = Spacing + horizontal;
             Controls.Add(topLeft);
@@ -44,8 +44,8 @@ namespace LCARS.CoreUi.UiElements.Controls
             topRight.Width = Spacing + horizontal;
             topRight.Top = 0;
             topRight.Left = Width - topRight.Width;
-            topRight.ButtonWidth = horizontal;
-            topRight.ButtonHeight = vertical;
+            topRight.VerticalBarWidth = horizontal;
+            topRight.HorizantalBarHeight = vertical;
             Controls.Add(topRight);
 
             bottomRight.ColorFunction = colorFunction1;
@@ -56,8 +56,8 @@ namespace LCARS.CoreUi.UiElements.Controls
             bottomRight.Width = Spacing + horizontal;
             bottomRight.Top = Height - bottomRight.Height;
             bottomRight.Left = Width - bottomRight.Width;
-            bottomRight.ButtonWidth = horizontal;
-            bottomRight.ButtonHeight = vertical;
+            bottomRight.VerticalBarWidth = horizontal;
+            bottomRight.HorizantalBarHeight = vertical;
             Controls.Add(bottomRight);
 
             bottomLeft.ColorFunction = colorFunction1;
@@ -68,8 +68,8 @@ namespace LCARS.CoreUi.UiElements.Controls
             bottomLeft.Width = Spacing + horizontal;
             bottomLeft.Top = Height - bottomLeft.Height;
             bottomLeft.Left = 0;
-            bottomLeft.ButtonWidth = horizontal;
-            bottomLeft.ButtonHeight = vertical;
+            bottomLeft.VerticalBarWidth = horizontal;
+            bottomLeft.HorizantalBarHeight = vertical;
             Controls.Add(bottomLeft);
 
             //Bars
@@ -276,8 +276,8 @@ namespace LCARS.CoreUi.UiElements.Controls
         {
             topLeft.Top = 0;
             topLeft.Left = 0;
-            topLeft.ButtonWidth = horizontal;
-            topLeft.ButtonHeight = vertical;
+            topLeft.VerticalBarWidth = horizontal;
+            topLeft.HorizantalBarHeight = vertical;
             topLeft.Height = Spacing + vertical;
             topLeft.Width = Spacing + horizontal;
 
@@ -285,22 +285,22 @@ namespace LCARS.CoreUi.UiElements.Controls
             topRight.Width = Spacing + horizontal;
             topRight.Top = 0;
             topRight.Left = Width - topRight.Width;
-            topRight.ButtonWidth = horizontal;
-            topRight.ButtonHeight = vertical;
+            topRight.VerticalBarWidth = horizontal;
+            topRight.HorizantalBarHeight = vertical;
 
             bottomRight.Height = Spacing + vertical;
             bottomRight.Width = Spacing + horizontal;
             bottomRight.Top = Height - bottomRight.Height;
             bottomRight.Left = Width - bottomRight.Width;
-            bottomRight.ButtonWidth = horizontal;
-            bottomRight.ButtonHeight = vertical;
+            bottomRight.VerticalBarWidth = horizontal;
+            bottomRight.HorizantalBarHeight = vertical;
 
             bottomLeft.Height = Spacing + vertical;
             bottomLeft.Width = Spacing + horizontal;
             bottomLeft.Top = Height - bottomLeft.Height;
             bottomLeft.Left = 0;
-            bottomLeft.ButtonWidth = horizontal;
-            bottomLeft.ButtonHeight = vertical;
+            bottomLeft.VerticalBarWidth = horizontal;
+            bottomLeft.HorizantalBarHeight = vertical;
 
             //Bars
             topBar.Height = vertical;

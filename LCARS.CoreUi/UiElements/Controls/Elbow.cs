@@ -7,7 +7,7 @@ using System.Windows.Forms.Design.Behavior;
 
 namespace LCARS.CoreUi.UiElements.Controls
 {
-    [System.ComponentModel.DefaultEvent("Click"), Designer(typeof(ElbowDesigner))]
+    [DefaultEvent("Click"), Designer(typeof(ElbowDesigner))]
     public class Elbow : LcarsButtonBase
     {
         #region " Control Design Information "
@@ -43,53 +43,42 @@ namespace LCARS.CoreUi.UiElements.Controls
         }
         #endregion
 
-        #region " Global Variables "
-        LcarsElbowStyle Style;
-        int barWidth = 200;
-        int barHeight = 25;
-        Point ratio = new Point(1, 1);
-        #endregion
-
         #region " Properties "
-        public Point ElbowRatio
+        public int VerticalBarWidth
         {
-            get { return ratio; }
+            get { return verticalBarWidth; }
             set
             {
-                ratio = value;
+                if (verticalBarWidth == value) return;
+                verticalBarWidth = value;
                 DrawAllButtons();
             }
         }
+        int verticalBarWidth = 200;
 
-        public int ButtonWidth
+        public int HorizantalBarHeight
         {
-            get { return barWidth; }
+            get { return horizantalBarHeight; }
             set
             {
-                barWidth = value;
+                if (horizantalBarHeight == value) return;
+                horizantalBarHeight = value;
                 DrawAllButtons();
             }
         }
-
-        public int ButtonHeight
-        {
-            get { return barHeight; }
-            set
-            {
-                barHeight = value;
-                DrawAllButtons();
-            }
-        }
+        int horizantalBarHeight = 25;
 
         public LcarsElbowStyle ElbowStyle
         {
-            get { return Style; }
+            get { return elbowStyle; }
             set
             {
-                Style = value;
+                if (elbowStyle == value) return;
+                elbowStyle = value;
                 DrawAllButtons();
             }
         }
+        LcarsElbowStyle elbowStyle;
         #endregion
 
         #region " Draw LCARS Style Elbows "
@@ -111,23 +100,17 @@ namespace LCARS.CoreUi.UiElements.Controls
 
             //draw the first elipse the size of the elbow
             g.FillEllipse(mybrush, 0, 0, Height, Height);
-
-            g.FillRectangle(mybrush, 0, (Height) / 2, barWidth, (Height / 2) + (Height / 4));
-
-            g.FillRectangle(mybrush, Height / 2, 0, Width - (Height / 2), barHeight);
-
-            g.FillRectangle(mybrush, Height / 2, barHeight, barWidth - (Height / 2), Height - barHeight);
-
-            g.FillRectangle(Brushes.Black, barWidth, barHeight, Width - barWidth, Height - barHeight);
-
-            g.FillRectangle(mybrush, barWidth, barHeight, Height / 4, Height / 4);
-
-            g.FillEllipse(Brushes.Black, barWidth, barHeight, Height / 2, Height / 2);
+            g.FillRectangle(mybrush, 0, (Height) / 2, verticalBarWidth, (Height / 2) + (Height / 4));
+            g.FillRectangle(mybrush, Height / 2, 0, Width - (Height / 2), horizantalBarHeight);
+            g.FillRectangle(mybrush, Height / 2, horizantalBarHeight, verticalBarWidth - (Height / 2), Height - horizantalBarHeight);
+            g.FillRectangle(Brushes.Black, verticalBarWidth, horizantalBarHeight, Width - verticalBarWidth, Height - horizantalBarHeight);
+            g.FillRectangle(mybrush, verticalBarWidth, horizantalBarHeight, Height / 4, Height / 4);
+            g.FillEllipse(Brushes.Black, verticalBarWidth, horizantalBarHeight, Height / 2, Height / 2);
 
             Bitmap buffer = new Bitmap(mybitmap);
             Point[] myPoints = new Point[3];
 
-            switch (Style)
+            switch (elbowStyle)
             {
                 case LcarsElbowStyle.UpperRight:
                     myPoints[0] = new Point(Width, 0);
@@ -170,28 +153,28 @@ namespace LCARS.CoreUi.UiElements.Controls
                 switch (p.ElbowStyle)
                 {
                     case LcarsElbowStyle.LowerLeft:
-                        s.Add(new SnapLine(SnapLineType.Top, p.Height - p.ButtonHeight, SnapLinePriority.Always));
-                        s.Add(new SnapLine(SnapLineType.Right, p.Width - p.ButtonWidth, SnapLinePriority.Always));
-                        s.Add(new SnapLine(SnapLineType.Horizontal, p.Height - p.ButtonHeight - p.Margin.Top, "Margin.Top", SnapLinePriority.Always));
-                        s.Add(new SnapLine(SnapLineType.Vertical, p.Width - p.ButtonWidth + p.Margin.Right, "Margin.Right", SnapLinePriority.Always));
+                        s.Add(new SnapLine(SnapLineType.Top, p.Height - p.HorizantalBarHeight, SnapLinePriority.Always));
+                        s.Add(new SnapLine(SnapLineType.Right, p.Width - p.VerticalBarWidth, SnapLinePriority.Always));
+                        s.Add(new SnapLine(SnapLineType.Horizontal, p.Height - p.HorizantalBarHeight - p.Margin.Top, "Margin.Top", SnapLinePriority.Always));
+                        s.Add(new SnapLine(SnapLineType.Vertical, p.Width - p.VerticalBarWidth + p.Margin.Right, "Margin.Right", SnapLinePriority.Always));
                         break;
                     case LcarsElbowStyle.LowerRight:
-                        s.Add(new SnapLine(SnapLineType.Top, p.Height - p.ButtonHeight, SnapLinePriority.Always));
-                        s.Add(new SnapLine(SnapLineType.Left, p.ButtonWidth, SnapLinePriority.Always));
-                        s.Add(new SnapLine(SnapLineType.Horizontal, p.Height - p.ButtonHeight - p.Margin.Top, "Margin.Top", SnapLinePriority.Always));
-                        s.Add(new SnapLine(SnapLineType.Vertical, p.ButtonWidth - p.Margin.Left, "Margin.Left", SnapLinePriority.Always));
+                        s.Add(new SnapLine(SnapLineType.Top, p.Height - p.HorizantalBarHeight, SnapLinePriority.Always));
+                        s.Add(new SnapLine(SnapLineType.Left, p.VerticalBarWidth, SnapLinePriority.Always));
+                        s.Add(new SnapLine(SnapLineType.Horizontal, p.Height - p.HorizantalBarHeight - p.Margin.Top, "Margin.Top", SnapLinePriority.Always));
+                        s.Add(new SnapLine(SnapLineType.Vertical, p.VerticalBarWidth - p.Margin.Left, "Margin.Left", SnapLinePriority.Always));
                         break;
                     case LcarsElbowStyle.UpperLeft:
-                        s.Add(new SnapLine(SnapLineType.Bottom, p.ButtonHeight, SnapLinePriority.Always));
-                        s.Add(new SnapLine(SnapLineType.Right, p.ButtonWidth, SnapLinePriority.Always));
-                        s.Add(new SnapLine(SnapLineType.Horizontal, p.ButtonHeight + p.Margin.Bottom, "Margin.Bottom", SnapLinePriority.Always));
-                        s.Add(new SnapLine(SnapLineType.Vertical, p.ButtonWidth + p.Margin.Right, "Margin.Right", SnapLinePriority.Always));
+                        s.Add(new SnapLine(SnapLineType.Bottom, p.HorizantalBarHeight, SnapLinePriority.Always));
+                        s.Add(new SnapLine(SnapLineType.Right, p.VerticalBarWidth, SnapLinePriority.Always));
+                        s.Add(new SnapLine(SnapLineType.Horizontal, p.HorizantalBarHeight + p.Margin.Bottom, "Margin.Bottom", SnapLinePriority.Always));
+                        s.Add(new SnapLine(SnapLineType.Vertical, p.VerticalBarWidth + p.Margin.Right, "Margin.Right", SnapLinePriority.Always));
                         break;
                     case LcarsElbowStyle.UpperRight:
-                        s.Add(new SnapLine(SnapLineType.Bottom, p.ButtonHeight, SnapLinePriority.Always));
-                        s.Add(new SnapLine(SnapLineType.Left, p.Width - p.ButtonWidth, SnapLinePriority.Always));
-                        s.Add(new SnapLine(SnapLineType.Horizontal, p.ButtonHeight + p.Margin.Bottom, "Margin.Bottom", SnapLinePriority.Always));
-                        s.Add(new SnapLine(SnapLineType.Vertical, p.Width - p.ButtonWidth - p.Margin.Right, "Margin.Left", SnapLinePriority.Always));
+                        s.Add(new SnapLine(SnapLineType.Bottom, p.HorizantalBarHeight, SnapLinePriority.Always));
+                        s.Add(new SnapLine(SnapLineType.Left, p.Width - p.VerticalBarWidth, SnapLinePriority.Always));
+                        s.Add(new SnapLine(SnapLineType.Horizontal, p.HorizantalBarHeight + p.Margin.Bottom, "Margin.Bottom", SnapLinePriority.Always));
+                        s.Add(new SnapLine(SnapLineType.Vertical, p.Width - p.VerticalBarWidth - p.Margin.Right, "Margin.Left", SnapLinePriority.Always));
                         break;
                 }
                 return s;
