@@ -193,9 +193,9 @@ namespace LCARS.CoreUi.UiElements.Tabbing
 
             if (Control == null) return false;
             //Convert the point from screen coordinates to coordinates based on our LcarsTabControl
-            Point mypoint = ((LcarsTabControl)Control).buttonPanel.PointToClient(point);
+            Point mypoint = ((LcarsTabControl)Control).tabButtonPanel.PointToClient(point);
             //Find out what control is under the mouse at that point.
-            Control child = ((LcarsTabControl)Control).buttonPanel.GetChildAtPoint(mypoint);
+            Control child = ((LcarsTabControl)Control).tabButtonPanel.GetChildAtPoint(mypoint);
 
             //If there's nothing under the mouse, don't bother.
             if (child == null) return false;

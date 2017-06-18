@@ -17,11 +17,11 @@ namespace LCARS.CoreUi.UiElements.Tabbing
     public class LcarsTabControl : Control
     {
         //In case it's not obvious, this is the elbow in the top right of the LcarsTabControl.
-        Elbow topElbow = new Elbow();
+        Elbow elbow = new Elbow();
         //Likewise, this is the heading bar at the very top of the control
         FlatButton myHeading = new FlatButton();
         //and the buttonPanel that holds the tab buttons along the right side
-        public Panel buttonPanel = new Panel();
+        public Panel tabButtonPanel = new Panel();
         //This label is used to display a message explaining how to add tabs when none
         //have been added and the control is in 'design time'.
 
@@ -78,31 +78,31 @@ namespace LCARS.CoreUi.UiElements.Tabbing
             Controls.Add(myHeading);
 
             //The elbow in the top right of the tabcontrol,
-            topElbow.ElbowStyle = LcarsElbowStyle.UpperRight;
-            topElbow.ButtonHeight = 20;
-            topElbow.ButtonWidth = 100;
-            topElbow.Width = 120;
-            topElbow.Height = 75;
-            topElbow.Left = Width - topElbow.Width;
-            topElbow.Top = 0;
-            topElbow.ButtonText = "TABS";
-            topElbow.ButtonTextAlign = ContentAlignment.BottomRight;
-            topElbow.ColorFunction = LcarsColorFunction.StaticTan;
-            topElbow.Clickable = false;
-            topElbow.Anchor = AnchorStyles.Top | AnchorStyles.Right;
-            Controls.Add(topElbow);
+            elbow.ElbowStyle = LcarsElbowStyle.UpperRight;
+            elbow.ButtonHeight = 20;
+            elbow.ButtonWidth = 100;
+            elbow.Width = 120;
+            elbow.Height = 75;
+            elbow.Left = Width - elbow.Width;
+            elbow.Top = 0;
+            elbow.ButtonText = "TABS";
+            elbow.ButtonTextAlign = ContentAlignment.BottomRight;
+            elbow.ColorFunction = LcarsColorFunction.StaticTan;
+            elbow.Clickable = false;
+            elbow.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+            Controls.Add(elbow);
 
             //And the panel that contains the buttons that act as the 'Tabs'.
-            buttonPanel.Width = 100;
-            buttonPanel.Height = Height - topElbow.Bottom;
-            buttonPanel.Top = topElbow.Bottom;
-            buttonPanel.Left = Width - buttonPanel.Width;
-            buttonPanel.BackColor = Color.Black;
-            buttonPanel.Anchor = AnchorStyles.Top | AnchorStyles.Right;
-            Controls.Add(buttonPanel);
+            tabButtonPanel.Width = 100;
+            tabButtonPanel.Height = Height - elbow.Bottom;
+            tabButtonPanel.Top = elbow.Bottom;
+            tabButtonPanel.Left = Width - tabButtonPanel.Width;
+            tabButtonPanel.BackColor = Color.Black;
+            tabButtonPanel.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+            Controls.Add(tabButtonPanel);
 
             TabPagesChanged();
-            topElbow.SendToBack();
+            elbow.SendToBack();
         }
 
         private void InitializeComponent()
@@ -137,7 +137,7 @@ namespace LCARS.CoreUi.UiElements.Tabbing
             }
 
             //Remove the tab's button from the buttonPanel.
-            buttonPanel.Controls.Clear();
+            tabButtonPanel.Controls.Clear();
 
             //Add all of the tabs back to the control, so now the new ones are there, too 
             //(or old ones are gone...)
@@ -169,7 +169,7 @@ namespace LCARS.CoreUi.UiElements.Tabbing
                 mybutton.DoesBeep = false;
 
                 //position the button based on how many buttons are already there.
-                mybutton.Top = (buttonPanel.Controls.Count * 41) + 6;
+                mybutton.Top = (tabButtonPanel.Controls.Count * 41) + 6;
                 mybutton.Left = 0;
 
                 //By setting the button's 'Tag' property to the Tab it is associated with,
@@ -178,22 +178,22 @@ namespace LCARS.CoreUi.UiElements.Tabbing
 
                 //Make the button call "TabButton_Click" whenever someone clicks on it.
                 mybutton.Click += TabButton_Click;
-                buttonPanel.Controls.Add(mybutton);
+                tabButtonPanel.Controls.Add(mybutton);
             }
 
             //If there's any room left after all of tabs have been made, we need to fill the
             //empty space with another button that isn't clickable.
-            if ((buttonPanel.Controls.Count * 41) + 6 < buttonPanel.Height)
+            if ((tabButtonPanel.Controls.Count * 41) + 6 < tabButtonPanel.Height)
             {
                 FlatButton myButton = new FlatButton();
 
                 myButton.Width = 100;
 
                 //Start at the bottom of the last button
-                myButton.Top = (buttonPanel.Controls.Count * 41) + 6;
+                myButton.Top = (tabButtonPanel.Controls.Count * 41) + 6;
 
                 //and end at the bottom of the tab control.
-                myButton.Height = buttonPanel.Height - myButton.Top;
+                myButton.Height = tabButtonPanel.Height - myButton.Top;
 
                 myButton.ColorFunction = LcarsColorFunction.StaticTan;
                 myButton.Clickable = false;
@@ -202,7 +202,7 @@ namespace LCARS.CoreUi.UiElements.Tabbing
                 //have the button resize with the control.  We don't want it to get wider,
                 //that 100px so we leave AnchorStyles.Right out of the code.
                 myButton.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left;
-                buttonPanel.Controls.Add(myButton);
+                tabButtonPanel.Controls.Add(myButton);
             }
 
             //If the "SelectedTab" property isn't set, then select the first tab added to the control.
@@ -239,7 +239,7 @@ namespace LCARS.CoreUi.UiElements.Tabbing
                 myHeading.Text = tab.Text;
 
                 //Set the selected tabs button's red alert to white and all others to normal
-                foreach (FlatButton mybutton in buttonPanel.Controls)
+                foreach (FlatButton mybutton in tabButtonPanel.Controls)
                 {
                     if (object.ReferenceEquals(mybutton.Tag, tab))
                     {
@@ -337,12 +337,12 @@ namespace LCARS.CoreUi.UiElements.Tabbing
 
             //For whatever reason, anchors alone weren't working, so I had to add code here to move
             //the main components of the LcarsTabControl whenever the control was resized.
-            topElbow.Left = Width - topElbow.Width;
-            topElbow.Top = 0;
+            elbow.Left = Width - elbow.Width;
+            elbow.Top = 0;
 
-            buttonPanel.Top = topElbow.Bottom;
-            buttonPanel.Left = Width - buttonPanel.Width;
-            buttonPanel.Height = Height - buttonPanel.Top;
+            tabButtonPanel.Top = elbow.Bottom;
+            tabButtonPanel.Left = Width - tabButtonPanel.Width;
+            tabButtonPanel.Height = Height - tabButtonPanel.Top;
 
             myHeading.Width = Width - 126;
             myHeading.Top = 0;
