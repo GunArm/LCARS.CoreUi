@@ -143,38 +143,18 @@ namespace LCARS.CoreUi.UiElements.Tabbing
             //Create the controls that make up the tabcontrol.  
 
             //The elbow in the top right of the tabcontrol,
-            elbow.ElbowStyle = LcarsElbowStyle.UpperRight;
-            elbow.HorizantalBarHeight = horizantalBarHeight;
-            elbow.VerticalBarWidth = verticalBarWidth;
-            elbow.Width = elbow.VerticalBarWidth + 20; // extra 20 for curve
-            elbow.Height = elbow.HorizantalBarHeight + ElbowButtonPadding;
-            elbow.Left = Width - elbow.Width;
-            elbow.Top = 0;
             elbow.ButtonText = "TABS";
-            elbow.ButtonTextAlign = ContentAlignment.BottomRight;
             elbow.ColorFunction = LcarsColorFunction.StaticTan;
             elbow.Clickable = false;
-            elbow.Anchor = AnchorStyles.Top | AnchorStyles.Right;
             Controls.Add(elbow);
 
             //The heading above the tab area (very top),
             horizantalBar.ButtonText = "";
-            horizantalBar.Width = Width - (elbow.Width + spacing);
-            horizantalBar.Height = horizantalBarHeight;
-            horizantalBar.Left = 0;
-            horizantalBar.Top = 0;
-            horizantalBar.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
             horizantalBar.ColorFunction = LcarsColorFunction.LCARSDisplayOnly;
-            horizantalBar.ButtonTextAlign = ContentAlignment.BottomLeft;
             Controls.Add(horizantalBar);
 
             //And the panel that contains the buttons that act as the 'Tabs'.
-            tabButtonPanel.Width = verticalBarWidth;
-            tabButtonPanel.Height = Height - (elbow.Bottom + spacing);
-            tabButtonPanel.Top = elbow.Bottom + spacing;
-            tabButtonPanel.Left = Width - tabButtonPanel.Width;
             tabButtonPanel.BackColor = Color.Black;
-            tabButtonPanel.Anchor = AnchorStyles.Top | AnchorStyles.Right;
             Controls.Add(tabButtonPanel);
 
             RedoLayout();
