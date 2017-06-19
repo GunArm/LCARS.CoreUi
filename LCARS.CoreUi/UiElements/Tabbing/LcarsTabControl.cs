@@ -179,6 +179,111 @@ namespace LCARS.CoreUi.UiElements.Tabbing
             ResumeLayout(false);
         }
 
+        private void ChangeTab(LcarsTabPage tab)
+        {
+            //Brings the provided tab to the front of all of the other tabs and sets it as 
+            //the selected tab. 
+
+            //NOTE: tab is used because if we used the property to set the selected tab, 
+            //we would get into an 'endless loop' because the 'SelectedTab' property calls 
+            //'ChangeTab' which in turn would call 'SelectedTab' again.  Not good!
+            if (tab != null)
+            {
+                tab.BringToFront();
+                selectedTab = tab;
+
+                //Set the heading(the bar at the top)'s text to the tab's text
+                horizantalBar.Text = tab.Text;
+
+                //Set the selected tabs button's red alert to white and all others to normal
+                foreach (FlatButton mybutton in tabButtonPanel.Controls)
+                {
+                    if (ReferenceEquals(mybutton.Tag, tab))
+                    {
+                        mybutton.AlertState = LcarsAlert.White;
+                    }
+                    else
+                    {
+                        mybutton.AlertState = LcarsAlert.Normal;
+                    }
+                }
+            }
+
+            //Let the user of the control know that a tab has been selected.
+            SelectedTabChanged?.Invoke(tab, TabPages.IndexOf(tab));
+        }
+
+        private void TabButton_Click(object sender, EventArgs e)
+        {
+            //Handles the user clicking on one of the tab buttons.
+
+            //"Sender" is the button that the user clicked.  We can use it's tag property (that
+            //was set in the 'TabPagesChanged' Sub) to bring the tab associated with this button to 
+            //the front.
+            ChangeTab((LcarsTabPage)((Control)sender).Tag);
+        }
+
+        private void LcarsTabControl_ParentChanged(object sender, System.EventArgs e)
+        {
+            //This event fires when the control is added to the form or moved from one control to 
+            //another.  The reason the following code is here rather than in the 'New' or 
+            //InitializeComponents' Subs is because we have to wait until the control has been added
+            //to the form or another control before we can check if any of those controls are running
+            //in design time.
+
+            //Here, we're checking if the control is running in "Design Time" or "Run Time".
+            //Design Time is when you are editing the form in the designer.  Run Time is when you
+            //execute the program.  We don't want to show a message explaining how to use the
+            //LcarsTabControl unless they are a programmer!
+            if (IsDesignerHosted & Controls.Contains(designerMessage) == false)
+            {
+                designerMessage.AutoSize = true;
+                designerMessage.Text = "There are currently no tabs." + Environment.NewLine +
+                    "Right click on the elbow and choose" + Environment.NewLine +
+                    "'Add Tab' to add new tabs to the control.";
+
+                //Center the message in the Tab area.
+                designerMessage.Left = ((Width - 112) / 2) - (designerMessage.Width / 2);
+                designerMessage.Top = (Height / 2) - (designerMessage.Height / 2);
+
+                designerMessage.ForeColor = Color.White;
+
+                //by removing all of it's anchors, the control will stay centered.
+                designerMessage.Anchor = AnchorStyles.None;
+
+                Controls.Add(designerMessage);
+
+                //It's sent to the back just in case a tab is there.  It shouldn't be, but if
+                //it is, this line ensures that the message is hidden behind it.
+                SendToBack();
+            }
+        }
+
+        private bool IsDesignerHosted
+        {
+            get
+            {
+                Control ctrl = this;
+                while (ctrl != null)
+                {
+                    if (ctrl.Site == null)
+                    {
+                        //If a control does not have a site, then it's definately in 'Run Time'.
+                        return false;
+                    }
+                    if (ctrl.Site.DesignMode == true)
+                    {
+                        return true;
+                    }
+
+                    //Check the control's parent to make sure it's not running in design time.
+                    //if any of them are, then the whole program is.
+                    ctrl = ctrl.Parent;
+                }
+                return false;
+            }
+        }
+        
         internal void TabPagesChanged()
         {
             //This is called whenever a tab has been added or removed from the TabPages collection.
@@ -186,7 +291,7 @@ namespace LCARS.CoreUi.UiElements.Tabbing
             //Remove all of the tabs from the control
             foreach (Control mycontrol in Controls)
             {
-                if (object.ReferenceEquals(mycontrol.GetType(), typeof(LcarsTabPage)))
+                if (ReferenceEquals(mycontrol.GetType(), typeof(LcarsTabPage)))
                 {
                     Controls.Remove(mycontrol);
                 }
@@ -323,115 +428,6 @@ namespace LCARS.CoreUi.UiElements.Tabbing
             ChangeTab(selectedTab);
         }
 
-        private void ChangeTab(LcarsTabPage tab)
-        {
-            //Brings the provided tab to the front of all of the other tabs and sets it as 
-            //the selected tab. 
-
-            //NOTE: tab is used because if we used the property to set the selected tab, 
-            //we would get into an 'endless loop' because the 'SelectedTab' property calls 
-            //'ChangeTab' which in turn would call 'SelectedTab' again.  Not good!
-            if (tab != null)
-            {
-                tab.BringToFront();
-                selectedTab = tab;
-
-                //Set the heading(the bar at the top)'s text to the tab's text
-                horizantalBar.Text = tab.Text;
-
-                //Set the selected tabs button's red alert to white and all others to normal
-                foreach (FlatButton mybutton in tabButtonPanel.Controls)
-                {
-                    if (object.ReferenceEquals(mybutton.Tag, tab))
-                    {
-                        mybutton.AlertState = LcarsAlert.White;
-                    }
-                    else
-                    {
-                        mybutton.AlertState = LcarsAlert.Normal;
-                    }
-                }
-            }
-
-            //Let the user of the control know that a tab has been selected.
-            SelectedTabChanged?.Invoke(tab, TabPages.IndexOf(tab));
-        }
-
-        private void TabButton_Click(object sender, EventArgs e)
-        {
-            //Handles the user clicking on one of the tab buttons.
-
-            //"Sender" is the button that the user clicked.  We can use it's tag property (that
-            //was set in the 'TabPagesChanged' Sub) to bring the tab associated with this button to 
-            //the front.
-            ChangeTab((LcarsTabPage)((Control)sender).Tag);
-        }
-
-        private void LcarsTabControl_ParentChanged(object sender, System.EventArgs e)
-        {
-            //This event fires when the control is added to the form or moved from one control to 
-            //another.  The reason the following code is here rather than in the 'New' or 
-            //InitializeComponents' Subs is because we have to wait until the control has been added
-            //to the form or another control before we can check if any of those controls are running
-            //in design time.
-
-            //Here, we're checking if the control is running in "Design Time" or "Run Time".
-            //Design Time is when you are editing the form in the designer.  Run Time is when you
-            //execute the program.  We don't want to show a message explaining how to use the
-            //LcarsTabControl unless they are a programmer!
-            if (IsDesignerHosted & Controls.Contains(designerMessage) == false)
-            {
-                designerMessage.AutoSize = true;
-                designerMessage.Text = "There are currently no tabs." + Environment.NewLine +
-                    "Right click on the elbow and choose" + Environment.NewLine +
-                    "'Add Tab' to add new tabs to the control.";
-
-                //Center the message in the Tab area.
-                designerMessage.Left = ((Width - 112) / 2) - (designerMessage.Width / 2);
-                designerMessage.Top = (Height / 2) - (designerMessage.Height / 2);
-
-                designerMessage.ForeColor = Color.White;
-
-                //by removing all of it's anchors, the control will stay centered.
-                designerMessage.Anchor = AnchorStyles.None;
-
-                Controls.Add(designerMessage);
-
-                //It's sent to the back just in case a tab is there.  It shouldn't be, but if
-                //it is, this line ensures that the message is hidden behind it.
-                SendToBack();
-            }
-        }
-
-        public bool IsDesignerHosted
-        {
-            //Thanks to this (http://decav.com/blogs/andre/archive/2007/04/18/1078.aspx) 
-            //website for explaining how to tell if you are in design time (editor) or run 
-            //time (executing/running) whichi is what the below code does.
-
-            get
-            {
-                Control ctrl = this;
-                while (ctrl != null)
-                {
-                    if (ctrl.Site == null)
-                    {
-                        //If a control does not have a site, then it's definately in 'Run Time'.
-                        return false;
-                    }
-                    if (ctrl.Site.DesignMode == true)
-                    {
-                        return true;
-                    }
-
-                    //Check the control's parent to make sure it's not running in design time.
-                    //if any of them are, then the whole program is.
-                    ctrl = ctrl.Parent;
-                }
-                return false;
-            }
-        }
-
         private void ElbowChanged()
         {
             // Adjusts layout and alignment properties which are not affected by resize, but only when elbow proportions change
@@ -482,7 +478,7 @@ namespace LCARS.CoreUi.UiElements.Tabbing
 
         private void LcarsTabControl_Resize(object sender, System.EventArgs e)
         {
-            // adjusts layout for a change in the tab control size
+            // minimial layout changes for a resize when we don't have to worry about the elbow properties having changed
 
             tabButtonPanel.Height = Height - (elbow.Height + spacing);
             horizantalBar.Width = Width - (elbow.Width + spacing);
