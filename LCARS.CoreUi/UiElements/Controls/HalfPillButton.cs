@@ -41,13 +41,14 @@ namespace LCARS.CoreUi.UiElements.Controls
 
         }
         #endregion
-        
+
         #region " Properties "
         public LcarsHalfPillButtonStyles ButtonStyle
         {
             get { return buttonStyle; }
             set
             {
+                if (buttonStyle == value) return;
                 buttonStyle = value;
                 DrawAllButtons();
             }

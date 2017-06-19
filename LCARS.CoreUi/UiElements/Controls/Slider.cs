@@ -60,8 +60,7 @@ namespace LCARS.CoreUi.UiElements.Controls
             get { return mainColor; }
             set
             {
-                if (value == mainColor)
-                    return;
+                if (value == mainColor) return;
                 mainColor = value;
                 Invalidate();
             }
@@ -74,8 +73,7 @@ namespace LCARS.CoreUi.UiElements.Controls
             get { return buttonColor; }
             set
             {
-                if (value == buttonColor)
-                    return;
+                if (value == buttonColor) return;
                 buttonColor = value;
                 Invalidate();
             }
@@ -83,17 +81,17 @@ namespace LCARS.CoreUi.UiElements.Controls
         private LcarsColorFunction buttonColor = LcarsColorFunction.PrimaryFunction;
 
         [DefaultValue(true)]
-        public bool Lit
+        public bool IsLit
         {
-            get { return lit; }
+            get { return isLit; }
             set
             {
-                if (value == lit) return;
-                lit = value;
+                if (value == isLit) return;
+                isLit = value;
                 Invalidate();
             }
         }
-        private bool lit = true;
+        private bool isLit = true;
 
         [DefaultValue(0)]
         public int Min
@@ -351,7 +349,7 @@ namespace LCARS.CoreUi.UiElements.Controls
                     barColor = Color.Red;
                     break;
             }
-            if (!lit) barColor = Color.FromArgb(255, barColor.R / 2, barColor.G / 2, barColor.B / 2);
+            if (!isLit) barColor = Color.FromArgb(255, barColor.R / 2, barColor.G / 2, barColor.B / 2);
 
             Rectangle btnRect = ButtonBounds;
             if (alertState == LcarsAlert.Normal)

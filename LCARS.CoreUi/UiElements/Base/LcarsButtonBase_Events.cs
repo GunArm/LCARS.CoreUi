@@ -85,7 +85,7 @@ namespace LCARS.CoreUi.UiElements.Base
 
         private void StartTextScroll(object sender, EventArgs e)
         {
-            if (this.CreateGraphics().MeasureString(myText, font).Width > TextSize.Width)
+            if (this.CreateGraphics().MeasureString(buttonText, font).Width > TextSize.Width)
             {
                 textScrollTimer.Interval = 200;
                 oAlign = textAlign;
@@ -104,7 +104,7 @@ namespace LCARS.CoreUi.UiElements.Base
                     //top aligned
                     textAlign = ContentAlignment.BottomLeft;
                 }
-                currentTextScrollRotation = myText + "              ";
+                currentTextScrollRotation = buttonText + "              ";
                 textScrollTimer.Enabled = true;
             }
         }
@@ -127,7 +127,7 @@ namespace LCARS.CoreUi.UiElements.Base
                     textAlign = oAlign;
                 }
 
-                currentTextScrollRotation = myText;
+                currentTextScrollRotation = buttonText;
                 Invalidate();
             }
         }

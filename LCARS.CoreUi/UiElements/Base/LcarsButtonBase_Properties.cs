@@ -216,21 +216,21 @@ namespace LCARS.CoreUi.UiElements.Base
         [DefaultValue("LCARS Button")]
         public virtual string ButtonText
         {
-            get { return myText; }
+            get { return buttonText; }
             set
             {
                 if (value == null) value = string.Empty;
 
-                if (forceCapital) myText = value.ToUpper();
-                else myText = value;
+                if (forceCapital) buttonText = value.ToUpper();
+                else buttonText = value;
 
-                currentTextScrollRotation = myText;
+                currentTextScrollRotation = buttonText;
                 if (textHeight == -1) TextHeight = -1;
 
                 this.Invalidate();
             }
         }
-        protected string myText = "LCARS";
+        protected string buttonText = "LCARS";
 
         /// <summary>
         /// The text of the control
@@ -303,17 +303,17 @@ namespace LCARS.CoreUi.UiElements.Base
                 textHeight = value;
                 if (textHeight == -1)
                 {
-                    if (!string.IsNullOrEmpty(myText))
+                    if (!string.IsNullOrEmpty(buttonText))
                     {
                         SizeF mysize = new SizeF();
                         int i = 1;
                         Graphics g = Graphics.FromImage(new Bitmap(10, 10));
-                        mysize = g.MeasureString(myText, new Font("LCARS", i, FontStyle.Regular, GraphicsUnit.Point));
+                        mysize = g.MeasureString(buttonText, new Font("LCARS", i, FontStyle.Regular, GraphicsUnit.Point));
 
                         while (!(mysize.Width >= this.Width - 8 | mysize.Height >= this.Height))
                         {
                             i += 1;
-                            mysize = g.MeasureString(myText, new Font("LCARS", i, FontStyle.Regular, GraphicsUnit.Point));
+                            mysize = g.MeasureString(buttonText, new Font("LCARS", i, FontStyle.Regular, GraphicsUnit.Point));
                         }
                         if (i < 2)
                         {

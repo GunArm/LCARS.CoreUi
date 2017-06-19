@@ -59,6 +59,7 @@ namespace LCARS.CoreUi.UiElements.Controls
             get { return buttonStyle; }
             set
             {
+                if (buttonStyle == value) return;
                 buttonStyle = value;
                 DrawAllButtons();
             }
@@ -70,6 +71,7 @@ namespace LCARS.CoreUi.UiElements.Controls
             get { return circleRadius; }
             set
             {
+                if (circleRadius == value) return;
                 circleRadius = value;
                 DrawAllButtons();
             }
@@ -81,6 +83,7 @@ namespace LCARS.CoreUi.UiElements.Controls
             get { return circleLocation; }
             set
             {
+                if (circleLocation == value) return;
                 circleLocation = value;
                 DrawAllButtons();
             }

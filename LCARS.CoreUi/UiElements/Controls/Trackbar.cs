@@ -23,8 +23,8 @@ namespace LCARS.CoreUi.UiElements.Controls
             get { return currentPage; }
             set
             {
-                if (!(value < pages && value >= 0)) return;
                 if (currentPage == value) return;
+                if (!(value < pages && value >= 0)) return;
                 currentPage = value;
                 if (pages > 1)
                 {

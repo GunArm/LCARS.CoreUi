@@ -14,6 +14,7 @@ namespace LCARS.CoreUi.UiElements.Controls
             get { return colorFunction2; }
             set
             {
+                if (colorFunction2 == value) return;
                 colorFunction2 = value;
                 DrawAllButtons();
             }
@@ -26,6 +27,7 @@ namespace LCARS.CoreUi.UiElements.Controls
             get { return intMax; }
             set
             {
+                if (intMax == value) return;
                 if (value > intMin)
                 {
                     intMax = value;
@@ -45,6 +47,7 @@ namespace LCARS.CoreUi.UiElements.Controls
             get { return intMin; }
             set
             {
+                if (intMin == value) return;
                 if (value < intMax)
                 {
                     intMin = value;
@@ -64,17 +67,12 @@ namespace LCARS.CoreUi.UiElements.Controls
             get { return intVal; }
             set
             {
-                if (value >= intMin & value <= Max)
+                if (intVal == value) return;
+                if (value >= intMin & value <= intMax)
                 {
                     intVal = value;
-                    if (intMax - intMin > 0)
-                    {
-                        ButtonText = ((intVal / (intMax - intMin)) * 100) + "%";
-                    }
-                    else
-                    {
-                        ButtonText = "0%";
-                    }
+                    if (intMax - intMin > 0) ButtonText = ((intVal / (intMax - intMin)) * 100) + "%";
+                    else ButtonText = "0%";
 
                     DrawAllButtons();
                 }

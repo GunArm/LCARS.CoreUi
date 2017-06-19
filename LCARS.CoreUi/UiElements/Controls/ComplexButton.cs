@@ -43,53 +43,54 @@ namespace LCARS.CoreUi.UiElements.Controls
         }
         #endregion
 
-        #region " Global Variables "
-        string strSideText = "47";
-        int staticWidth = -1;
-        LcarsColorFunction SideColor = LcarsColorFunction.Orange;
-        LcarsColorFunction sideBoxColor = LcarsColorFunction.Orange;
-        #endregion
-
         #region " Properties "
         public string SideText
         {
-            get { return strSideText; }
+            get { return sideText; }
             set
             {
-                strSideText = value;
+                if (sideText == value) return;
+                sideText = value;
                 DrawAllButtons();
             }
         }
+        string sideText = "47";
 
         public int SideTextWidth
         {
-            get { return staticWidth; }
+            get { return sideTextWidth; }
             set
             {
-                staticWidth = value;
+                if (sideTextWidth == value) return;
+                sideTextWidth = value;
                 DrawAllButtons();
             }
         }
+        int sideTextWidth = -1;
 
         public LcarsColorFunction SideTextColor
         {
-            get { return SideColor; }
+            get { return sideTextColor; }
             set
             {
-                SideColor = value;
+                if (SideTextColor == value) return;
+                sideTextColor = value;
                 DrawAllButtons();
             }
         }
+        LcarsColorFunction sideTextColor = LcarsColorFunction.Orange;
 
         public LcarsColorFunction SideBlockColor
         {
-            get { return sideBoxColor; }
+            get { return sideBlockColor; }
             set
             {
-                sideBoxColor = value;
+                if (sideBlockColor == value) return;
+                sideBlockColor = value;
                 DrawAllButtons();
             }
         }
+        LcarsColorFunction sideBlockColor = LcarsColorFunction.Orange;
         #endregion
 
         #region " Subs "
@@ -113,9 +114,9 @@ namespace LCARS.CoreUi.UiElements.Controls
             SolidBrush sideBrush = new SolidBrush(GetButtonColor());
             SolidBrush sideTextBrush = new SolidBrush(GetButtonColor());
 
-            if (strSideText == null)
+            if (sideText == null)
             {
-                strSideText = "47";
+                sideText = "47";
             }
 
             //initialize the graphics
@@ -129,7 +130,7 @@ namespace LCARS.CoreUi.UiElements.Controls
 
             //get the width and height of the fonts
             buttonTextSize = g.MeasureString(ButtonText.ToUpper(), textFont);
-            sideTextSize = g.MeasureString(strSideText.ToUpper(), sideFont);
+            sideTextSize = g.MeasureString(sideText.ToUpper(), sideFont);
 
             //draw the left orange block.  If the mouse is down, draw it white.
             g.FillRectangle(sideBrush, 0, 0, Height / 2, Height);
@@ -137,9 +138,9 @@ namespace LCARS.CoreUi.UiElements.Controls
             //set the curleft to the right side of what we have already drawn.
             curLeft = Height / 2;
 
-            if (staticWidth > -1)
+            if (sideTextWidth > -1)
             {
-                curLeft += staticWidth - (int)sideTextSize.Width;
+                curLeft += sideTextWidth - (int)sideTextSize.Width;
             }
             else
             {
@@ -147,9 +148,9 @@ namespace LCARS.CoreUi.UiElements.Controls
             }
 
             //draw the side text
-            g.DrawString(strSideText.ToUpper(), sideFont, sideTextBrush, curLeft, (-1) * (float)Height / (float)4.7);
+            g.DrawString(sideText.ToUpper(), sideFont, sideTextBrush, curLeft, (-1) * (float)Height / (float)4.7);
 
-            if (!string.IsNullOrEmpty(strSideText))
+            if (!string.IsNullOrEmpty(sideText))
             {
                 curLeft = (curLeft + (int)sideTextSize.Width) - (Height / 6);
             }

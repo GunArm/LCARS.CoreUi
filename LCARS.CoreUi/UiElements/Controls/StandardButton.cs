@@ -52,6 +52,7 @@ namespace LCARS.CoreUi.UiElements.Controls
             get { return myButtonType; }
             set
             {
+                if (myButtonType == value) return;
                 myButtonType = value;
                 DrawAllButtons();
             }

@@ -74,7 +74,6 @@ namespace LCARS.CoreUi.UiElements.Controls
             //Ensures that the control is repainted
         }
 
-
         //Handles this control's paint event, and resizes controls to match.
         protected override void OnPaint(PaintEventArgs e)
         {
@@ -201,6 +200,7 @@ namespace LCARS.CoreUi.UiElements.Controls
             get { return new Size(componentWidth, componentHeight); }
             set
             {
+                if (ControlSize == value) return;
                 componentWidth = value.Width;
                 componentHeight = value.Height;
                 MinimumSize = new Size(value.Width + myPadding, value.Height + myPadding);
