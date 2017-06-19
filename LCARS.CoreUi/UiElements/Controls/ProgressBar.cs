@@ -30,52 +30,52 @@ namespace LCARS.CoreUi.UiElements.Controls
             topLeft.Text = "";
             topLeft.Top = 0;
             topLeft.Left = 0;
-            topLeft.VerticalBarWidth = horizontal;
-            topLeft.HorizantalBarHeight = vertical;
-            topLeft.Height = Spacing + vertical;
-            topLeft.Width = Spacing + horizontal;
+            topLeft.VerticalBarWidth = verticalBarHeight;
+            topLeft.HorizantalBarHeight = horizantalBarWidth;
+            topLeft.Height = Spacing + horizantalBarWidth;
+            topLeft.Width = Spacing + verticalBarHeight;
             Controls.Add(topLeft);
 
             topRight.ColorFunction = colorFunction1;
             topRight.Clickable = false;
             topRight.ElbowStyle = LcarsElbowStyle.UpperRight;
             topRight.Text = "";
-            topRight.Height = Spacing + vertical;
-            topRight.Width = Spacing + horizontal;
+            topRight.Height = Spacing + horizantalBarWidth;
+            topRight.Width = Spacing + verticalBarHeight;
             topRight.Top = 0;
             topRight.Left = Width - topRight.Width;
-            topRight.VerticalBarWidth = horizontal;
-            topRight.HorizantalBarHeight = vertical;
+            topRight.VerticalBarWidth = verticalBarHeight;
+            topRight.HorizantalBarHeight = horizantalBarWidth;
             Controls.Add(topRight);
 
             bottomRight.ColorFunction = colorFunction1;
             bottomRight.Clickable = false;
             bottomRight.ElbowStyle = LcarsElbowStyle.LowerRight;
             bottomRight.Text = "";
-            bottomRight.Height = Spacing + vertical;
-            bottomRight.Width = Spacing + horizontal;
+            bottomRight.Height = Spacing + horizantalBarWidth;
+            bottomRight.Width = Spacing + verticalBarHeight;
             bottomRight.Top = Height - bottomRight.Height;
             bottomRight.Left = Width - bottomRight.Width;
-            bottomRight.VerticalBarWidth = horizontal;
-            bottomRight.HorizantalBarHeight = vertical;
+            bottomRight.VerticalBarWidth = verticalBarHeight;
+            bottomRight.HorizantalBarHeight = horizantalBarWidth;
             Controls.Add(bottomRight);
 
             bottomLeft.ColorFunction = colorFunction1;
             bottomLeft.Clickable = false;
             bottomLeft.ElbowStyle = LcarsElbowStyle.LowerLeft;
             bottomLeft.Text = "";
-            bottomLeft.Height = Spacing + vertical;
-            bottomLeft.Width = Spacing + horizontal;
+            bottomLeft.Height = Spacing + horizantalBarWidth;
+            bottomLeft.Width = Spacing + verticalBarHeight;
             bottomLeft.Top = Height - bottomLeft.Height;
             bottomLeft.Left = 0;
-            bottomLeft.VerticalBarWidth = horizontal;
-            bottomLeft.HorizantalBarHeight = vertical;
+            bottomLeft.VerticalBarWidth = verticalBarHeight;
+            bottomLeft.HorizantalBarHeight = horizantalBarWidth;
             Controls.Add(bottomLeft);
 
             //Bars
             topBar.ColorFunction = colorFunction1;
             topBar.Clickable = false;
-            topBar.Height = vertical;
+            topBar.Height = horizantalBarWidth;
             topBar.Width = Width - (topLeft.Width * 2);
             topBar.Top = 0;
             topBar.Left = topLeft.Width;
@@ -84,7 +84,7 @@ namespace LCARS.CoreUi.UiElements.Controls
             bottomBar.ColorFunction = colorFunction1;
             bottomBar.Clickable = false;
             bottomBar.ButtonTextAlign = ContentAlignment.BottomRight;
-            bottomBar.Height = vertical;
+            bottomBar.Height = horizantalBarWidth;
             bottomBar.Width = Width - (topLeft.Width * 2);
             bottomBar.Top = Height - bottomBar.Height;
             bottomBar.Left = topLeft.Width;
@@ -94,7 +94,7 @@ namespace LCARS.CoreUi.UiElements.Controls
             leftBar.Clickable = false;
             leftBar.Text = "";
             leftBar.Height = Height - (topLeft.Height * 2);
-            leftBar.Width = horizontal;
+            leftBar.Width = verticalBarHeight;
             leftBar.Top = topLeft.Height;
             leftBar.Left = 0;
             Controls.Add(leftBar);
@@ -103,7 +103,7 @@ namespace LCARS.CoreUi.UiElements.Controls
             rightBar.Clickable = false;
             rightBar.Text = "";
             rightBar.Height = Height - (topLeft.Height * 2);
-            rightBar.Width = horizontal;
+            rightBar.Width = verticalBarHeight;
             rightBar.Top = topLeft.Height;
             rightBar.Left = Width - rightBar.Width;
             Controls.Add(rightBar);
@@ -112,7 +112,7 @@ namespace LCARS.CoreUi.UiElements.Controls
             display.ColorFunction = colorFunction2;
             display.Clickable = false;
             display.Text = "";
-            if (_style == ProgressBarStyle.Horizontal)
+            if (orientation == ProgressBarStyle.Horizontal)
             {
                 display.Height = rightBar.Height;
                 display.Width = (int)(topBar.Width * Value);
@@ -219,49 +219,53 @@ namespace LCARS.CoreUi.UiElements.Controls
             set { bottomBar.ButtonTextAlign = value; }
         }
 
-        public int HorizontalBarThickness
+        public int VerticalBarHeight
         {
-            get { return horizontal; }
+            get { return verticalBarHeight; }
             set
             {
-                horizontal = value;
+                if (verticalBarHeight == value) return;
+                verticalBarHeight = value;
                 Redraw();
             }
         }
-        private int horizontal = 10;
+        private int verticalBarHeight = 10;
 
-        public int VerticalBarThickness
+        public int HorizantalBarWidth
         {
-            get { return vertical; }
+            get { return horizantalBarWidth; }
             set
             {
-                vertical = value;
+                if (horizantalBarWidth == value) return;
+                horizantalBarWidth = value;
                 Redraw();
             }
         }
-        private int vertical = 20;
+        private int horizantalBarWidth = 20;
 
         public int Spacing
         {
             get { return spacing; }
             set
             {
+                if (spacing == value) return;
                 spacing = value;
                 Redraw();
             }
         }
         private int spacing = 5;
 
-        public ProgressBarStyle ProgressBarOrientation
+        public ProgressBarStyle Orientation
         {
-            get { return _style; }
+            get { return orientation; }
             set
             {
-                _style = value;
+                if (orientation == value) return;
+                orientation = value;
                 Redraw();
             }
         }
-        private ProgressBarStyle _style = ProgressBarStyle.Horizontal;
+        private ProgressBarStyle orientation = ProgressBarStyle.Horizontal;
         #endregion
 
         #region " Event Handlers "
@@ -276,55 +280,55 @@ namespace LCARS.CoreUi.UiElements.Controls
         {
             topLeft.Top = 0;
             topLeft.Left = 0;
-            topLeft.VerticalBarWidth = horizontal;
-            topLeft.HorizantalBarHeight = vertical;
-            topLeft.Height = Spacing + vertical;
-            topLeft.Width = Spacing + horizontal;
+            topLeft.VerticalBarWidth = verticalBarHeight;
+            topLeft.HorizantalBarHeight = horizantalBarWidth;
+            topLeft.Height = Spacing + horizantalBarWidth;
+            topLeft.Width = Spacing + verticalBarHeight;
 
-            topRight.Height = Spacing + vertical;
-            topRight.Width = Spacing + horizontal;
+            topRight.Height = Spacing + horizantalBarWidth;
+            topRight.Width = Spacing + verticalBarHeight;
             topRight.Top = 0;
             topRight.Left = Width - topRight.Width;
-            topRight.VerticalBarWidth = horizontal;
-            topRight.HorizantalBarHeight = vertical;
+            topRight.VerticalBarWidth = verticalBarHeight;
+            topRight.HorizantalBarHeight = horizantalBarWidth;
 
-            bottomRight.Height = Spacing + vertical;
-            bottomRight.Width = Spacing + horizontal;
+            bottomRight.Height = Spacing + horizantalBarWidth;
+            bottomRight.Width = Spacing + verticalBarHeight;
             bottomRight.Top = Height - bottomRight.Height;
             bottomRight.Left = Width - bottomRight.Width;
-            bottomRight.VerticalBarWidth = horizontal;
-            bottomRight.HorizantalBarHeight = vertical;
+            bottomRight.VerticalBarWidth = verticalBarHeight;
+            bottomRight.HorizantalBarHeight = horizantalBarWidth;
 
-            bottomLeft.Height = Spacing + vertical;
-            bottomLeft.Width = Spacing + horizontal;
+            bottomLeft.Height = Spacing + horizantalBarWidth;
+            bottomLeft.Width = Spacing + verticalBarHeight;
             bottomLeft.Top = Height - bottomLeft.Height;
             bottomLeft.Left = 0;
-            bottomLeft.VerticalBarWidth = horizontal;
-            bottomLeft.HorizantalBarHeight = vertical;
+            bottomLeft.VerticalBarWidth = verticalBarHeight;
+            bottomLeft.HorizantalBarHeight = horizantalBarWidth;
 
             //Bars
-            topBar.Height = vertical;
+            topBar.Height = horizantalBarWidth;
             topBar.Width = Width - (this.topLeft.Width * 2);
             topBar.Top = 0;
             topBar.Left = this.topLeft.Width;
 
-            bottomBar.Height = vertical;
+            bottomBar.Height = horizantalBarWidth;
             bottomBar.Width = Width - (this.topLeft.Width * 2);
             bottomBar.Top = Height - bottomBar.Height;
             bottomBar.Left = this.topLeft.Width;
 
             leftBar.Height = Height - (this.topLeft.Height * 2);
-            leftBar.Width = horizontal;
+            leftBar.Width = verticalBarHeight;
             leftBar.Top = this.topLeft.Height;
             leftBar.Left = 0;
 
             rightBar.Height = Height - (this.topLeft.Height * 2);
-            rightBar.Width = horizontal;
+            rightBar.Width = verticalBarHeight;
             rightBar.Top = this.topLeft.Height;
             rightBar.Left = Width - rightBar.Width;
 
             //Display
-            if (_style == ProgressBarStyle.Horizontal)
+            if (orientation == ProgressBarStyle.Horizontal)
             {
                 display.Height = this.rightBar.Height;
                 display.Width = (int)(this.topBar.Width * Value);
