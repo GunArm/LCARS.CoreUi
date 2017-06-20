@@ -83,9 +83,19 @@ namespace LCARS.CoreUi.UiElements.Base
             }
 
             // turn color white when pressed, unless already white, then turn it red
-            if (isPressed) color = (color == Color.White) ? Color.Red : Color.White;
+            if (isPressed) color = ColorsAreClose(Color.White, color) ? Color.Red : Color.White;
 
             return color;
+        }
+
+        const int colorDistanceThreshold = 15;
+        private bool ColorsAreClose(Color color1, Color color2)
+        {
+            var rDist = Math.Abs(color1.R - color2.R);
+            var gDist = Math.Abs(color1.G - color2.G);
+            var bDist = Math.Abs(color1.B - color2.B);
+
+            return !(rDist + gDist + bDist > colorDistanceThreshold);
         }
 
         private Bitmap DrawUnlitButton(Bitmap normal)
