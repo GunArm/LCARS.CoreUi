@@ -31,6 +31,7 @@ namespace LCARS.CoreUi.UiElements.Controls
                 if (value > intMin)
                 {
                     intMax = value;
+                    UpdatePercentage();
                     DrawAllButtons();
                 }
                 else
@@ -51,6 +52,7 @@ namespace LCARS.CoreUi.UiElements.Controls
                 if (value < intMax)
                 {
                     intMin = value;
+                    UpdatePercentage();
                     DrawAllButtons();
                 }
                 else
@@ -68,12 +70,10 @@ namespace LCARS.CoreUi.UiElements.Controls
             set
             {
                 if (intVal == value) return;
-                if (value >= intMin & value <= intMax)
+                if (value >= intMin && value <= intMax)
                 {
                     intVal = value;
-                    if (intMax - intMin > 0) ButtonText = ((intVal / (intMax - intMin)) * 100) + "%";
-                    else ButtonText = "0%";
-
+                    UpdatePercentage();
                     DrawAllButtons();
                 }
                 else
@@ -83,6 +83,12 @@ namespace LCARS.CoreUi.UiElements.Controls
             }
         }
         int intVal;
+
+        private void UpdatePercentage()
+        {
+            if (intMax - intMin > 0) ButtonText = ((intVal / (double)(intMax - intMin)) * 100) + "%";
+            else ButtonText = "0%";
+        }
 
         public LevelIndicator()
         {
@@ -98,41 +104,27 @@ namespace LCARS.CoreUi.UiElements.Controls
             SolidBrush myBrush2 = new SolidBrush(ColorManager.GetColor(colorFunction2));
             int valHeight = 0;
 
-            if (intVal > 0)
-            {
-                valHeight = ((Height - 20) * intVal) / intMax;
-            }
-            else
-            {
-                valHeight = 0;
-            }
+            if (intVal > 0) valHeight = ((Height - 20) * intVal) / intMax;
+            else valHeight = 0;
 
             g.FillRectangle(Brushes.Black, new Rectangle(0, 0, Width, Height));
-
             g.FillRectangle(myBrush, new Rectangle(20, 10, Width - 40, Height - 20));
-
             g.FillRectangle(myBrush2, new Rectangle(20, ((Height - 10) - valHeight), Width - 40, valHeight));
 
             int myStep = (Height - 22) / 20;
-            if (myStep < 1)
-            {
-                myStep = 1;
-            }
+            if (myStep < 1) myStep = 1;
             for (int intloop = 10; intloop <= Height - 12; intloop += myStep)
             {
                 if (intloop % 5 == 0)
                 {
                     g.FillRectangle(myBrush, new Rectangle(5, (Height - intloop) - 2, 15, 2));
                     g.FillRectangle(myBrush, new Rectangle(Width - 20, (Height - intloop) - 2, 15, 2));
-
                 }
                 else
                 {
                     g.FillRectangle(Brushes.Red, new Rectangle(10, (Height - intloop) - 2, 10, 2));
                     g.FillRectangle(Brushes.Red, new Rectangle(Width - 20, (Height - intloop) - 2, 10, 2));
-
                 }
-
             }
             TextSize = Size;
             g.Dispose();
