@@ -54,10 +54,16 @@ namespace LCARS.CoreUi.UiElements.Base
             return mybitmap;
         }
 
+
         protected Color GetButtonColor()
         {
+            return GetButtonColor(ColorFunction);
+        }
+
+        protected Color GetButtonColor(LcarsColorFunction colorFunction)
+        {
             Color color;
-            switch(AlertState)
+            switch (AlertState)
             {
                 case LcarsAlert.Red:
                     color = Color.Red;
@@ -72,7 +78,7 @@ namespace LCARS.CoreUi.UiElements.Base
                     color = CustomAlertColor;
                     break;
                 default:
-                    color = ColorManager.GetColor(ColorFunction);
+                    color = ColorManager.GetColor(colorFunction);
                     break;
             }
 
@@ -115,11 +121,11 @@ namespace LCARS.CoreUi.UiElements.Base
             }
             else
             {
-                if (ellipsisMode == EllipsisModes.Character)  format.Trimming = StringTrimming.EllipsisCharacter;
+                if (ellipsisMode == EllipsisModes.Character) format.Trimming = StringTrimming.EllipsisCharacter;
                 else format.Trimming = StringTrimming.EllipsisWord;
             }
 
-            if (textScrollTimer.Enabled)  format.Alignment = StringAlignment.Near;
+            if (textScrollTimer.Enabled) format.Alignment = StringAlignment.Near;
             else
             {
                 if (textAlign == ContentAlignment.BottomCenter | textAlign == ContentAlignment.MiddleCenter | textAlign == ContentAlignment.TopCenter)

@@ -111,8 +111,8 @@ namespace LCARS.CoreUi.UiElements.Controls
             Font textFont = new Font("LCARS", (Height / 2) + 4, FontStyle.Regular, GraphicsUnit.Pixel);
             Font sideFont = new Font("LCARS", (float)(Height / 2.9) + Height, FontStyle.Regular, GraphicsUnit.Pixel);
             SolidBrush myBrush = new SolidBrush(GetButtonColor());
-            SolidBrush sideBrush = new SolidBrush(GetButtonColor());
-            SolidBrush sideTextBrush = new SolidBrush(GetButtonColor());
+            SolidBrush sideBrush = new SolidBrush(GetButtonColor(sideBlockColor));
+            SolidBrush sideTextBrush = new SolidBrush(GetButtonColor(sideTextColor));
 
             if (sideText == null)
             {
