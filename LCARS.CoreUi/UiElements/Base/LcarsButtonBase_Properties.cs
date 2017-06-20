@@ -45,7 +45,7 @@ namespace LCARS.CoreUi.UiElements.Base
             set
             {
                 font = value;
-                this.Invalidate();
+                Invalidate();
             }
         }
         protected Font font;
@@ -63,7 +63,7 @@ namespace LCARS.CoreUi.UiElements.Base
             set
             {
                 textAlign = value;
-                this.Invalidate();
+                Invalidate();
             }
         }
         protected ContentAlignment textAlign = ContentAlignment.TopLeft;
@@ -100,7 +100,7 @@ namespace LCARS.CoreUi.UiElements.Base
             set
             {
                 autoEllipsis = value;
-                this.Invalidate();
+                Invalidate();
             }
         }
         protected bool autoEllipsis = true;
@@ -227,7 +227,7 @@ namespace LCARS.CoreUi.UiElements.Base
                 currentTextScrollRotation = buttonText;
                 if (textHeight == -1) TextHeight = -1;
 
-                this.Invalidate();
+                Invalidate();
             }
         }
         protected string buttonText = "LCARS";
@@ -253,7 +253,7 @@ namespace LCARS.CoreUi.UiElements.Base
             set
             {
                 textVisible = value;
-                this.Invalidate();
+                Invalidate();
             }
         }
         protected bool textVisible = true;
@@ -268,7 +268,7 @@ namespace LCARS.CoreUi.UiElements.Base
             set
             {
                 textLocation = value;
-                this.Invalidate();
+                Invalidate();
             }
         }
         protected Point textLocation = new Point(0, 0);
@@ -284,7 +284,7 @@ namespace LCARS.CoreUi.UiElements.Base
             set
             {
                 textSize = value;
-                this.Invalidate();
+                Invalidate();
             }
         }
         protected Size textSize;
@@ -310,7 +310,7 @@ namespace LCARS.CoreUi.UiElements.Base
                         Graphics g = Graphics.FromImage(new Bitmap(10, 10));
                         mysize = g.MeasureString(buttonText, new Font("LCARS", i, FontStyle.Regular, GraphicsUnit.Point));
 
-                        while (!(mysize.Width >= this.Width - 8 | mysize.Height >= this.Height))
+                        while (!(mysize.Width >= Width - 8 | mysize.Height >= Height))
                         {
                             i += 1;
                             mysize = g.MeasureString(buttonText, new Font("LCARS", i, FontStyle.Regular, GraphicsUnit.Point));
@@ -327,7 +327,7 @@ namespace LCARS.CoreUi.UiElements.Base
                 {
                     font = new Font("LCARS", textHeight, FontStyle.Regular, GraphicsUnit.Point);
                 }
-                this.Invalidate();
+                Invalidate();
             }
         }
         protected int textHeight = 14;
@@ -345,7 +345,7 @@ namespace LCARS.CoreUi.UiElements.Base
             set
             {
                 isLit = value;
-                this.Invalidate();
+                Invalidate();
             }
         }
         bool isLit = true;

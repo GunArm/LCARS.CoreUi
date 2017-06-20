@@ -36,7 +36,7 @@ namespace LCARS.CoreUi.UiElements.Base
 
             SolidBrush myBrush = new SolidBrush(GetButtonColor());
 
-            mybitmap = new Bitmap(this.Size.Width, this.Size.Height);
+            mybitmap = new Bitmap(Size.Width, Size.Height);
             g = Graphics.FromImage(mybitmap);
 
             g.FillRectangle(Brushes.Black, 0, 0, mybitmap.Width, mybitmap.Height);
@@ -44,12 +44,12 @@ namespace LCARS.CoreUi.UiElements.Base
             g.SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.AntiAlias;
             g.PixelOffsetMode = System.Drawing.Drawing2D.PixelOffsetMode.HighQuality;
 
-            g.FillEllipse(myBrush, 0, 0, this.Size.Height, this.Size.Height);
-            g.FillRectangle(myBrush, this.Size.Height / 2, 0, this.Size.Width - this.Size.Height, this.Size.Height);
-            g.FillEllipse(myBrush, this.Size.Width - this.Size.Height, 0, this.Size.Height, this.Size.Height);
+            g.FillEllipse(myBrush, 0, 0, Size.Height, Size.Height);
+            g.FillRectangle(myBrush, Size.Height / 2, 0, Size.Width - Size.Height, Size.Height);
+            g.FillEllipse(myBrush, Size.Width - Size.Height, 0, Size.Height, Size.Height);
             //Draw text:
-            this.TextLocation = new Point(0, 0);
-            this.TextSize = (Size)new Point(this.Width - this.Height, this.Height);
+            TextLocation = new Point(0, 0);
+            TextSize = (Size)new Point(Width - Height, Height);
             g.Dispose();
             return mybitmap;
         }

@@ -33,7 +33,7 @@ namespace LCARS.CoreUi.UiElements.Base
 
             base.DoubleBuffered = true;
 
-            textSize = this.Size;
+            textSize = Size;
             font = new Font("LCARS", textHeight, FontStyle.Regular, GraphicsUnit.Point);
             try
             {
@@ -55,14 +55,14 @@ namespace LCARS.CoreUi.UiElements.Base
 
         private void InitializeComponent()
         {
-            this.SuspendLayout();
+            SuspendLayout();
             //
             //StandardButton
             //
-            this.Name = "LcarsButton";
-            this.Size = new Size(147, 36);
-            this.ResumeLayout(false);
-            this.Text = "LCARS";
+            Name = "LcarsButton";
+            Size = new Size(147, 36);
+            ResumeLayout(false);
+            Text = "LCARS";
         }
 
         private Bitmap normalButton;
@@ -82,7 +82,7 @@ namespace LCARS.CoreUi.UiElements.Base
                 while (flashing)
                 {
                     flasherInvertLit = !flasherInvertLit;
-                    this.Invalidate();
+                    Invalidate();
                     Application.DoEvents();
                     Thread.Sleep(flashingInterval);
                 }
@@ -90,7 +90,7 @@ namespace LCARS.CoreUi.UiElements.Base
             catch (ThreadAbortException t)
             {
                 flasherInvertLit = false;
-                this.Invalidate();
+                Invalidate();
             }
         }
 

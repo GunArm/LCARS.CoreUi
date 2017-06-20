@@ -52,7 +52,7 @@ namespace LCARS.CoreUi.UiElements.Base
 
         protected override void ScaleControl(System.Drawing.SizeF factor, System.Windows.Forms.BoundsSpecified specified)
         {
-            this.TextHeight = textHeight * (int)factor.Height;
+            TextHeight = textHeight * (int)factor.Height;
             base.ScaleControl(factor, specified);
         }
 
