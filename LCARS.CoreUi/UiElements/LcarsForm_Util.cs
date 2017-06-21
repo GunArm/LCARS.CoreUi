@@ -1,5 +1,5 @@
 ﻿using LCARS.CoreUi.Interfaces;
-namespace LCARS.CoreUi.Helpers
+namespace LCARS.CoreUi.UiElements
 {
     /// <summary>
     /// Contains utility functions for general use.
@@ -7,7 +7,7 @@ namespace LCARS.CoreUi.Helpers
     /// <remarks>
     /// This is the module for various things that don't fit in anywhere else, but are used in multiple places.
     /// </remarks>
-    public static class Util
+    partial class LcarsForm
     {
         /// <summary>
         /// Sets the beeping of a control and all subcontrols

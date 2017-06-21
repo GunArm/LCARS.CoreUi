@@ -21,59 +21,11 @@ namespace LCARS.CoreUi.UiElements
     /// 
     /// Default handlers are supplied for color changing, beep updating, and LCARS closing.
     /// </remarks>
-    public class LcarsForm : Form
+    public partial class LcarsForm : Form
     {
         #region " Windows API "
-        [StructLayout(LayoutKind.Sequential)]
-        private struct POINTAPI
-        {
-            public int X;
-            public int Y;
-        }
 
-        [StructLayout(LayoutKind.Sequential)]
-        private struct RECT
-        {
-            public int Left;
-            public int Top;
-            public int Right;
-            public int Bottom;
-        }
-
-        [StructLayout(LayoutKind.Sequential)]
-        private struct MINMAXINFO
-        {
-            public POINTAPI ptReserved;
-            public POINTAPI ptMaxSize;
-            public POINTAPI ptMaxPosition;
-            public POINTAPI ptMinTrackSize;
-            public POINTAPI ptMaxTrackSize;
-        }
-
-        [StructLayout(LayoutKind.Sequential)]
-        private struct MONITORINFO
-        {
-            public Int32 cbSize;
-            public RECT rcMonitor;
-            public RECT rcWork;
-            public Int32 dwFlags;
-        }
-        [DllImport("user32", CharSet = CharSet.Ansi, SetLastError = true, ExactSpelling = true)]
-
-        private static extern Int32 MonitorFromWindow(Int32 hwnd, Int32 dwFlags);
-        [DllImport("user32", CharSet = CharSet.Ansi, SetLastError = true, ExactSpelling = true)]
-
-        private static extern Int32 MonitorFromPoint(POINTAPI pt, Int32 dwFlags);
-        [DllImport("user32", CharSet = CharSet.Auto, SetLastError = true, ExactSpelling = true)]
-
-        private static extern int GetMonitorInfo(Int32 hMonitor, ref MONITORINFO lpmi);
-        [DllImport("user32.dll", CharSet = CharSet.Ansi, SetLastError = true, ExactSpelling = true)]
-
-        private static extern int RegisterWindowMessageA(string lpString);
-        private const Int32 MONITOR_DEFAULTTONEAREST = 0x2;
-        private const Int32 MONITOR_DEFAULTTOPRIMARY = 0x1;
-        private const int WM_MINMAXINFO = 0x24;
-        private int X32_MSG;
+        private uint X32_MSG;
         #endregion
 
         #region " Events "
@@ -97,7 +49,7 @@ namespace LCARS.CoreUi.UiElements
         /// </summary>
         /// <param name="m">Window message</param>
         /// <remarks>
-        /// Any messages of type WM_MINMAXINFO or LCARS_X32_MSG will be handled, and not passed to the
+        /// Any messages of type WM_MINMAXINFO or Lcars.CoreUi will be handled, and not passed to the
         /// default handler.
         /// </remarks>
         protected override void WndProc(ref Message m)
@@ -128,40 +80,40 @@ namespace LCARS.CoreUi.UiElements
             }
             else if (m.Msg == WM_MINMAXINFO)
             {
-                MINMAXINFO mmi = (MINMAXINFO) Marshal.PtrToStructure(m.LParam, typeof(MINMAXINFO));
-                int monitor = MonitorFromWindow((int)Handle, MONITOR_DEFAULTTONEAREST);
-                POINTAPI pt0 = new POINTAPI
+                MINMAXINFO mmi = (MINMAXINFO)Marshal.PtrToStructure(m.LParam, typeof(MINMAXINFO));
+                IntPtr monitor = MonitorFromWindow(Handle, MonitorOptions.DefaultToNearest);
+                PointStruct pt0 = new PointStruct
                 {
                     X = 0,
                     Y = 0
                 };
-                int primary = MonitorFromPoint(pt0, MONITOR_DEFAULTTOPRIMARY);
-                if (monitor != 0 && primary != 0)
+                IntPtr primary = MonitorFromPoint(pt0, MonitorOptions.DefaultToPrimary);
+                if (monitor != IntPtr.Zero && primary != IntPtr.Zero)
                 {
                     MONITORINFO minfo = default(MONITORINFO);
                     MONITORINFO pminfo = default(MONITORINFO);
-                    minfo.cbSize = Marshal.SizeOf(minfo);
-                    pminfo.cbSize = Marshal.SizeOf(pminfo);
-                    if (GetMonitorInfo(monitor, ref minfo) != 0 && GetMonitorInfo(primary, ref pminfo) !=0)
+                    minfo.Size = Marshal.SizeOf(minfo);
+                    pminfo.Size = Marshal.SizeOf(pminfo);
+                    if (GetMonitorInfo(monitor, ref minfo) && GetMonitorInfo(primary, ref pminfo))
                     {
                         // This looks wrong, but Windows assumes the coordinates are for the primary
                         // monitor, and then adjusts them. We need to undo the adjustments so that
                         // the result is what we actually want.
 
                         // First, we account for the position change between the primary and actual monitors
-                        mmi.ptMaxPosition.X = minfo.rcWork.Left - minfo.rcMonitor.Left;
-                        mmi.ptMaxPosition.Y = minfo.rcWork.Top - minfo.rcMonitor.Top;
+                        mmi.MaxPosition.X = minfo.WorkArea.Left - minfo.Monitor.Left;
+                        mmi.MaxPosition.Y = minfo.WorkArea.Top - minfo.Monitor.Top;
 
                         // For some reason setting the max track size bypasses the size adjustment.
-                        mmi.ptMaxTrackSize.X = minfo.rcWork.Right - minfo.rcWork.Left;
-                        mmi.ptMaxTrackSize.Y = minfo.rcWork.Bottom - minfo.rcWork.Top;
+                        mmi.MaxTrackSize.X = minfo.WorkArea.Right - minfo.WorkArea.Left;
+                        mmi.MaxTrackSize.Y = minfo.WorkArea.Bottom - minfo.WorkArea.Top;
 
                         Marshal.StructureToPtr(mmi, m.LParam, true);
                         m.Result = (IntPtr)1;
                         return;
                     }
                 }
-                m.Result = (IntPtr) 0;
+                m.Result = (IntPtr)0;
             }
             else
             {
@@ -169,10 +121,10 @@ namespace LCARS.CoreUi.UiElements
             }
         }
 
-        //Register LCARS_X32_MSG
+        //Register Lcars.CoreUi
         protected override void OnLoad(EventArgs e)
         {
-            X32_MSG = RegisterWindowMessageA("LCARS_X32_MSG");
+            X32_MSG = RegisterWindowMessageA("Lcars.CoreUi");
             base.OnLoad(e);
         }
 
@@ -181,7 +133,7 @@ namespace LCARS.CoreUi.UiElements
         /// </summary>
         protected virtual void OnColorsChange()
         {
-            Util.UpdateColors(this);
+            UpdateColors(this);
         }
 
         /// <summary>
@@ -190,7 +142,7 @@ namespace LCARS.CoreUi.UiElements
         /// <param name="beep">New beeping setting</param>
         protected virtual void OnBeepingUpdate(bool beep)
         {
-            Util.SetBeeping(this, beep);
+            SetBeeping(this, beep);
         }
 
         /// <summary>
