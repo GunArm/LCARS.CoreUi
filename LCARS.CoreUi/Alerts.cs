@@ -19,10 +19,19 @@ namespace LCARS.CoreUi
             public int cdData;
             public IntPtr lpData;
         }
-        [DllImport("user32.dll", CharSet = CharSet.Auto, SetLastError = true, ExactSpelling = true)]
+
+        [DllImport("user32.dll", CharSet = CharSet.Auto, SetLastError = true)]
         private static extern IntPtr SendMessage(IntPtr hWnd, int msg, IntPtr wParam, IntPtr lParam);
 
         const int WM_COPYDATA = 0x4a;
+
+        public static void RestoreDefaults()
+        {
+            settings.TryDelete("Alerts");
+            settings.Save("Alerts", "0", "Red|#FF0000|"); // + InstallPath + "\red_alert.wav")
+            settings.Save("Alerts", "1", "Yellow|#FFFF00|");
+        }
+
         /// <summary>
         /// Registers a new alert with LCARS, or returns the ID of the alert with the same name.
         /// </summary>
