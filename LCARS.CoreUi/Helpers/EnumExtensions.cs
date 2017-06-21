@@ -28,5 +28,12 @@ namespace LCARS.CoreUi.Helpers
             if (!typeof(T).IsEnum) throw new ArgumentException("T must be an enumerated type");
             return (int)Enum.Parse(typeof(T), name, true);
         }
+
+        public static T Random()
+        {
+            if (!typeof(T).IsEnum) throw new ArgumentException("T must be an enumerated type");
+            var list = Enum.GetValues(typeof(T)).Cast<T>().ToArray();
+            return list[Randomizer.NextInt(list.Length)];
+        }
     }
 }
