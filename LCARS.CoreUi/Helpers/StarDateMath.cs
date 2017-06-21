@@ -1,5 +1,5 @@
 ﻿using System;
-namespace LCARS.CoreUi
+namespace LCARS.CoreUi.Helpers
 {
     /// <summary>
     /// Contains methods for handling and converting stardates
@@ -7,7 +7,7 @@ namespace LCARS.CoreUi
     /// <remarks>Previously in StardateLibrary.dll. Moved here for simplicity. Generally only the static methods are used.</remarks>
     public class StarDateMath
     {
-        System.DateTime mydate;
+        DateTime mydate;
         double mystardate;
         int @base = 2323;
         /// <summary>
@@ -15,7 +15,7 @@ namespace LCARS.CoreUi
         /// </summary>
         /// <param name="newdate">Standard date</param>
         /// <remarks></remarks>
-        public StarDateMath(System.DateTime newdate)
+        public StarDateMath(DateTime newdate)
         {
             mydate = newdate;
             mystardate = getStardate(newdate);
@@ -46,10 +46,10 @@ namespace LCARS.CoreUi
         /// <param name="datebase">Year to base stardate on. Generally 2323 is used.</param>
         /// <returns>Decimal representation of stardate.</returns>
         /// <remarks>One of the two functions you are likely to use.</remarks>
-        public static double getStardate(System.DateTime convertdate, int datebase = 2323)
+        public static double getStardate(DateTime convertdate, int datebase = 2323)
         {
             int x = 0;
-            if (System.DateTime.IsLeapYear(convertdate.Year))
+            if (DateTime.IsLeapYear(convertdate.Year))
             {
                 x = 366;
             }
@@ -67,12 +67,12 @@ namespace LCARS.CoreUi
         /// <param name="datebase">Datebase used for stardate.</param>
         /// <returns>Standard date equivalent of the stardate</returns>
         /// <remarks> If you used something other than 2323, set the datebase!</remarks>
-        public static System.DateTime GetEarthDate(StarDateMath convertdate, int datebase = 2323)
+        public static DateTime GetEarthDate(StarDateMath convertdate, int datebase = 2323)
         {
             double earthdatetime = convertdate.StarDate / 1000 + datebase;
             int myyear = (int)Math.Floor(earthdatetime);
             int x = 365;
-            if (System.DateTime.IsLeapYear(myyear))
+            if (DateTime.IsLeapYear(myyear))
             {
                 x = 366;
             }
@@ -87,7 +87,7 @@ namespace LCARS.CoreUi
             int month = 1;
 
             DoTransformation(x, ref myday, ref month);
-            System.DateTime mynewdate = new System.DateTime(myyear, month, myday, myhour, myminute, mysecond);
+            DateTime mynewdate = new DateTime(myyear, month, myday, myhour, myminute, mysecond);
             return mynewdate;
         }
 
@@ -163,7 +163,7 @@ namespace LCARS.CoreUi
         /// <value>Standard date</value>
         /// <returns>Standard date</returns>
         /// <remarks></remarks>
-        public System.DateTime EarthDate
+        public DateTime EarthDate
         {
             get { return mydate; }
             set

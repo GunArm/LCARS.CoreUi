@@ -67,9 +67,9 @@
     <Compile Include="Interfaces\IBeeping.cs" />
     <Compile Include="Interfaces\IColorable.cs" />
     <Compile Include="Interfaces\ILightweightControl.cs" />
-    <Compile Include="Paths.cs" />
+    <Compile Include="Helpers\Paths.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="StarDateMath.cs" />
+    <Compile Include="Helpers\StarDateMath.cs" />
     <Compile Include="UiElements\Base\LcarsButtonBaseDesigner.cs" />
     <Compile Include="UiElements\Base\LcarsButtonBase_ControlOverrides.cs">
       <SubType>Component</SubType>

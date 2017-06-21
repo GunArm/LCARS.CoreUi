@@ -1,7 +1,7 @@
 ﻿using System.IO;
 using System.Reflection;
 
-namespace LCARS.CoreUi
+namespace LCARS.CoreUi.Helpers
 {
     public static class Paths
     {

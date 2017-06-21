@@ -13,6 +13,7 @@ namespace LCARS.CoreUi.Helpers
             if (!typeof(T).IsEnum) throw new ArgumentException("T must be an enumerated type");
             return Enum.GetValues(typeof(T)).Cast<T>().OrderBy(o => Convert.ToInt32(o)).ToList();
         }
+
         public static int Count
         {
             get

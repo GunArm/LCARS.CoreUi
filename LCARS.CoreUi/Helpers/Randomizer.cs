@@ -2,7 +2,7 @@
 
 namespace LCARS.CoreUi.Helpers
 {
-    static class Randomizer
+    public static class Randomizer
     {
         // provide a global randomizer so there are no seed issues with successive new Random objects
         private static Random random = new Random();
