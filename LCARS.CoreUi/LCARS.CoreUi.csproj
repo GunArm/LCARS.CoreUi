@@ -59,7 +59,7 @@
     <Compile Include="Enums\LcarsColorFunction.cs" />
     <Compile Include="Colors\LcarsColorManager.cs" />
     <Compile Include="Colors\LcarsColorSet.cs" />
-    <Compile Include="Helpers\Alerts.cs" />
+    <Compile Include="Alerts.cs" />
     <Compile Include="Helpers\ColorExtensions.cs" />
     <Compile Include="Helpers\SettingsStore.cs" />
     <Compile Include="UiElements\LcarsForm_Util.cs">

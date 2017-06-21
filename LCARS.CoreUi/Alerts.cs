@@ -1,9 +1,10 @@
-﻿using System;
+﻿using LCARS.CoreUi.Helpers;
+using System;
 using System.Collections.Generic;
 using System.Drawing;
 using System.Runtime.InteropServices;
 
-namespace LCARS.CoreUi.Helpers
+namespace LCARS.CoreUi
 {
     /// <summary>
     /// Contains methods for registering and using alerts.
