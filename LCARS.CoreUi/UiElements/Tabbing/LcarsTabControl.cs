@@ -310,7 +310,7 @@ namespace LCARS.CoreUi.UiElements.Tabbing
                 //Set the size of the tab equal to the area we want the tab to cover.  Basically,
                 //everwhere our heading, elbow, and buttonpanel are not.
 
-                mytab.Width = Width - tabButtonPanel.Width - 10; // 10px spacing 
+                mytab.Width = Width - tabButtonPanel.Width - spacing * 2;
                 mytab.Height = Height - (horizantalBar.Height + spacing);
 
                 switch (elbowStyle)
