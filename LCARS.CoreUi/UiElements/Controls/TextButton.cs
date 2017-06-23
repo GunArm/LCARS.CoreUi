@@ -1,4 +1,5 @@
-﻿using LCARS.CoreUi.Enums;
+﻿using LCARS.CoreUi.Assets.Access;
+using LCARS.CoreUi.Enums;
 using LCARS.CoreUi.UiElements.Base;
 using System;
 using System.Drawing;
@@ -46,7 +47,7 @@ namespace LCARS.CoreUi.UiElements.Controls
         #region " Global Variables "
         TextButtonType buttonType = TextButtonType.DoublePills;
         ContentAlignment buttonTextAlign = ContentAlignment.MiddleRight;
-
+        Font font;
         FontData fontDims;
         #endregion
 
@@ -100,7 +101,8 @@ namespace LCARS.CoreUi.UiElements.Controls
             {
                 if (textHeight == value) return;
                 textHeight = value;
-                fontDims = GetFontDimensions(new Font("LCARS", value, FontStyle.Regular, GraphicsUnit.Point), ButtonText);
+                font = FontProvider.Lcars(value);
+                fontDims = GetFontDimensions(font, ButtonText);
                 DrawAllButtons();
             }
         }
@@ -112,7 +114,7 @@ namespace LCARS.CoreUi.UiElements.Controls
             {
                 if (buttonText == value) return;
                 buttonText = value.ToUpper();
-                fontDims = GetFontDimensions(new Font("LCARS", textHeight, FontStyle.Regular, GraphicsUnit.Point), buttonText);
+                fontDims = GetFontDimensions(font, ButtonText);
                 DrawAllButtons();
             }
         }
@@ -125,7 +127,6 @@ namespace LCARS.CoreUi.UiElements.Controls
             int x = 0;
             int y = 0;
             Graphics myG = null;
-            myFont = new Font("LCARS", textHeight, FontStyle.Regular, GraphicsUnit.Point);
             SizeF textSize = CreateGraphics().MeasureString(Text, myFont);
             if (string.IsNullOrEmpty(Text))
             {
@@ -176,7 +177,7 @@ namespace LCARS.CoreUi.UiElements.Controls
                 {
                     Graphics g = null;
                     SolidBrush mybrush = new SolidBrush(GetButtonColor());
-                    Font myfont = new Font("LCARS", TextHeight, FontStyle.Regular, GraphicsUnit.Point);
+
                     int drawHeight = 0;
 
                     if (fontDims.Height == 0)
@@ -222,19 +223,19 @@ namespace LCARS.CoreUi.UiElements.Controls
                         if (buttonTextAlign.ToString().ToLower().Contains("right"))
                         {
                             g.FillRectangle(Brushes.Black, Width - ((fontDims.Width + drawHeight) + 12), 0, fontDims.Width + 6, drawHeight);
-                            g.DrawString(ButtonText, myfont, Brushes.Orange, Width - (((fontDims.Width + fontDims.Left) + drawHeight) + 6), -fontDims.Top);
+                            g.DrawString(ButtonText, font, Brushes.Orange, Width - (((fontDims.Width + fontDims.Left) + drawHeight) + 6), -fontDims.Top);
                         }
 
                         if (buttonTextAlign.ToString().ToLower().Contains("left"))
                         {
                             g.FillRectangle(Brushes.Black, drawHeight + 6, 0, fontDims.Width + 6, drawHeight);
-                            g.DrawString(ButtonText, myfont, Brushes.Orange, (drawHeight - fontDims.Left) + 6, -fontDims.Top);
+                            g.DrawString(ButtonText, font, Brushes.Orange, (drawHeight - fontDims.Left) + 6, -fontDims.Top);
                         }
 
                         if (buttonTextAlign.ToString().ToLower().Contains("center"))
                         {
                             g.FillRectangle(Brushes.Black, (Width / 2) - ((fontDims.Width + 12) / 2), 0, fontDims.Width + 12, drawHeight);
-                            g.DrawString(ButtonText, myfont, Brushes.Orange, ((Width / 2) - (fontDims.Width / 2)) - fontDims.Left, -fontDims.Top);
+                            g.DrawString(ButtonText, font, Brushes.Orange, ((Width / 2) - (fontDims.Width / 2)) - fontDims.Left, -fontDims.Top);
                         }
                     }
                 }

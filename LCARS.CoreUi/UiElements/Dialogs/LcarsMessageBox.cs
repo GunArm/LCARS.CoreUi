@@ -1,4 +1,5 @@
-﻿using LCARS.CoreUi.Enums;
+﻿using LCARS.CoreUi.Assets.Access;
+using LCARS.CoreUi.Enums;
 using LCARS.CoreUi.UiElements.Base;
 using LCARS.CoreUi.UiElements.Controls;
 using System;
@@ -150,7 +151,7 @@ namespace LCARS.CoreUi.UiElements.Dialogs
             errorTextBox.BackColor = Color.Black;
             errorTextBox.BorderStyle = BorderStyle.None;
             errorTextBox.WordWrap = true;
-            errorTextBox.Font = new Font("LCARS", 14, FontStyle.Regular);
+            errorTextBox.Font = FontProvider.Lcars(14);
             errorTextBox.ForeColor = Color.Orange;
             errorTextBox.BringToFront();
             errorTextBox.Text = prompt.ToString();

@@ -1,4 +1,5 @@
-﻿using System.Drawing;
+﻿using LCARS.CoreUi.Assets.Access;
+using System.Drawing;
 using System.Windows.Forms;
 
 namespace LCARS.CoreUi.UiElements.Controls
@@ -15,7 +16,7 @@ namespace LCARS.CoreUi.UiElements.Controls
         }
 
         #region " Font "
-        protected static Font defFont = new Font("LCARS", 16, FontStyle.Regular, GraphicsUnit.Point);
+        protected static Font defFont = FontProvider.Lcars(16);
         public override void ResetFont()
         {
             Font = defFont;
@@ -26,7 +27,7 @@ namespace LCARS.CoreUi.UiElements.Controls
             return !defFont.Equals(Font);
         }
 
-        public override System.Drawing.Font Font
+        public override Font Font
         {
             get { return base.Font; }
             set

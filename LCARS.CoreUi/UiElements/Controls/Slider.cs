@@ -1,4 +1,5 @@
-﻿using LCARS.CoreUi.Colors;
+﻿using LCARS.CoreUi.Assets.Access;
+using LCARS.CoreUi.Colors;
 using LCARS.CoreUi.Enums;
 using LCARS.CoreUi.Interfaces;
 using System;
@@ -386,7 +387,7 @@ namespace LCARS.CoreUi.UiElements.Controls
             do
             {
 
-                f = new Font("LCARS", fontSize, FontStyle.Regular, GraphicsUnit.Point);
+                f = FontProvider.Lcars(fontSize);
                 textSize = CreateGraphics().MeasureString(val.ToString(), f);
                 fontSize -= .5f;
             }

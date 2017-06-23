@@ -1,4 +1,5 @@
-﻿using LCARS.CoreUi.Enums;
+﻿using LCARS.CoreUi.Assets.Access;
+using LCARS.CoreUi.Enums;
 using LCARS.CoreUi.UiElements.Controls;
 using System;
 using System.Drawing;
@@ -21,7 +22,7 @@ namespace LCARS.CoreUi.UiElements.Lightweight
             if (bounds.Height <= 0) return;
             if (bounds.Width <= 0) return;
 
-            Font sideFont = new Font("LCARS", Height + (Height / 2.9f), FontStyle.Regular, GraphicsUnit.Pixel);
+            Font sideFont = FontProvider.Lcars(Height + (Height / 2.9f), GraphicsUnit.Pixel);
             //Set up brushes
             SolidBrush myBrush = new SolidBrush(ColorManager.GetColor(ColorFunction));
             SolidBrush sideBrush;

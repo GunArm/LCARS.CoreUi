@@ -34,7 +34,7 @@ namespace LCARS.CoreUi.UiElements.Base
             base.DoubleBuffered = true;
 
             textSize = Size;
-            font = new Font("LCARS", textHeight, FontStyle.Regular, GraphicsUnit.Point);
+            font = FontProvider.Lcars(textHeight);
             try
             {
                 // try/catch because this pukes in the designer where SoundProvider ctor apparently gets omitted

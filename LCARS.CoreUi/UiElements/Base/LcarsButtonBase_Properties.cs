@@ -1,4 +1,5 @@
-﻿using LCARS.CoreUi.Colors;
+﻿using LCARS.CoreUi.Assets.Access;
+using LCARS.CoreUi.Colors;
 using LCARS.CoreUi.Enums;
 using System;
 using System.Collections.Generic;
@@ -144,7 +145,7 @@ namespace LCARS.CoreUi.UiElements.Base
                     }
                     else
                     {
-                        if(flasher != null) flasher.Abort();
+                        if (flasher != null) flasher.Abort();
                     }
                 }
 
@@ -308,24 +309,24 @@ namespace LCARS.CoreUi.UiElements.Base
                         SizeF mysize = new SizeF();
                         int i = 1;
                         Graphics g = Graphics.FromImage(new Bitmap(10, 10));
-                        mysize = g.MeasureString(buttonText, new Font("LCARS", i, FontStyle.Regular, GraphicsUnit.Point));
+                        mysize = g.MeasureString(buttonText, FontProvider.Lcars(i));
 
-                        while (!(mysize.Width >= Width - 8 | mysize.Height >= Height))
+                        while (!(mysize.Width >= Width - 8 || mysize.Height >= Height))
                         {
                             i += 1;
-                            mysize = g.MeasureString(buttonText, new Font("LCARS", i, FontStyle.Regular, GraphicsUnit.Point));
+                            mysize = g.MeasureString(buttonText, FontProvider.Lcars(i));
                         }
                         if (i < 2)
                         {
                             i = 2;
                         }
-                        font = new Font("LCARS", i - 1, FontStyle.Regular, GraphicsUnit.Point);
+                        font = FontProvider.Lcars(i - 1);
                         textHeight = -1;
                     }
                 }
                 else
                 {
-                    font = new Font("LCARS", textHeight, FontStyle.Regular, GraphicsUnit.Point);
+                    font = FontProvider.Lcars(textHeight);
                 }
                 Invalidate();
             }

@@ -1,4 +1,5 @@
-﻿using LCARS.CoreUi.Enums;
+﻿using LCARS.CoreUi.Assets.Access;
+using LCARS.CoreUi.Enums;
 using LCARS.CoreUi.UiElements.Base;
 using System.Drawing;
 using System.Drawing.Drawing2D;
@@ -108,8 +109,8 @@ namespace LCARS.CoreUi.UiElements.Controls
             SizeF buttonTextSize = default(SizeF);
             SizeF sideTextSize = default(SizeF);
             int curLeft = 0;
-            Font textFont = new Font("LCARS", (Height / 2) + 4, FontStyle.Regular, GraphicsUnit.Pixel);
-            Font sideFont = new Font("LCARS", (float)(Height / 2.9) + Height, FontStyle.Regular, GraphicsUnit.Pixel);
+            Font textFont = FontProvider.Lcars((Height / 2) + 4, GraphicsUnit.Pixel);
+            Font sideFont = FontProvider.Lcars((float)(Height / 2.9) + Height, GraphicsUnit.Pixel);
             SolidBrush myBrush = new SolidBrush(GetButtonColor());
             SolidBrush sideBrush = new SolidBrush(GetButtonColor(sideBlockColor));
             SolidBrush sideTextBrush = new SolidBrush(GetButtonColor(sideTextColor));

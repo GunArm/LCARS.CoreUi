@@ -1,4 +1,5 @@
-﻿using LCARS.CoreUi.Enums;
+﻿using LCARS.CoreUi.Assets.Access;
+using LCARS.CoreUi.Enums;
 using LCARS.CoreUi.UiElements.Controls;
 using System.Drawing;
 using System.Windows.Forms;
@@ -64,7 +65,7 @@ namespace LCARS.CoreUi.UiElements.Dialogs
             txtPrompt.BackColor = Color.Black;
             txtPrompt.ForeColor = Color.Orange;
             txtPrompt.BorderStyle = BorderStyle.None;
-            txtPrompt.Font = new Font("LCARS", 14, FontStyle.Regular);
+            txtPrompt.Font = FontProvider.Lcars(14);
             txtPrompt.ReadOnly = true;
             txtPrompt.WordWrap = true;
             Controls.Add(txtPrompt);
@@ -74,7 +75,7 @@ namespace LCARS.CoreUi.UiElements.Dialogs
             inputBox.Top = txtPrompt.Bottom + 7;
             inputBox.BackColor = Color.Black;
             inputBox.ForeColor = Color.Orange;
-            inputBox.Font = new Font("LCARS", 14, FontStyle.Regular);
+            inputBox.Font = FontProvider.Lcars(14);
             inputBox.Text = defaultResponse;
             inputBox.TabIndex = 0;
             inputBox.Focus();

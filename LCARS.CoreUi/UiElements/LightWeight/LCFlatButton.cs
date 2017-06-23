@@ -610,7 +610,7 @@ namespace LCARS.CoreUi.UiElements.Lightweight
                 Redraw();
             }
         }
-        protected Font font = new Font("LCARS", 14, FontStyle.Regular, GraphicsUnit.Point);
+        protected Font font = FontProvider.Lcars(14);
 
         /// <summary>
         /// Sets the lit state of the control
@@ -728,7 +728,7 @@ namespace LCARS.CoreUi.UiElements.Lightweight
             set
             {
                 if (value == font.Size) return;
-                font = new Font("LCARS", value, FontStyle.Regular, GraphicsUnit.Point);
+                font = FontProvider.Lcars(value);
                 Redraw();
             }
         }
