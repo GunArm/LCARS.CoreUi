@@ -144,6 +144,7 @@ namespace LCARS.CoreUi.UiElements.Tabbing
 
             //The elbow in the top right of the tabcontrol,
             elbow.ButtonText = "TABS";
+            elbow.TextVisible = false;
             elbow.ColorFunction = LcarsColorFunction.StaticTan;
             elbow.Clickable = false;
             Controls.Add(elbow);
@@ -406,6 +407,7 @@ namespace LCARS.CoreUi.UiElements.Tabbing
                         break;
                 }
 
+                myButton.TextVisible = false;
                 myButton.ColorFunction = LcarsColorFunction.StaticTan;
                 myButton.Clickable = false;
                 tabButtonPanel.Controls.Add(myButton);
@@ -447,28 +449,32 @@ namespace LCARS.CoreUi.UiElements.Tabbing
             {
                 case LcarsElbowStyle.UpperRight:
                     horizantalBar.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
-                    horizantalBar.ButtonTextAlign = ContentAlignment.BottomLeft;
+                    // horizantalBar.ButtonTextAlign = ContentAlignment.BottomLeft;
+                    horizantalBar.ButtonTextAlign = ContentAlignment.MiddleLeft;
                     elbow.ButtonTextAlign = ContentAlignment.BottomRight;
                     elbow.Anchor = AnchorStyles.Top | AnchorStyles.Right;
                     tabButtonPanel.Anchor = AnchorStyles.Top | AnchorStyles.Right;
                     break;
                 case LcarsElbowStyle.UpperLeft:
                     horizantalBar.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
-                    horizantalBar.ButtonTextAlign = ContentAlignment.BottomRight;
+                    // horizantalBar.ButtonTextAlign = ContentAlignment.BottomRight;
+                    horizantalBar.ButtonTextAlign = ContentAlignment.MiddleRight;
                     elbow.ButtonTextAlign = ContentAlignment.BottomLeft;
                     elbow.Anchor = AnchorStyles.Top | AnchorStyles.Left;
                     tabButtonPanel.Anchor = AnchorStyles.Top | AnchorStyles.Left;
                     break;
                 case LcarsElbowStyle.LowerRight:
                     horizantalBar.Anchor = AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
-                    horizantalBar.ButtonTextAlign = ContentAlignment.TopLeft;
+                    // horizantalBar.ButtonTextAlign = ContentAlignment.TopLeft;
+                    horizantalBar.ButtonTextAlign = ContentAlignment.MiddleLeft;
                     elbow.ButtonTextAlign = ContentAlignment.TopRight;
                     elbow.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
                     tabButtonPanel.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
                     break;
                 case LcarsElbowStyle.LowerLeft:
                     horizantalBar.Anchor = AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
-                    horizantalBar.ButtonTextAlign = ContentAlignment.TopRight;
+                    // horizantalBar.ButtonTextAlign = ContentAlignment.TopRight;
+                    horizantalBar.ButtonTextAlign = ContentAlignment.MiddleRight;
                     elbow.ButtonTextAlign = ContentAlignment.TopLeft;
                     elbow.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
                     tabButtonPanel.Anchor = AnchorStyles.Top | AnchorStyles.Left;
