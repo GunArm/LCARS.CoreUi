@@ -45,6 +45,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Access\FontProvider.cs" />
     <Compile Include="Assets\Access\SoundProvider.cs" />
     <Compile Include="Enums\EllipsisModes.cs" />
     <Compile Include="Enums\LcarsButtonStyles.cs" />
@@ -52,7 +53,7 @@
     <Compile Include="Enums\LcarsHalfPillButtonStyles.cs" />
     <Compile Include="Helpers\Randomizer.cs" />
     <Compile Include="Enums\LightweightEvents.cs" />
-    <Compile Include="Assets\Access\FontProvider.cs" />
+    <Compile Include="Assets\Access\FontFamilyProvider.cs" />
     <Compile Include="Helpers\EnumExtensions.cs" />
     <Compile Include="Enums\LcarsAlert.cs" />
     <Compile Include="Enums\LcarsArrowDirection.cs" />

@@ -1,54 +1,22 @@
-﻿using LCARS.CoreUi.Helpers;
-using System;
-using System.Collections.Generic;
-using System.Drawing;
-using System.Drawing.Text;
-using System.IO;
-using System.Linq;
+﻿using System.Drawing;
 
 namespace LCARS.CoreUi.Assets.Access
 {
     public static class FontProvider
     {
-        private static Dictionary<string, FontFamily> lcarsFonts;
-        private static Dictionary<string, FontFamily> alienFonts;
-        private static Dictionary<string, FontFamily> miscFonts;
-
-        public static FontFamily LcarsLight { get { return lcarsFonts["lcars-lite"]; } }
-        public static FontFamily LcarsHeavy { get { return lcarsFonts["lcars-full"]; } }
-        public static FontFamily RandomAlien { get { return alienFonts.ElementAt(Randomizer.NextInt(0, alienFonts.Count)).Value; } }
-
-        static FontProvider()
+        public static Font Lcars(float size, GraphicsUnit graphicsUnit = GraphicsUnit.Point)
         {
-            lcarsFonts = GetFontCollection("LCARS");
-            alienFonts = GetFontCollection("Alien");
-            miscFonts = GetFontCollection("Misc");
+            return new Font(FontFamilyProvider.LcarsLight, size, FontStyle.Regular, graphicsUnit);
         }
 
-        private static Dictionary<string, FontFamily> GetFontCollection(string fontGroup)
+        public static Font Lcars(float size, FontStyle fontStyle, GraphicsUnit graphicsUnit = GraphicsUnit.Point)
         {
-            string subFolderPath = Path.Combine(Paths.FontsDir, fontGroup);
-
-            var fonts = new Dictionary<string, FontFamily>(StringComparer.InvariantCultureIgnoreCase);
-            if (!Directory.Exists(subFolderPath)) return fonts;
-            
-            foreach (var fontFilePath in Directory.EnumerateFiles(subFolderPath))
-            {
-                if (!fontFilePath.ToLower().EndsWith("ttf") && !fontFilePath.ToLower().EndsWith("otf")) continue;
-
-                var families = ReadFontFile(fontFilePath);
-                if (families.Length != 1) throw new Exception("Font file " + fontFilePath + " has more (or less) than one font");
-                fonts.Add(Path.GetFileNameWithoutExtension(fontFilePath), families[0]);
-            }
-            
-            return fonts;
+            return new Font(FontFamilyProvider.LcarsLight, size, fontStyle, graphicsUnit);
         }
 
-        private static FontFamily[] ReadFontFile(string fontFileName)
+        public static Font RandomAlien(float size, GraphicsUnit graphicsUnit = GraphicsUnit.Point)
         {
-            var pfc = new PrivateFontCollection();
-            pfc.AddFontFile(fontFileName);
-            return pfc.Families;
+            return new Font(FontFamilyProvider.RandomAlien, size, FontStyle.Regular, graphicsUnit);
         }
     }
 }
