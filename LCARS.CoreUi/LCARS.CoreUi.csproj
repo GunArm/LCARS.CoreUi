@@ -171,54 +171,22 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <None Include="Assets\Fonts\Alien\bajoran.ttf">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="Assets\Fonts\Alien\cardassian.ttf">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="Assets\Fonts\Alien\dominion.ttf">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="Assets\Fonts\Alien\fabrini.ttf">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="Assets\Fonts\Alien\ferengi.ttf">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="Assets\Fonts\Alien\klingon.ttf">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="Assets\Fonts\Alien\romulan.ttf">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="Assets\Fonts\Alien\tholian.ttf">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="Assets\Fonts\Alien\trill.ttf">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="Assets\Fonts\Alien\vulcan.ttf">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="Assets\Fonts\LCARS\lcars-full.ttf">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="Assets\Fonts\LCARS\lcars-lite.ttf">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="Assets\Fonts\Misc\tng_credits.ttf">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="Assets\Fonts\Misc\tng_monitors.ttf">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="Assets\Fonts\Misc\tng_title.ttf">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="Assets\Fonts\Misc\trekbats.ttf">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
+    <EmbeddedResource Include="Assets\Fonts\Alien\bajoran.ttf" />
+    <EmbeddedResource Include="Assets\Fonts\Alien\cardassian.ttf" />
+    <EmbeddedResource Include="Assets\Fonts\Alien\dominion.ttf" />
+    <EmbeddedResource Include="Assets\Fonts\Alien\fabrini.ttf" />
+    <EmbeddedResource Include="Assets\Fonts\Alien\ferengi.ttf" />
+    <EmbeddedResource Include="Assets\Fonts\Alien\klingon.ttf" />
+    <EmbeddedResource Include="Assets\Fonts\Alien\romulan.ttf" />
+    <EmbeddedResource Include="Assets\Fonts\Alien\tholian.ttf" />
+    <EmbeddedResource Include="Assets\Fonts\Alien\trill.ttf" />
+    <EmbeddedResource Include="Assets\Fonts\Alien\vulcan.ttf" />
+    <EmbeddedResource Include="Assets\Fonts\LCARS\lcars-full.ttf" />
+    <EmbeddedResource Include="Assets\Fonts\LCARS\lcars-lite.ttf" />
+    <EmbeddedResource Include="Assets\Fonts\Misc\tng_credits.ttf" />
+    <EmbeddedResource Include="Assets\Fonts\Misc\tng_monitors.ttf" />
+    <EmbeddedResource Include="Assets\Fonts\Misc\tng_title.ttf" />
+    <EmbeddedResource Include="Assets\Fonts\Misc\trekbats.ttf" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
