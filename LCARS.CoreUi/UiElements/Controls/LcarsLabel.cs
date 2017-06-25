@@ -1,7 +1,9 @@
-﻿using LCARS.CoreUi.Colors;
+﻿using LCARS.CoreUi.Assets.Access;
+using LCARS.CoreUi.Colors;
 using LCARS.CoreUi.Enums;
 using LCARS.CoreUi.Interfaces;
 using System;
+using System.Drawing;
 
 namespace LCARS.CoreUi.UiElements.Controls
 {
@@ -10,8 +12,9 @@ namespace LCARS.CoreUi.UiElements.Controls
     {
         public LcarsLabel()
         {
-            this.BackColor = System.Drawing.Color.Black;
-            this.Font = new System.Drawing.Font("LCARS", _textHeight, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            UseCompatibleTextRendering = true;
+            BackColor = Color.Black;
+            Font = FontProvider.Lcars(textHeight);
             ColorManager = new LcarsColorManager();
         }
 
@@ -40,21 +43,31 @@ namespace LCARS.CoreUi.UiElements.Controls
         }
         private LcarsColorFunction colorFunction = LcarsColorFunction.Orange;
 
-        public int TextHeight
+        public new Font Font
         {
-            get { return _textHeight; }
+            get { return base.Font; }
             set
             {
-                _textHeight = value;
-                this.Font = new System.Drawing.Font("LCARS", _textHeight, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+                base.Font = value;
+                textHeight = (int)value.SizeInPoints;
             }
         }
-        private int _textHeight = 18;
+
+        public int TextHeight
+        {
+            get { return textHeight; }
+            set
+            {
+                textHeight = value;
+                Font = new Font(Font.FontFamily, textHeight, FontStyle.Regular, GraphicsUnit.Point);
+            }
+        }
+        private int textHeight = 18;
 
         private void OnColorsUpdated(object sender, EventArgs e)
         {
             ForeColor = ColorManager.GetColor(colorFunction);
-            this.Refresh();
+            Refresh();
         }
     }
 
