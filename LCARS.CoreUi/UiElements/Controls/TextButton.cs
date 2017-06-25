@@ -47,8 +47,6 @@ namespace LCARS.CoreUi.UiElements.Controls
         #region " Global Variables "
         TextButtonType buttonType = TextButtonType.DoublePills;
         ContentAlignment buttonTextAlign = ContentAlignment.MiddleRight;
-        Font font;
-        FontData fontDims;
         #endregion
 
         #region " Enums"
@@ -102,7 +100,6 @@ namespace LCARS.CoreUi.UiElements.Controls
                 if (textHeight == value) return;
                 textHeight = value;
                 font = FontProvider.Lcars(value);
-                fontDims = GetFontDimensions(font, ButtonText);
                 DrawAllButtons();
             }
         }
@@ -114,7 +111,6 @@ namespace LCARS.CoreUi.UiElements.Controls
             {
                 if (buttonText == value) return;
                 buttonText = value.ToUpper();
-                fontDims = GetFontDimensions(font, ButtonText);
                 DrawAllButtons();
             }
         }
@@ -180,6 +176,7 @@ namespace LCARS.CoreUi.UiElements.Controls
 
                     int drawHeight = 0;
 
+                    FontData fontDims = GetFontDimensions(font, ButtonText);
                     if (fontDims.Height == 0)
                     {
                         fontDims = new FontData();

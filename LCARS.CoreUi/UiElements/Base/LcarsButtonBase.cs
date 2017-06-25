@@ -29,12 +29,11 @@ namespace LCARS.CoreUi.UiElements.Base
         {
             // for designer, InitEvents (esp resize) before InitializeComponent()
             InitEvents();
-            InitializeComponent();
-
-            base.DoubleBuffered = true;
 
             textSize = Size;
             font = FontProvider.Lcars(textHeight);
+            InitializeComponent();
+            base.DoubleBuffered = true;
             try
             {
                 // try/catch because this pukes in the designer where SoundProvider ctor apparently gets omitted
