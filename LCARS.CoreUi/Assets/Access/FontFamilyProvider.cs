@@ -13,23 +13,23 @@ namespace LCARS.CoreUi.Assets.Access
     {
         private static Assembly assembly = Assembly.GetExecutingAssembly();
 
-        private static Dictionary<string, FontFamily> lcarsFontFamilies;
-        private static Dictionary<string, FontFamily> alienFontFamilies;
-        private static Dictionary<string, FontFamily> miscFontFamilies;
+        public static Dictionary<string, FontFamily> LcarsFontFamilies { get; private set; }
+        public static Dictionary<string, FontFamily> AlienFontFamilies { get; private set; }
+        public static Dictionary<string, FontFamily> MiscFontFamilies { get; private set; }
 
-        public static FontFamily LcarsLight { get { return lcarsFontFamilies["lcars-lite"]; } }
-        public static FontFamily LcarsHeavy { get { return lcarsFontFamilies["lcars-full"]; } }
-        public static FontFamily RandomAlien { get { return alienFontFamilies.ElementAt(Randomizer.NextInt(0, alienFontFamilies.Count)).Value; } }
+        public static FontFamily LcarsLight { get { return LcarsFontFamilies["lcars-lite"]; } }
+        public static FontFamily LcarsHeavy { get { return LcarsFontFamilies["lcars-full"]; } }
+        public static FontFamily RandomAlien { get { return AlienFontFamilies.ElementAt(Randomizer.NextInt(0, AlienFontFamilies.Count)).Value; } }
 
         static FontFamilyProvider()
         {
-            LoadFontFamiliesFromResources(ref lcarsFontFamilies, new List<string>
+            LcarsFontFamilies = LoadFontFamiliesFromResources(new List<string>
             {
                 "LCARS.CoreUi.Assets.Fonts.LCARS.lcars-full.ttf",
                 "LCARS.CoreUi.Assets.Fonts.LCARS.lcars-lite.ttf",
             });
 
-            LoadFontFamiliesFromResources(ref alienFontFamilies, new List<string>
+            AlienFontFamilies = LoadFontFamiliesFromResources(new List<string>
             {
                 "LCARS.CoreUi.Assets.Fonts.Alien.bajoran.ttf",
                 "LCARS.CoreUi.Assets.Fonts.Alien.cardassian.ttf",
@@ -43,7 +43,7 @@ namespace LCARS.CoreUi.Assets.Access
                 "LCARS.CoreUi.Assets.Fonts.Alien.vulcan.ttf",
             });
 
-            LoadFontFamiliesFromResources(ref miscFontFamilies, new List<string>
+            MiscFontFamilies = LoadFontFamiliesFromResources(new List<string>
             {
                 "LCARS.CoreUi.Assets.Fonts.Misc.tng_credits.ttf",
                 "LCARS.CoreUi.Assets.Fonts.Misc.tng_monitors.ttf",
@@ -52,9 +52,9 @@ namespace LCARS.CoreUi.Assets.Access
             });
         }
 
-        private static void LoadFontFamiliesFromResources(ref Dictionary<string, FontFamily> loadInto, List<string> namespacePaths)
+        private static Dictionary<string, FontFamily> LoadFontFamiliesFromResources(List<string> namespacePaths)
         {
-            loadInto = new Dictionary<string, FontFamily>();
+            var result = new Dictionary<string, FontFamily>();
             foreach (string namespacePath in namespacePaths)
             {
                 var bits = namespacePath.Split('.');
@@ -64,10 +64,11 @@ namespace LCARS.CoreUi.Assets.Access
                 var families = GetFontFamiliesFromResource(namespacePath);
                 if (families.Length != 1) throw new Exception("Font file " + namespacePath + " has more (or less) than one font");
                 string key = bits[bits.Length - 2];
-                loadInto.Add(key, families[0]);
+                result.Add(key, families[0]);
             }
+            return result;
         }
-        
+
         private static FontFamily[] GetFontFamiliesFromResource(string fontNamespacePath)
         {
             var pfc = new PrivateFontCollection();
