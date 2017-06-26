@@ -197,24 +197,38 @@ namespace LCARS.CoreUi.UiElements.Controls
                         Height = drawHeight;
                     }
 
-                    //Draw black background
-                    g.FillRectangle(Brushes.Black, 0, 0, mybitmap.Width, mybitmap.Height);
-
                     //Set graphics to use smoothing
                     g.SmoothingMode = SmoothingMode.AntiAlias;
                     g.PixelOffsetMode = PixelOffsetMode.HighQuality;
 
+                    //Draw black background
+                    g.FillRectangle(Brushes.Black, 0, 0, mybitmap.Width, mybitmap.Height);
+                    g.FillRectangle(mybrush, drawHeight + 6, 0, (Width - (drawHeight * 2)) - 12, drawHeight); // full middle bar
+
                     switch (buttonType)
                     {
                         case TextButtonType.DoublePills:
-                            g.FillEllipse(mybrush, 0, 0, drawHeight, drawHeight);
-                            g.FillEllipse(mybrush, Width - drawHeight, 0, drawHeight, drawHeight);
-                            g.FillRectangle(Brushes.Black, drawHeight / 2, 0, Width - drawHeight, drawHeight);
-                            g.FillRectangle(mybrush, drawHeight / 2, 0, drawHeight / 2, drawHeight);
-                            g.FillRectangle(mybrush, drawHeight + 6, 0, (Width - (drawHeight * 2)) - 12, drawHeight);
-                            g.FillRectangle(mybrush, Width - drawHeight, 0, drawHeight / 2, drawHeight);
+                            g.FillEllipse(mybrush, 0, 0, drawHeight, drawHeight); // left pill
+                            g.FillRectangle(mybrush, drawHeight / 2, 0, drawHeight / 2, drawHeight); // left pill bulk
+                            g.FillEllipse(mybrush, Width - drawHeight, 0, drawHeight, drawHeight); // right pill
+                            g.FillRectangle(mybrush, Width - drawHeight, 0, drawHeight / 2, drawHeight); // right pill bulk        
+                            break;
+                        case TextButtonType.LeftPill:
+                            g.FillEllipse(mybrush, 0, 0, drawHeight, drawHeight); // left pill
+                            g.FillRectangle(mybrush, drawHeight / 2, 0, drawHeight / 2, drawHeight); // left pill bulk
+                            g.FillRectangle(mybrush, Width - drawHeight, 0, drawHeight, drawHeight); // right pill bulk        
+                            break;
+                        case TextButtonType.RightPill:
+                            g.FillRectangle(mybrush, 0, 0, drawHeight, drawHeight); // left pill bulk
+                            g.FillEllipse(mybrush, Width - drawHeight, 0, drawHeight, drawHeight); // right pill
+                            g.FillRectangle(mybrush, Width - drawHeight, 0, drawHeight / 2, drawHeight); // right pill bulk   
+                            break;
+                        case TextButtonType.NoPills:
+                            g.FillRectangle(mybrush, 0, 0, drawHeight, drawHeight); // left pill bulk
+                            g.FillRectangle(mybrush, Width - drawHeight, 0, drawHeight, drawHeight); // right pill bulk   
                             break;
                     }
+                    
                     if (!string.IsNullOrEmpty(ButtonText))
                     {
                         if (buttonTextAlign.ToString().ToLower().Contains("right"))
