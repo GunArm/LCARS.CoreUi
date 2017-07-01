@@ -63,6 +63,9 @@
     <Compile Include="Alerts.cs" />
     <Compile Include="Helpers\ColorExtensions.cs" />
     <Compile Include="Helpers\SettingsStore.cs" />
+    <Compile Include="UiElements\LcarsForm_FullScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="UiElements\LcarsForm_Util.cs">
       <SubType>Form</SubType>
     </Compile>

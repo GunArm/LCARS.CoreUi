@@ -78,43 +78,44 @@ namespace LCARS.CoreUi.UiElements
                 }
 
             }
-            else if (m.Msg == WM_MINMAXINFO)
-            {
-                MINMAXINFO mmi = (MINMAXINFO)Marshal.PtrToStructure(m.LParam, typeof(MINMAXINFO));
-                IntPtr monitor = MonitorFromWindow(Handle, MonitorOptions.DefaultToNearest);
-                PointStruct pt0 = new PointStruct
-                {
-                    X = 0,
-                    Y = 0
-                };
-                IntPtr primary = MonitorFromPoint(pt0, MonitorOptions.DefaultToPrimary);
-                if (monitor != IntPtr.Zero && primary != IntPtr.Zero)
-                {
-                    MONITORINFO minfo = default(MONITORINFO);
-                    MONITORINFO pminfo = default(MONITORINFO);
-                    minfo.Size = Marshal.SizeOf(minfo);
-                    pminfo.Size = Marshal.SizeOf(pminfo);
-                    if (GetMonitorInfo(monitor, ref minfo) && GetMonitorInfo(primary, ref pminfo))
-                    {
-                        // This looks wrong, but Windows assumes the coordinates are for the primary
-                        // monitor, and then adjusts them. We need to undo the adjustments so that
-                        // the result is what we actually want.
+            // Not sure what this was trying to do. Commented out to allow FullScreen functionality.
+            //else if (m.Msg == WM_MINMAXINFO)
+            //{
+            //    MINMAXINFO mmi = (MINMAXINFO)Marshal.PtrToStructure(m.LParam, typeof(MINMAXINFO));
+            //    IntPtr monitor = MonitorFromWindow(Handle, MonitorOptions.DefaultToNearest);
+            //    PointStruct pt0 = new PointStruct
+            //    {
+            //        X = 0,
+            //        Y = 0
+            //    };
+            //    IntPtr primary = MonitorFromPoint(pt0, MonitorOptions.DefaultToPrimary);
+            //    if (monitor != IntPtr.Zero && primary != IntPtr.Zero)
+            //    {
+            //        MONITORINFO minfo = default(MONITORINFO);
+            //        MONITORINFO pminfo = default(MONITORINFO);
+            //        minfo.Size = Marshal.SizeOf(minfo);
+            //        pminfo.Size = Marshal.SizeOf(pminfo);
+            //        if (GetMonitorInfo(monitor, ref minfo) && GetMonitorInfo(primary, ref pminfo))
+            //        {
+            //            // This looks wrong, but Windows assumes the coordinates are for the primary
+            //            // monitor, and then adjusts them. We need to undo the adjustments so that
+            //            // the result is what we actually want.
 
-                        // First, we account for the position change between the primary and actual monitors
-                        mmi.MaxPosition.X = minfo.WorkArea.Left - minfo.Monitor.Left;
-                        mmi.MaxPosition.Y = minfo.WorkArea.Top - minfo.Monitor.Top;
+            //            // First, we account for the position change between the primary and actual monitors
+            //            mmi.MaxPosition.X = minfo.WorkArea.Left - minfo.Monitor.Left;
+            //            mmi.MaxPosition.Y = minfo.WorkArea.Top - minfo.Monitor.Top;
 
-                        // For some reason setting the max track size bypasses the size adjustment.
-                        mmi.MaxTrackSize.X = minfo.WorkArea.Right - minfo.WorkArea.Left;
-                        mmi.MaxTrackSize.Y = minfo.WorkArea.Bottom - minfo.WorkArea.Top;
+            //            // For some reason setting the max track size bypasses the size adjustment.
+            //            mmi.MaxTrackSize.X = minfo.WorkArea.Right - minfo.WorkArea.Left;
+            //            mmi.MaxTrackSize.Y = minfo.WorkArea.Bottom - minfo.WorkArea.Top;
 
-                        Marshal.StructureToPtr(mmi, m.LParam, true);
-                        m.Result = (IntPtr)1;
-                        return;
-                    }
-                }
-                m.Result = (IntPtr)0;
-            }
+            //            Marshal.StructureToPtr(mmi, m.LParam, true);
+            //            m.Result = (IntPtr)1;
+            //            return;
+            //        }
+            //    }
+            //    m.Result = (IntPtr)0;
+            //}
             else
             {
                 base.WndProc(ref m);
