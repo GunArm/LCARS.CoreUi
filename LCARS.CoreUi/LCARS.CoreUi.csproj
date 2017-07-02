@@ -169,11 +169,6 @@
     <Compile Include="UiElements\Tabbing\LcarsTabPageDesigner.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Assets\Sounds\ShortBeeps\207.wav">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-  </ItemGroup>
-  <ItemGroup>
     <EmbeddedResource Include="Assets\Fonts\Alien\bajoran.ttf" />
     <EmbeddedResource Include="Assets\Fonts\Alien\cardassian.ttf" />
     <EmbeddedResource Include="Assets\Fonts\Alien\dominion.ttf" />
@@ -190,6 +185,97 @@
     <EmbeddedResource Include="Assets\Fonts\Misc\tng_monitors.ttf" />
     <EmbeddedResource Include="Assets\Fonts\Misc\tng_title.ttf" />
     <EmbeddedResource Include="Assets\Fonts\Misc\trekbats.ttf" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Assets\Sounds\Alert\001.wav" />
+    <EmbeddedResource Include="Assets\Sounds\Alert\002.wav" />
+    <EmbeddedResource Include="Assets\Sounds\Alert\003.wav" />
+    <EmbeddedResource Include="Assets\Sounds\Alert\004.wav" />
+    <EmbeddedResource Include="Assets\Sounds\Alert\005.wav" />
+    <EmbeddedResource Include="Assets\Sounds\Alert\006_hailing.wav" />
+    <EmbeddedResource Include="Assets\Sounds\Alert\007_hailing.wav" />
+    <EmbeddedResource Include="Assets\Sounds\Alert\008.wav" />
+    <EmbeddedResource Include="Assets\Sounds\Alert\009.wav" />
+    <EmbeddedResource Include="Assets\Sounds\Alert\010.wav" />
+    <EmbeddedResource Include="Assets\Sounds\Alert\011.wav" />
+    <EmbeddedResource Include="Assets\Sounds\Alert\012.wav" />
+    <EmbeddedResource Include="Assets\Sounds\Alert\013.wav" />
+    <EmbeddedResource Include="Assets\Sounds\Alert\014.wav" />
+    <EmbeddedResource Include="Assets\Sounds\Alert\015.wav" />
+    <EmbeddedResource Include="Assets\Sounds\Alert\016.wav" />
+    <EmbeddedResource Include="Assets\Sounds\Alert\017.wav" />
+    <EmbeddedResource Include="Assets\Sounds\Alert\018.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Assets\Sounds\Voice\035 update.wav" />
+    <EmbeddedResource Include="Assets\Sounds\Voice\048 disconnect.wav" />
+    <EmbeddedResource Include="Assets\Sounds\Voice\049 reconnect.wav" />
+    <EmbeddedResource Include="Assets\Sounds\Voice\301 new data.wav" />
+    <EmbeddedResource Include="Assets\Sounds\Voice\302 new data.wav" />
+    <EmbeddedResource Include="Assets\Sounds\Voice\303 accessing db.wav" />
+    <EmbeddedResource Include="Assets\Sounds\Voice\304 accessing file.wav" />
+    <EmbeddedResource Include="Assets\Sounds\Voice\305 accessing library.wav" />
+    <EmbeddedResource Include="Assets\Sounds\Voice\307 acknowledged.wav" />
+    <EmbeddedResource Include="Assets\Sounds\Voice\309 input.wav" />
+    <EmbeddedResource Include="Assets\Sounds\Voice\310 cancelled.wav" />
+    <EmbeddedResource Include="Assets\Sounds\Voice\312 incoming transmission.wav" />
+    <EmbeddedResource Include="Assets\Sounds\Voice\314 input received.wav" />
+    <EmbeddedResource Include="Assets\Sounds\Voice\317 transmitted.wav" />
+    <EmbeddedResource Include="Assets\Sounds\Voice\319 specify.wav" />
+    <EmbeddedResource Include="Assets\Sounds\Voice\320 specify2.wav" />
+    <EmbeddedResource Include="Assets\Sounds\Voice\322 reconnect2.wav" />
+    <EmbeddedResource Include="Assets\Sounds\Voice\326 specify geographical.wav" />
+    <EmbeddedResource Include="Assets\Sounds\Voice\327 specify search.wav" />
+    <EmbeddedResource Include="Assets\Sounds\Voice\330 update complete.wav" />
+    <EmbeddedResource Include="Assets\Sounds\Voice\335 no access facility.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Assets\Sounds\Beep\001.wav" />
+    <EmbeddedResource Include="Assets\Sounds\Beep\002_%28001reversed%29.wav" />
+    <EmbeddedResource Include="Assets\Sounds\Beep\003.wav" />
+    <EmbeddedResource Include="Assets\Sounds\Beep\004.wav" />
+    <EmbeddedResource Include="Assets\Sounds\Beep\005.wav" />
+    <EmbeddedResource Include="Assets\Sounds\Beep\006.wav" />
+    <EmbeddedResource Include="Assets\Sounds\Beep\007.wav" />
+    <EmbeddedResource Include="Assets\Sounds\Beep\008.wav" />
+    <EmbeddedResource Include="Assets\Sounds\Beep\009.wav" />
+    <EmbeddedResource Include="Assets\Sounds\Beep\010.wav" />
+    <EmbeddedResource Include="Assets\Sounds\Beep\011.wav" />
+    <EmbeddedResource Include="Assets\Sounds\Beep\012.wav" />
+    <EmbeddedResource Include="Assets\Sounds\Beep\013.wav" />
+    <EmbeddedResource Include="Assets\Sounds\Beep\014.wav" />
+    <EmbeddedResource Include="Assets\Sounds\Beep\015_%28014reversed%29.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Assets\Sounds\Fail\001.wav" />
+    <EmbeddedResource Include="Assets\Sounds\Fail\002.wav" />
+    <EmbeddedResource Include="Assets\Sounds\Fail\003.wav" />
+    <EmbeddedResource Include="Assets\Sounds\Fail\004.wav" />
+    <EmbeddedResource Include="Assets\Sounds\Fail\005.wav" />
+    <EmbeddedResource Include="Assets\Sounds\Fail\006.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Assets\Sounds\Processing\001.wav" />
+    <EmbeddedResource Include="Assets\Sounds\Processing\002.wav" />
+    <EmbeddedResource Include="Assets\Sounds\Processing\003.wav" />
+    <EmbeddedResource Include="Assets\Sounds\Processing\004.wav" />
+    <EmbeddedResource Include="Assets\Sounds\Processing\005.wav" />
+    <EmbeddedResource Include="Assets\Sounds\Processing\006.wav" />
+    <EmbeddedResource Include="Assets\Sounds\Processing\007.wav" />
+    <EmbeddedResource Include="Assets\Sounds\Processing\008.wav" />
+    <EmbeddedResource Include="Assets\Sounds\Processing\009.wav" />
+    <EmbeddedResource Include="Assets\Sounds\Processing\010.wav" />
+    <EmbeddedResource Include="Assets\Sounds\Processing\011.wav" />
+    <EmbeddedResource Include="Assets\Sounds\Processing\012.wav" />
+    <EmbeddedResource Include="Assets\Sounds\Processing\013.wav" />
+    <EmbeddedResource Include="Assets\Sounds\Processing\014.wav" />
+    <EmbeddedResource Include="Assets\Sounds\Processing\015.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Assets\Sounds\Toggle\001_doorbell_on.wav" />
+    <EmbeddedResource Include="Assets\Sounds\Toggle\002_doorbell_off.wav" />
+    <EmbeddedResource Include="Assets\Sounds\Toggle\003_turn_on.wav" />
+    <EmbeddedResource Include="Assets\Sounds\Toggle\004_turn_off.wav" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
