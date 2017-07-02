@@ -46,6 +46,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Access\FontProvider.cs" />
+    <Compile Include="Assets\Access\LcarsSound.cs" />
     <Compile Include="Assets\Access\SoundProvider.cs" />
     <Compile Include="Enums\EllipsisModes.cs" />
     <Compile Include="Enums\LcarsButtonStyles.cs" />
