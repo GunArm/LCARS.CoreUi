@@ -226,9 +226,9 @@
             this.lcarsList1 = new LCARS.CoreUi.UiElements.Controls.LcarsList();
             this.elbow6 = new LCARS.CoreUi.UiElements.Controls.Elbow();
             this.splitContainer2 = new System.Windows.Forms.SplitContainer();
+            this.FullScreenButton = new LCARS.CoreUi.UiElements.Controls.StandardButton();
             this.standardButton19 = new LCARS.CoreUi.UiElements.Controls.StandardButton();
             this.standardButton18 = new LCARS.CoreUi.UiElements.Controls.StandardButton();
-            this.FullScreenButton = new LCARS.CoreUi.UiElements.Controls.StandardButton();
             this.lcarsTabControl1.SuspendLayout();
             this.lcarsTabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
@@ -259,10 +259,10 @@
             // lcarsTabControl1
             // 
             this.lcarsTabControl1.BackColor = System.Drawing.Color.Black;
-            this.lcarsTabControl1.Controls.Add(this.lcarsTabPage1);
-            this.lcarsTabControl1.Controls.Add(this.lcarsTabPage4);
             this.lcarsTabControl1.Controls.Add(this.lcarsTabPage5);
             this.lcarsTabControl1.Controls.Add(this.lcarsTabPage11);
+            this.lcarsTabControl1.Controls.Add(this.lcarsTabPage1);
+            this.lcarsTabControl1.Controls.Add(this.lcarsTabPage4);
             this.lcarsTabControl1.Controls.Add(this.lcarsTabPage12);
             this.lcarsTabControl1.Controls.Add(this.lcarsTabPage14);
             this.lcarsTabControl1.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -271,8 +271,8 @@
             this.lcarsTabControl1.HorizantalBarHeight = 20;
             this.lcarsTabControl1.Location = new System.Drawing.Point(0, 0);
             this.lcarsTabControl1.Name = "lcarsTabControl1";
-            this.lcarsTabControl1.SelectedTab = this.lcarsTabPage1;
-            this.lcarsTabControl1.Size = new System.Drawing.Size(1052, 559);
+            this.lcarsTabControl1.SelectedTab = this.lcarsTabPage5;
+            this.lcarsTabControl1.Size = new System.Drawing.Size(1064, 477);
             this.lcarsTabControl1.Spacing = 6;
             this.lcarsTabControl1.TabButtonHeight = 35;
             this.lcarsTabControl1.TabIndex = 0;
@@ -294,7 +294,7 @@
             this.lcarsTabPage1.Controls.Add(this.splitContainer1);
             this.lcarsTabPage1.Location = new System.Drawing.Point(162, 26);
             this.lcarsTabPage1.Name = "lcarsTabPage1";
-            this.lcarsTabPage1.Size = new System.Drawing.Size(890, 533);
+            this.lcarsTabPage1.Size = new System.Drawing.Size(902, 451);
             this.lcarsTabPage1.TabIndex = 4;
             this.lcarsTabPage1.Text = "TABCONTROL";
             // 
@@ -312,8 +312,8 @@
             // splitContainer1.Panel2
             // 
             this.splitContainer1.Panel2.Controls.Add(this.lcarsTabControl3);
-            this.splitContainer1.Size = new System.Drawing.Size(890, 533);
-            this.splitContainer1.SplitterDistance = 335;
+            this.splitContainer1.Size = new System.Drawing.Size(902, 451);
+            this.splitContainer1.SplitterDistance = 283;
             this.splitContainer1.TabIndex = 0;
             // 
             // lcarsTabControl2
@@ -327,7 +327,7 @@
             this.lcarsTabControl2.Location = new System.Drawing.Point(0, 0);
             this.lcarsTabControl2.Name = "lcarsTabControl2";
             this.lcarsTabControl2.SelectedTab = this.lcarsTabPage6;
-            this.lcarsTabControl2.Size = new System.Drawing.Size(890, 335);
+            this.lcarsTabControl2.Size = new System.Drawing.Size(902, 283);
             this.lcarsTabControl2.Spacing = 6;
             this.lcarsTabControl2.TabButtonHeight = 35;
             this.lcarsTabControl2.TabIndex = 0;
@@ -348,7 +348,7 @@
             this.lcarsTabPage6.Controls.Add(this.elbow5);
             this.lcarsTabPage6.Location = new System.Drawing.Point(0, 0);
             this.lcarsTabPage6.Name = "lcarsTabPage6";
-            this.lcarsTabPage6.Size = new System.Drawing.Size(778, 309);
+            this.lcarsTabPage6.Size = new System.Drawing.Size(790, 257);
             this.lcarsTabPage6.TabIndex = 4;
             this.lcarsTabPage6.Text = "TC PROPS";
             // 
@@ -420,6 +420,7 @@
             this.elbow5.Location = new System.Drawing.Point(50, 21);
             this.elbow5.Name = "elbow5";
             this.elbow5.Size = new System.Drawing.Size(282, 134);
+            this.elbow5.SoundAsset = LCARS.CoreUi.Assets.Access.LcarsSoundAsset.Unset;
             this.elbow5.TabIndex = 0;
             this.elbow5.Text = "ELBOWSTYLE";
             this.elbow5.TextHeight = 14;
@@ -437,7 +438,7 @@
             this.lcarsTabControl3.Location = new System.Drawing.Point(0, 0);
             this.lcarsTabControl3.Name = "lcarsTabControl3";
             this.lcarsTabControl3.SelectedTab = null;
-            this.lcarsTabControl3.Size = new System.Drawing.Size(890, 194);
+            this.lcarsTabControl3.Size = new System.Drawing.Size(902, 164);
             this.lcarsTabControl3.Spacing = 6;
             this.lcarsTabControl3.TabButtonHeight = 35;
             this.lcarsTabControl3.TabIndex = 0;
@@ -456,7 +457,7 @@
             this.lcarsTabPage4.Controls.Add(this.elbow1);
             this.lcarsTabPage4.Location = new System.Drawing.Point(162, 26);
             this.lcarsTabPage4.Name = "lcarsTabPage4";
-            this.lcarsTabPage4.Size = new System.Drawing.Size(890, 533);
+            this.lcarsTabPage4.Size = new System.Drawing.Size(902, 451);
             this.lcarsTabPage4.TabIndex = 5;
             this.lcarsTabPage4.Text = "ELBOW ANC";
             // 
@@ -481,7 +482,8 @@
             this.elbow4.IsLit = true;
             this.elbow4.Location = new System.Drawing.Point(3, 3);
             this.elbow4.Name = "elbow4";
-            this.elbow4.Size = new System.Drawing.Size(396, 144);
+            this.elbow4.Size = new System.Drawing.Size(408, 62);
+            this.elbow4.SoundAsset = LCARS.CoreUi.Assets.Access.LcarsSoundAsset.Unset;
             this.elbow4.TabIndex = 3;
             this.elbow4.Text = "ELBOW4";
             this.elbow4.TextHeight = 14;
@@ -505,9 +507,10 @@
             this.elbow3.HoldDraw = false;
             this.elbow3.HorizantalBarHeight = 25;
             this.elbow3.IsLit = true;
-            this.elbow3.Location = new System.Drawing.Point(3, 153);
+            this.elbow3.Location = new System.Drawing.Point(3, 71);
             this.elbow3.Name = "elbow3";
             this.elbow3.Size = new System.Drawing.Size(425, 377);
+            this.elbow3.SoundAsset = LCARS.CoreUi.Assets.Access.LcarsSoundAsset.Unset;
             this.elbow3.TabIndex = 2;
             this.elbow3.Text = "ELBOW3";
             this.elbow3.TextHeight = 14;
@@ -535,7 +538,8 @@
             this.elbow2.IsLit = true;
             this.elbow2.Location = new System.Drawing.Point(434, 445);
             this.elbow2.Name = "elbow2";
-            this.elbow2.Size = new System.Drawing.Size(456, 85);
+            this.elbow2.Size = new System.Drawing.Size(468, 3);
+            this.elbow2.SoundAsset = LCARS.CoreUi.Assets.Access.LcarsSoundAsset.Unset;
             this.elbow2.TabIndex = 1;
             this.elbow2.Text = "ELBOW2";
             this.elbow2.TextHeight = 14;
@@ -559,9 +563,10 @@
             this.elbow1.HoldDraw = false;
             this.elbow1.HorizantalBarHeight = 25;
             this.elbow1.IsLit = true;
-            this.elbow1.Location = new System.Drawing.Point(405, 3);
+            this.elbow1.Location = new System.Drawing.Point(417, 3);
             this.elbow1.Name = "elbow1";
             this.elbow1.Size = new System.Drawing.Size(485, 436);
+            this.elbow1.SoundAsset = LCARS.CoreUi.Assets.Access.LcarsSoundAsset.Unset;
             this.elbow1.TabIndex = 0;
             this.elbow1.Text = "ELBOW1";
             this.elbow1.TextHeight = 14;
@@ -577,7 +582,7 @@
             this.lcarsTabPage5.Controls.Add(this.lcarsTabControl4);
             this.lcarsTabPage5.Location = new System.Drawing.Point(162, 26);
             this.lcarsTabPage5.Name = "lcarsTabPage5";
-            this.lcarsTabPage5.Size = new System.Drawing.Size(890, 533);
+            this.lcarsTabPage5.Size = new System.Drawing.Size(902, 451);
             this.lcarsTabPage5.TabIndex = 6;
             this.lcarsTabPage5.Text = "BUTTONS";
             // 
@@ -598,7 +603,7 @@
             this.lcarsTabControl4.Location = new System.Drawing.Point(0, 0);
             this.lcarsTabControl4.Name = "lcarsTabControl4";
             this.lcarsTabControl4.SelectedTab = this.lcarsTabPage2;
-            this.lcarsTabControl4.Size = new System.Drawing.Size(890, 533);
+            this.lcarsTabControl4.Size = new System.Drawing.Size(902, 451);
             this.lcarsTabControl4.Spacing = 6;
             this.lcarsTabControl4.TabButtonHeight = 35;
             this.lcarsTabControl4.TabIndex = 0;
@@ -645,7 +650,7 @@
             this.lcarsTabPage2.Controls.Add(this.lcarsButtonBase1);
             this.lcarsTabPage2.Location = new System.Drawing.Point(0, 0);
             this.lcarsTabPage2.Name = "lcarsTabPage2";
-            this.lcarsTabPage2.Size = new System.Drawing.Size(778, 507);
+            this.lcarsTabPage2.Size = new System.Drawing.Size(790, 425);
             this.lcarsTabPage2.TabIndex = 4;
             this.lcarsTabPage2.Text = "BASE";
             // 
@@ -666,6 +671,7 @@
             this.lcarsButtonBase36.Location = new System.Drawing.Point(463, 171);
             this.lcarsButtonBase36.Name = "lcarsButtonBase36";
             this.lcarsButtonBase36.Size = new System.Drawing.Size(249, 78);
+            this.lcarsButtonBase36.SoundAsset = LCARS.CoreUi.Assets.Access.LcarsSoundAsset.Unset;
             this.lcarsButtonBase36.TabIndex = 11;
             this.lcarsButtonBase36.Text = "LCARSBUTTONBASE34";
             this.lcarsButtonBase36.TextHeight = 14;
@@ -688,6 +694,7 @@
             this.lcarsButtonBase35.Location = new System.Drawing.Point(463, 87);
             this.lcarsButtonBase35.Name = "lcarsButtonBase35";
             this.lcarsButtonBase35.Size = new System.Drawing.Size(249, 78);
+            this.lcarsButtonBase35.SoundAsset = LCARS.CoreUi.Assets.Access.LcarsSoundAsset.Unset;
             this.lcarsButtonBase35.TabIndex = 11;
             this.lcarsButtonBase35.Text = "LCARSBUTTONBASE34";
             this.lcarsButtonBase35.TextHeight = 14;
@@ -710,6 +717,7 @@
             this.lcarsButtonBase34.Location = new System.Drawing.Point(463, 3);
             this.lcarsButtonBase34.Name = "lcarsButtonBase34";
             this.lcarsButtonBase34.Size = new System.Drawing.Size(249, 78);
+            this.lcarsButtonBase34.SoundAsset = LCARS.CoreUi.Assets.Access.LcarsSoundAsset.Unset;
             this.lcarsButtonBase34.TabIndex = 11;
             this.lcarsButtonBase34.Text = "LCARSBUTTONBASE34";
             this.lcarsButtonBase34.TextHeight = 14;
@@ -733,6 +741,7 @@
             this.lcarsButtonBase22.Location = new System.Drawing.Point(157, 427);
             this.lcarsButtonBase22.Name = "lcarsButtonBase22";
             this.lcarsButtonBase22.Size = new System.Drawing.Size(147, 36);
+            this.lcarsButtonBase22.SoundAsset = LCARS.CoreUi.Assets.Access.LcarsSoundAsset.Unset;
             this.lcarsButtonBase22.TabIndex = 10;
             this.lcarsButtonBase22.Text = "LCARSBUTTONBASE11";
             this.lcarsButtonBase22.TextHeight = 14;
@@ -755,6 +764,7 @@
             this.lcarsButtonBase11.Location = new System.Drawing.Point(4, 427);
             this.lcarsButtonBase11.Name = "lcarsButtonBase11";
             this.lcarsButtonBase11.Size = new System.Drawing.Size(147, 36);
+            this.lcarsButtonBase11.SoundAsset = LCARS.CoreUi.Assets.Access.LcarsSoundAsset.Unset;
             this.lcarsButtonBase11.TabIndex = 10;
             this.lcarsButtonBase11.Text = "LCARSBUTTONBASE11";
             this.lcarsButtonBase11.TextHeight = 14;
@@ -778,6 +788,7 @@
             this.lcarsButtonBase21.Location = new System.Drawing.Point(157, 384);
             this.lcarsButtonBase21.Name = "lcarsButtonBase21";
             this.lcarsButtonBase21.Size = new System.Drawing.Size(147, 36);
+            this.lcarsButtonBase21.SoundAsset = LCARS.CoreUi.Assets.Access.LcarsSoundAsset.Unset;
             this.lcarsButtonBase21.TabIndex = 9;
             this.lcarsButtonBase21.Text = "LCARSBUTTONBASE10";
             this.lcarsButtonBase21.TextHeight = 14;
@@ -800,6 +811,7 @@
             this.lcarsButtonBase10.Location = new System.Drawing.Point(4, 384);
             this.lcarsButtonBase10.Name = "lcarsButtonBase10";
             this.lcarsButtonBase10.Size = new System.Drawing.Size(147, 36);
+            this.lcarsButtonBase10.SoundAsset = LCARS.CoreUi.Assets.Access.LcarsSoundAsset.Unset;
             this.lcarsButtonBase10.TabIndex = 9;
             this.lcarsButtonBase10.Text = "LCARSBUTTONBASE10";
             this.lcarsButtonBase10.TextHeight = 14;
@@ -823,6 +835,7 @@
             this.lcarsButtonBase20.Location = new System.Drawing.Point(157, 341);
             this.lcarsButtonBase20.Name = "lcarsButtonBase20";
             this.lcarsButtonBase20.Size = new System.Drawing.Size(147, 36);
+            this.lcarsButtonBase20.SoundAsset = LCARS.CoreUi.Assets.Access.LcarsSoundAsset.Unset;
             this.lcarsButtonBase20.TabIndex = 8;
             this.lcarsButtonBase20.Text = "LCARSBUTTONBASE9";
             this.lcarsButtonBase20.TextHeight = 14;
@@ -845,6 +858,7 @@
             this.lcarsButtonBase9.Location = new System.Drawing.Point(4, 341);
             this.lcarsButtonBase9.Name = "lcarsButtonBase9";
             this.lcarsButtonBase9.Size = new System.Drawing.Size(147, 36);
+            this.lcarsButtonBase9.SoundAsset = LCARS.CoreUi.Assets.Access.LcarsSoundAsset.Unset;
             this.lcarsButtonBase9.TabIndex = 8;
             this.lcarsButtonBase9.Text = "LCARSBUTTONBASE9";
             this.lcarsButtonBase9.TextHeight = 14;
@@ -868,6 +882,7 @@
             this.lcarsButtonBase19.Location = new System.Drawing.Point(157, 298);
             this.lcarsButtonBase19.Name = "lcarsButtonBase19";
             this.lcarsButtonBase19.Size = new System.Drawing.Size(147, 36);
+            this.lcarsButtonBase19.SoundAsset = LCARS.CoreUi.Assets.Access.LcarsSoundAsset.Unset;
             this.lcarsButtonBase19.TabIndex = 7;
             this.lcarsButtonBase19.Text = "LCARSBUTTONBASE8";
             this.lcarsButtonBase19.TextHeight = 14;
@@ -890,6 +905,7 @@
             this.lcarsButtonBase8.Location = new System.Drawing.Point(4, 298);
             this.lcarsButtonBase8.Name = "lcarsButtonBase8";
             this.lcarsButtonBase8.Size = new System.Drawing.Size(147, 36);
+            this.lcarsButtonBase8.SoundAsset = LCARS.CoreUi.Assets.Access.LcarsSoundAsset.Unset;
             this.lcarsButtonBase8.TabIndex = 7;
             this.lcarsButtonBase8.Text = "LCARSBUTTONBASE8";
             this.lcarsButtonBase8.TextHeight = 14;
@@ -913,6 +929,7 @@
             this.lcarsButtonBase18.Location = new System.Drawing.Point(156, 256);
             this.lcarsButtonBase18.Name = "lcarsButtonBase18";
             this.lcarsButtonBase18.Size = new System.Drawing.Size(147, 36);
+            this.lcarsButtonBase18.SoundAsset = LCARS.CoreUi.Assets.Access.LcarsSoundAsset.Unset;
             this.lcarsButtonBase18.TabIndex = 6;
             this.lcarsButtonBase18.Text = "LCARSBUTTONBASE7";
             this.lcarsButtonBase18.TextHeight = 14;
@@ -935,6 +952,7 @@
             this.lcarsButtonBase7.Location = new System.Drawing.Point(3, 256);
             this.lcarsButtonBase7.Name = "lcarsButtonBase7";
             this.lcarsButtonBase7.Size = new System.Drawing.Size(147, 36);
+            this.lcarsButtonBase7.SoundAsset = LCARS.CoreUi.Assets.Access.LcarsSoundAsset.Unset;
             this.lcarsButtonBase7.TabIndex = 6;
             this.lcarsButtonBase7.Text = "LCARSBUTTONBASE7";
             this.lcarsButtonBase7.TextHeight = 14;
@@ -958,6 +976,7 @@
             this.lcarsButtonBase17.Location = new System.Drawing.Point(157, 214);
             this.lcarsButtonBase17.Name = "lcarsButtonBase17";
             this.lcarsButtonBase17.Size = new System.Drawing.Size(147, 36);
+            this.lcarsButtonBase17.SoundAsset = LCARS.CoreUi.Assets.Access.LcarsSoundAsset.Unset;
             this.lcarsButtonBase17.TabIndex = 5;
             this.lcarsButtonBase17.Text = "LCARSBUTTONBASE6";
             this.lcarsButtonBase17.TextHeight = 14;
@@ -980,6 +999,7 @@
             this.lcarsButtonBase6.Location = new System.Drawing.Point(4, 214);
             this.lcarsButtonBase6.Name = "lcarsButtonBase6";
             this.lcarsButtonBase6.Size = new System.Drawing.Size(147, 36);
+            this.lcarsButtonBase6.SoundAsset = LCARS.CoreUi.Assets.Access.LcarsSoundAsset.Unset;
             this.lcarsButtonBase6.TabIndex = 5;
             this.lcarsButtonBase6.Text = "LCARSBUTTONBASE6";
             this.lcarsButtonBase6.TextHeight = 14;
@@ -1003,6 +1023,7 @@
             this.lcarsButtonBase16.Location = new System.Drawing.Point(157, 171);
             this.lcarsButtonBase16.Name = "lcarsButtonBase16";
             this.lcarsButtonBase16.Size = new System.Drawing.Size(147, 36);
+            this.lcarsButtonBase16.SoundAsset = LCARS.CoreUi.Assets.Access.LcarsSoundAsset.Unset;
             this.lcarsButtonBase16.TabIndex = 4;
             this.lcarsButtonBase16.Text = "LCARSBUTTONBASE5";
             this.lcarsButtonBase16.TextHeight = 14;
@@ -1025,6 +1046,7 @@
             this.lcarsButtonBase5.Location = new System.Drawing.Point(4, 171);
             this.lcarsButtonBase5.Name = "lcarsButtonBase5";
             this.lcarsButtonBase5.Size = new System.Drawing.Size(147, 36);
+            this.lcarsButtonBase5.SoundAsset = LCARS.CoreUi.Assets.Access.LcarsSoundAsset.Unset;
             this.lcarsButtonBase5.TabIndex = 4;
             this.lcarsButtonBase5.Text = "LCARSBUTTONBASE5";
             this.lcarsButtonBase5.TextHeight = 14;
@@ -1048,6 +1070,7 @@
             this.lcarsButtonBase15.Location = new System.Drawing.Point(157, 129);
             this.lcarsButtonBase15.Name = "lcarsButtonBase15";
             this.lcarsButtonBase15.Size = new System.Drawing.Size(147, 36);
+            this.lcarsButtonBase15.SoundAsset = LCARS.CoreUi.Assets.Access.LcarsSoundAsset.Unset;
             this.lcarsButtonBase15.TabIndex = 3;
             this.lcarsButtonBase15.Text = "LCARSBUTTONBASE4";
             this.lcarsButtonBase15.TextHeight = 14;
@@ -1070,6 +1093,7 @@
             this.lcarsButtonBase4.Location = new System.Drawing.Point(4, 129);
             this.lcarsButtonBase4.Name = "lcarsButtonBase4";
             this.lcarsButtonBase4.Size = new System.Drawing.Size(147, 36);
+            this.lcarsButtonBase4.SoundAsset = LCARS.CoreUi.Assets.Access.LcarsSoundAsset.Unset;
             this.lcarsButtonBase4.TabIndex = 3;
             this.lcarsButtonBase4.Text = "LCARSBUTTONBASE4";
             this.lcarsButtonBase4.TextHeight = 14;
@@ -1093,6 +1117,7 @@
             this.lcarsButtonBase14.Location = new System.Drawing.Point(157, 87);
             this.lcarsButtonBase14.Name = "lcarsButtonBase14";
             this.lcarsButtonBase14.Size = new System.Drawing.Size(147, 36);
+            this.lcarsButtonBase14.SoundAsset = LCARS.CoreUi.Assets.Access.LcarsSoundAsset.Unset;
             this.lcarsButtonBase14.TabIndex = 2;
             this.lcarsButtonBase14.Text = "LCARSBUTTONBASE3";
             this.lcarsButtonBase14.TextHeight = 14;
@@ -1115,6 +1140,7 @@
             this.lcarsButtonBase3.Location = new System.Drawing.Point(4, 87);
             this.lcarsButtonBase3.Name = "lcarsButtonBase3";
             this.lcarsButtonBase3.Size = new System.Drawing.Size(147, 36);
+            this.lcarsButtonBase3.SoundAsset = LCARS.CoreUi.Assets.Access.LcarsSoundAsset.Unset;
             this.lcarsButtonBase3.TabIndex = 2;
             this.lcarsButtonBase3.Text = "LCARSBUTTONBASE3";
             this.lcarsButtonBase3.TextHeight = 14;
@@ -1138,6 +1164,7 @@
             this.lcarsButtonBase13.Location = new System.Drawing.Point(157, 45);
             this.lcarsButtonBase13.Name = "lcarsButtonBase13";
             this.lcarsButtonBase13.Size = new System.Drawing.Size(147, 36);
+            this.lcarsButtonBase13.SoundAsset = LCARS.CoreUi.Assets.Access.LcarsSoundAsset.Unset;
             this.lcarsButtonBase13.TabIndex = 1;
             this.lcarsButtonBase13.Text = "LCARSBUTTONBASE2";
             this.lcarsButtonBase13.TextHeight = 14;
@@ -1160,6 +1187,7 @@
             this.lcarsButtonBase2.Location = new System.Drawing.Point(4, 45);
             this.lcarsButtonBase2.Name = "lcarsButtonBase2";
             this.lcarsButtonBase2.Size = new System.Drawing.Size(147, 36);
+            this.lcarsButtonBase2.SoundAsset = LCARS.CoreUi.Assets.Access.LcarsSoundAsset.Unset;
             this.lcarsButtonBase2.TabIndex = 1;
             this.lcarsButtonBase2.Text = "LCARSBUTTONBASE2";
             this.lcarsButtonBase2.TextHeight = 14;
@@ -1183,6 +1211,7 @@
             this.lcarsButtonBase12.Location = new System.Drawing.Point(157, 3);
             this.lcarsButtonBase12.Name = "lcarsButtonBase12";
             this.lcarsButtonBase12.Size = new System.Drawing.Size(147, 36);
+            this.lcarsButtonBase12.SoundAsset = LCARS.CoreUi.Assets.Access.LcarsSoundAsset.Unset;
             this.lcarsButtonBase12.TabIndex = 0;
             this.lcarsButtonBase12.Text = "LCARSBUTTONBASE1";
             this.lcarsButtonBase12.TextHeight = 14;
@@ -1205,6 +1234,7 @@
             this.lcarsButtonBase1.Location = new System.Drawing.Point(4, 3);
             this.lcarsButtonBase1.Name = "lcarsButtonBase1";
             this.lcarsButtonBase1.Size = new System.Drawing.Size(147, 36);
+            this.lcarsButtonBase1.SoundAsset = LCARS.CoreUi.Assets.Access.LcarsSoundAsset.Unset;
             this.lcarsButtonBase1.TabIndex = 0;
             this.lcarsButtonBase1.Text = "LCARSBUTTONBASE1";
             this.lcarsButtonBase1.TextHeight = 14;
@@ -1234,7 +1264,7 @@
             this.lcarsTabPage10.Controls.Add(this.standardButton1);
             this.lcarsTabPage10.Location = new System.Drawing.Point(0, 0);
             this.lcarsTabPage10.Name = "lcarsTabPage10";
-            this.lcarsTabPage10.Size = new System.Drawing.Size(778, 507);
+            this.lcarsTabPage10.Size = new System.Drawing.Size(790, 425);
             this.lcarsTabPage10.TabIndex = 10;
             this.lcarsTabPage10.Text = "STANDARD";
             // 
@@ -1254,9 +1284,10 @@
             this.standardButton16.FlashInterval = 500;
             this.standardButton16.HoldDraw = false;
             this.standardButton16.IsLit = true;
-            this.standardButton16.Location = new System.Drawing.Point(190, 382);
+            this.standardButton16.Location = new System.Drawing.Point(202, 382);
             this.standardButton16.Name = "standardButton16";
             this.standardButton16.Size = new System.Drawing.Size(585, 173);
+            this.standardButton16.SoundAsset = LCARS.CoreUi.Assets.Access.LcarsSoundAsset.PlainBeep;
             this.standardButton16.TabIndex = 1;
             this.standardButton16.Text = "STANDARDBUTTON12";
             this.standardButton16.TextHeight = 14;
@@ -1279,9 +1310,10 @@
             this.standardButton15.FlashInterval = 500;
             this.standardButton15.HoldDraw = false;
             this.standardButton15.IsLit = true;
-            this.standardButton15.Location = new System.Drawing.Point(304, 245);
+            this.standardButton15.Location = new System.Drawing.Point(316, 245);
             this.standardButton15.Name = "standardButton15";
             this.standardButton15.Size = new System.Drawing.Size(471, 131);
+            this.standardButton15.SoundAsset = LCARS.CoreUi.Assets.Access.LcarsSoundAsset.PlainBeep;
             this.standardButton15.TabIndex = 1;
             this.standardButton15.Text = "STANDARDBUTTON12";
             this.standardButton15.TextHeight = 14;
@@ -1304,9 +1336,10 @@
             this.standardButton14.FlashInterval = 500;
             this.standardButton14.HoldDraw = false;
             this.standardButton14.IsLit = true;
-            this.standardButton14.Location = new System.Drawing.Point(374, 140);
+            this.standardButton14.Location = new System.Drawing.Point(386, 140);
             this.standardButton14.Name = "standardButton14";
             this.standardButton14.Size = new System.Drawing.Size(401, 99);
+            this.standardButton14.SoundAsset = LCARS.CoreUi.Assets.Access.LcarsSoundAsset.PlainBeep;
             this.standardButton14.TabIndex = 1;
             this.standardButton14.Text = "STANDARDBUTTON12";
             this.standardButton14.TextHeight = 14;
@@ -1329,9 +1362,10 @@
             this.standardButton13.FlashInterval = 500;
             this.standardButton13.HoldDraw = false;
             this.standardButton13.IsLit = true;
-            this.standardButton13.Location = new System.Drawing.Point(430, 60);
+            this.standardButton13.Location = new System.Drawing.Point(442, 60);
             this.standardButton13.Name = "standardButton13";
             this.standardButton13.Size = new System.Drawing.Size(345, 74);
+            this.standardButton13.SoundAsset = LCARS.CoreUi.Assets.Access.LcarsSoundAsset.PlainBeep;
             this.standardButton13.TabIndex = 1;
             this.standardButton13.Text = "STANDARDBUTTON12";
             this.standardButton13.TextHeight = 14;
@@ -1354,9 +1388,10 @@
             this.standardButton12.FlashInterval = 500;
             this.standardButton12.HoldDraw = false;
             this.standardButton12.IsLit = true;
-            this.standardButton12.Location = new System.Drawing.Point(478, 0);
+            this.standardButton12.Location = new System.Drawing.Point(490, 0);
             this.standardButton12.Name = "standardButton12";
             this.standardButton12.Size = new System.Drawing.Size(297, 54);
+            this.standardButton12.SoundAsset = LCARS.CoreUi.Assets.Access.LcarsSoundAsset.PlainBeep;
             this.standardButton12.TabIndex = 1;
             this.standardButton12.Text = "STANDARDBUTTON12";
             this.standardButton12.TextHeight = 14;
@@ -1381,6 +1416,7 @@
             this.standardButton8.Location = new System.Drawing.Point(3, 238);
             this.standardButton8.Name = "standardButton8";
             this.standardButton8.Size = new System.Drawing.Size(261, 29);
+            this.standardButton8.SoundAsset = LCARS.CoreUi.Assets.Access.LcarsSoundAsset.PlainBeep;
             this.standardButton8.TabIndex = 0;
             this.standardButton8.Text = "STANDARDBUTTON1";
             this.standardButton8.TextHeight = 14;
@@ -1405,6 +1441,7 @@
             this.standardButton4.Location = new System.Drawing.Point(3, 102);
             this.standardButton4.Name = "standardButton4";
             this.standardButton4.Size = new System.Drawing.Size(261, 29);
+            this.standardButton4.SoundAsset = LCARS.CoreUi.Assets.Access.LcarsSoundAsset.PlainBeep;
             this.standardButton4.TabIndex = 0;
             this.standardButton4.Text = "STANDARDBUTTON1";
             this.standardButton4.TextHeight = 14;
@@ -1429,6 +1466,7 @@
             this.standardButton11.Location = new System.Drawing.Point(3, 306);
             this.standardButton11.Name = "standardButton11";
             this.standardButton11.Size = new System.Drawing.Size(261, 29);
+            this.standardButton11.SoundAsset = LCARS.CoreUi.Assets.Access.LcarsSoundAsset.PlainBeep;
             this.standardButton11.TabIndex = 0;
             this.standardButton11.Text = "STANDARDBUTTON1";
             this.standardButton11.TextHeight = 14;
@@ -1453,6 +1491,7 @@
             this.standardButton7.Location = new System.Drawing.Point(3, 170);
             this.standardButton7.Name = "standardButton7";
             this.standardButton7.Size = new System.Drawing.Size(261, 29);
+            this.standardButton7.SoundAsset = LCARS.CoreUi.Assets.Access.LcarsSoundAsset.PlainBeep;
             this.standardButton7.TabIndex = 0;
             this.standardButton7.Text = "STANDARDBUTTON1";
             this.standardButton7.TextHeight = 14;
@@ -1477,6 +1516,7 @@
             this.standardButton2.Location = new System.Drawing.Point(3, 34);
             this.standardButton2.Name = "standardButton2";
             this.standardButton2.Size = new System.Drawing.Size(261, 29);
+            this.standardButton2.SoundAsset = LCARS.CoreUi.Assets.Access.LcarsSoundAsset.PlainBeep;
             this.standardButton2.TabIndex = 0;
             this.standardButton2.Text = "STANDARDBUTTON1";
             this.standardButton2.TextHeight = 14;
@@ -1501,6 +1541,7 @@
             this.standardButton10.Location = new System.Drawing.Point(3, 340);
             this.standardButton10.Name = "standardButton10";
             this.standardButton10.Size = new System.Drawing.Size(261, 29);
+            this.standardButton10.SoundAsset = LCARS.CoreUi.Assets.Access.LcarsSoundAsset.PlainBeep;
             this.standardButton10.TabIndex = 0;
             this.standardButton10.Text = "STANDARDBUTTON1";
             this.standardButton10.TextHeight = 14;
@@ -1525,6 +1566,7 @@
             this.standardButton6.Location = new System.Drawing.Point(3, 204);
             this.standardButton6.Name = "standardButton6";
             this.standardButton6.Size = new System.Drawing.Size(261, 29);
+            this.standardButton6.SoundAsset = LCARS.CoreUi.Assets.Access.LcarsSoundAsset.PlainBeep;
             this.standardButton6.TabIndex = 0;
             this.standardButton6.Text = "STANDARDBUTTON1";
             this.standardButton6.TextHeight = 14;
@@ -1549,6 +1591,7 @@
             this.standardButton3.Location = new System.Drawing.Point(3, 68);
             this.standardButton3.Name = "standardButton3";
             this.standardButton3.Size = new System.Drawing.Size(261, 29);
+            this.standardButton3.SoundAsset = LCARS.CoreUi.Assets.Access.LcarsSoundAsset.PlainBeep;
             this.standardButton3.TabIndex = 0;
             this.standardButton3.Text = "STANDARDBUTTON1";
             this.standardButton3.TextHeight = 14;
@@ -1573,6 +1616,7 @@
             this.standardButton9.Location = new System.Drawing.Point(3, 272);
             this.standardButton9.Name = "standardButton9";
             this.standardButton9.Size = new System.Drawing.Size(261, 29);
+            this.standardButton9.SoundAsset = LCARS.CoreUi.Assets.Access.LcarsSoundAsset.PlainBeep;
             this.standardButton9.TabIndex = 0;
             this.standardButton9.Text = "STANDARDBUTTON1";
             this.standardButton9.TextHeight = 14;
@@ -1597,6 +1641,7 @@
             this.standardButton5.Location = new System.Drawing.Point(3, 136);
             this.standardButton5.Name = "standardButton5";
             this.standardButton5.Size = new System.Drawing.Size(261, 29);
+            this.standardButton5.SoundAsset = LCARS.CoreUi.Assets.Access.LcarsSoundAsset.PlainBeep;
             this.standardButton5.TabIndex = 0;
             this.standardButton5.Text = "STANDARDBUTTON1";
             this.standardButton5.TextHeight = 14;
@@ -1621,6 +1666,7 @@
             this.standardButton1.Location = new System.Drawing.Point(3, 0);
             this.standardButton1.Name = "standardButton1";
             this.standardButton1.Size = new System.Drawing.Size(261, 29);
+            this.standardButton1.SoundAsset = LCARS.CoreUi.Assets.Access.LcarsSoundAsset.PlainBeep;
             this.standardButton1.TabIndex = 0;
             this.standardButton1.Text = "STANDARDBUTTON1";
             this.standardButton1.TextHeight = 14;
@@ -1681,7 +1727,7 @@
             this.lcarsTabPage3.Controls.Add(this.arrowButton1);
             this.lcarsTabPage3.Location = new System.Drawing.Point(0, 0);
             this.lcarsTabPage3.Name = "lcarsTabPage3";
-            this.lcarsTabPage3.Size = new System.Drawing.Size(778, 507);
+            this.lcarsTabPage3.Size = new System.Drawing.Size(790, 425);
             this.lcarsTabPage3.TabIndex = 5;
             this.lcarsTabPage3.Text = "ARROW";
             // 
@@ -1704,6 +1750,7 @@
             this.arrowButton44.Location = new System.Drawing.Point(172, 562);
             this.arrowButton44.Name = "arrowButton44";
             this.arrowButton44.Size = new System.Drawing.Size(50, 50);
+            this.arrowButton44.SoundAsset = LCARS.CoreUi.Assets.Access.LcarsSoundAsset.PlainBeep;
             this.arrowButton44.TabIndex = 10;
             this.arrowButton44.TextHeight = 14;
             this.arrowButton44.TextVisible = true;
@@ -1727,6 +1774,7 @@
             this.arrowButton33.Location = new System.Drawing.Point(116, 562);
             this.arrowButton33.Name = "arrowButton33";
             this.arrowButton33.Size = new System.Drawing.Size(50, 50);
+            this.arrowButton33.SoundAsset = LCARS.CoreUi.Assets.Access.LcarsSoundAsset.PlainBeep;
             this.arrowButton33.TabIndex = 10;
             this.arrowButton33.TextHeight = 14;
             this.arrowButton33.TextVisible = true;
@@ -1750,6 +1798,7 @@
             this.arrowButton22.Location = new System.Drawing.Point(60, 562);
             this.arrowButton22.Name = "arrowButton22";
             this.arrowButton22.Size = new System.Drawing.Size(50, 50);
+            this.arrowButton22.SoundAsset = LCARS.CoreUi.Assets.Access.LcarsSoundAsset.PlainBeep;
             this.arrowButton22.TabIndex = 10;
             this.arrowButton22.TextHeight = 14;
             this.arrowButton22.TextVisible = true;
@@ -1773,6 +1822,7 @@
             this.arrowButton11.Location = new System.Drawing.Point(4, 562);
             this.arrowButton11.Name = "arrowButton11";
             this.arrowButton11.Size = new System.Drawing.Size(50, 50);
+            this.arrowButton11.SoundAsset = LCARS.CoreUi.Assets.Access.LcarsSoundAsset.PlainBeep;
             this.arrowButton11.TabIndex = 10;
             this.arrowButton11.TextHeight = 14;
             this.arrowButton11.TextVisible = true;
@@ -1796,6 +1846,7 @@
             this.arrowButton43.Location = new System.Drawing.Point(172, 506);
             this.arrowButton43.Name = "arrowButton43";
             this.arrowButton43.Size = new System.Drawing.Size(50, 50);
+            this.arrowButton43.SoundAsset = LCARS.CoreUi.Assets.Access.LcarsSoundAsset.PlainBeep;
             this.arrowButton43.TabIndex = 9;
             this.arrowButton43.TextHeight = 14;
             this.arrowButton43.TextVisible = true;
@@ -1819,6 +1870,7 @@
             this.arrowButton32.Location = new System.Drawing.Point(116, 506);
             this.arrowButton32.Name = "arrowButton32";
             this.arrowButton32.Size = new System.Drawing.Size(50, 50);
+            this.arrowButton32.SoundAsset = LCARS.CoreUi.Assets.Access.LcarsSoundAsset.PlainBeep;
             this.arrowButton32.TabIndex = 9;
             this.arrowButton32.TextHeight = 14;
             this.arrowButton32.TextVisible = true;
@@ -1842,6 +1894,7 @@
             this.arrowButton21.Location = new System.Drawing.Point(60, 506);
             this.arrowButton21.Name = "arrowButton21";
             this.arrowButton21.Size = new System.Drawing.Size(50, 50);
+            this.arrowButton21.SoundAsset = LCARS.CoreUi.Assets.Access.LcarsSoundAsset.PlainBeep;
             this.arrowButton21.TabIndex = 9;
             this.arrowButton21.TextHeight = 14;
             this.arrowButton21.TextVisible = true;
@@ -1865,6 +1918,7 @@
             this.arrowButton10.Location = new System.Drawing.Point(4, 506);
             this.arrowButton10.Name = "arrowButton10";
             this.arrowButton10.Size = new System.Drawing.Size(50, 50);
+            this.arrowButton10.SoundAsset = LCARS.CoreUi.Assets.Access.LcarsSoundAsset.PlainBeep;
             this.arrowButton10.TabIndex = 9;
             this.arrowButton10.TextHeight = 14;
             this.arrowButton10.TextVisible = true;
@@ -1888,6 +1942,7 @@
             this.arrowButton42.Location = new System.Drawing.Point(172, 450);
             this.arrowButton42.Name = "arrowButton42";
             this.arrowButton42.Size = new System.Drawing.Size(50, 50);
+            this.arrowButton42.SoundAsset = LCARS.CoreUi.Assets.Access.LcarsSoundAsset.PlainBeep;
             this.arrowButton42.TabIndex = 8;
             this.arrowButton42.TextHeight = 14;
             this.arrowButton42.TextVisible = true;
@@ -1911,6 +1966,7 @@
             this.arrowButton31.Location = new System.Drawing.Point(116, 450);
             this.arrowButton31.Name = "arrowButton31";
             this.arrowButton31.Size = new System.Drawing.Size(50, 50);
+            this.arrowButton31.SoundAsset = LCARS.CoreUi.Assets.Access.LcarsSoundAsset.PlainBeep;
             this.arrowButton31.TabIndex = 8;
             this.arrowButton31.TextHeight = 14;
             this.arrowButton31.TextVisible = true;
@@ -1934,6 +1990,7 @@
             this.arrowButton20.Location = new System.Drawing.Point(60, 450);
             this.arrowButton20.Name = "arrowButton20";
             this.arrowButton20.Size = new System.Drawing.Size(50, 50);
+            this.arrowButton20.SoundAsset = LCARS.CoreUi.Assets.Access.LcarsSoundAsset.PlainBeep;
             this.arrowButton20.TabIndex = 8;
             this.arrowButton20.TextHeight = 14;
             this.arrowButton20.TextVisible = true;
@@ -1957,6 +2014,7 @@
             this.arrowButton9.Location = new System.Drawing.Point(4, 450);
             this.arrowButton9.Name = "arrowButton9";
             this.arrowButton9.Size = new System.Drawing.Size(50, 50);
+            this.arrowButton9.SoundAsset = LCARS.CoreUi.Assets.Access.LcarsSoundAsset.PlainBeep;
             this.arrowButton9.TabIndex = 8;
             this.arrowButton9.TextHeight = 14;
             this.arrowButton9.TextVisible = true;
@@ -1980,6 +2038,7 @@
             this.arrowButton41.Location = new System.Drawing.Point(172, 394);
             this.arrowButton41.Name = "arrowButton41";
             this.arrowButton41.Size = new System.Drawing.Size(50, 50);
+            this.arrowButton41.SoundAsset = LCARS.CoreUi.Assets.Access.LcarsSoundAsset.PlainBeep;
             this.arrowButton41.TabIndex = 7;
             this.arrowButton41.TextHeight = 14;
             this.arrowButton41.TextVisible = true;
@@ -2003,6 +2062,7 @@
             this.arrowButton30.Location = new System.Drawing.Point(116, 394);
             this.arrowButton30.Name = "arrowButton30";
             this.arrowButton30.Size = new System.Drawing.Size(50, 50);
+            this.arrowButton30.SoundAsset = LCARS.CoreUi.Assets.Access.LcarsSoundAsset.PlainBeep;
             this.arrowButton30.TabIndex = 7;
             this.arrowButton30.TextHeight = 14;
             this.arrowButton30.TextVisible = true;
@@ -2026,6 +2086,7 @@
             this.arrowButton19.Location = new System.Drawing.Point(60, 394);
             this.arrowButton19.Name = "arrowButton19";
             this.arrowButton19.Size = new System.Drawing.Size(50, 50);
+            this.arrowButton19.SoundAsset = LCARS.CoreUi.Assets.Access.LcarsSoundAsset.PlainBeep;
             this.arrowButton19.TabIndex = 7;
             this.arrowButton19.TextHeight = 14;
             this.arrowButton19.TextVisible = true;
@@ -2049,6 +2110,7 @@
             this.arrowButton8.Location = new System.Drawing.Point(4, 394);
             this.arrowButton8.Name = "arrowButton8";
             this.arrowButton8.Size = new System.Drawing.Size(50, 50);
+            this.arrowButton8.SoundAsset = LCARS.CoreUi.Assets.Access.LcarsSoundAsset.PlainBeep;
             this.arrowButton8.TabIndex = 7;
             this.arrowButton8.TextHeight = 14;
             this.arrowButton8.TextVisible = true;
@@ -2072,6 +2134,7 @@
             this.arrowButton40.Location = new System.Drawing.Point(172, 338);
             this.arrowButton40.Name = "arrowButton40";
             this.arrowButton40.Size = new System.Drawing.Size(50, 50);
+            this.arrowButton40.SoundAsset = LCARS.CoreUi.Assets.Access.LcarsSoundAsset.PlainBeep;
             this.arrowButton40.TabIndex = 6;
             this.arrowButton40.TextHeight = 14;
             this.arrowButton40.TextVisible = true;
@@ -2095,6 +2158,7 @@
             this.arrowButton29.Location = new System.Drawing.Point(116, 338);
             this.arrowButton29.Name = "arrowButton29";
             this.arrowButton29.Size = new System.Drawing.Size(50, 50);
+            this.arrowButton29.SoundAsset = LCARS.CoreUi.Assets.Access.LcarsSoundAsset.PlainBeep;
             this.arrowButton29.TabIndex = 6;
             this.arrowButton29.TextHeight = 14;
             this.arrowButton29.TextVisible = true;
@@ -2118,6 +2182,7 @@
             this.arrowButton18.Location = new System.Drawing.Point(60, 338);
             this.arrowButton18.Name = "arrowButton18";
             this.arrowButton18.Size = new System.Drawing.Size(50, 50);
+            this.arrowButton18.SoundAsset = LCARS.CoreUi.Assets.Access.LcarsSoundAsset.PlainBeep;
             this.arrowButton18.TabIndex = 6;
             this.arrowButton18.TextHeight = 14;
             this.arrowButton18.TextVisible = true;
@@ -2141,6 +2206,7 @@
             this.arrowButton7.Location = new System.Drawing.Point(4, 338);
             this.arrowButton7.Name = "arrowButton7";
             this.arrowButton7.Size = new System.Drawing.Size(50, 50);
+            this.arrowButton7.SoundAsset = LCARS.CoreUi.Assets.Access.LcarsSoundAsset.PlainBeep;
             this.arrowButton7.TabIndex = 6;
             this.arrowButton7.TextHeight = 14;
             this.arrowButton7.TextVisible = true;
@@ -2164,6 +2230,7 @@
             this.arrowButton39.Location = new System.Drawing.Point(172, 282);
             this.arrowButton39.Name = "arrowButton39";
             this.arrowButton39.Size = new System.Drawing.Size(50, 50);
+            this.arrowButton39.SoundAsset = LCARS.CoreUi.Assets.Access.LcarsSoundAsset.PlainBeep;
             this.arrowButton39.TabIndex = 5;
             this.arrowButton39.TextHeight = 14;
             this.arrowButton39.TextVisible = true;
@@ -2187,6 +2254,7 @@
             this.arrowButton28.Location = new System.Drawing.Point(116, 282);
             this.arrowButton28.Name = "arrowButton28";
             this.arrowButton28.Size = new System.Drawing.Size(50, 50);
+            this.arrowButton28.SoundAsset = LCARS.CoreUi.Assets.Access.LcarsSoundAsset.PlainBeep;
             this.arrowButton28.TabIndex = 5;
             this.arrowButton28.TextHeight = 14;
             this.arrowButton28.TextVisible = true;
@@ -2210,6 +2278,7 @@
             this.arrowButton17.Location = new System.Drawing.Point(60, 282);
             this.arrowButton17.Name = "arrowButton17";
             this.arrowButton17.Size = new System.Drawing.Size(50, 50);
+            this.arrowButton17.SoundAsset = LCARS.CoreUi.Assets.Access.LcarsSoundAsset.PlainBeep;
             this.arrowButton17.TabIndex = 5;
             this.arrowButton17.TextHeight = 14;
             this.arrowButton17.TextVisible = true;
@@ -2233,6 +2302,7 @@
             this.arrowButton6.Location = new System.Drawing.Point(4, 282);
             this.arrowButton6.Name = "arrowButton6";
             this.arrowButton6.Size = new System.Drawing.Size(50, 50);
+            this.arrowButton6.SoundAsset = LCARS.CoreUi.Assets.Access.LcarsSoundAsset.PlainBeep;
             this.arrowButton6.TabIndex = 5;
             this.arrowButton6.TextHeight = 14;
             this.arrowButton6.TextVisible = true;
@@ -2256,6 +2326,7 @@
             this.arrowButton38.Location = new System.Drawing.Point(172, 227);
             this.arrowButton38.Name = "arrowButton38";
             this.arrowButton38.Size = new System.Drawing.Size(50, 50);
+            this.arrowButton38.SoundAsset = LCARS.CoreUi.Assets.Access.LcarsSoundAsset.PlainBeep;
             this.arrowButton38.TabIndex = 4;
             this.arrowButton38.TextHeight = 14;
             this.arrowButton38.TextVisible = true;
@@ -2279,6 +2350,7 @@
             this.arrowButton27.Location = new System.Drawing.Point(116, 227);
             this.arrowButton27.Name = "arrowButton27";
             this.arrowButton27.Size = new System.Drawing.Size(50, 50);
+            this.arrowButton27.SoundAsset = LCARS.CoreUi.Assets.Access.LcarsSoundAsset.PlainBeep;
             this.arrowButton27.TabIndex = 4;
             this.arrowButton27.TextHeight = 14;
             this.arrowButton27.TextVisible = true;
@@ -2302,6 +2374,7 @@
             this.arrowButton16.Location = new System.Drawing.Point(60, 227);
             this.arrowButton16.Name = "arrowButton16";
             this.arrowButton16.Size = new System.Drawing.Size(50, 50);
+            this.arrowButton16.SoundAsset = LCARS.CoreUi.Assets.Access.LcarsSoundAsset.PlainBeep;
             this.arrowButton16.TabIndex = 4;
             this.arrowButton16.TextHeight = 14;
             this.arrowButton16.TextVisible = true;
@@ -2325,6 +2398,7 @@
             this.arrowButton37.Location = new System.Drawing.Point(172, 171);
             this.arrowButton37.Name = "arrowButton37";
             this.arrowButton37.Size = new System.Drawing.Size(50, 50);
+            this.arrowButton37.SoundAsset = LCARS.CoreUi.Assets.Access.LcarsSoundAsset.PlainBeep;
             this.arrowButton37.TabIndex = 3;
             this.arrowButton37.TextHeight = 14;
             this.arrowButton37.TextVisible = true;
@@ -2348,6 +2422,7 @@
             this.arrowButton26.Location = new System.Drawing.Point(116, 171);
             this.arrowButton26.Name = "arrowButton26";
             this.arrowButton26.Size = new System.Drawing.Size(50, 50);
+            this.arrowButton26.SoundAsset = LCARS.CoreUi.Assets.Access.LcarsSoundAsset.PlainBeep;
             this.arrowButton26.TabIndex = 3;
             this.arrowButton26.TextHeight = 14;
             this.arrowButton26.TextVisible = true;
@@ -2371,6 +2446,7 @@
             this.arrowButton15.Location = new System.Drawing.Point(60, 171);
             this.arrowButton15.Name = "arrowButton15";
             this.arrowButton15.Size = new System.Drawing.Size(50, 50);
+            this.arrowButton15.SoundAsset = LCARS.CoreUi.Assets.Access.LcarsSoundAsset.PlainBeep;
             this.arrowButton15.TabIndex = 3;
             this.arrowButton15.TextHeight = 14;
             this.arrowButton15.TextVisible = true;
@@ -2394,6 +2470,7 @@
             this.arrowButton58.Location = new System.Drawing.Point(324, 359);
             this.arrowButton58.Name = "arrowButton58";
             this.arrowButton58.Size = new System.Drawing.Size(249, 255);
+            this.arrowButton58.SoundAsset = LCARS.CoreUi.Assets.Access.LcarsSoundAsset.PlainBeep;
             this.arrowButton58.TabIndex = 2;
             this.arrowButton58.TextHeight = 14;
             this.arrowButton58.TextVisible = true;
@@ -2417,6 +2494,7 @@
             this.arrowButton5.Location = new System.Drawing.Point(4, 227);
             this.arrowButton5.Name = "arrowButton5";
             this.arrowButton5.Size = new System.Drawing.Size(50, 50);
+            this.arrowButton5.SoundAsset = LCARS.CoreUi.Assets.Access.LcarsSoundAsset.PlainBeep;
             this.arrowButton5.TabIndex = 4;
             this.arrowButton5.TextHeight = 14;
             this.arrowButton5.TextVisible = true;
@@ -2440,6 +2518,7 @@
             this.arrowButton36.Location = new System.Drawing.Point(172, 115);
             this.arrowButton36.Name = "arrowButton36";
             this.arrowButton36.Size = new System.Drawing.Size(50, 50);
+            this.arrowButton36.SoundAsset = LCARS.CoreUi.Assets.Access.LcarsSoundAsset.PlainBeep;
             this.arrowButton36.TabIndex = 2;
             this.arrowButton36.TextHeight = 14;
             this.arrowButton36.TextVisible = true;
@@ -2463,6 +2542,7 @@
             this.arrowButton25.Location = new System.Drawing.Point(116, 115);
             this.arrowButton25.Name = "arrowButton25";
             this.arrowButton25.Size = new System.Drawing.Size(50, 50);
+            this.arrowButton25.SoundAsset = LCARS.CoreUi.Assets.Access.LcarsSoundAsset.PlainBeep;
             this.arrowButton25.TabIndex = 2;
             this.arrowButton25.TextHeight = 14;
             this.arrowButton25.TextVisible = true;
@@ -2486,6 +2566,7 @@
             this.arrowButton14.Location = new System.Drawing.Point(60, 115);
             this.arrowButton14.Name = "arrowButton14";
             this.arrowButton14.Size = new System.Drawing.Size(50, 50);
+            this.arrowButton14.SoundAsset = LCARS.CoreUi.Assets.Access.LcarsSoundAsset.PlainBeep;
             this.arrowButton14.TabIndex = 2;
             this.arrowButton14.TextHeight = 14;
             this.arrowButton14.TextVisible = true;
@@ -2509,6 +2590,7 @@
             this.arrowButton4.Location = new System.Drawing.Point(4, 171);
             this.arrowButton4.Name = "arrowButton4";
             this.arrowButton4.Size = new System.Drawing.Size(50, 50);
+            this.arrowButton4.SoundAsset = LCARS.CoreUi.Assets.Access.LcarsSoundAsset.PlainBeep;
             this.arrowButton4.TabIndex = 3;
             this.arrowButton4.TextHeight = 14;
             this.arrowButton4.TextVisible = true;
@@ -2532,6 +2614,7 @@
             this.arrowButton35.Location = new System.Drawing.Point(172, 59);
             this.arrowButton35.Name = "arrowButton35";
             this.arrowButton35.Size = new System.Drawing.Size(50, 50);
+            this.arrowButton35.SoundAsset = LCARS.CoreUi.Assets.Access.LcarsSoundAsset.PlainBeep;
             this.arrowButton35.TabIndex = 1;
             this.arrowButton35.TextHeight = 14;
             this.arrowButton35.TextVisible = true;
@@ -2555,6 +2638,7 @@
             this.arrowButton56.Location = new System.Drawing.Point(324, 4);
             this.arrowButton56.Name = "arrowButton56";
             this.arrowButton56.Size = new System.Drawing.Size(249, 245);
+            this.arrowButton56.SoundAsset = LCARS.CoreUi.Assets.Access.LcarsSoundAsset.PlainBeep;
             this.arrowButton56.TabIndex = 0;
             this.arrowButton56.TextHeight = 14;
             this.arrowButton56.TextVisible = true;
@@ -2578,6 +2662,7 @@
             this.arrowButton24.Location = new System.Drawing.Point(116, 59);
             this.arrowButton24.Name = "arrowButton24";
             this.arrowButton24.Size = new System.Drawing.Size(50, 50);
+            this.arrowButton24.SoundAsset = LCARS.CoreUi.Assets.Access.LcarsSoundAsset.PlainBeep;
             this.arrowButton24.TabIndex = 1;
             this.arrowButton24.TextHeight = 14;
             this.arrowButton24.TextVisible = true;
@@ -2601,6 +2686,7 @@
             this.arrowButton13.Location = new System.Drawing.Point(60, 59);
             this.arrowButton13.Name = "arrowButton13";
             this.arrowButton13.Size = new System.Drawing.Size(50, 50);
+            this.arrowButton13.SoundAsset = LCARS.CoreUi.Assets.Access.LcarsSoundAsset.PlainBeep;
             this.arrowButton13.TabIndex = 1;
             this.arrowButton13.TextHeight = 14;
             this.arrowButton13.TextVisible = true;
@@ -2624,6 +2710,7 @@
             this.arrowButton34.Location = new System.Drawing.Point(172, 4);
             this.arrowButton34.Name = "arrowButton34";
             this.arrowButton34.Size = new System.Drawing.Size(50, 50);
+            this.arrowButton34.SoundAsset = LCARS.CoreUi.Assets.Access.LcarsSoundAsset.PlainBeep;
             this.arrowButton34.TabIndex = 0;
             this.arrowButton34.TextHeight = 14;
             this.arrowButton34.TextVisible = true;
@@ -2647,6 +2734,7 @@
             this.arrowButton3.Location = new System.Drawing.Point(4, 115);
             this.arrowButton3.Name = "arrowButton3";
             this.arrowButton3.Size = new System.Drawing.Size(50, 50);
+            this.arrowButton3.SoundAsset = LCARS.CoreUi.Assets.Access.LcarsSoundAsset.PlainBeep;
             this.arrowButton3.TabIndex = 2;
             this.arrowButton3.TextHeight = 14;
             this.arrowButton3.TextVisible = true;
@@ -2670,6 +2758,7 @@
             this.arrowButton23.Location = new System.Drawing.Point(116, 4);
             this.arrowButton23.Name = "arrowButton23";
             this.arrowButton23.Size = new System.Drawing.Size(50, 50);
+            this.arrowButton23.SoundAsset = LCARS.CoreUi.Assets.Access.LcarsSoundAsset.PlainBeep;
             this.arrowButton23.TabIndex = 0;
             this.arrowButton23.TextHeight = 14;
             this.arrowButton23.TextVisible = true;
@@ -2693,6 +2782,7 @@
             this.arrowButton12.Location = new System.Drawing.Point(60, 4);
             this.arrowButton12.Name = "arrowButton12";
             this.arrowButton12.Size = new System.Drawing.Size(50, 50);
+            this.arrowButton12.SoundAsset = LCARS.CoreUi.Assets.Access.LcarsSoundAsset.PlainBeep;
             this.arrowButton12.TabIndex = 0;
             this.arrowButton12.TextHeight = 14;
             this.arrowButton12.TextVisible = true;
@@ -2716,6 +2806,7 @@
             this.arrowButton2.Location = new System.Drawing.Point(4, 59);
             this.arrowButton2.Name = "arrowButton2";
             this.arrowButton2.Size = new System.Drawing.Size(50, 50);
+            this.arrowButton2.SoundAsset = LCARS.CoreUi.Assets.Access.LcarsSoundAsset.PlainBeep;
             this.arrowButton2.TabIndex = 1;
             this.arrowButton2.TextHeight = 14;
             this.arrowButton2.TextVisible = true;
@@ -2739,6 +2830,7 @@
             this.arrowButton1.Location = new System.Drawing.Point(4, 4);
             this.arrowButton1.Name = "arrowButton1";
             this.arrowButton1.Size = new System.Drawing.Size(50, 50);
+            this.arrowButton1.SoundAsset = LCARS.CoreUi.Assets.Access.LcarsSoundAsset.PlainBeep;
             this.arrowButton1.TabIndex = 0;
             this.arrowButton1.TextHeight = 14;
             this.arrowButton1.TextVisible = true;
@@ -2763,7 +2855,7 @@
             this.lcarsTabPage7.Controls.Add(this.complexButton1);
             this.lcarsTabPage7.Location = new System.Drawing.Point(0, 0);
             this.lcarsTabPage7.Name = "lcarsTabPage7";
-            this.lcarsTabPage7.Size = new System.Drawing.Size(778, 507);
+            this.lcarsTabPage7.Size = new System.Drawing.Size(790, 425);
             this.lcarsTabPage7.TabIndex = 6;
             this.lcarsTabPage7.Text = "COMPLEX";
             // 
@@ -2788,6 +2880,7 @@
             this.complexButton12.SideTextColor = LCARS.CoreUi.Enums.LcarsColorFunction.Orange;
             this.complexButton12.SideTextWidth = -1;
             this.complexButton12.Size = new System.Drawing.Size(603, 115);
+            this.complexButton12.SoundAsset = LCARS.CoreUi.Assets.Access.LcarsSoundAsset.RandomBeep;
             this.complexButton12.TabIndex = 0;
             this.complexButton12.Text = "COMPLEXBUTTON1";
             this.complexButton12.TextHeight = 14;
@@ -2815,6 +2908,7 @@
             this.complexButton8.SideTextColor = LCARS.CoreUi.Enums.LcarsColorFunction.Orange;
             this.complexButton8.SideTextWidth = -1;
             this.complexButton8.Size = new System.Drawing.Size(349, 29);
+            this.complexButton8.SoundAsset = LCARS.CoreUi.Assets.Access.LcarsSoundAsset.RandomBeep;
             this.complexButton8.TabIndex = 0;
             this.complexButton8.Text = "COMPLEXBUTTON1";
             this.complexButton8.TextHeight = 14;
@@ -2842,6 +2936,7 @@
             this.complexButton4.SideTextColor = LCARS.CoreUi.Enums.LcarsColorFunction.Orange;
             this.complexButton4.SideTextWidth = -1;
             this.complexButton4.Size = new System.Drawing.Size(349, 29);
+            this.complexButton4.SoundAsset = LCARS.CoreUi.Assets.Access.LcarsSoundAsset.RandomBeep;
             this.complexButton4.TabIndex = 0;
             this.complexButton4.Text = "COMPLEXBUTTON1";
             this.complexButton4.TextHeight = 14;
@@ -2869,6 +2964,7 @@
             this.complexButton11.SideTextColor = LCARS.CoreUi.Enums.LcarsColorFunction.Orange;
             this.complexButton11.SideTextWidth = -1;
             this.complexButton11.Size = new System.Drawing.Size(349, 29);
+            this.complexButton11.SoundAsset = LCARS.CoreUi.Assets.Access.LcarsSoundAsset.RandomBeep;
             this.complexButton11.TabIndex = 0;
             this.complexButton11.Text = "COMPLEXBUTTON1";
             this.complexButton11.TextHeight = 14;
@@ -2896,6 +2992,7 @@
             this.complexButton7.SideTextColor = LCARS.CoreUi.Enums.LcarsColorFunction.Orange;
             this.complexButton7.SideTextWidth = -1;
             this.complexButton7.Size = new System.Drawing.Size(349, 29);
+            this.complexButton7.SoundAsset = LCARS.CoreUi.Assets.Access.LcarsSoundAsset.RandomBeep;
             this.complexButton7.TabIndex = 0;
             this.complexButton7.Text = "COMPLEXBUTTON1";
             this.complexButton7.TextHeight = 14;
@@ -2923,6 +3020,7 @@
             this.complexButton3.SideTextColor = LCARS.CoreUi.Enums.LcarsColorFunction.Orange;
             this.complexButton3.SideTextWidth = -1;
             this.complexButton3.Size = new System.Drawing.Size(349, 29);
+            this.complexButton3.SoundAsset = LCARS.CoreUi.Assets.Access.LcarsSoundAsset.RandomBeep;
             this.complexButton3.TabIndex = 0;
             this.complexButton3.Text = "COMPLEXBUTTON1";
             this.complexButton3.TextHeight = 14;
@@ -2950,6 +3048,7 @@
             this.complexButton10.SideTextColor = LCARS.CoreUi.Enums.LcarsColorFunction.Orange;
             this.complexButton10.SideTextWidth = -1;
             this.complexButton10.Size = new System.Drawing.Size(349, 29);
+            this.complexButton10.SoundAsset = LCARS.CoreUi.Assets.Access.LcarsSoundAsset.RandomBeep;
             this.complexButton10.TabIndex = 0;
             this.complexButton10.Text = "COMPLEXBUTTON1";
             this.complexButton10.TextHeight = 14;
@@ -2977,6 +3076,7 @@
             this.complexButton6.SideTextColor = LCARS.CoreUi.Enums.LcarsColorFunction.Orange;
             this.complexButton6.SideTextWidth = -1;
             this.complexButton6.Size = new System.Drawing.Size(349, 29);
+            this.complexButton6.SoundAsset = LCARS.CoreUi.Assets.Access.LcarsSoundAsset.RandomBeep;
             this.complexButton6.TabIndex = 0;
             this.complexButton6.Text = "COMPLEXBUTTON1";
             this.complexButton6.TextHeight = 14;
@@ -3004,6 +3104,7 @@
             this.complexButton2.SideTextColor = LCARS.CoreUi.Enums.LcarsColorFunction.Orange;
             this.complexButton2.SideTextWidth = -1;
             this.complexButton2.Size = new System.Drawing.Size(349, 29);
+            this.complexButton2.SoundAsset = LCARS.CoreUi.Assets.Access.LcarsSoundAsset.RandomBeep;
             this.complexButton2.TabIndex = 0;
             this.complexButton2.Text = "COMPLEXBUTTON1";
             this.complexButton2.TextHeight = 14;
@@ -3031,6 +3132,7 @@
             this.complexButton9.SideTextColor = LCARS.CoreUi.Enums.LcarsColorFunction.Orange;
             this.complexButton9.SideTextWidth = -1;
             this.complexButton9.Size = new System.Drawing.Size(349, 29);
+            this.complexButton9.SoundAsset = LCARS.CoreUi.Assets.Access.LcarsSoundAsset.RandomBeep;
             this.complexButton9.TabIndex = 0;
             this.complexButton9.Text = "COMPLEXBUTTON1";
             this.complexButton9.TextHeight = 14;
@@ -3058,6 +3160,7 @@
             this.complexButton5.SideTextColor = LCARS.CoreUi.Enums.LcarsColorFunction.Orange;
             this.complexButton5.SideTextWidth = -1;
             this.complexButton5.Size = new System.Drawing.Size(349, 29);
+            this.complexButton5.SoundAsset = LCARS.CoreUi.Assets.Access.LcarsSoundAsset.RandomBeep;
             this.complexButton5.TabIndex = 0;
             this.complexButton5.Text = "COMPLEXBUTTON1";
             this.complexButton5.TextHeight = 14;
@@ -3085,6 +3188,7 @@
             this.complexButton1.SideTextColor = LCARS.CoreUi.Enums.LcarsColorFunction.Orange;
             this.complexButton1.SideTextWidth = -1;
             this.complexButton1.Size = new System.Drawing.Size(349, 29);
+            this.complexButton1.SoundAsset = LCARS.CoreUi.Assets.Access.LcarsSoundAsset.RandomBeep;
             this.complexButton1.TabIndex = 0;
             this.complexButton1.Text = "COMPLEXBUTTON1";
             this.complexButton1.TextHeight = 14;
@@ -3114,7 +3218,7 @@
             this.lcarsTabPage8.Controls.Add(this.flatButton1);
             this.lcarsTabPage8.Location = new System.Drawing.Point(0, 0);
             this.lcarsTabPage8.Name = "lcarsTabPage8";
-            this.lcarsTabPage8.Size = new System.Drawing.Size(778, 507);
+            this.lcarsTabPage8.Size = new System.Drawing.Size(790, 425);
             this.lcarsTabPage8.TabIndex = 7;
             this.lcarsTabPage8.Text = "FLAT";
             // 
@@ -3135,6 +3239,7 @@
             this.flatButton15.Location = new System.Drawing.Point(589, 323);
             this.flatButton15.Name = "flatButton15";
             this.flatButton15.Size = new System.Drawing.Size(146, 171);
+            this.flatButton15.SoundAsset = LCARS.CoreUi.Assets.Access.LcarsSoundAsset.PlainBeep;
             this.flatButton15.TabIndex = 12;
             this.flatButton15.Text = "FLATBUTTON15";
             this.flatButton15.TextHeight = 14;
@@ -3158,6 +3263,7 @@
             this.flatButton14.Location = new System.Drawing.Point(589, 216);
             this.flatButton14.Name = "flatButton14";
             this.flatButton14.Size = new System.Drawing.Size(146, 100);
+            this.flatButton14.SoundAsset = LCARS.CoreUi.Assets.Access.LcarsSoundAsset.PlainBeep;
             this.flatButton14.TabIndex = 11;
             this.flatButton14.Text = "FLATBUTTON14";
             this.flatButton14.TextHeight = 14;
@@ -3181,6 +3287,7 @@
             this.flatButton13.Location = new System.Drawing.Point(589, 3);
             this.flatButton13.Name = "flatButton13";
             this.flatButton13.Size = new System.Drawing.Size(146, 207);
+            this.flatButton13.SoundAsset = LCARS.CoreUi.Assets.Access.LcarsSoundAsset.PlainBeep;
             this.flatButton13.TabIndex = 10;
             this.flatButton13.Text = "FLATBUTTON13";
             this.flatButton13.TextHeight = 14;
@@ -3205,6 +3312,7 @@
             this.flatButton12.Location = new System.Drawing.Point(476, 109);
             this.flatButton12.Name = "flatButton12";
             this.flatButton12.Size = new System.Drawing.Size(107, 100);
+            this.flatButton12.SoundAsset = LCARS.CoreUi.Assets.Access.LcarsSoundAsset.PlainBeep;
             this.flatButton12.TabIndex = 9;
             this.flatButton12.Text = "FLATBUTTON12";
             this.flatButton12.TextHeight = 14;
@@ -3228,6 +3336,7 @@
             this.flatButton11.Location = new System.Drawing.Point(383, 109);
             this.flatButton11.Name = "flatButton11";
             this.flatButton11.Size = new System.Drawing.Size(87, 101);
+            this.flatButton11.SoundAsset = LCARS.CoreUi.Assets.Access.LcarsSoundAsset.PlainBeep;
             this.flatButton11.TabIndex = 8;
             this.flatButton11.Text = "FLATBUTTON11";
             this.flatButton11.TextHeight = 14;
@@ -3251,6 +3360,7 @@
             this.flatButton10.Location = new System.Drawing.Point(383, 394);
             this.flatButton10.Name = "flatButton10";
             this.flatButton10.Size = new System.Drawing.Size(200, 100);
+            this.flatButton10.SoundAsset = LCARS.CoreUi.Assets.Access.LcarsSoundAsset.PlainBeep;
             this.flatButton10.TabIndex = 7;
             this.flatButton10.Text = "FLATBUTTON10";
             this.flatButton10.TextHeight = 14;
@@ -3275,6 +3385,7 @@
             this.flatButton9.Location = new System.Drawing.Point(4, 394);
             this.flatButton9.Name = "flatButton9";
             this.flatButton9.Size = new System.Drawing.Size(373, 100);
+            this.flatButton9.SoundAsset = LCARS.CoreUi.Assets.Access.LcarsSoundAsset.PlainBeep;
             this.flatButton9.TabIndex = 6;
             this.flatButton9.Text = "FLATBUTTON9";
             this.flatButton9.TextHeight = 14;
@@ -3298,6 +3409,7 @@
             this.flatButton8.Location = new System.Drawing.Point(383, 3);
             this.flatButton8.Name = "flatButton8";
             this.flatButton8.Size = new System.Drawing.Size(200, 100);
+            this.flatButton8.SoundAsset = LCARS.CoreUi.Assets.Access.LcarsSoundAsset.PlainBeep;
             this.flatButton8.TabIndex = 5;
             this.flatButton8.Text = "FLATBUTTON8";
             this.flatButton8.TextHeight = 14;
@@ -3321,6 +3433,7 @@
             this.flatButton7.Location = new System.Drawing.Point(383, 216);
             this.flatButton7.Name = "flatButton7";
             this.flatButton7.Size = new System.Drawing.Size(200, 172);
+            this.flatButton7.SoundAsset = LCARS.CoreUi.Assets.Access.LcarsSoundAsset.PlainBeep;
             this.flatButton7.TabIndex = 4;
             this.flatButton7.Text = "FLATBUTTON7";
             this.flatButton7.TextHeight = 14;
@@ -3344,6 +3457,7 @@
             this.flatButton6.Location = new System.Drawing.Point(275, 216);
             this.flatButton6.Name = "flatButton6";
             this.flatButton6.Size = new System.Drawing.Size(102, 172);
+            this.flatButton6.SoundAsset = LCARS.CoreUi.Assets.Access.LcarsSoundAsset.PlainBeep;
             this.flatButton6.TabIndex = 3;
             this.flatButton6.Text = "FLATBUTTON6";
             this.flatButton6.TextHeight = 14;
@@ -3367,6 +3481,7 @@
             this.flatButton5.Location = new System.Drawing.Point(125, 216);
             this.flatButton5.Name = "flatButton5";
             this.flatButton5.Size = new System.Drawing.Size(144, 172);
+            this.flatButton5.SoundAsset = LCARS.CoreUi.Assets.Access.LcarsSoundAsset.PlainBeep;
             this.flatButton5.TabIndex = 2;
             this.flatButton5.Text = "FLATBUTTON5";
             this.flatButton5.TextHeight = 14;
@@ -3390,6 +3505,7 @@
             this.flatButton4.Location = new System.Drawing.Point(4, 216);
             this.flatButton4.Name = "flatButton4";
             this.flatButton4.Size = new System.Drawing.Size(115, 172);
+            this.flatButton4.SoundAsset = LCARS.CoreUi.Assets.Access.LcarsSoundAsset.PlainBeep;
             this.flatButton4.TabIndex = 1;
             this.flatButton4.Text = "FLATBUTTON4";
             this.flatButton4.TextHeight = 14;
@@ -3414,6 +3530,7 @@
             this.flatButton3.Location = new System.Drawing.Point(210, 3);
             this.flatButton3.Name = "flatButton3";
             this.flatButton3.Size = new System.Drawing.Size(167, 207);
+            this.flatButton3.SoundAsset = LCARS.CoreUi.Assets.Access.LcarsSoundAsset.PlainBeep;
             this.flatButton3.TabIndex = 0;
             this.flatButton3.Text = "FLATBUTTON1";
             this.flatButton3.TextHeight = 14;
@@ -3437,6 +3554,7 @@
             this.flatButton2.Location = new System.Drawing.Point(4, 110);
             this.flatButton2.Name = "flatButton2";
             this.flatButton2.Size = new System.Drawing.Size(200, 100);
+            this.flatButton2.SoundAsset = LCARS.CoreUi.Assets.Access.LcarsSoundAsset.PlainBeep;
             this.flatButton2.TabIndex = 0;
             this.flatButton2.Text = "FLATBUTTON1";
             this.flatButton2.TextHeight = 14;
@@ -3460,6 +3578,7 @@
             this.flatButton1.Location = new System.Drawing.Point(4, 4);
             this.flatButton1.Name = "flatButton1";
             this.flatButton1.Size = new System.Drawing.Size(200, 100);
+            this.flatButton1.SoundAsset = LCARS.CoreUi.Assets.Access.LcarsSoundAsset.PlainBeep;
             this.flatButton1.TabIndex = 0;
             this.flatButton1.Text = "FLATBUTTON1";
             this.flatButton1.TextHeight = 14;
@@ -3484,7 +3603,7 @@
             this.lcarsTabPage9.Controls.Add(this.halfPillButton1);
             this.lcarsTabPage9.Location = new System.Drawing.Point(0, 0);
             this.lcarsTabPage9.Name = "lcarsTabPage9";
-            this.lcarsTabPage9.Size = new System.Drawing.Size(778, 507);
+            this.lcarsTabPage9.Size = new System.Drawing.Size(790, 425);
             this.lcarsTabPage9.TabIndex = 9;
             this.lcarsTabPage9.Text = "HALFPILL";
             // 
@@ -3504,9 +3623,10 @@
             this.halfPillButton10.FlashInterval = 500;
             this.halfPillButton10.HoldDraw = false;
             this.halfPillButton10.IsLit = true;
-            this.halfPillButton10.Location = new System.Drawing.Point(360, 424);
+            this.halfPillButton10.Location = new System.Drawing.Point(372, 424);
             this.halfPillButton10.Name = "halfPillButton10";
             this.halfPillButton10.Size = new System.Drawing.Size(418, 100);
+            this.halfPillButton10.SoundAsset = LCARS.CoreUi.Assets.Access.LcarsSoundAsset.PlainBeep;
             this.halfPillButton10.TabIndex = 1;
             this.halfPillButton10.Text = "HALFPILLBUTTON2";
             this.halfPillButton10.TextHeight = 14;
@@ -3529,9 +3649,10 @@
             this.halfPillButton8.FlashInterval = 500;
             this.halfPillButton8.HoldDraw = false;
             this.halfPillButton8.IsLit = true;
-            this.halfPillButton8.Location = new System.Drawing.Point(415, 318);
+            this.halfPillButton8.Location = new System.Drawing.Point(427, 318);
             this.halfPillButton8.Name = "halfPillButton8";
             this.halfPillButton8.Size = new System.Drawing.Size(363, 100);
+            this.halfPillButton8.SoundAsset = LCARS.CoreUi.Assets.Access.LcarsSoundAsset.PlainBeep;
             this.halfPillButton8.TabIndex = 1;
             this.halfPillButton8.Text = "HALFPILLBUTTON2";
             this.halfPillButton8.TextHeight = 14;
@@ -3554,9 +3675,10 @@
             this.halfPillButton6.FlashInterval = 500;
             this.halfPillButton6.HoldDraw = false;
             this.halfPillButton6.IsLit = true;
-            this.halfPillButton6.Location = new System.Drawing.Point(459, 212);
+            this.halfPillButton6.Location = new System.Drawing.Point(471, 212);
             this.halfPillButton6.Name = "halfPillButton6";
             this.halfPillButton6.Size = new System.Drawing.Size(319, 100);
+            this.halfPillButton6.SoundAsset = LCARS.CoreUi.Assets.Access.LcarsSoundAsset.PlainBeep;
             this.halfPillButton6.TabIndex = 1;
             this.halfPillButton6.Text = "HALFPILLBUTTON2";
             this.halfPillButton6.TextHeight = 14;
@@ -3581,6 +3703,7 @@
             this.halfPillButton9.Location = new System.Drawing.Point(2, 424);
             this.halfPillButton9.Name = "halfPillButton9";
             this.halfPillButton9.Size = new System.Drawing.Size(200, 100);
+            this.halfPillButton9.SoundAsset = LCARS.CoreUi.Assets.Access.LcarsSoundAsset.PlainBeep;
             this.halfPillButton9.TabIndex = 0;
             this.halfPillButton9.Text = "HALFPILLBUTTON1";
             this.halfPillButton9.TextHeight = 14;
@@ -3603,9 +3726,10 @@
             this.halfPillButton4.FlashInterval = 500;
             this.halfPillButton4.HoldDraw = false;
             this.halfPillButton4.IsLit = true;
-            this.halfPillButton4.Location = new System.Drawing.Point(512, 106);
+            this.halfPillButton4.Location = new System.Drawing.Point(524, 106);
             this.halfPillButton4.Name = "halfPillButton4";
             this.halfPillButton4.Size = new System.Drawing.Size(266, 100);
+            this.halfPillButton4.SoundAsset = LCARS.CoreUi.Assets.Access.LcarsSoundAsset.PlainBeep;
             this.halfPillButton4.TabIndex = 1;
             this.halfPillButton4.Text = "HALFPILLBUTTON2";
             this.halfPillButton4.TextHeight = 14;
@@ -3630,6 +3754,7 @@
             this.halfPillButton7.Location = new System.Drawing.Point(2, 318);
             this.halfPillButton7.Name = "halfPillButton7";
             this.halfPillButton7.Size = new System.Drawing.Size(200, 100);
+            this.halfPillButton7.SoundAsset = LCARS.CoreUi.Assets.Access.LcarsSoundAsset.PlainBeep;
             this.halfPillButton7.TabIndex = 0;
             this.halfPillButton7.Text = "HALFPILLBUTTON1";
             this.halfPillButton7.TextHeight = 14;
@@ -3654,6 +3779,7 @@
             this.halfPillButton5.Location = new System.Drawing.Point(2, 212);
             this.halfPillButton5.Name = "halfPillButton5";
             this.halfPillButton5.Size = new System.Drawing.Size(200, 100);
+            this.halfPillButton5.SoundAsset = LCARS.CoreUi.Assets.Access.LcarsSoundAsset.PlainBeep;
             this.halfPillButton5.TabIndex = 0;
             this.halfPillButton5.Text = "HALFPILLBUTTON1";
             this.halfPillButton5.TextHeight = 14;
@@ -3678,6 +3804,7 @@
             this.halfPillButton3.Location = new System.Drawing.Point(2, 106);
             this.halfPillButton3.Name = "halfPillButton3";
             this.halfPillButton3.Size = new System.Drawing.Size(200, 100);
+            this.halfPillButton3.SoundAsset = LCARS.CoreUi.Assets.Access.LcarsSoundAsset.PlainBeep;
             this.halfPillButton3.TabIndex = 0;
             this.halfPillButton3.Text = "HALFPILLBUTTON1";
             this.halfPillButton3.TextHeight = 14;
@@ -3700,9 +3827,10 @@
             this.halfPillButton2.FlashInterval = 500;
             this.halfPillButton2.HoldDraw = false;
             this.halfPillButton2.IsLit = true;
-            this.halfPillButton2.Location = new System.Drawing.Point(559, 0);
+            this.halfPillButton2.Location = new System.Drawing.Point(571, 0);
             this.halfPillButton2.Name = "halfPillButton2";
             this.halfPillButton2.Size = new System.Drawing.Size(219, 100);
+            this.halfPillButton2.SoundAsset = LCARS.CoreUi.Assets.Access.LcarsSoundAsset.PlainBeep;
             this.halfPillButton2.TabIndex = 1;
             this.halfPillButton2.Text = "HALFPILLBUTTON2";
             this.halfPillButton2.TextHeight = 14;
@@ -3727,6 +3855,7 @@
             this.halfPillButton1.Location = new System.Drawing.Point(2, 0);
             this.halfPillButton1.Name = "halfPillButton1";
             this.halfPillButton1.Size = new System.Drawing.Size(200, 100);
+            this.halfPillButton1.SoundAsset = LCARS.CoreUi.Assets.Access.LcarsSoundAsset.PlainBeep;
             this.halfPillButton1.TabIndex = 0;
             this.halfPillButton1.Text = "HALFPILLBUTTON1";
             this.halfPillButton1.TextHeight = 14;
@@ -3774,7 +3903,7 @@
             this.lcarsTabPage13.Controls.Add(this.textButton1);
             this.lcarsTabPage13.Location = new System.Drawing.Point(0, 0);
             this.lcarsTabPage13.Name = "lcarsTabPage13";
-            this.lcarsTabPage13.Size = new System.Drawing.Size(778, 507);
+            this.lcarsTabPage13.Size = new System.Drawing.Size(790, 425);
             this.lcarsTabPage13.TabIndex = 12;
             this.lcarsTabPage13.Text = "TEXT";
             // 
@@ -3796,6 +3925,7 @@
             this.textButton22.Location = new System.Drawing.Point(0, 287);
             this.textButton22.Name = "textButton22";
             this.textButton22.Size = new System.Drawing.Size(200, 22);
+            this.textButton22.SoundAsset = LCARS.CoreUi.Assets.Access.LcarsSoundAsset.RandomBeep;
             this.textButton22.TabIndex = 0;
             this.textButton22.Text = "TEXTBUTTON1";
             this.textButton22.TextHeight = 24;
@@ -3820,6 +3950,7 @@
             this.textButton33.Location = new System.Drawing.Point(575, 287);
             this.textButton33.Name = "textButton33";
             this.textButton33.Size = new System.Drawing.Size(200, 22);
+            this.textButton33.SoundAsset = LCARS.CoreUi.Assets.Access.LcarsSoundAsset.RandomBeep;
             this.textButton33.TabIndex = 0;
             this.textButton33.Text = "TEXTBUTTON1";
             this.textButton33.TextHeight = 24;
@@ -3844,6 +3975,7 @@
             this.textButton11.Location = new System.Drawing.Point(275, 287);
             this.textButton11.Name = "textButton11";
             this.textButton11.Size = new System.Drawing.Size(200, 22);
+            this.textButton11.SoundAsset = LCARS.CoreUi.Assets.Access.LcarsSoundAsset.RandomBeep;
             this.textButton11.TabIndex = 0;
             this.textButton11.Text = "TEXTBUTTON1";
             this.textButton11.TextHeight = 24;
@@ -3868,6 +4000,7 @@
             this.textButton21.Location = new System.Drawing.Point(0, 260);
             this.textButton21.Name = "textButton21";
             this.textButton21.Size = new System.Drawing.Size(200, 22);
+            this.textButton21.SoundAsset = LCARS.CoreUi.Assets.Access.LcarsSoundAsset.RandomBeep;
             this.textButton21.TabIndex = 0;
             this.textButton21.Text = "TEXTBUTTON1";
             this.textButton21.TextHeight = 24;
@@ -3892,6 +4025,7 @@
             this.textButton32.Location = new System.Drawing.Point(575, 260);
             this.textButton32.Name = "textButton32";
             this.textButton32.Size = new System.Drawing.Size(200, 22);
+            this.textButton32.SoundAsset = LCARS.CoreUi.Assets.Access.LcarsSoundAsset.RandomBeep;
             this.textButton32.TabIndex = 0;
             this.textButton32.Text = "TEXTBUTTON1";
             this.textButton32.TextHeight = 24;
@@ -3916,6 +4050,7 @@
             this.textButton10.Location = new System.Drawing.Point(275, 260);
             this.textButton10.Name = "textButton10";
             this.textButton10.Size = new System.Drawing.Size(200, 22);
+            this.textButton10.SoundAsset = LCARS.CoreUi.Assets.Access.LcarsSoundAsset.RandomBeep;
             this.textButton10.TabIndex = 0;
             this.textButton10.Text = "TEXTBUTTON1";
             this.textButton10.TextHeight = 24;
@@ -3940,6 +4075,7 @@
             this.textButton20.Location = new System.Drawing.Point(0, 233);
             this.textButton20.Name = "textButton20";
             this.textButton20.Size = new System.Drawing.Size(200, 22);
+            this.textButton20.SoundAsset = LCARS.CoreUi.Assets.Access.LcarsSoundAsset.RandomBeep;
             this.textButton20.TabIndex = 0;
             this.textButton20.Text = "TEXTBUTTON1";
             this.textButton20.TextHeight = 24;
@@ -3964,6 +4100,7 @@
             this.textButton31.Location = new System.Drawing.Point(575, 233);
             this.textButton31.Name = "textButton31";
             this.textButton31.Size = new System.Drawing.Size(200, 22);
+            this.textButton31.SoundAsset = LCARS.CoreUi.Assets.Access.LcarsSoundAsset.RandomBeep;
             this.textButton31.TabIndex = 0;
             this.textButton31.Text = "TEXTBUTTON1";
             this.textButton31.TextHeight = 24;
@@ -3988,6 +4125,7 @@
             this.textButton9.Location = new System.Drawing.Point(275, 233);
             this.textButton9.Name = "textButton9";
             this.textButton9.Size = new System.Drawing.Size(200, 22);
+            this.textButton9.SoundAsset = LCARS.CoreUi.Assets.Access.LcarsSoundAsset.RandomBeep;
             this.textButton9.TabIndex = 0;
             this.textButton9.Text = "TEXTBUTTON1";
             this.textButton9.TextHeight = 24;
@@ -4012,6 +4150,7 @@
             this.textButton19.Location = new System.Drawing.Point(0, 206);
             this.textButton19.Name = "textButton19";
             this.textButton19.Size = new System.Drawing.Size(200, 22);
+            this.textButton19.SoundAsset = LCARS.CoreUi.Assets.Access.LcarsSoundAsset.RandomBeep;
             this.textButton19.TabIndex = 0;
             this.textButton19.Text = "TEXTBUTTON1";
             this.textButton19.TextHeight = 24;
@@ -4036,6 +4175,7 @@
             this.textButton30.Location = new System.Drawing.Point(575, 206);
             this.textButton30.Name = "textButton30";
             this.textButton30.Size = new System.Drawing.Size(200, 22);
+            this.textButton30.SoundAsset = LCARS.CoreUi.Assets.Access.LcarsSoundAsset.RandomBeep;
             this.textButton30.TabIndex = 0;
             this.textButton30.Text = "TEXTBUTTON1";
             this.textButton30.TextHeight = 24;
@@ -4060,6 +4200,7 @@
             this.textButton8.Location = new System.Drawing.Point(275, 206);
             this.textButton8.Name = "textButton8";
             this.textButton8.Size = new System.Drawing.Size(200, 22);
+            this.textButton8.SoundAsset = LCARS.CoreUi.Assets.Access.LcarsSoundAsset.RandomBeep;
             this.textButton8.TabIndex = 0;
             this.textButton8.Text = "TEXTBUTTON1";
             this.textButton8.TextHeight = 24;
@@ -4084,6 +4225,7 @@
             this.textButton18.Location = new System.Drawing.Point(0, 179);
             this.textButton18.Name = "textButton18";
             this.textButton18.Size = new System.Drawing.Size(200, 22);
+            this.textButton18.SoundAsset = LCARS.CoreUi.Assets.Access.LcarsSoundAsset.RandomBeep;
             this.textButton18.TabIndex = 0;
             this.textButton18.Text = "TEXTBUTTON1";
             this.textButton18.TextHeight = 24;
@@ -4108,6 +4250,7 @@
             this.textButton29.Location = new System.Drawing.Point(575, 179);
             this.textButton29.Name = "textButton29";
             this.textButton29.Size = new System.Drawing.Size(200, 22);
+            this.textButton29.SoundAsset = LCARS.CoreUi.Assets.Access.LcarsSoundAsset.RandomBeep;
             this.textButton29.TabIndex = 0;
             this.textButton29.Text = "TEXTBUTTON1";
             this.textButton29.TextHeight = 24;
@@ -4132,6 +4275,7 @@
             this.textButton7.Location = new System.Drawing.Point(275, 179);
             this.textButton7.Name = "textButton7";
             this.textButton7.Size = new System.Drawing.Size(200, 22);
+            this.textButton7.SoundAsset = LCARS.CoreUi.Assets.Access.LcarsSoundAsset.RandomBeep;
             this.textButton7.TabIndex = 0;
             this.textButton7.Text = "TEXTBUTTON1";
             this.textButton7.TextHeight = 24;
@@ -4156,6 +4300,7 @@
             this.textButton17.Location = new System.Drawing.Point(0, 152);
             this.textButton17.Name = "textButton17";
             this.textButton17.Size = new System.Drawing.Size(200, 22);
+            this.textButton17.SoundAsset = LCARS.CoreUi.Assets.Access.LcarsSoundAsset.RandomBeep;
             this.textButton17.TabIndex = 0;
             this.textButton17.Text = "TEXTBUTTON1";
             this.textButton17.TextHeight = 24;
@@ -4180,6 +4325,7 @@
             this.textButton28.Location = new System.Drawing.Point(575, 152);
             this.textButton28.Name = "textButton28";
             this.textButton28.Size = new System.Drawing.Size(200, 22);
+            this.textButton28.SoundAsset = LCARS.CoreUi.Assets.Access.LcarsSoundAsset.RandomBeep;
             this.textButton28.TabIndex = 0;
             this.textButton28.Text = "TEXTBUTTON1";
             this.textButton28.TextHeight = 24;
@@ -4204,6 +4350,7 @@
             this.textButton6.Location = new System.Drawing.Point(275, 152);
             this.textButton6.Name = "textButton6";
             this.textButton6.Size = new System.Drawing.Size(200, 22);
+            this.textButton6.SoundAsset = LCARS.CoreUi.Assets.Access.LcarsSoundAsset.RandomBeep;
             this.textButton6.TabIndex = 0;
             this.textButton6.Text = "TEXTBUTTON1";
             this.textButton6.TextHeight = 24;
@@ -4228,6 +4375,7 @@
             this.textButton16.Location = new System.Drawing.Point(0, 125);
             this.textButton16.Name = "textButton16";
             this.textButton16.Size = new System.Drawing.Size(200, 22);
+            this.textButton16.SoundAsset = LCARS.CoreUi.Assets.Access.LcarsSoundAsset.RandomBeep;
             this.textButton16.TabIndex = 0;
             this.textButton16.Text = "TEXTBUTTON1";
             this.textButton16.TextHeight = 24;
@@ -4252,6 +4400,7 @@
             this.textButton27.Location = new System.Drawing.Point(575, 125);
             this.textButton27.Name = "textButton27";
             this.textButton27.Size = new System.Drawing.Size(200, 22);
+            this.textButton27.SoundAsset = LCARS.CoreUi.Assets.Access.LcarsSoundAsset.RandomBeep;
             this.textButton27.TabIndex = 0;
             this.textButton27.Text = "TEXTBUTTON1";
             this.textButton27.TextHeight = 24;
@@ -4276,6 +4425,7 @@
             this.textButton5.Location = new System.Drawing.Point(275, 125);
             this.textButton5.Name = "textButton5";
             this.textButton5.Size = new System.Drawing.Size(200, 22);
+            this.textButton5.SoundAsset = LCARS.CoreUi.Assets.Access.LcarsSoundAsset.RandomBeep;
             this.textButton5.TabIndex = 0;
             this.textButton5.Text = "TEXTBUTTON1";
             this.textButton5.TextHeight = 24;
@@ -4300,6 +4450,7 @@
             this.textButton15.Location = new System.Drawing.Point(0, 98);
             this.textButton15.Name = "textButton15";
             this.textButton15.Size = new System.Drawing.Size(200, 22);
+            this.textButton15.SoundAsset = LCARS.CoreUi.Assets.Access.LcarsSoundAsset.RandomBeep;
             this.textButton15.TabIndex = 0;
             this.textButton15.Text = "TEXTBUTTON1";
             this.textButton15.TextHeight = 24;
@@ -4324,6 +4475,7 @@
             this.textButton26.Location = new System.Drawing.Point(575, 98);
             this.textButton26.Name = "textButton26";
             this.textButton26.Size = new System.Drawing.Size(200, 22);
+            this.textButton26.SoundAsset = LCARS.CoreUi.Assets.Access.LcarsSoundAsset.RandomBeep;
             this.textButton26.TabIndex = 0;
             this.textButton26.Text = "TEXTBUTTON1";
             this.textButton26.TextHeight = 24;
@@ -4348,6 +4500,7 @@
             this.textButton4.Location = new System.Drawing.Point(275, 98);
             this.textButton4.Name = "textButton4";
             this.textButton4.Size = new System.Drawing.Size(200, 22);
+            this.textButton4.SoundAsset = LCARS.CoreUi.Assets.Access.LcarsSoundAsset.RandomBeep;
             this.textButton4.TabIndex = 0;
             this.textButton4.Text = "TEXTBUTTON1";
             this.textButton4.TextHeight = 24;
@@ -4372,6 +4525,7 @@
             this.textButton14.Location = new System.Drawing.Point(0, 71);
             this.textButton14.Name = "textButton14";
             this.textButton14.Size = new System.Drawing.Size(200, 22);
+            this.textButton14.SoundAsset = LCARS.CoreUi.Assets.Access.LcarsSoundAsset.RandomBeep;
             this.textButton14.TabIndex = 0;
             this.textButton14.Text = "TEXTBUTTON1";
             this.textButton14.TextHeight = 24;
@@ -4396,6 +4550,7 @@
             this.textButton25.Location = new System.Drawing.Point(575, 71);
             this.textButton25.Name = "textButton25";
             this.textButton25.Size = new System.Drawing.Size(200, 22);
+            this.textButton25.SoundAsset = LCARS.CoreUi.Assets.Access.LcarsSoundAsset.RandomBeep;
             this.textButton25.TabIndex = 0;
             this.textButton25.Text = "TEXTBUTTON1";
             this.textButton25.TextHeight = 24;
@@ -4420,6 +4575,7 @@
             this.textButton3.Location = new System.Drawing.Point(275, 71);
             this.textButton3.Name = "textButton3";
             this.textButton3.Size = new System.Drawing.Size(200, 22);
+            this.textButton3.SoundAsset = LCARS.CoreUi.Assets.Access.LcarsSoundAsset.RandomBeep;
             this.textButton3.TabIndex = 0;
             this.textButton3.Text = "TEXTBUTTON1";
             this.textButton3.TextHeight = 24;
@@ -4444,6 +4600,7 @@
             this.textButton13.Location = new System.Drawing.Point(0, 44);
             this.textButton13.Name = "textButton13";
             this.textButton13.Size = new System.Drawing.Size(200, 22);
+            this.textButton13.SoundAsset = LCARS.CoreUi.Assets.Access.LcarsSoundAsset.RandomBeep;
             this.textButton13.TabIndex = 0;
             this.textButton13.Text = "TEXTBUTTON1";
             this.textButton13.TextHeight = 24;
@@ -4468,6 +4625,7 @@
             this.textButton24.Location = new System.Drawing.Point(575, 44);
             this.textButton24.Name = "textButton24";
             this.textButton24.Size = new System.Drawing.Size(200, 22);
+            this.textButton24.SoundAsset = LCARS.CoreUi.Assets.Access.LcarsSoundAsset.RandomBeep;
             this.textButton24.TabIndex = 0;
             this.textButton24.Text = "TEXTBUTTON1";
             this.textButton24.TextHeight = 24;
@@ -4492,6 +4650,7 @@
             this.textButton2.Location = new System.Drawing.Point(275, 44);
             this.textButton2.Name = "textButton2";
             this.textButton2.Size = new System.Drawing.Size(200, 22);
+            this.textButton2.SoundAsset = LCARS.CoreUi.Assets.Access.LcarsSoundAsset.RandomBeep;
             this.textButton2.TabIndex = 0;
             this.textButton2.Text = "TEXTBUTTON1";
             this.textButton2.TextHeight = 24;
@@ -4516,6 +4675,7 @@
             this.textButton12.Location = new System.Drawing.Point(0, 17);
             this.textButton12.Name = "textButton12";
             this.textButton12.Size = new System.Drawing.Size(200, 22);
+            this.textButton12.SoundAsset = LCARS.CoreUi.Assets.Access.LcarsSoundAsset.RandomBeep;
             this.textButton12.TabIndex = 0;
             this.textButton12.Text = "TEXTBUTTON1";
             this.textButton12.TextHeight = 24;
@@ -4540,6 +4700,7 @@
             this.textButton23.Location = new System.Drawing.Point(575, 17);
             this.textButton23.Name = "textButton23";
             this.textButton23.Size = new System.Drawing.Size(200, 22);
+            this.textButton23.SoundAsset = LCARS.CoreUi.Assets.Access.LcarsSoundAsset.RandomBeep;
             this.textButton23.TabIndex = 0;
             this.textButton23.Text = "TEXTBUTTON1";
             this.textButton23.TextHeight = 24;
@@ -4564,6 +4725,7 @@
             this.textButton1.Location = new System.Drawing.Point(275, 17);
             this.textButton1.Name = "textButton1";
             this.textButton1.Size = new System.Drawing.Size(200, 22);
+            this.textButton1.SoundAsset = LCARS.CoreUi.Assets.Access.LcarsSoundAsset.RandomBeep;
             this.textButton1.TabIndex = 0;
             this.textButton1.Text = "TEXTBUTTON1";
             this.textButton1.TextHeight = 24;
@@ -4584,7 +4746,7 @@
             this.lcarsTabPage11.Controls.Add(this.levelIndicator1);
             this.lcarsTabPage11.Location = new System.Drawing.Point(162, 26);
             this.lcarsTabPage11.Name = "lcarsTabPage11";
-            this.lcarsTabPage11.Size = new System.Drawing.Size(890, 533);
+            this.lcarsTabPage11.Size = new System.Drawing.Size(902, 451);
             this.lcarsTabPage11.TabIndex = 8;
             this.lcarsTabPage11.Text = "INDICATORS";
             // 
@@ -4597,10 +4759,10 @@
             this.progressBar2.ColorFunction1 = LCARS.CoreUi.Enums.LcarsColorFunction.StaticTan;
             this.progressBar2.ColorFunction2 = LCARS.CoreUi.Enums.LcarsColorFunction.PrimaryFunction;
             this.progressBar2.HorizantalBarWidth = 20;
-            this.progressBar2.Location = new System.Drawing.Point(723, 0);
+            this.progressBar2.Location = new System.Drawing.Point(729, 0);
             this.progressBar2.Name = "progressBar2";
             this.progressBar2.Orientation = LCARS.CoreUi.UiElements.Controls.ProgressBar.ProgressBarStyle.Vertical;
-            this.progressBar2.Size = new System.Drawing.Size(163, 402);
+            this.progressBar2.Size = new System.Drawing.Size(163, 320);
             this.progressBar2.Spacing = 5;
             this.progressBar2.TabIndex = 3;
             this.progressBar2.Text = "progressBar2";
@@ -4618,10 +4780,10 @@
             this.progressBar1.ColorFunction2 = LCARS.CoreUi.Enums.LcarsColorFunction.PrimaryFunction;
             this.progressBar1.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.progressBar1.HorizantalBarWidth = 20;
-            this.progressBar1.Location = new System.Drawing.Point(0, 424);
+            this.progressBar1.Location = new System.Drawing.Point(0, 342);
             this.progressBar1.Name = "progressBar1";
             this.progressBar1.Orientation = LCARS.CoreUi.UiElements.Controls.ProgressBar.ProgressBarStyle.Horizontal;
-            this.progressBar1.Size = new System.Drawing.Size(890, 109);
+            this.progressBar1.Size = new System.Drawing.Size(902, 109);
             this.progressBar1.Spacing = 5;
             this.progressBar1.TabIndex = 2;
             this.progressBar1.Text = "progressBar1";
@@ -4634,10 +4796,10 @@
             // 
             this.slider4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.slider4.CustomAlertColor = System.Drawing.Color.Empty;
-            this.slider4.Location = new System.Drawing.Point(4, 0);
+            this.slider4.Location = new System.Drawing.Point(10, 0);
             this.slider4.Min = 50;
             this.slider4.Name = "slider4";
-            this.slider4.Size = new System.Drawing.Size(106, 402);
+            this.slider4.Size = new System.Drawing.Size(106, 320);
             this.slider4.TabIndex = 1;
             this.slider4.Text = "slider4";
             this.slider4.ValueChanged += new System.EventHandler(this.slider4_ValueChanged);
@@ -4658,11 +4820,12 @@
             this.levelIndicator3.FlashInterval = 500;
             this.levelIndicator3.HoldDraw = false;
             this.levelIndicator3.IsLit = true;
-            this.levelIndicator3.Location = new System.Drawing.Point(529, 0);
+            this.levelIndicator3.Location = new System.Drawing.Point(535, 0);
             this.levelIndicator3.Max = 300;
             this.levelIndicator3.Min = 50;
             this.levelIndicator3.Name = "levelIndicator3";
-            this.levelIndicator3.Size = new System.Drawing.Size(163, 402);
+            this.levelIndicator3.Size = new System.Drawing.Size(163, 320);
+            this.levelIndicator3.SoundAsset = LCARS.CoreUi.Assets.Access.LcarsSoundAsset.Unset;
             this.levelIndicator3.TabIndex = 0;
             this.levelIndicator3.Text = "LEVELINDICATOR1";
             this.levelIndicator3.TextHeight = 14;
@@ -4684,10 +4847,11 @@
             this.levelIndicator2.FlashInterval = 500;
             this.levelIndicator2.HoldDraw = false;
             this.levelIndicator2.IsLit = true;
-            this.levelIndicator2.Location = new System.Drawing.Point(141, 0);
+            this.levelIndicator2.Location = new System.Drawing.Point(147, 0);
             this.levelIndicator2.Max = 200;
             this.levelIndicator2.Name = "levelIndicator2";
-            this.levelIndicator2.Size = new System.Drawing.Size(163, 402);
+            this.levelIndicator2.Size = new System.Drawing.Size(163, 320);
+            this.levelIndicator2.SoundAsset = LCARS.CoreUi.Assets.Access.LcarsSoundAsset.Unset;
             this.levelIndicator2.TabIndex = 0;
             this.levelIndicator2.Text = "LEVELINDICATOR1";
             this.levelIndicator2.TextHeight = 14;
@@ -4709,9 +4873,10 @@
             this.levelIndicator1.FlashInterval = 500;
             this.levelIndicator1.HoldDraw = false;
             this.levelIndicator1.IsLit = true;
-            this.levelIndicator1.Location = new System.Drawing.Point(335, 0);
+            this.levelIndicator1.Location = new System.Drawing.Point(341, 0);
             this.levelIndicator1.Name = "levelIndicator1";
-            this.levelIndicator1.Size = new System.Drawing.Size(163, 402);
+            this.levelIndicator1.Size = new System.Drawing.Size(163, 320);
+            this.levelIndicator1.SoundAsset = LCARS.CoreUi.Assets.Access.LcarsSoundAsset.Unset;
             this.levelIndicator1.TabIndex = 0;
             this.levelIndicator1.Text = "LEVELINDICATOR1";
             this.levelIndicator1.TextHeight = 14;
@@ -4726,7 +4891,7 @@
             this.lcarsTabPage12.Controls.Add(this.buttonGrid1);
             this.lcarsTabPage12.Location = new System.Drawing.Point(162, 26);
             this.lcarsTabPage12.Name = "lcarsTabPage12";
-            this.lcarsTabPage12.Size = new System.Drawing.Size(890, 533);
+            this.lcarsTabPage12.Size = new System.Drawing.Size(902, 451);
             this.lcarsTabPage12.TabIndex = 10;
             this.lcarsTabPage12.Text = "BUTTONGRID";
             // 
@@ -4742,7 +4907,8 @@
             this.buttonGrid1.Location = new System.Drawing.Point(0, 0);
             this.buttonGrid1.MinimumSize = new System.Drawing.Size(50, 50);
             this.buttonGrid1.Name = "buttonGrid1";
-            this.buttonGrid1.Size = new System.Drawing.Size(890, 533);
+            this.buttonGrid1.Size = new System.Drawing.Size(902, 451);
+            this.buttonGrid1.SoundAsset = LCARS.CoreUi.Assets.Access.LcarsSoundAsset.Unset;
             this.buttonGrid1.TabIndex = 0;
             this.buttonGrid1.Text = "buttonGrid1";
             // 
@@ -4756,7 +4922,7 @@
             this.lcarsTabPage14.Controls.Add(this.lcarsList1);
             this.lcarsTabPage14.Location = new System.Drawing.Point(162, 26);
             this.lcarsTabPage14.Name = "lcarsTabPage14";
-            this.lcarsTabPage14.Size = new System.Drawing.Size(890, 533);
+            this.lcarsTabPage14.Size = new System.Drawing.Size(902, 451);
             this.lcarsTabPage14.TabIndex = 12;
             this.lcarsTabPage14.Text = "LIST AND FONTS";
             // 
@@ -4782,7 +4948,7 @@
             this.lcarsList1.ItemHeight = 25;
             this.lcarsList1.Location = new System.Drawing.Point(0, 0);
             this.lcarsList1.Name = "lcarsList1";
-            this.lcarsList1.Size = new System.Drawing.Size(890, 252);
+            this.lcarsList1.Size = new System.Drawing.Size(902, 252);
             this.lcarsList1.TabIndex = 0;
             this.lcarsList1.TabStops = new float[0];
             this.lcarsList1.SelectedIndexChanged += new System.EventHandler(this.lcarsList1_SelectedIndexChanged);
@@ -4806,7 +4972,8 @@
             this.elbow6.IsLit = true;
             this.elbow6.Location = new System.Drawing.Point(0, 0);
             this.elbow6.Name = "elbow6";
-            this.elbow6.Size = new System.Drawing.Size(1052, 136);
+            this.elbow6.Size = new System.Drawing.Size(1064, 136);
+            this.elbow6.SoundAsset = LCARS.CoreUi.Assets.Access.LcarsSoundAsset.Unset;
             this.elbow6.TabIndex = 1;
             this.elbow6.Text = "ELBOW6";
             this.elbow6.TextHeight = 14;
@@ -4832,9 +4999,35 @@
             // splitContainer2.Panel2
             // 
             this.splitContainer2.Panel2.Controls.Add(this.lcarsTabControl1);
-            this.splitContainer2.Size = new System.Drawing.Size(1052, 699);
+            this.splitContainer2.Size = new System.Drawing.Size(1064, 617);
             this.splitContainer2.SplitterDistance = 136;
             this.splitContainer2.TabIndex = 3;
+            // 
+            // FullScreenButton
+            // 
+            this.FullScreenButton.AlertState = LCARS.CoreUi.Enums.LcarsAlert.Normal;
+            this.FullScreenButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.FullScreenButton.ButtonStyle = LCARS.CoreUi.Enums.LcarsButtonStyles.Pill;
+            this.FullScreenButton.ButtonText = "FULLSCREEN";
+            this.FullScreenButton.ButtonTextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.FullScreenButton.Clickable = true;
+            this.FullScreenButton.ColorFunction = LCARS.CoreUi.Enums.LcarsColorFunction.StaticTan;
+            this.FullScreenButton.CustomAlertColor = System.Drawing.Color.Empty;
+            this.FullScreenButton.Data = null;
+            this.FullScreenButton.Data2 = null;
+            this.FullScreenButton.DoesSound = false;
+            this.FullScreenButton.FlashInterval = 500;
+            this.FullScreenButton.HoldDraw = false;
+            this.FullScreenButton.IsLit = false;
+            this.FullScreenButton.Location = new System.Drawing.Point(948, 3);
+            this.FullScreenButton.Name = "FullScreenButton";
+            this.FullScreenButton.Size = new System.Drawing.Size(113, 28);
+            this.FullScreenButton.SoundAsset = LCARS.CoreUi.Assets.Access.LcarsSoundAsset.Unset;
+            this.FullScreenButton.TabIndex = 5;
+            this.FullScreenButton.Text = "FULLSCREEN";
+            this.FullScreenButton.TextHeight = 14;
+            this.FullScreenButton.TextVisible = true;
+            this.FullScreenButton.Click += new System.EventHandler(this.FullScreenButton_Click);
             // 
             // standardButton19
             // 
@@ -4854,6 +5047,7 @@
             this.standardButton19.Location = new System.Drawing.Point(168, 3);
             this.standardButton19.Name = "standardButton19";
             this.standardButton19.Size = new System.Drawing.Size(113, 28);
+            this.standardButton19.SoundAsset = LCARS.CoreUi.Assets.Access.LcarsSoundAsset.Unset;
             this.standardButton19.TabIndex = 4;
             this.standardButton19.Text = "INPUT BOX";
             this.standardButton19.TextHeight = 14;
@@ -4878,43 +5072,19 @@
             this.standardButton18.Location = new System.Drawing.Point(168, 37);
             this.standardButton18.Name = "standardButton18";
             this.standardButton18.Size = new System.Drawing.Size(113, 28);
+            this.standardButton18.SoundAsset = LCARS.CoreUi.Assets.Access.LcarsSoundAsset.Unset;
             this.standardButton18.TabIndex = 3;
             this.standardButton18.Text = "MESSAGE BOX";
             this.standardButton18.TextHeight = 14;
             this.standardButton18.TextVisible = true;
             this.standardButton18.Click += new System.EventHandler(this.standardButton18_Click);
             // 
-            // standardButton17
-            // 
-            this.FullScreenButton.AlertState = LCARS.CoreUi.Enums.LcarsAlert.Normal;
-            this.FullScreenButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.FullScreenButton.ButtonStyle = LCARS.CoreUi.Enums.LcarsButtonStyles.Pill;
-            this.FullScreenButton.ButtonText = "FULLSCREEN";
-            this.FullScreenButton.ButtonTextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.FullScreenButton.Clickable = true;
-            this.FullScreenButton.ColorFunction = LCARS.CoreUi.Enums.LcarsColorFunction.StaticTan;
-            this.FullScreenButton.CustomAlertColor = System.Drawing.Color.Empty;
-            this.FullScreenButton.Data = null;
-            this.FullScreenButton.Data2 = null;
-            this.FullScreenButton.DoesSound = false;
-            this.FullScreenButton.FlashInterval = 500;
-            this.FullScreenButton.HoldDraw = false;
-            this.FullScreenButton.IsLit = false;
-            this.FullScreenButton.Location = new System.Drawing.Point(936, 3);
-            this.FullScreenButton.Name = "standardButton17";
-            this.FullScreenButton.Size = new System.Drawing.Size(113, 28);
-            this.FullScreenButton.TabIndex = 5;
-            this.FullScreenButton.Text = "FULLSCREEN";
-            this.FullScreenButton.TextHeight = 14;
-            this.FullScreenButton.TextVisible = true;
-            this.FullScreenButton.Click += new System.EventHandler(this.FullScreenButton_Click);
-            // 
             // LcarsDemo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
-            this.ClientSize = new System.Drawing.Size(1052, 699);
+            this.ClientSize = new System.Drawing.Size(1064, 617);
             this.Controls.Add(this.splitContainer2);
             this.Name = "LcarsDemo";
             this.Text = "Form1";

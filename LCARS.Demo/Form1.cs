@@ -150,6 +150,8 @@ namespace LCARS.Demo
         private void FullScreenButton_Click(object sender, EventArgs e)
         {
             FullScreenButton.IsLit = !FullScreenButton.IsLit;
+            if (FullScreenButton.IsLit) LcarsSound.Play(LcarsSoundAsset.TurnOn2);
+            else LcarsSound.Play(LcarsSoundAsset.TurnOff2);
             FullScreen = FullScreenButton.IsLit;
         }
     }
