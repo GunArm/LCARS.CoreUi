@@ -52,6 +52,7 @@
     <Compile Include="Enums\LcarsButtonStyles.cs" />
     <Compile Include="Enums\LcarsElbowStyle.cs" />
     <Compile Include="Enums\LcarsHalfPillButtonStyles.cs" />
+    <Compile Include="Helpers\ListExtensions.cs" />
     <Compile Include="Helpers\Randomizer.cs" />
     <Compile Include="Enums\LightweightEvents.cs" />
     <Compile Include="Assets\Access\FontFamilyProvider.cs" />
