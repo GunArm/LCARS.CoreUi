@@ -11,10 +11,6 @@ namespace LCARS.CoreUi.UiElements.Tabbing
     [Designer(typeof(LcarsTabPageDesigner)), TypeConverter(typeof(LcarsTabPageConverter)), DesignTimeVisible(false), ToolboxItem(false), Designer("System.Windows.Forms.Design.ParentControlDesigner,System.Design", typeof(IDesigner))]
     public class LcarsTabPage : Control
     {
-        //The text of the LcarsPage (what shows on the button and the heading).
-        string text;
-
-        LcarsColorFunction colorFunction = LcarsColorFunction.MiscFunction;
         public LcarsTabPage()
         {
             text = "NEW TAB";
@@ -34,8 +30,7 @@ namespace LCARS.CoreUi.UiElements.Tabbing
             get { return text; }
             set
             {
-                //It's LCARS.  Text is UPPER CASE! unless it isn't...
-                text = value.ToUpper();
+                text = value;
 
                 if (Parent != null)
                 {
@@ -44,6 +39,7 @@ namespace LCARS.CoreUi.UiElements.Tabbing
                 }
             }
         }
+        private string text;
 
         [DefaultValue(LcarsColorFunction.MiscFunction)]
         public LcarsColorFunction ColorFunction
@@ -58,5 +54,6 @@ namespace LCARS.CoreUi.UiElements.Tabbing
                 }
             }
         }
+        private LcarsColorFunction colorFunction = LcarsColorFunction.MiscFunction;
     }
 }

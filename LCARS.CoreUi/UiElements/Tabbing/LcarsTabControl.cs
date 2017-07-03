@@ -102,7 +102,6 @@ namespace LCARS.CoreUi.UiElements.Tabbing
         }
         private int tabButtonHeight = 35;
 
-
         public int ElbowButtonPadding
         {
             get { return elbowButtonPadding; }
@@ -126,6 +125,18 @@ namespace LCARS.CoreUi.UiElements.Tabbing
             }
         }
         private int spacing = 6;
+
+        public bool ForceCaps
+        {
+            get { return forceCapital; }
+            set
+            {
+                if (value == forceCapital) return;
+                forceCapital = value;
+                Invalidate();
+            }
+        }
+        private bool forceCapital = true;
 
         private void RedoLayout()
         {
@@ -338,6 +349,7 @@ namespace LCARS.CoreUi.UiElements.Tabbing
                 mybutton.Width = verticalBarWidth;
                 mybutton.Height = tabButtonHeight;
                 mybutton.Left = 0;
+                mybutton.ForceCaps = ForceCaps;
                 mybutton.ButtonText = mytab.Text;
                 mybutton.ButtonTextAlign = ContentAlignment.BottomRight;
                 mybutton.ColorFunction = mytab.ColorFunction;

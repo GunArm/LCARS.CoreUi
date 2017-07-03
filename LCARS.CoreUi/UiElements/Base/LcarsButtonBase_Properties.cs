@@ -82,7 +82,12 @@ namespace LCARS.CoreUi.UiElements.Base
         public bool ForceCaps
         {
             get { return forceCapital; }
-            set { forceCapital = value; }
+            set
+            {
+                if (value == forceCapital) return;
+                forceCapital = value;
+                Invalidate();
+            }
         }
         protected bool forceCapital = true;
 
@@ -210,20 +215,23 @@ namespace LCARS.CoreUi.UiElements.Base
 
         /// <summary>
         /// The text displayed on the button.
+        /// The text of the control
         /// </summary>
         /// <remarks>
         /// The button's <see cref="Text">Text</see> property is an alias of this property.
         /// </remarks>
+        /// <value>New text to set</value>
+        /// <returns>Current text of the control.</returns>
         [DefaultValue("LCARS Button")]
         public virtual string ButtonText
         {
             get { return buttonText; }
             set
             {
+                if (value == buttonText) return;
                 if (value == null) value = string.Empty;
 
-                if (forceCapital) buttonText = value.ToUpper();
-                else buttonText = value;
+                buttonText = value;
 
                 currentTextScrollRotation = buttonText;
                 if (textHeight == -1) TextHeight = -1;
