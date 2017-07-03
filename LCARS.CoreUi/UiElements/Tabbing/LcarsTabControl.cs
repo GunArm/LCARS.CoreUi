@@ -342,10 +342,8 @@ namespace LCARS.CoreUi.UiElements.Tabbing
                 mybutton.ButtonTextAlign = ContentAlignment.BottomRight;
                 mybutton.ColorFunction = mytab.ColorFunction;
 
-                //Button beeping also needs to be handled.  I'm working on a way for new controls
-                //and community made programs to easily interface with LCARSmain so they know when
-                //they need to turn beeping on/off or when the colors have changed.
-                mybutton.DoesSound = false;
+                mybutton.DoesSound = true;
+                mybutton.SoundAsset = Assets.Access.LcarsSoundAsset.RandomProcessing;
 
                 //position the button based on how many buttons are already there.
                 switch (elbowStyle)
