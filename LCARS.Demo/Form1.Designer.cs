@@ -404,7 +404,7 @@
             // elbow5
             // 
             this.elbow5.AlertState = LCARS.CoreUi.Enums.LcarsAlert.Normal;
-            this.elbow5.ButtonText = "ELBOWSTYLE";
+            this.elbow5.Text = "ELBOWSTYLE";
             this.elbow5.ButtonTextAlign = System.Drawing.ContentAlignment.TopLeft;
             this.elbow5.Clickable = true;
             this.elbow5.ColorFunction = LCARS.CoreUi.Enums.LcarsColorFunction.MiscFunction;
@@ -467,7 +467,7 @@
             this.elbow4.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.elbow4.ButtonText = "ELBOW4";
+            this.elbow4.Text = "ELBOW4";
             this.elbow4.ButtonTextAlign = System.Drawing.ContentAlignment.TopLeft;
             this.elbow4.Clickable = true;
             this.elbow4.ColorFunction = LCARS.CoreUi.Enums.LcarsColorFunction.MiscFunction;
@@ -494,7 +494,7 @@
             // 
             this.elbow3.AlertState = LCARS.CoreUi.Enums.LcarsAlert.Normal;
             this.elbow3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.elbow3.ButtonText = "ELBOW3";
+            this.elbow3.Text = "ELBOW3";
             this.elbow3.ButtonTextAlign = System.Drawing.ContentAlignment.TopLeft;
             this.elbow3.Clickable = true;
             this.elbow3.ColorFunction = LCARS.CoreUi.Enums.LcarsColorFunction.MiscFunction;
@@ -523,7 +523,7 @@
             this.elbow2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.elbow2.ButtonText = "ELBOW2";
+            this.elbow2.Text = "ELBOW2";
             this.elbow2.ButtonTextAlign = System.Drawing.ContentAlignment.TopLeft;
             this.elbow2.Clickable = true;
             this.elbow2.ColorFunction = LCARS.CoreUi.Enums.LcarsColorFunction.MiscFunction;
@@ -550,7 +550,7 @@
             // 
             this.elbow1.AlertState = LCARS.CoreUi.Enums.LcarsAlert.Normal;
             this.elbow1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.elbow1.ButtonText = "ELBOW1";
+            this.elbow1.Text = "ELBOW1";
             this.elbow1.ButtonTextAlign = System.Drawing.ContentAlignment.TopLeft;
             this.elbow1.Clickable = true;
             this.elbow1.ColorFunction = LCARS.CoreUi.Enums.LcarsColorFunction.MiscFunction;
@@ -657,7 +657,7 @@
             // lcarsButtonBase36
             // 
             this.lcarsButtonBase36.AlertState = LCARS.CoreUi.Enums.LcarsAlert.Normal;
-            this.lcarsButtonBase36.ButtonText = "LCARSBUTTONBASE34";
+            this.lcarsButtonBase36.Text = "LCARSBUTTONBASE34";
             this.lcarsButtonBase36.ButtonTextAlign = System.Drawing.ContentAlignment.TopLeft;
             this.lcarsButtonBase36.Clickable = true;
             this.lcarsButtonBase36.ColorFunction = LCARS.CoreUi.Enums.LcarsColorFunction.MiscFunction;
@@ -680,7 +680,7 @@
             // lcarsButtonBase35
             // 
             this.lcarsButtonBase35.AlertState = LCARS.CoreUi.Enums.LcarsAlert.Normal;
-            this.lcarsButtonBase35.ButtonText = "LCARSBUTTONBASE34";
+            this.lcarsButtonBase35.Text = "LCARSBUTTONBASE34";
             this.lcarsButtonBase35.ButtonTextAlign = System.Drawing.ContentAlignment.TopLeft;
             this.lcarsButtonBase35.Clickable = true;
             this.lcarsButtonBase35.ColorFunction = LCARS.CoreUi.Enums.LcarsColorFunction.MiscFunction;
@@ -703,7 +703,7 @@
             // lcarsButtonBase34
             // 
             this.lcarsButtonBase34.AlertState = LCARS.CoreUi.Enums.LcarsAlert.Normal;
-            this.lcarsButtonBase34.ButtonText = "LCARSBUTTONBASE34";
+            this.lcarsButtonBase34.Text = "LCARSBUTTONBASE34";
             this.lcarsButtonBase34.ButtonTextAlign = System.Drawing.ContentAlignment.TopLeft;
             this.lcarsButtonBase34.Clickable = true;
             this.lcarsButtonBase34.ColorFunction = LCARS.CoreUi.Enums.LcarsColorFunction.MiscFunction;
@@ -726,7 +726,7 @@
             // lcarsButtonBase22
             // 
             this.lcarsButtonBase22.AlertState = LCARS.CoreUi.Enums.LcarsAlert.Normal;
-            this.lcarsButtonBase22.ButtonText = "LCARSBUTTONBASE11";
+            this.lcarsButtonBase22.Text = "LCARSBUTTONBASE11";
             this.lcarsButtonBase22.ButtonTextAlign = System.Drawing.ContentAlignment.TopLeft;
             this.lcarsButtonBase22.Clickable = true;
             this.lcarsButtonBase22.ColorFunction = LCARS.CoreUi.Enums.LcarsColorFunction.StaticBlue;
@@ -750,7 +750,7 @@
             // lcarsButtonBase11
             // 
             this.lcarsButtonBase11.AlertState = LCARS.CoreUi.Enums.LcarsAlert.Normal;
-            this.lcarsButtonBase11.ButtonText = "LCARSBUTTONBASE11";
+            this.lcarsButtonBase11.Text = "LCARSBUTTONBASE11";
             this.lcarsButtonBase11.ButtonTextAlign = System.Drawing.ContentAlignment.TopLeft;
             this.lcarsButtonBase11.Clickable = true;
             this.lcarsButtonBase11.ColorFunction = LCARS.CoreUi.Enums.LcarsColorFunction.StaticBlue;
@@ -773,7 +773,7 @@
             // lcarsButtonBase21
             // 
             this.lcarsButtonBase21.AlertState = LCARS.CoreUi.Enums.LcarsAlert.Normal;
-            this.lcarsButtonBase21.ButtonText = "LCARSBUTTONBASE10";
+            this.lcarsButtonBase21.Text = "LCARSBUTTONBASE10";
             this.lcarsButtonBase21.ButtonTextAlign = System.Drawing.ContentAlignment.TopLeft;
             this.lcarsButtonBase21.Clickable = true;
             this.lcarsButtonBase21.ColorFunction = LCARS.CoreUi.Enums.LcarsColorFunction.Orange;
@@ -797,7 +797,7 @@
             // lcarsButtonBase10
             // 
             this.lcarsButtonBase10.AlertState = LCARS.CoreUi.Enums.LcarsAlert.Normal;
-            this.lcarsButtonBase10.ButtonText = "LCARSBUTTONBASE10";
+            this.lcarsButtonBase10.Text = "LCARSBUTTONBASE10";
             this.lcarsButtonBase10.ButtonTextAlign = System.Drawing.ContentAlignment.TopLeft;
             this.lcarsButtonBase10.Clickable = true;
             this.lcarsButtonBase10.ColorFunction = LCARS.CoreUi.Enums.LcarsColorFunction.Orange;
@@ -820,7 +820,7 @@
             // lcarsButtonBase20
             // 
             this.lcarsButtonBase20.AlertState = LCARS.CoreUi.Enums.LcarsAlert.Normal;
-            this.lcarsButtonBase20.ButtonText = "LCARSBUTTONBASE9";
+            this.lcarsButtonBase20.Text = "LCARSBUTTONBASE9";
             this.lcarsButtonBase20.ButtonTextAlign = System.Drawing.ContentAlignment.TopLeft;
             this.lcarsButtonBase20.Clickable = true;
             this.lcarsButtonBase20.ColorFunction = LCARS.CoreUi.Enums.LcarsColorFunction.StaticTan;
@@ -844,7 +844,7 @@
             // lcarsButtonBase9
             // 
             this.lcarsButtonBase9.AlertState = LCARS.CoreUi.Enums.LcarsAlert.Normal;
-            this.lcarsButtonBase9.ButtonText = "LCARSBUTTONBASE9";
+            this.lcarsButtonBase9.Text = "LCARSBUTTONBASE9";
             this.lcarsButtonBase9.ButtonTextAlign = System.Drawing.ContentAlignment.TopLeft;
             this.lcarsButtonBase9.Clickable = true;
             this.lcarsButtonBase9.ColorFunction = LCARS.CoreUi.Enums.LcarsColorFunction.StaticTan;
@@ -867,7 +867,7 @@
             // lcarsButtonBase19
             // 
             this.lcarsButtonBase19.AlertState = LCARS.CoreUi.Enums.LcarsAlert.Normal;
-            this.lcarsButtonBase19.ButtonText = "LCARSBUTTONBASE8";
+            this.lcarsButtonBase19.Text = "LCARSBUTTONBASE8";
             this.lcarsButtonBase19.ButtonTextAlign = System.Drawing.ContentAlignment.TopLeft;
             this.lcarsButtonBase19.Clickable = true;
             this.lcarsButtonBase19.ColorFunction = LCARS.CoreUi.Enums.LcarsColorFunction.FunctionOffline;
@@ -891,7 +891,7 @@
             // lcarsButtonBase8
             // 
             this.lcarsButtonBase8.AlertState = LCARS.CoreUi.Enums.LcarsAlert.Normal;
-            this.lcarsButtonBase8.ButtonText = "LCARSBUTTONBASE8";
+            this.lcarsButtonBase8.Text = "LCARSBUTTONBASE8";
             this.lcarsButtonBase8.ButtonTextAlign = System.Drawing.ContentAlignment.TopLeft;
             this.lcarsButtonBase8.Clickable = true;
             this.lcarsButtonBase8.ColorFunction = LCARS.CoreUi.Enums.LcarsColorFunction.FunctionOffline;
@@ -914,7 +914,7 @@
             // lcarsButtonBase18
             // 
             this.lcarsButtonBase18.AlertState = LCARS.CoreUi.Enums.LcarsAlert.Normal;
-            this.lcarsButtonBase18.ButtonText = "LCARSBUTTONBASE7";
+            this.lcarsButtonBase18.Text = "LCARSBUTTONBASE7";
             this.lcarsButtonBase18.ButtonTextAlign = System.Drawing.ContentAlignment.TopLeft;
             this.lcarsButtonBase18.Clickable = true;
             this.lcarsButtonBase18.ColorFunction = LCARS.CoreUi.Enums.LcarsColorFunction.PrimaryFunction;
@@ -938,7 +938,7 @@
             // lcarsButtonBase7
             // 
             this.lcarsButtonBase7.AlertState = LCARS.CoreUi.Enums.LcarsAlert.Normal;
-            this.lcarsButtonBase7.ButtonText = "LCARSBUTTONBASE7";
+            this.lcarsButtonBase7.Text = "LCARSBUTTONBASE7";
             this.lcarsButtonBase7.ButtonTextAlign = System.Drawing.ContentAlignment.TopLeft;
             this.lcarsButtonBase7.Clickable = true;
             this.lcarsButtonBase7.ColorFunction = LCARS.CoreUi.Enums.LcarsColorFunction.PrimaryFunction;
@@ -961,7 +961,7 @@
             // lcarsButtonBase17
             // 
             this.lcarsButtonBase17.AlertState = LCARS.CoreUi.Enums.LcarsAlert.Normal;
-            this.lcarsButtonBase17.ButtonText = "LCARSBUTTONBASE6";
+            this.lcarsButtonBase17.Text = "LCARSBUTTONBASE6";
             this.lcarsButtonBase17.ButtonTextAlign = System.Drawing.ContentAlignment.TopLeft;
             this.lcarsButtonBase17.Clickable = true;
             this.lcarsButtonBase17.ColorFunction = LCARS.CoreUi.Enums.LcarsColorFunction.LCARSDisplayOnly;
@@ -985,7 +985,7 @@
             // lcarsButtonBase6
             // 
             this.lcarsButtonBase6.AlertState = LCARS.CoreUi.Enums.LcarsAlert.Normal;
-            this.lcarsButtonBase6.ButtonText = "LCARSBUTTONBASE6";
+            this.lcarsButtonBase6.Text = "LCARSBUTTONBASE6";
             this.lcarsButtonBase6.ButtonTextAlign = System.Drawing.ContentAlignment.TopLeft;
             this.lcarsButtonBase6.Clickable = true;
             this.lcarsButtonBase6.ColorFunction = LCARS.CoreUi.Enums.LcarsColorFunction.LCARSDisplayOnly;
@@ -1008,7 +1008,7 @@
             // lcarsButtonBase16
             // 
             this.lcarsButtonBase16.AlertState = LCARS.CoreUi.Enums.LcarsAlert.Normal;
-            this.lcarsButtonBase16.ButtonText = "LCARSBUTTONBASE5";
+            this.lcarsButtonBase16.Text = "LCARSBUTTONBASE5";
             this.lcarsButtonBase16.ButtonTextAlign = System.Drawing.ContentAlignment.TopLeft;
             this.lcarsButtonBase16.Clickable = true;
             this.lcarsButtonBase16.ColorFunction = LCARS.CoreUi.Enums.LcarsColorFunction.MiscFunction;
@@ -1032,7 +1032,7 @@
             // lcarsButtonBase5
             // 
             this.lcarsButtonBase5.AlertState = LCARS.CoreUi.Enums.LcarsAlert.Normal;
-            this.lcarsButtonBase5.ButtonText = "LCARSBUTTONBASE5";
+            this.lcarsButtonBase5.Text = "LCARSBUTTONBASE5";
             this.lcarsButtonBase5.ButtonTextAlign = System.Drawing.ContentAlignment.TopLeft;
             this.lcarsButtonBase5.Clickable = true;
             this.lcarsButtonBase5.ColorFunction = LCARS.CoreUi.Enums.LcarsColorFunction.MiscFunction;
@@ -1055,7 +1055,7 @@
             // lcarsButtonBase15
             // 
             this.lcarsButtonBase15.AlertState = LCARS.CoreUi.Enums.LcarsAlert.Normal;
-            this.lcarsButtonBase15.ButtonText = "LCARSBUTTONBASE4";
+            this.lcarsButtonBase15.Text = "LCARSBUTTONBASE4";
             this.lcarsButtonBase15.ButtonTextAlign = System.Drawing.ContentAlignment.TopLeft;
             this.lcarsButtonBase15.Clickable = true;
             this.lcarsButtonBase15.ColorFunction = LCARS.CoreUi.Enums.LcarsColorFunction.CriticalFunction;
@@ -1079,7 +1079,7 @@
             // lcarsButtonBase4
             // 
             this.lcarsButtonBase4.AlertState = LCARS.CoreUi.Enums.LcarsAlert.Normal;
-            this.lcarsButtonBase4.ButtonText = "LCARSBUTTONBASE4";
+            this.lcarsButtonBase4.Text = "LCARSBUTTONBASE4";
             this.lcarsButtonBase4.ButtonTextAlign = System.Drawing.ContentAlignment.TopLeft;
             this.lcarsButtonBase4.Clickable = true;
             this.lcarsButtonBase4.ColorFunction = LCARS.CoreUi.Enums.LcarsColorFunction.CriticalFunction;
@@ -1102,7 +1102,7 @@
             // lcarsButtonBase14
             // 
             this.lcarsButtonBase14.AlertState = LCARS.CoreUi.Enums.LcarsAlert.Normal;
-            this.lcarsButtonBase14.ButtonText = "LCARSBUTTONBASE3";
+            this.lcarsButtonBase14.Text = "LCARSBUTTONBASE3";
             this.lcarsButtonBase14.ButtonTextAlign = System.Drawing.ContentAlignment.TopLeft;
             this.lcarsButtonBase14.Clickable = true;
             this.lcarsButtonBase14.ColorFunction = LCARS.CoreUi.Enums.LcarsColorFunction.MiscFunction;
@@ -1126,7 +1126,7 @@
             // lcarsButtonBase3
             // 
             this.lcarsButtonBase3.AlertState = LCARS.CoreUi.Enums.LcarsAlert.Normal;
-            this.lcarsButtonBase3.ButtonText = "LCARSBUTTONBASE3";
+            this.lcarsButtonBase3.Text = "LCARSBUTTONBASE3";
             this.lcarsButtonBase3.ButtonTextAlign = System.Drawing.ContentAlignment.TopLeft;
             this.lcarsButtonBase3.Clickable = true;
             this.lcarsButtonBase3.ColorFunction = LCARS.CoreUi.Enums.LcarsColorFunction.MiscFunction;
@@ -1149,7 +1149,7 @@
             // lcarsButtonBase13
             // 
             this.lcarsButtonBase13.AlertState = LCARS.CoreUi.Enums.LcarsAlert.Normal;
-            this.lcarsButtonBase13.ButtonText = "LCARSBUTTONBASE2";
+            this.lcarsButtonBase13.Text = "LCARSBUTTONBASE2";
             this.lcarsButtonBase13.ButtonTextAlign = System.Drawing.ContentAlignment.TopLeft;
             this.lcarsButtonBase13.Clickable = true;
             this.lcarsButtonBase13.ColorFunction = LCARS.CoreUi.Enums.LcarsColorFunction.SystemFunction;
@@ -1173,7 +1173,7 @@
             // lcarsButtonBase2
             // 
             this.lcarsButtonBase2.AlertState = LCARS.CoreUi.Enums.LcarsAlert.Normal;
-            this.lcarsButtonBase2.ButtonText = "LCARSBUTTONBASE2";
+            this.lcarsButtonBase2.Text = "LCARSBUTTONBASE2";
             this.lcarsButtonBase2.ButtonTextAlign = System.Drawing.ContentAlignment.TopLeft;
             this.lcarsButtonBase2.Clickable = true;
             this.lcarsButtonBase2.ColorFunction = LCARS.CoreUi.Enums.LcarsColorFunction.SystemFunction;
@@ -1196,7 +1196,7 @@
             // lcarsButtonBase12
             // 
             this.lcarsButtonBase12.AlertState = LCARS.CoreUi.Enums.LcarsAlert.Normal;
-            this.lcarsButtonBase12.ButtonText = "LCARSBUTTONBASE1";
+            this.lcarsButtonBase12.Text = "LCARSBUTTONBASE1";
             this.lcarsButtonBase12.ButtonTextAlign = System.Drawing.ContentAlignment.TopLeft;
             this.lcarsButtonBase12.Clickable = true;
             this.lcarsButtonBase12.ColorFunction = LCARS.CoreUi.Enums.LcarsColorFunction.FunctionUnavailable;
@@ -1220,7 +1220,7 @@
             // lcarsButtonBase1
             // 
             this.lcarsButtonBase1.AlertState = LCARS.CoreUi.Enums.LcarsAlert.Normal;
-            this.lcarsButtonBase1.ButtonText = "LCARSBUTTONBASE1";
+            this.lcarsButtonBase1.Text = "LCARSBUTTONBASE1";
             this.lcarsButtonBase1.ButtonTextAlign = System.Drawing.ContentAlignment.TopLeft;
             this.lcarsButtonBase1.Clickable = true;
             this.lcarsButtonBase1.ColorFunction = LCARS.CoreUi.Enums.LcarsColorFunction.FunctionUnavailable;
@@ -1273,7 +1273,7 @@
             this.standardButton16.AlertState = LCARS.CoreUi.Enums.LcarsAlert.Normal;
             this.standardButton16.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.standardButton16.ButtonStyle = LCARS.CoreUi.Enums.LcarsButtonStyles.Pill;
-            this.standardButton16.ButtonText = "STANDARDBUTTON12";
+            this.standardButton16.Text = "STANDARDBUTTON12";
             this.standardButton16.ButtonTextAlign = System.Drawing.ContentAlignment.TopLeft;
             this.standardButton16.Clickable = true;
             this.standardButton16.ColorFunction = LCARS.CoreUi.Enums.LcarsColorFunction.StaticBlue;
@@ -1299,7 +1299,7 @@
             this.standardButton15.AlertState = LCARS.CoreUi.Enums.LcarsAlert.Normal;
             this.standardButton15.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.standardButton15.ButtonStyle = LCARS.CoreUi.Enums.LcarsButtonStyles.Pill;
-            this.standardButton15.ButtonText = "STANDARDBUTTON12";
+            this.standardButton15.Text = "STANDARDBUTTON12";
             this.standardButton15.ButtonTextAlign = System.Drawing.ContentAlignment.TopLeft;
             this.standardButton15.Clickable = true;
             this.standardButton15.ColorFunction = LCARS.CoreUi.Enums.LcarsColorFunction.PrimaryFunction;
@@ -1325,7 +1325,7 @@
             this.standardButton14.AlertState = LCARS.CoreUi.Enums.LcarsAlert.Normal;
             this.standardButton14.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.standardButton14.ButtonStyle = LCARS.CoreUi.Enums.LcarsButtonStyles.Pill;
-            this.standardButton14.ButtonText = "STANDARDBUTTON12";
+            this.standardButton14.Text = "STANDARDBUTTON12";
             this.standardButton14.ButtonTextAlign = System.Drawing.ContentAlignment.TopLeft;
             this.standardButton14.Clickable = true;
             this.standardButton14.ColorFunction = LCARS.CoreUi.Enums.LcarsColorFunction.LCARSDisplayOnly;
@@ -1351,7 +1351,7 @@
             this.standardButton13.AlertState = LCARS.CoreUi.Enums.LcarsAlert.Normal;
             this.standardButton13.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.standardButton13.ButtonStyle = LCARS.CoreUi.Enums.LcarsButtonStyles.Pill;
-            this.standardButton13.ButtonText = "STANDARDBUTTON12";
+            this.standardButton13.Text = "STANDARDBUTTON12";
             this.standardButton13.ButtonTextAlign = System.Drawing.ContentAlignment.TopLeft;
             this.standardButton13.Clickable = true;
             this.standardButton13.ColorFunction = LCARS.CoreUi.Enums.LcarsColorFunction.CriticalFunction;
@@ -1377,7 +1377,7 @@
             this.standardButton12.AlertState = LCARS.CoreUi.Enums.LcarsAlert.Normal;
             this.standardButton12.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.standardButton12.ButtonStyle = LCARS.CoreUi.Enums.LcarsButtonStyles.Pill;
-            this.standardButton12.ButtonText = "STANDARDBUTTON12";
+            this.standardButton12.Text = "STANDARDBUTTON12";
             this.standardButton12.ButtonTextAlign = System.Drawing.ContentAlignment.TopLeft;
             this.standardButton12.Clickable = true;
             this.standardButton12.ColorFunction = LCARS.CoreUi.Enums.LcarsColorFunction.FunctionUnavailable;
@@ -1402,7 +1402,7 @@
             // 
             this.standardButton8.AlertState = LCARS.CoreUi.Enums.LcarsAlert.Normal;
             this.standardButton8.ButtonStyle = LCARS.CoreUi.Enums.LcarsButtonStyles.Pill;
-            this.standardButton8.ButtonText = "STANDARDBUTTON1";
+            this.standardButton8.Text = "STANDARDBUTTON1";
             this.standardButton8.ButtonTextAlign = System.Drawing.ContentAlignment.TopLeft;
             this.standardButton8.Clickable = true;
             this.standardButton8.ColorFunction = LCARS.CoreUi.Enums.LcarsColorFunction.FunctionOffline;
@@ -1427,7 +1427,7 @@
             // 
             this.standardButton4.AlertState = LCARS.CoreUi.Enums.LcarsAlert.Normal;
             this.standardButton4.ButtonStyle = LCARS.CoreUi.Enums.LcarsButtonStyles.Pill;
-            this.standardButton4.ButtonText = "STANDARDBUTTON1";
+            this.standardButton4.Text = "STANDARDBUTTON1";
             this.standardButton4.ButtonTextAlign = System.Drawing.ContentAlignment.TopLeft;
             this.standardButton4.Clickable = true;
             this.standardButton4.ColorFunction = LCARS.CoreUi.Enums.LcarsColorFunction.CriticalFunction;
@@ -1452,7 +1452,7 @@
             // 
             this.standardButton11.AlertState = LCARS.CoreUi.Enums.LcarsAlert.Normal;
             this.standardButton11.ButtonStyle = LCARS.CoreUi.Enums.LcarsButtonStyles.Pill;
-            this.standardButton11.ButtonText = "STANDARDBUTTON1";
+            this.standardButton11.Text = "STANDARDBUTTON1";
             this.standardButton11.ButtonTextAlign = System.Drawing.ContentAlignment.TopLeft;
             this.standardButton11.Clickable = true;
             this.standardButton11.ColorFunction = LCARS.CoreUi.Enums.LcarsColorFunction.Orange;
@@ -1477,7 +1477,7 @@
             // 
             this.standardButton7.AlertState = LCARS.CoreUi.Enums.LcarsAlert.Normal;
             this.standardButton7.ButtonStyle = LCARS.CoreUi.Enums.LcarsButtonStyles.Pill;
-            this.standardButton7.ButtonText = "STANDARDBUTTON1";
+            this.standardButton7.Text = "STANDARDBUTTON1";
             this.standardButton7.ButtonTextAlign = System.Drawing.ContentAlignment.TopLeft;
             this.standardButton7.Clickable = true;
             this.standardButton7.ColorFunction = LCARS.CoreUi.Enums.LcarsColorFunction.LCARSDisplayOnly;
@@ -1502,7 +1502,7 @@
             // 
             this.standardButton2.AlertState = LCARS.CoreUi.Enums.LcarsAlert.Normal;
             this.standardButton2.ButtonStyle = LCARS.CoreUi.Enums.LcarsButtonStyles.Pill;
-            this.standardButton2.ButtonText = "STANDARDBUTTON1";
+            this.standardButton2.Text = "STANDARDBUTTON1";
             this.standardButton2.ButtonTextAlign = System.Drawing.ContentAlignment.TopLeft;
             this.standardButton2.Clickable = true;
             this.standardButton2.ColorFunction = LCARS.CoreUi.Enums.LcarsColorFunction.SystemFunction;
@@ -1527,7 +1527,7 @@
             // 
             this.standardButton10.AlertState = LCARS.CoreUi.Enums.LcarsAlert.Normal;
             this.standardButton10.ButtonStyle = LCARS.CoreUi.Enums.LcarsButtonStyles.Pill;
-            this.standardButton10.ButtonText = "STANDARDBUTTON1";
+            this.standardButton10.Text = "STANDARDBUTTON1";
             this.standardButton10.ButtonTextAlign = System.Drawing.ContentAlignment.TopLeft;
             this.standardButton10.Clickable = true;
             this.standardButton10.ColorFunction = LCARS.CoreUi.Enums.LcarsColorFunction.StaticBlue;
@@ -1552,7 +1552,7 @@
             // 
             this.standardButton6.AlertState = LCARS.CoreUi.Enums.LcarsAlert.Normal;
             this.standardButton6.ButtonStyle = LCARS.CoreUi.Enums.LcarsButtonStyles.Pill;
-            this.standardButton6.ButtonText = "STANDARDBUTTON1";
+            this.standardButton6.Text = "STANDARDBUTTON1";
             this.standardButton6.ButtonTextAlign = System.Drawing.ContentAlignment.TopLeft;
             this.standardButton6.Clickable = true;
             this.standardButton6.ColorFunction = LCARS.CoreUi.Enums.LcarsColorFunction.PrimaryFunction;
@@ -1577,7 +1577,7 @@
             // 
             this.standardButton3.AlertState = LCARS.CoreUi.Enums.LcarsAlert.Normal;
             this.standardButton3.ButtonStyle = LCARS.CoreUi.Enums.LcarsButtonStyles.Pill;
-            this.standardButton3.ButtonText = "STANDARDBUTTON1";
+            this.standardButton3.Text = "STANDARDBUTTON1";
             this.standardButton3.ButtonTextAlign = System.Drawing.ContentAlignment.TopLeft;
             this.standardButton3.Clickable = true;
             this.standardButton3.ColorFunction = LCARS.CoreUi.Enums.LcarsColorFunction.MiscFunction;
@@ -1602,7 +1602,7 @@
             // 
             this.standardButton9.AlertState = LCARS.CoreUi.Enums.LcarsAlert.Normal;
             this.standardButton9.ButtonStyle = LCARS.CoreUi.Enums.LcarsButtonStyles.Pill;
-            this.standardButton9.ButtonText = "STANDARDBUTTON1";
+            this.standardButton9.Text = "STANDARDBUTTON1";
             this.standardButton9.ButtonTextAlign = System.Drawing.ContentAlignment.TopLeft;
             this.standardButton9.Clickable = true;
             this.standardButton9.ColorFunction = LCARS.CoreUi.Enums.LcarsColorFunction.StaticTan;
@@ -1627,7 +1627,7 @@
             // 
             this.standardButton5.AlertState = LCARS.CoreUi.Enums.LcarsAlert.Normal;
             this.standardButton5.ButtonStyle = LCARS.CoreUi.Enums.LcarsButtonStyles.Pill;
-            this.standardButton5.ButtonText = "STANDARDBUTTON1";
+            this.standardButton5.Text = "STANDARDBUTTON1";
             this.standardButton5.ButtonTextAlign = System.Drawing.ContentAlignment.TopLeft;
             this.standardButton5.Clickable = true;
             this.standardButton5.ColorFunction = LCARS.CoreUi.Enums.LcarsColorFunction.MiscFunction;
@@ -1652,7 +1652,7 @@
             // 
             this.standardButton1.AlertState = LCARS.CoreUi.Enums.LcarsAlert.Normal;
             this.standardButton1.ButtonStyle = LCARS.CoreUi.Enums.LcarsButtonStyles.Pill;
-            this.standardButton1.ButtonText = "STANDARDBUTTON1";
+            this.standardButton1.Text = "STANDARDBUTTON1";
             this.standardButton1.ButtonTextAlign = System.Drawing.ContentAlignment.TopLeft;
             this.standardButton1.Clickable = true;
             this.standardButton1.ColorFunction = LCARS.CoreUi.Enums.LcarsColorFunction.FunctionUnavailable;
@@ -1736,7 +1736,7 @@
             this.arrowButton44.AlertState = LCARS.CoreUi.Enums.LcarsAlert.Normal;
             this.arrowButton44.ArrowDirection = LCARS.CoreUi.Enums.LcarsArrowDirection.Right;
             this.arrowButton44.AutoEllipsis = false;
-            this.arrowButton44.ButtonText = "";
+            this.arrowButton44.Text = "";
             this.arrowButton44.ButtonTextAlign = System.Drawing.ContentAlignment.TopLeft;
             this.arrowButton44.Clickable = true;
             this.arrowButton44.ColorFunction = LCARS.CoreUi.Enums.LcarsColorFunction.StaticBlue;
@@ -1760,7 +1760,7 @@
             this.arrowButton33.AlertState = LCARS.CoreUi.Enums.LcarsAlert.Normal;
             this.arrowButton33.ArrowDirection = LCARS.CoreUi.Enums.LcarsArrowDirection.Left;
             this.arrowButton33.AutoEllipsis = false;
-            this.arrowButton33.ButtonText = "";
+            this.arrowButton33.Text = "";
             this.arrowButton33.ButtonTextAlign = System.Drawing.ContentAlignment.TopLeft;
             this.arrowButton33.Clickable = true;
             this.arrowButton33.ColorFunction = LCARS.CoreUi.Enums.LcarsColorFunction.StaticBlue;
@@ -1784,7 +1784,7 @@
             this.arrowButton22.AlertState = LCARS.CoreUi.Enums.LcarsAlert.Normal;
             this.arrowButton22.ArrowDirection = LCARS.CoreUi.Enums.LcarsArrowDirection.Down;
             this.arrowButton22.AutoEllipsis = false;
-            this.arrowButton22.ButtonText = "";
+            this.arrowButton22.Text = "";
             this.arrowButton22.ButtonTextAlign = System.Drawing.ContentAlignment.TopLeft;
             this.arrowButton22.Clickable = true;
             this.arrowButton22.ColorFunction = LCARS.CoreUi.Enums.LcarsColorFunction.StaticBlue;
@@ -1808,7 +1808,7 @@
             this.arrowButton11.AlertState = LCARS.CoreUi.Enums.LcarsAlert.Normal;
             this.arrowButton11.ArrowDirection = LCARS.CoreUi.Enums.LcarsArrowDirection.Up;
             this.arrowButton11.AutoEllipsis = false;
-            this.arrowButton11.ButtonText = "";
+            this.arrowButton11.Text = "";
             this.arrowButton11.ButtonTextAlign = System.Drawing.ContentAlignment.TopLeft;
             this.arrowButton11.Clickable = true;
             this.arrowButton11.ColorFunction = LCARS.CoreUi.Enums.LcarsColorFunction.StaticBlue;
@@ -1832,7 +1832,7 @@
             this.arrowButton43.AlertState = LCARS.CoreUi.Enums.LcarsAlert.Normal;
             this.arrowButton43.ArrowDirection = LCARS.CoreUi.Enums.LcarsArrowDirection.Right;
             this.arrowButton43.AutoEllipsis = false;
-            this.arrowButton43.ButtonText = "";
+            this.arrowButton43.Text = "";
             this.arrowButton43.ButtonTextAlign = System.Drawing.ContentAlignment.TopLeft;
             this.arrowButton43.Clickable = true;
             this.arrowButton43.ColorFunction = LCARS.CoreUi.Enums.LcarsColorFunction.Orange;
@@ -1856,7 +1856,7 @@
             this.arrowButton32.AlertState = LCARS.CoreUi.Enums.LcarsAlert.Normal;
             this.arrowButton32.ArrowDirection = LCARS.CoreUi.Enums.LcarsArrowDirection.Left;
             this.arrowButton32.AutoEllipsis = false;
-            this.arrowButton32.ButtonText = "";
+            this.arrowButton32.Text = "";
             this.arrowButton32.ButtonTextAlign = System.Drawing.ContentAlignment.TopLeft;
             this.arrowButton32.Clickable = true;
             this.arrowButton32.ColorFunction = LCARS.CoreUi.Enums.LcarsColorFunction.Orange;
@@ -1880,7 +1880,7 @@
             this.arrowButton21.AlertState = LCARS.CoreUi.Enums.LcarsAlert.Normal;
             this.arrowButton21.ArrowDirection = LCARS.CoreUi.Enums.LcarsArrowDirection.Down;
             this.arrowButton21.AutoEllipsis = false;
-            this.arrowButton21.ButtonText = "";
+            this.arrowButton21.Text = "";
             this.arrowButton21.ButtonTextAlign = System.Drawing.ContentAlignment.TopLeft;
             this.arrowButton21.Clickable = true;
             this.arrowButton21.ColorFunction = LCARS.CoreUi.Enums.LcarsColorFunction.Orange;
@@ -1904,7 +1904,7 @@
             this.arrowButton10.AlertState = LCARS.CoreUi.Enums.LcarsAlert.Normal;
             this.arrowButton10.ArrowDirection = LCARS.CoreUi.Enums.LcarsArrowDirection.Up;
             this.arrowButton10.AutoEllipsis = false;
-            this.arrowButton10.ButtonText = "";
+            this.arrowButton10.Text = "";
             this.arrowButton10.ButtonTextAlign = System.Drawing.ContentAlignment.TopLeft;
             this.arrowButton10.Clickable = true;
             this.arrowButton10.ColorFunction = LCARS.CoreUi.Enums.LcarsColorFunction.Orange;
@@ -1928,7 +1928,7 @@
             this.arrowButton42.AlertState = LCARS.CoreUi.Enums.LcarsAlert.Normal;
             this.arrowButton42.ArrowDirection = LCARS.CoreUi.Enums.LcarsArrowDirection.Right;
             this.arrowButton42.AutoEllipsis = false;
-            this.arrowButton42.ButtonText = "";
+            this.arrowButton42.Text = "";
             this.arrowButton42.ButtonTextAlign = System.Drawing.ContentAlignment.TopLeft;
             this.arrowButton42.Clickable = true;
             this.arrowButton42.ColorFunction = LCARS.CoreUi.Enums.LcarsColorFunction.StaticTan;
@@ -1952,7 +1952,7 @@
             this.arrowButton31.AlertState = LCARS.CoreUi.Enums.LcarsAlert.Normal;
             this.arrowButton31.ArrowDirection = LCARS.CoreUi.Enums.LcarsArrowDirection.Left;
             this.arrowButton31.AutoEllipsis = false;
-            this.arrowButton31.ButtonText = "";
+            this.arrowButton31.Text = "";
             this.arrowButton31.ButtonTextAlign = System.Drawing.ContentAlignment.TopLeft;
             this.arrowButton31.Clickable = true;
             this.arrowButton31.ColorFunction = LCARS.CoreUi.Enums.LcarsColorFunction.StaticTan;
@@ -1976,7 +1976,7 @@
             this.arrowButton20.AlertState = LCARS.CoreUi.Enums.LcarsAlert.Normal;
             this.arrowButton20.ArrowDirection = LCARS.CoreUi.Enums.LcarsArrowDirection.Down;
             this.arrowButton20.AutoEllipsis = false;
-            this.arrowButton20.ButtonText = "";
+            this.arrowButton20.Text = "";
             this.arrowButton20.ButtonTextAlign = System.Drawing.ContentAlignment.TopLeft;
             this.arrowButton20.Clickable = true;
             this.arrowButton20.ColorFunction = LCARS.CoreUi.Enums.LcarsColorFunction.StaticTan;
@@ -2000,7 +2000,7 @@
             this.arrowButton9.AlertState = LCARS.CoreUi.Enums.LcarsAlert.Normal;
             this.arrowButton9.ArrowDirection = LCARS.CoreUi.Enums.LcarsArrowDirection.Up;
             this.arrowButton9.AutoEllipsis = false;
-            this.arrowButton9.ButtonText = "";
+            this.arrowButton9.Text = "";
             this.arrowButton9.ButtonTextAlign = System.Drawing.ContentAlignment.TopLeft;
             this.arrowButton9.Clickable = true;
             this.arrowButton9.ColorFunction = LCARS.CoreUi.Enums.LcarsColorFunction.StaticTan;
@@ -2024,7 +2024,7 @@
             this.arrowButton41.AlertState = LCARS.CoreUi.Enums.LcarsAlert.Normal;
             this.arrowButton41.ArrowDirection = LCARS.CoreUi.Enums.LcarsArrowDirection.Right;
             this.arrowButton41.AutoEllipsis = false;
-            this.arrowButton41.ButtonText = "";
+            this.arrowButton41.Text = "";
             this.arrowButton41.ButtonTextAlign = System.Drawing.ContentAlignment.TopLeft;
             this.arrowButton41.Clickable = true;
             this.arrowButton41.ColorFunction = LCARS.CoreUi.Enums.LcarsColorFunction.FunctionOffline;
@@ -2048,7 +2048,7 @@
             this.arrowButton30.AlertState = LCARS.CoreUi.Enums.LcarsAlert.Normal;
             this.arrowButton30.ArrowDirection = LCARS.CoreUi.Enums.LcarsArrowDirection.Left;
             this.arrowButton30.AutoEllipsis = false;
-            this.arrowButton30.ButtonText = "";
+            this.arrowButton30.Text = "";
             this.arrowButton30.ButtonTextAlign = System.Drawing.ContentAlignment.TopLeft;
             this.arrowButton30.Clickable = true;
             this.arrowButton30.ColorFunction = LCARS.CoreUi.Enums.LcarsColorFunction.FunctionOffline;
@@ -2072,7 +2072,7 @@
             this.arrowButton19.AlertState = LCARS.CoreUi.Enums.LcarsAlert.Normal;
             this.arrowButton19.ArrowDirection = LCARS.CoreUi.Enums.LcarsArrowDirection.Down;
             this.arrowButton19.AutoEllipsis = false;
-            this.arrowButton19.ButtonText = "";
+            this.arrowButton19.Text = "";
             this.arrowButton19.ButtonTextAlign = System.Drawing.ContentAlignment.TopLeft;
             this.arrowButton19.Clickable = true;
             this.arrowButton19.ColorFunction = LCARS.CoreUi.Enums.LcarsColorFunction.FunctionOffline;
@@ -2096,7 +2096,7 @@
             this.arrowButton8.AlertState = LCARS.CoreUi.Enums.LcarsAlert.Normal;
             this.arrowButton8.ArrowDirection = LCARS.CoreUi.Enums.LcarsArrowDirection.Up;
             this.arrowButton8.AutoEllipsis = false;
-            this.arrowButton8.ButtonText = "";
+            this.arrowButton8.Text = "";
             this.arrowButton8.ButtonTextAlign = System.Drawing.ContentAlignment.TopLeft;
             this.arrowButton8.Clickable = true;
             this.arrowButton8.ColorFunction = LCARS.CoreUi.Enums.LcarsColorFunction.FunctionOffline;
@@ -2120,7 +2120,7 @@
             this.arrowButton40.AlertState = LCARS.CoreUi.Enums.LcarsAlert.Normal;
             this.arrowButton40.ArrowDirection = LCARS.CoreUi.Enums.LcarsArrowDirection.Right;
             this.arrowButton40.AutoEllipsis = false;
-            this.arrowButton40.ButtonText = "";
+            this.arrowButton40.Text = "";
             this.arrowButton40.ButtonTextAlign = System.Drawing.ContentAlignment.TopLeft;
             this.arrowButton40.Clickable = true;
             this.arrowButton40.ColorFunction = LCARS.CoreUi.Enums.LcarsColorFunction.PrimaryFunction;
@@ -2144,7 +2144,7 @@
             this.arrowButton29.AlertState = LCARS.CoreUi.Enums.LcarsAlert.Normal;
             this.arrowButton29.ArrowDirection = LCARS.CoreUi.Enums.LcarsArrowDirection.Left;
             this.arrowButton29.AutoEllipsis = false;
-            this.arrowButton29.ButtonText = "";
+            this.arrowButton29.Text = "";
             this.arrowButton29.ButtonTextAlign = System.Drawing.ContentAlignment.TopLeft;
             this.arrowButton29.Clickable = true;
             this.arrowButton29.ColorFunction = LCARS.CoreUi.Enums.LcarsColorFunction.PrimaryFunction;
@@ -2168,7 +2168,7 @@
             this.arrowButton18.AlertState = LCARS.CoreUi.Enums.LcarsAlert.Normal;
             this.arrowButton18.ArrowDirection = LCARS.CoreUi.Enums.LcarsArrowDirection.Down;
             this.arrowButton18.AutoEllipsis = false;
-            this.arrowButton18.ButtonText = "";
+            this.arrowButton18.Text = "";
             this.arrowButton18.ButtonTextAlign = System.Drawing.ContentAlignment.TopLeft;
             this.arrowButton18.Clickable = true;
             this.arrowButton18.ColorFunction = LCARS.CoreUi.Enums.LcarsColorFunction.PrimaryFunction;
@@ -2192,7 +2192,7 @@
             this.arrowButton7.AlertState = LCARS.CoreUi.Enums.LcarsAlert.Normal;
             this.arrowButton7.ArrowDirection = LCARS.CoreUi.Enums.LcarsArrowDirection.Up;
             this.arrowButton7.AutoEllipsis = false;
-            this.arrowButton7.ButtonText = "";
+            this.arrowButton7.Text = "";
             this.arrowButton7.ButtonTextAlign = System.Drawing.ContentAlignment.TopLeft;
             this.arrowButton7.Clickable = true;
             this.arrowButton7.ColorFunction = LCARS.CoreUi.Enums.LcarsColorFunction.PrimaryFunction;
@@ -2216,7 +2216,7 @@
             this.arrowButton39.AlertState = LCARS.CoreUi.Enums.LcarsAlert.Normal;
             this.arrowButton39.ArrowDirection = LCARS.CoreUi.Enums.LcarsArrowDirection.Right;
             this.arrowButton39.AutoEllipsis = false;
-            this.arrowButton39.ButtonText = "";
+            this.arrowButton39.Text = "";
             this.arrowButton39.ButtonTextAlign = System.Drawing.ContentAlignment.TopLeft;
             this.arrowButton39.Clickable = true;
             this.arrowButton39.ColorFunction = LCARS.CoreUi.Enums.LcarsColorFunction.LCARSDisplayOnly;
@@ -2240,7 +2240,7 @@
             this.arrowButton28.AlertState = LCARS.CoreUi.Enums.LcarsAlert.Normal;
             this.arrowButton28.ArrowDirection = LCARS.CoreUi.Enums.LcarsArrowDirection.Left;
             this.arrowButton28.AutoEllipsis = false;
-            this.arrowButton28.ButtonText = "";
+            this.arrowButton28.Text = "";
             this.arrowButton28.ButtonTextAlign = System.Drawing.ContentAlignment.TopLeft;
             this.arrowButton28.Clickable = true;
             this.arrowButton28.ColorFunction = LCARS.CoreUi.Enums.LcarsColorFunction.LCARSDisplayOnly;
@@ -2264,7 +2264,7 @@
             this.arrowButton17.AlertState = LCARS.CoreUi.Enums.LcarsAlert.Normal;
             this.arrowButton17.ArrowDirection = LCARS.CoreUi.Enums.LcarsArrowDirection.Down;
             this.arrowButton17.AutoEllipsis = false;
-            this.arrowButton17.ButtonText = "";
+            this.arrowButton17.Text = "";
             this.arrowButton17.ButtonTextAlign = System.Drawing.ContentAlignment.TopLeft;
             this.arrowButton17.Clickable = true;
             this.arrowButton17.ColorFunction = LCARS.CoreUi.Enums.LcarsColorFunction.LCARSDisplayOnly;
@@ -2288,7 +2288,7 @@
             this.arrowButton6.AlertState = LCARS.CoreUi.Enums.LcarsAlert.Normal;
             this.arrowButton6.ArrowDirection = LCARS.CoreUi.Enums.LcarsArrowDirection.Up;
             this.arrowButton6.AutoEllipsis = false;
-            this.arrowButton6.ButtonText = "";
+            this.arrowButton6.Text = "";
             this.arrowButton6.ButtonTextAlign = System.Drawing.ContentAlignment.TopLeft;
             this.arrowButton6.Clickable = true;
             this.arrowButton6.ColorFunction = LCARS.CoreUi.Enums.LcarsColorFunction.LCARSDisplayOnly;
@@ -2312,7 +2312,7 @@
             this.arrowButton38.AlertState = LCARS.CoreUi.Enums.LcarsAlert.Normal;
             this.arrowButton38.ArrowDirection = LCARS.CoreUi.Enums.LcarsArrowDirection.Right;
             this.arrowButton38.AutoEllipsis = false;
-            this.arrowButton38.ButtonText = "";
+            this.arrowButton38.Text = "";
             this.arrowButton38.ButtonTextAlign = System.Drawing.ContentAlignment.TopLeft;
             this.arrowButton38.Clickable = true;
             this.arrowButton38.ColorFunction = LCARS.CoreUi.Enums.LcarsColorFunction.MiscFunction;
@@ -2336,7 +2336,7 @@
             this.arrowButton27.AlertState = LCARS.CoreUi.Enums.LcarsAlert.Normal;
             this.arrowButton27.ArrowDirection = LCARS.CoreUi.Enums.LcarsArrowDirection.Left;
             this.arrowButton27.AutoEllipsis = false;
-            this.arrowButton27.ButtonText = "";
+            this.arrowButton27.Text = "";
             this.arrowButton27.ButtonTextAlign = System.Drawing.ContentAlignment.TopLeft;
             this.arrowButton27.Clickable = true;
             this.arrowButton27.ColorFunction = LCARS.CoreUi.Enums.LcarsColorFunction.MiscFunction;
@@ -2360,7 +2360,7 @@
             this.arrowButton16.AlertState = LCARS.CoreUi.Enums.LcarsAlert.Normal;
             this.arrowButton16.ArrowDirection = LCARS.CoreUi.Enums.LcarsArrowDirection.Down;
             this.arrowButton16.AutoEllipsis = false;
-            this.arrowButton16.ButtonText = "";
+            this.arrowButton16.Text = "";
             this.arrowButton16.ButtonTextAlign = System.Drawing.ContentAlignment.TopLeft;
             this.arrowButton16.Clickable = true;
             this.arrowButton16.ColorFunction = LCARS.CoreUi.Enums.LcarsColorFunction.MiscFunction;
@@ -2384,7 +2384,7 @@
             this.arrowButton37.AlertState = LCARS.CoreUi.Enums.LcarsAlert.Normal;
             this.arrowButton37.ArrowDirection = LCARS.CoreUi.Enums.LcarsArrowDirection.Right;
             this.arrowButton37.AutoEllipsis = false;
-            this.arrowButton37.ButtonText = "";
+            this.arrowButton37.Text = "";
             this.arrowButton37.ButtonTextAlign = System.Drawing.ContentAlignment.TopLeft;
             this.arrowButton37.Clickable = true;
             this.arrowButton37.ColorFunction = LCARS.CoreUi.Enums.LcarsColorFunction.CriticalFunction;
@@ -2408,7 +2408,7 @@
             this.arrowButton26.AlertState = LCARS.CoreUi.Enums.LcarsAlert.Normal;
             this.arrowButton26.ArrowDirection = LCARS.CoreUi.Enums.LcarsArrowDirection.Left;
             this.arrowButton26.AutoEllipsis = false;
-            this.arrowButton26.ButtonText = "";
+            this.arrowButton26.Text = "";
             this.arrowButton26.ButtonTextAlign = System.Drawing.ContentAlignment.TopLeft;
             this.arrowButton26.Clickable = true;
             this.arrowButton26.ColorFunction = LCARS.CoreUi.Enums.LcarsColorFunction.CriticalFunction;
@@ -2432,7 +2432,7 @@
             this.arrowButton15.AlertState = LCARS.CoreUi.Enums.LcarsAlert.Normal;
             this.arrowButton15.ArrowDirection = LCARS.CoreUi.Enums.LcarsArrowDirection.Down;
             this.arrowButton15.AutoEllipsis = false;
-            this.arrowButton15.ButtonText = "";
+            this.arrowButton15.Text = "";
             this.arrowButton15.ButtonTextAlign = System.Drawing.ContentAlignment.TopLeft;
             this.arrowButton15.Clickable = true;
             this.arrowButton15.ColorFunction = LCARS.CoreUi.Enums.LcarsColorFunction.CriticalFunction;
@@ -2456,7 +2456,7 @@
             this.arrowButton58.AlertState = LCARS.CoreUi.Enums.LcarsAlert.Normal;
             this.arrowButton58.ArrowDirection = LCARS.CoreUi.Enums.LcarsArrowDirection.Right;
             this.arrowButton58.AutoEllipsis = false;
-            this.arrowButton58.ButtonText = "";
+            this.arrowButton58.Text = "";
             this.arrowButton58.ButtonTextAlign = System.Drawing.ContentAlignment.TopLeft;
             this.arrowButton58.Clickable = true;
             this.arrowButton58.ColorFunction = LCARS.CoreUi.Enums.LcarsColorFunction.StaticTan;
@@ -2480,7 +2480,7 @@
             this.arrowButton5.AlertState = LCARS.CoreUi.Enums.LcarsAlert.Normal;
             this.arrowButton5.ArrowDirection = LCARS.CoreUi.Enums.LcarsArrowDirection.Up;
             this.arrowButton5.AutoEllipsis = false;
-            this.arrowButton5.ButtonText = "";
+            this.arrowButton5.Text = "";
             this.arrowButton5.ButtonTextAlign = System.Drawing.ContentAlignment.TopLeft;
             this.arrowButton5.Clickable = true;
             this.arrowButton5.ColorFunction = LCARS.CoreUi.Enums.LcarsColorFunction.MiscFunction;
@@ -2504,7 +2504,7 @@
             this.arrowButton36.AlertState = LCARS.CoreUi.Enums.LcarsAlert.Normal;
             this.arrowButton36.ArrowDirection = LCARS.CoreUi.Enums.LcarsArrowDirection.Right;
             this.arrowButton36.AutoEllipsis = false;
-            this.arrowButton36.ButtonText = "";
+            this.arrowButton36.Text = "";
             this.arrowButton36.ButtonTextAlign = System.Drawing.ContentAlignment.TopLeft;
             this.arrowButton36.Clickable = true;
             this.arrowButton36.ColorFunction = LCARS.CoreUi.Enums.LcarsColorFunction.MiscFunction;
@@ -2528,7 +2528,7 @@
             this.arrowButton25.AlertState = LCARS.CoreUi.Enums.LcarsAlert.Normal;
             this.arrowButton25.ArrowDirection = LCARS.CoreUi.Enums.LcarsArrowDirection.Left;
             this.arrowButton25.AutoEllipsis = false;
-            this.arrowButton25.ButtonText = "";
+            this.arrowButton25.Text = "";
             this.arrowButton25.ButtonTextAlign = System.Drawing.ContentAlignment.TopLeft;
             this.arrowButton25.Clickable = true;
             this.arrowButton25.ColorFunction = LCARS.CoreUi.Enums.LcarsColorFunction.MiscFunction;
@@ -2552,7 +2552,7 @@
             this.arrowButton14.AlertState = LCARS.CoreUi.Enums.LcarsAlert.Normal;
             this.arrowButton14.ArrowDirection = LCARS.CoreUi.Enums.LcarsArrowDirection.Down;
             this.arrowButton14.AutoEllipsis = false;
-            this.arrowButton14.ButtonText = "";
+            this.arrowButton14.Text = "";
             this.arrowButton14.ButtonTextAlign = System.Drawing.ContentAlignment.TopLeft;
             this.arrowButton14.Clickable = true;
             this.arrowButton14.ColorFunction = LCARS.CoreUi.Enums.LcarsColorFunction.MiscFunction;
@@ -2576,7 +2576,7 @@
             this.arrowButton4.AlertState = LCARS.CoreUi.Enums.LcarsAlert.Normal;
             this.arrowButton4.ArrowDirection = LCARS.CoreUi.Enums.LcarsArrowDirection.Up;
             this.arrowButton4.AutoEllipsis = false;
-            this.arrowButton4.ButtonText = "";
+            this.arrowButton4.Text = "";
             this.arrowButton4.ButtonTextAlign = System.Drawing.ContentAlignment.TopLeft;
             this.arrowButton4.Clickable = true;
             this.arrowButton4.ColorFunction = LCARS.CoreUi.Enums.LcarsColorFunction.CriticalFunction;
@@ -2600,7 +2600,7 @@
             this.arrowButton35.AlertState = LCARS.CoreUi.Enums.LcarsAlert.Normal;
             this.arrowButton35.ArrowDirection = LCARS.CoreUi.Enums.LcarsArrowDirection.Right;
             this.arrowButton35.AutoEllipsis = false;
-            this.arrowButton35.ButtonText = "";
+            this.arrowButton35.Text = "";
             this.arrowButton35.ButtonTextAlign = System.Drawing.ContentAlignment.TopLeft;
             this.arrowButton35.Clickable = true;
             this.arrowButton35.ColorFunction = LCARS.CoreUi.Enums.LcarsColorFunction.SystemFunction;
@@ -2624,7 +2624,7 @@
             this.arrowButton56.AlertState = LCARS.CoreUi.Enums.LcarsAlert.Normal;
             this.arrowButton56.ArrowDirection = LCARS.CoreUi.Enums.LcarsArrowDirection.Right;
             this.arrowButton56.AutoEllipsis = false;
-            this.arrowButton56.ButtonText = "";
+            this.arrowButton56.Text = "";
             this.arrowButton56.ButtonTextAlign = System.Drawing.ContentAlignment.TopLeft;
             this.arrowButton56.Clickable = true;
             this.arrowButton56.ColorFunction = LCARS.CoreUi.Enums.LcarsColorFunction.FunctionUnavailable;
@@ -2648,7 +2648,7 @@
             this.arrowButton24.AlertState = LCARS.CoreUi.Enums.LcarsAlert.Normal;
             this.arrowButton24.ArrowDirection = LCARS.CoreUi.Enums.LcarsArrowDirection.Left;
             this.arrowButton24.AutoEllipsis = false;
-            this.arrowButton24.ButtonText = "";
+            this.arrowButton24.Text = "";
             this.arrowButton24.ButtonTextAlign = System.Drawing.ContentAlignment.TopLeft;
             this.arrowButton24.Clickable = true;
             this.arrowButton24.ColorFunction = LCARS.CoreUi.Enums.LcarsColorFunction.SystemFunction;
@@ -2672,7 +2672,7 @@
             this.arrowButton13.AlertState = LCARS.CoreUi.Enums.LcarsAlert.Normal;
             this.arrowButton13.ArrowDirection = LCARS.CoreUi.Enums.LcarsArrowDirection.Down;
             this.arrowButton13.AutoEllipsis = false;
-            this.arrowButton13.ButtonText = "";
+            this.arrowButton13.Text = "";
             this.arrowButton13.ButtonTextAlign = System.Drawing.ContentAlignment.TopLeft;
             this.arrowButton13.Clickable = true;
             this.arrowButton13.ColorFunction = LCARS.CoreUi.Enums.LcarsColorFunction.SystemFunction;
@@ -2696,7 +2696,7 @@
             this.arrowButton34.AlertState = LCARS.CoreUi.Enums.LcarsAlert.Normal;
             this.arrowButton34.ArrowDirection = LCARS.CoreUi.Enums.LcarsArrowDirection.Right;
             this.arrowButton34.AutoEllipsis = false;
-            this.arrowButton34.ButtonText = "";
+            this.arrowButton34.Text = "";
             this.arrowButton34.ButtonTextAlign = System.Drawing.ContentAlignment.TopLeft;
             this.arrowButton34.Clickable = true;
             this.arrowButton34.ColorFunction = LCARS.CoreUi.Enums.LcarsColorFunction.FunctionUnavailable;
@@ -2720,7 +2720,7 @@
             this.arrowButton3.AlertState = LCARS.CoreUi.Enums.LcarsAlert.Normal;
             this.arrowButton3.ArrowDirection = LCARS.CoreUi.Enums.LcarsArrowDirection.Up;
             this.arrowButton3.AutoEllipsis = false;
-            this.arrowButton3.ButtonText = "";
+            this.arrowButton3.Text = "";
             this.arrowButton3.ButtonTextAlign = System.Drawing.ContentAlignment.TopLeft;
             this.arrowButton3.Clickable = true;
             this.arrowButton3.ColorFunction = LCARS.CoreUi.Enums.LcarsColorFunction.MiscFunction;
@@ -2744,7 +2744,7 @@
             this.arrowButton23.AlertState = LCARS.CoreUi.Enums.LcarsAlert.Normal;
             this.arrowButton23.ArrowDirection = LCARS.CoreUi.Enums.LcarsArrowDirection.Left;
             this.arrowButton23.AutoEllipsis = false;
-            this.arrowButton23.ButtonText = "";
+            this.arrowButton23.Text = "";
             this.arrowButton23.ButtonTextAlign = System.Drawing.ContentAlignment.TopLeft;
             this.arrowButton23.Clickable = true;
             this.arrowButton23.ColorFunction = LCARS.CoreUi.Enums.LcarsColorFunction.FunctionUnavailable;
@@ -2768,7 +2768,7 @@
             this.arrowButton12.AlertState = LCARS.CoreUi.Enums.LcarsAlert.Normal;
             this.arrowButton12.ArrowDirection = LCARS.CoreUi.Enums.LcarsArrowDirection.Down;
             this.arrowButton12.AutoEllipsis = false;
-            this.arrowButton12.ButtonText = "";
+            this.arrowButton12.Text = "";
             this.arrowButton12.ButtonTextAlign = System.Drawing.ContentAlignment.TopLeft;
             this.arrowButton12.Clickable = true;
             this.arrowButton12.ColorFunction = LCARS.CoreUi.Enums.LcarsColorFunction.FunctionUnavailable;
@@ -2792,7 +2792,7 @@
             this.arrowButton2.AlertState = LCARS.CoreUi.Enums.LcarsAlert.Normal;
             this.arrowButton2.ArrowDirection = LCARS.CoreUi.Enums.LcarsArrowDirection.Up;
             this.arrowButton2.AutoEllipsis = false;
-            this.arrowButton2.ButtonText = "";
+            this.arrowButton2.Text = "";
             this.arrowButton2.ButtonTextAlign = System.Drawing.ContentAlignment.TopLeft;
             this.arrowButton2.Clickable = true;
             this.arrowButton2.ColorFunction = LCARS.CoreUi.Enums.LcarsColorFunction.SystemFunction;
@@ -2816,7 +2816,7 @@
             this.arrowButton1.AlertState = LCARS.CoreUi.Enums.LcarsAlert.Normal;
             this.arrowButton1.ArrowDirection = LCARS.CoreUi.Enums.LcarsArrowDirection.Up;
             this.arrowButton1.AutoEllipsis = false;
-            this.arrowButton1.ButtonText = "";
+            this.arrowButton1.Text = "";
             this.arrowButton1.ButtonTextAlign = System.Drawing.ContentAlignment.TopLeft;
             this.arrowButton1.Clickable = true;
             this.arrowButton1.ColorFunction = LCARS.CoreUi.Enums.LcarsColorFunction.FunctionUnavailable;
@@ -2862,7 +2862,7 @@
             // complexButton12
             // 
             this.complexButton12.AlertState = LCARS.CoreUi.Enums.LcarsAlert.Normal;
-            this.complexButton12.ButtonText = "COMPLEXBUTTON1";
+            this.complexButton12.Text = "COMPLEXBUTTON1";
             this.complexButton12.ButtonTextAlign = System.Drawing.ContentAlignment.TopLeft;
             this.complexButton12.Clickable = true;
             this.complexButton12.ColorFunction = LCARS.CoreUi.Enums.LcarsColorFunction.MiscFunction;
@@ -2890,7 +2890,7 @@
             // complexButton8
             // 
             this.complexButton8.AlertState = LCARS.CoreUi.Enums.LcarsAlert.Normal;
-            this.complexButton8.ButtonText = "COMPLEXBUTTON1";
+            this.complexButton8.Text = "COMPLEXBUTTON1";
             this.complexButton8.ButtonTextAlign = System.Drawing.ContentAlignment.TopLeft;
             this.complexButton8.Clickable = true;
             this.complexButton8.ColorFunction = LCARS.CoreUi.Enums.LcarsColorFunction.FunctionOffline;
@@ -2918,7 +2918,7 @@
             // complexButton4
             // 
             this.complexButton4.AlertState = LCARS.CoreUi.Enums.LcarsAlert.Normal;
-            this.complexButton4.ButtonText = "COMPLEXBUTTON1";
+            this.complexButton4.Text = "COMPLEXBUTTON1";
             this.complexButton4.ButtonTextAlign = System.Drawing.ContentAlignment.TopLeft;
             this.complexButton4.Clickable = true;
             this.complexButton4.ColorFunction = LCARS.CoreUi.Enums.LcarsColorFunction.CriticalFunction;
@@ -2946,7 +2946,7 @@
             // complexButton11
             // 
             this.complexButton11.AlertState = LCARS.CoreUi.Enums.LcarsAlert.Normal;
-            this.complexButton11.ButtonText = "COMPLEXBUTTON1";
+            this.complexButton11.Text = "COMPLEXBUTTON1";
             this.complexButton11.ButtonTextAlign = System.Drawing.ContentAlignment.TopLeft;
             this.complexButton11.Clickable = true;
             this.complexButton11.ColorFunction = LCARS.CoreUi.Enums.LcarsColorFunction.StaticBlue;
@@ -2974,7 +2974,7 @@
             // complexButton7
             // 
             this.complexButton7.AlertState = LCARS.CoreUi.Enums.LcarsAlert.Normal;
-            this.complexButton7.ButtonText = "COMPLEXBUTTON1";
+            this.complexButton7.Text = "COMPLEXBUTTON1";
             this.complexButton7.ButtonTextAlign = System.Drawing.ContentAlignment.TopLeft;
             this.complexButton7.Clickable = true;
             this.complexButton7.ColorFunction = LCARS.CoreUi.Enums.LcarsColorFunction.PrimaryFunction;
@@ -3002,7 +3002,7 @@
             // complexButton3
             // 
             this.complexButton3.AlertState = LCARS.CoreUi.Enums.LcarsAlert.Normal;
-            this.complexButton3.ButtonText = "COMPLEXBUTTON1";
+            this.complexButton3.Text = "COMPLEXBUTTON1";
             this.complexButton3.ButtonTextAlign = System.Drawing.ContentAlignment.TopLeft;
             this.complexButton3.Clickable = true;
             this.complexButton3.ColorFunction = LCARS.CoreUi.Enums.LcarsColorFunction.MiscFunction;
@@ -3030,7 +3030,7 @@
             // complexButton10
             // 
             this.complexButton10.AlertState = LCARS.CoreUi.Enums.LcarsAlert.Normal;
-            this.complexButton10.ButtonText = "COMPLEXBUTTON1";
+            this.complexButton10.Text = "COMPLEXBUTTON1";
             this.complexButton10.ButtonTextAlign = System.Drawing.ContentAlignment.TopLeft;
             this.complexButton10.Clickable = true;
             this.complexButton10.ColorFunction = LCARS.CoreUi.Enums.LcarsColorFunction.Orange;
@@ -3058,7 +3058,7 @@
             // complexButton6
             // 
             this.complexButton6.AlertState = LCARS.CoreUi.Enums.LcarsAlert.Normal;
-            this.complexButton6.ButtonText = "COMPLEXBUTTON1";
+            this.complexButton6.Text = "COMPLEXBUTTON1";
             this.complexButton6.ButtonTextAlign = System.Drawing.ContentAlignment.TopLeft;
             this.complexButton6.Clickable = true;
             this.complexButton6.ColorFunction = LCARS.CoreUi.Enums.LcarsColorFunction.LCARSDisplayOnly;
@@ -3086,7 +3086,7 @@
             // complexButton2
             // 
             this.complexButton2.AlertState = LCARS.CoreUi.Enums.LcarsAlert.Normal;
-            this.complexButton2.ButtonText = "COMPLEXBUTTON1";
+            this.complexButton2.Text = "COMPLEXBUTTON1";
             this.complexButton2.ButtonTextAlign = System.Drawing.ContentAlignment.TopLeft;
             this.complexButton2.Clickable = true;
             this.complexButton2.ColorFunction = LCARS.CoreUi.Enums.LcarsColorFunction.SystemFunction;
@@ -3114,7 +3114,7 @@
             // complexButton9
             // 
             this.complexButton9.AlertState = LCARS.CoreUi.Enums.LcarsAlert.Normal;
-            this.complexButton9.ButtonText = "COMPLEXBUTTON1";
+            this.complexButton9.Text = "COMPLEXBUTTON1";
             this.complexButton9.ButtonTextAlign = System.Drawing.ContentAlignment.TopLeft;
             this.complexButton9.Clickable = true;
             this.complexButton9.ColorFunction = LCARS.CoreUi.Enums.LcarsColorFunction.StaticTan;
@@ -3142,7 +3142,7 @@
             // complexButton5
             // 
             this.complexButton5.AlertState = LCARS.CoreUi.Enums.LcarsAlert.Normal;
-            this.complexButton5.ButtonText = "COMPLEXBUTTON1";
+            this.complexButton5.Text = "COMPLEXBUTTON1";
             this.complexButton5.ButtonTextAlign = System.Drawing.ContentAlignment.TopLeft;
             this.complexButton5.Clickable = true;
             this.complexButton5.ColorFunction = LCARS.CoreUi.Enums.LcarsColorFunction.MiscFunction;
@@ -3170,7 +3170,7 @@
             // complexButton1
             // 
             this.complexButton1.AlertState = LCARS.CoreUi.Enums.LcarsAlert.Normal;
-            this.complexButton1.ButtonText = "COMPLEXBUTTON1";
+            this.complexButton1.Text = "COMPLEXBUTTON1";
             this.complexButton1.ButtonTextAlign = System.Drawing.ContentAlignment.TopLeft;
             this.complexButton1.Clickable = true;
             this.complexButton1.ColorFunction = LCARS.CoreUi.Enums.LcarsColorFunction.FunctionUnavailable;
@@ -3225,7 +3225,7 @@
             // flatButton15
             // 
             this.flatButton15.AlertState = LCARS.CoreUi.Enums.LcarsAlert.Normal;
-            this.flatButton15.ButtonText = "FLATBUTTON15";
+            this.flatButton15.Text = "FLATBUTTON15";
             this.flatButton15.ButtonTextAlign = System.Drawing.ContentAlignment.TopLeft;
             this.flatButton15.Clickable = true;
             this.flatButton15.ColorFunction = LCARS.CoreUi.Enums.LcarsColorFunction.CriticalFunction;
@@ -3249,7 +3249,7 @@
             // flatButton14
             // 
             this.flatButton14.AlertState = LCARS.CoreUi.Enums.LcarsAlert.Normal;
-            this.flatButton14.ButtonText = "FLATBUTTON14";
+            this.flatButton14.Text = "FLATBUTTON14";
             this.flatButton14.ButtonTextAlign = System.Drawing.ContentAlignment.TopLeft;
             this.flatButton14.Clickable = true;
             this.flatButton14.ColorFunction = LCARS.CoreUi.Enums.LcarsColorFunction.PrimaryFunction;
@@ -3273,7 +3273,7 @@
             // flatButton13
             // 
             this.flatButton13.AlertState = LCARS.CoreUi.Enums.LcarsAlert.Normal;
-            this.flatButton13.ButtonText = "FLATBUTTON13";
+            this.flatButton13.Text = "FLATBUTTON13";
             this.flatButton13.ButtonTextAlign = System.Drawing.ContentAlignment.TopLeft;
             this.flatButton13.Clickable = true;
             this.flatButton13.ColorFunction = LCARS.CoreUi.Enums.LcarsColorFunction.Orange;
@@ -3297,7 +3297,7 @@
             // flatButton12
             // 
             this.flatButton12.AlertState = LCARS.CoreUi.Enums.LcarsAlert.Normal;
-            this.flatButton12.ButtonText = "FLATBUTTON12";
+            this.flatButton12.Text = "FLATBUTTON12";
             this.flatButton12.ButtonTextAlign = System.Drawing.ContentAlignment.TopLeft;
             this.flatButton12.Clickable = true;
             this.flatButton12.ColorFunction = LCARS.CoreUi.Enums.LcarsColorFunction.MiscFunction;
@@ -3322,7 +3322,7 @@
             // flatButton11
             // 
             this.flatButton11.AlertState = LCARS.CoreUi.Enums.LcarsAlert.Normal;
-            this.flatButton11.ButtonText = "FLATBUTTON11";
+            this.flatButton11.Text = "FLATBUTTON11";
             this.flatButton11.ButtonTextAlign = System.Drawing.ContentAlignment.TopLeft;
             this.flatButton11.Clickable = true;
             this.flatButton11.ColorFunction = LCARS.CoreUi.Enums.LcarsColorFunction.CriticalFunction;
@@ -3346,7 +3346,7 @@
             // flatButton10
             // 
             this.flatButton10.AlertState = LCARS.CoreUi.Enums.LcarsAlert.Normal;
-            this.flatButton10.ButtonText = "FLATBUTTON10";
+            this.flatButton10.Text = "FLATBUTTON10";
             this.flatButton10.ButtonTextAlign = System.Drawing.ContentAlignment.TopLeft;
             this.flatButton10.Clickable = true;
             this.flatButton10.ColorFunction = LCARS.CoreUi.Enums.LcarsColorFunction.SystemFunction;
@@ -3370,7 +3370,7 @@
             // flatButton9
             // 
             this.flatButton9.AlertState = LCARS.CoreUi.Enums.LcarsAlert.Normal;
-            this.flatButton9.ButtonText = "FLATBUTTON9";
+            this.flatButton9.Text = "FLATBUTTON9";
             this.flatButton9.ButtonTextAlign = System.Drawing.ContentAlignment.TopLeft;
             this.flatButton9.Clickable = true;
             this.flatButton9.ColorFunction = LCARS.CoreUi.Enums.LcarsColorFunction.FunctionOffline;
@@ -3395,7 +3395,7 @@
             // flatButton8
             // 
             this.flatButton8.AlertState = LCARS.CoreUi.Enums.LcarsAlert.Normal;
-            this.flatButton8.ButtonText = "FLATBUTTON8";
+            this.flatButton8.Text = "FLATBUTTON8";
             this.flatButton8.ButtonTextAlign = System.Drawing.ContentAlignment.TopLeft;
             this.flatButton8.Clickable = true;
             this.flatButton8.ColorFunction = LCARS.CoreUi.Enums.LcarsColorFunction.LCARSDisplayOnly;
@@ -3419,7 +3419,7 @@
             // flatButton7
             // 
             this.flatButton7.AlertState = LCARS.CoreUi.Enums.LcarsAlert.Normal;
-            this.flatButton7.ButtonText = "FLATBUTTON7";
+            this.flatButton7.Text = "FLATBUTTON7";
             this.flatButton7.ButtonTextAlign = System.Drawing.ContentAlignment.TopLeft;
             this.flatButton7.Clickable = true;
             this.flatButton7.ColorFunction = LCARS.CoreUi.Enums.LcarsColorFunction.FunctionUnavailable;
@@ -3443,7 +3443,7 @@
             // flatButton6
             // 
             this.flatButton6.AlertState = LCARS.CoreUi.Enums.LcarsAlert.Normal;
-            this.flatButton6.ButtonText = "FLATBUTTON6";
+            this.flatButton6.Text = "FLATBUTTON6";
             this.flatButton6.ButtonTextAlign = System.Drawing.ContentAlignment.TopLeft;
             this.flatButton6.Clickable = true;
             this.flatButton6.ColorFunction = LCARS.CoreUi.Enums.LcarsColorFunction.MiscFunction;
@@ -3467,7 +3467,7 @@
             // flatButton5
             // 
             this.flatButton5.AlertState = LCARS.CoreUi.Enums.LcarsAlert.Normal;
-            this.flatButton5.ButtonText = "FLATBUTTON5";
+            this.flatButton5.Text = "FLATBUTTON5";
             this.flatButton5.ButtonTextAlign = System.Drawing.ContentAlignment.TopLeft;
             this.flatButton5.Clickable = true;
             this.flatButton5.ColorFunction = LCARS.CoreUi.Enums.LcarsColorFunction.CriticalFunction;
@@ -3491,7 +3491,7 @@
             // flatButton4
             // 
             this.flatButton4.AlertState = LCARS.CoreUi.Enums.LcarsAlert.Normal;
-            this.flatButton4.ButtonText = "FLATBUTTON4";
+            this.flatButton4.Text = "FLATBUTTON4";
             this.flatButton4.ButtonTextAlign = System.Drawing.ContentAlignment.TopLeft;
             this.flatButton4.Clickable = true;
             this.flatButton4.ColorFunction = LCARS.CoreUi.Enums.LcarsColorFunction.LCARSDisplayOnly;
@@ -3515,7 +3515,7 @@
             // flatButton3
             // 
             this.flatButton3.AlertState = LCARS.CoreUi.Enums.LcarsAlert.Normal;
-            this.flatButton3.ButtonText = "FLATBUTTON1";
+            this.flatButton3.Text = "FLATBUTTON1";
             this.flatButton3.ButtonTextAlign = System.Drawing.ContentAlignment.TopLeft;
             this.flatButton3.Clickable = true;
             this.flatButton3.ColorFunction = LCARS.CoreUi.Enums.LcarsColorFunction.PrimaryFunction;
@@ -3540,7 +3540,7 @@
             // flatButton2
             // 
             this.flatButton2.AlertState = LCARS.CoreUi.Enums.LcarsAlert.Normal;
-            this.flatButton2.ButtonText = "FLATBUTTON1";
+            this.flatButton2.Text = "FLATBUTTON1";
             this.flatButton2.ButtonTextAlign = System.Drawing.ContentAlignment.TopLeft;
             this.flatButton2.Clickable = true;
             this.flatButton2.ColorFunction = LCARS.CoreUi.Enums.LcarsColorFunction.MiscFunction;
@@ -3564,7 +3564,7 @@
             // flatButton1
             // 
             this.flatButton1.AlertState = LCARS.CoreUi.Enums.LcarsAlert.Normal;
-            this.flatButton1.ButtonText = "FLATBUTTON1";
+            this.flatButton1.Text = "FLATBUTTON1";
             this.flatButton1.ButtonTextAlign = System.Drawing.ContentAlignment.TopLeft;
             this.flatButton1.Clickable = true;
             this.flatButton1.ColorFunction = LCARS.CoreUi.Enums.LcarsColorFunction.StaticBlue;
@@ -3612,7 +3612,7 @@
             this.halfPillButton10.AlertState = LCARS.CoreUi.Enums.LcarsAlert.Normal;
             this.halfPillButton10.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.halfPillButton10.ButtonStyle = LCARS.CoreUi.Enums.LcarsHalfPillButtonStyles.Left;
-            this.halfPillButton10.ButtonText = "HALFPILLBUTTON2";
+            this.halfPillButton10.Text = "HALFPILLBUTTON2";
             this.halfPillButton10.ButtonTextAlign = System.Drawing.ContentAlignment.TopLeft;
             this.halfPillButton10.Clickable = true;
             this.halfPillButton10.ColorFunction = LCARS.CoreUi.Enums.LcarsColorFunction.StaticBlue;
@@ -3638,7 +3638,7 @@
             this.halfPillButton8.AlertState = LCARS.CoreUi.Enums.LcarsAlert.Normal;
             this.halfPillButton8.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.halfPillButton8.ButtonStyle = LCARS.CoreUi.Enums.LcarsHalfPillButtonStyles.Left;
-            this.halfPillButton8.ButtonText = "HALFPILLBUTTON2";
+            this.halfPillButton8.Text = "HALFPILLBUTTON2";
             this.halfPillButton8.ButtonTextAlign = System.Drawing.ContentAlignment.TopLeft;
             this.halfPillButton8.Clickable = true;
             this.halfPillButton8.ColorFunction = LCARS.CoreUi.Enums.LcarsColorFunction.Orange;
@@ -3664,7 +3664,7 @@
             this.halfPillButton6.AlertState = LCARS.CoreUi.Enums.LcarsAlert.Normal;
             this.halfPillButton6.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.halfPillButton6.ButtonStyle = LCARS.CoreUi.Enums.LcarsHalfPillButtonStyles.Left;
-            this.halfPillButton6.ButtonText = "HALFPILLBUTTON2";
+            this.halfPillButton6.Text = "HALFPILLBUTTON2";
             this.halfPillButton6.ButtonTextAlign = System.Drawing.ContentAlignment.TopLeft;
             this.halfPillButton6.Clickable = true;
             this.halfPillButton6.ColorFunction = LCARS.CoreUi.Enums.LcarsColorFunction.StaticTan;
@@ -3689,7 +3689,7 @@
             // 
             this.halfPillButton9.AlertState = LCARS.CoreUi.Enums.LcarsAlert.Normal;
             this.halfPillButton9.ButtonStyle = LCARS.CoreUi.Enums.LcarsHalfPillButtonStyles.Right;
-            this.halfPillButton9.ButtonText = "HALFPILLBUTTON1";
+            this.halfPillButton9.Text = "HALFPILLBUTTON1";
             this.halfPillButton9.ButtonTextAlign = System.Drawing.ContentAlignment.TopLeft;
             this.halfPillButton9.Clickable = true;
             this.halfPillButton9.ColorFunction = LCARS.CoreUi.Enums.LcarsColorFunction.LCARSDisplayOnly;
@@ -3715,7 +3715,7 @@
             this.halfPillButton4.AlertState = LCARS.CoreUi.Enums.LcarsAlert.Normal;
             this.halfPillButton4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.halfPillButton4.ButtonStyle = LCARS.CoreUi.Enums.LcarsHalfPillButtonStyles.Left;
-            this.halfPillButton4.ButtonText = "HALFPILLBUTTON2";
+            this.halfPillButton4.Text = "HALFPILLBUTTON2";
             this.halfPillButton4.ButtonTextAlign = System.Drawing.ContentAlignment.TopLeft;
             this.halfPillButton4.Clickable = true;
             this.halfPillButton4.ColorFunction = LCARS.CoreUi.Enums.LcarsColorFunction.FunctionOffline;
@@ -3740,7 +3740,7 @@
             // 
             this.halfPillButton7.AlertState = LCARS.CoreUi.Enums.LcarsAlert.Normal;
             this.halfPillButton7.ButtonStyle = LCARS.CoreUi.Enums.LcarsHalfPillButtonStyles.Right;
-            this.halfPillButton7.ButtonText = "HALFPILLBUTTON1";
+            this.halfPillButton7.Text = "HALFPILLBUTTON1";
             this.halfPillButton7.ButtonTextAlign = System.Drawing.ContentAlignment.TopLeft;
             this.halfPillButton7.Clickable = true;
             this.halfPillButton7.ColorFunction = LCARS.CoreUi.Enums.LcarsColorFunction.MiscFunction;
@@ -3765,7 +3765,7 @@
             // 
             this.halfPillButton5.AlertState = LCARS.CoreUi.Enums.LcarsAlert.Normal;
             this.halfPillButton5.ButtonStyle = LCARS.CoreUi.Enums.LcarsHalfPillButtonStyles.Right;
-            this.halfPillButton5.ButtonText = "HALFPILLBUTTON1";
+            this.halfPillButton5.Text = "HALFPILLBUTTON1";
             this.halfPillButton5.ButtonTextAlign = System.Drawing.ContentAlignment.TopLeft;
             this.halfPillButton5.Clickable = true;
             this.halfPillButton5.ColorFunction = LCARS.CoreUi.Enums.LcarsColorFunction.CriticalFunction;
@@ -3790,7 +3790,7 @@
             // 
             this.halfPillButton3.AlertState = LCARS.CoreUi.Enums.LcarsAlert.Normal;
             this.halfPillButton3.ButtonStyle = LCARS.CoreUi.Enums.LcarsHalfPillButtonStyles.Right;
-            this.halfPillButton3.ButtonText = "HALFPILLBUTTON1";
+            this.halfPillButton3.Text = "HALFPILLBUTTON1";
             this.halfPillButton3.ButtonTextAlign = System.Drawing.ContentAlignment.TopLeft;
             this.halfPillButton3.Clickable = true;
             this.halfPillButton3.ColorFunction = LCARS.CoreUi.Enums.LcarsColorFunction.SystemFunction;
@@ -3816,7 +3816,7 @@
             this.halfPillButton2.AlertState = LCARS.CoreUi.Enums.LcarsAlert.Normal;
             this.halfPillButton2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.halfPillButton2.ButtonStyle = LCARS.CoreUi.Enums.LcarsHalfPillButtonStyles.Left;
-            this.halfPillButton2.ButtonText = "HALFPILLBUTTON2";
+            this.halfPillButton2.Text = "HALFPILLBUTTON2";
             this.halfPillButton2.ButtonTextAlign = System.Drawing.ContentAlignment.TopLeft;
             this.halfPillButton2.Clickable = true;
             this.halfPillButton2.ColorFunction = LCARS.CoreUi.Enums.LcarsColorFunction.PrimaryFunction;
@@ -3841,7 +3841,7 @@
             // 
             this.halfPillButton1.AlertState = LCARS.CoreUi.Enums.LcarsAlert.Normal;
             this.halfPillButton1.ButtonStyle = LCARS.CoreUi.Enums.LcarsHalfPillButtonStyles.Right;
-            this.halfPillButton1.ButtonText = "HALFPILLBUTTON1";
+            this.halfPillButton1.Text = "HALFPILLBUTTON1";
             this.halfPillButton1.ButtonTextAlign = System.Drawing.ContentAlignment.TopLeft;
             this.halfPillButton1.Clickable = true;
             this.halfPillButton1.ColorFunction = LCARS.CoreUi.Enums.LcarsColorFunction.FunctionUnavailable;
@@ -3910,7 +3910,7 @@
             // textButton22
             // 
             this.textButton22.AlertState = LCARS.CoreUi.Enums.LcarsAlert.Normal;
-            this.textButton22.ButtonText = "TEXTBUTTON1";
+            this.textButton22.Text = "TEXTBUTTON1";
             this.textButton22.ButtonTextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.textButton22.ButtonType = LCARS.CoreUi.UiElements.Controls.TextButton.TextButtonType.RightPill;
             this.textButton22.Clickable = true;
@@ -3935,7 +3935,7 @@
             // textButton33
             // 
             this.textButton33.AlertState = LCARS.CoreUi.Enums.LcarsAlert.Normal;
-            this.textButton33.ButtonText = "TEXTBUTTON1";
+            this.textButton33.Text = "TEXTBUTTON1";
             this.textButton33.ButtonTextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.textButton33.ButtonType = LCARS.CoreUi.UiElements.Controls.TextButton.TextButtonType.LeftPill;
             this.textButton33.Clickable = true;
@@ -3960,7 +3960,7 @@
             // textButton11
             // 
             this.textButton11.AlertState = LCARS.CoreUi.Enums.LcarsAlert.Normal;
-            this.textButton11.ButtonText = "TEXTBUTTON1";
+            this.textButton11.Text = "TEXTBUTTON1";
             this.textButton11.ButtonTextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.textButton11.ButtonType = LCARS.CoreUi.UiElements.Controls.TextButton.TextButtonType.DoublePills;
             this.textButton11.Clickable = true;
@@ -3985,7 +3985,7 @@
             // textButton21
             // 
             this.textButton21.AlertState = LCARS.CoreUi.Enums.LcarsAlert.Normal;
-            this.textButton21.ButtonText = "TEXTBUTTON1";
+            this.textButton21.Text = "TEXTBUTTON1";
             this.textButton21.ButtonTextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.textButton21.ButtonType = LCARS.CoreUi.UiElements.Controls.TextButton.TextButtonType.RightPill;
             this.textButton21.Clickable = true;
@@ -4010,7 +4010,7 @@
             // textButton32
             // 
             this.textButton32.AlertState = LCARS.CoreUi.Enums.LcarsAlert.Normal;
-            this.textButton32.ButtonText = "TEXTBUTTON1";
+            this.textButton32.Text = "TEXTBUTTON1";
             this.textButton32.ButtonTextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.textButton32.ButtonType = LCARS.CoreUi.UiElements.Controls.TextButton.TextButtonType.LeftPill;
             this.textButton32.Clickable = true;
@@ -4035,7 +4035,7 @@
             // textButton10
             // 
             this.textButton10.AlertState = LCARS.CoreUi.Enums.LcarsAlert.Normal;
-            this.textButton10.ButtonText = "TEXTBUTTON1";
+            this.textButton10.Text = "TEXTBUTTON1";
             this.textButton10.ButtonTextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.textButton10.ButtonType = LCARS.CoreUi.UiElements.Controls.TextButton.TextButtonType.DoublePills;
             this.textButton10.Clickable = true;
@@ -4060,7 +4060,7 @@
             // textButton20
             // 
             this.textButton20.AlertState = LCARS.CoreUi.Enums.LcarsAlert.Normal;
-            this.textButton20.ButtonText = "TEXTBUTTON1";
+            this.textButton20.Text = "TEXTBUTTON1";
             this.textButton20.ButtonTextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.textButton20.ButtonType = LCARS.CoreUi.UiElements.Controls.TextButton.TextButtonType.RightPill;
             this.textButton20.Clickable = true;
@@ -4085,7 +4085,7 @@
             // textButton31
             // 
             this.textButton31.AlertState = LCARS.CoreUi.Enums.LcarsAlert.Normal;
-            this.textButton31.ButtonText = "TEXTBUTTON1";
+            this.textButton31.Text = "TEXTBUTTON1";
             this.textButton31.ButtonTextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.textButton31.ButtonType = LCARS.CoreUi.UiElements.Controls.TextButton.TextButtonType.LeftPill;
             this.textButton31.Clickable = true;
@@ -4110,7 +4110,7 @@
             // textButton9
             // 
             this.textButton9.AlertState = LCARS.CoreUi.Enums.LcarsAlert.Normal;
-            this.textButton9.ButtonText = "TEXTBUTTON1";
+            this.textButton9.Text = "TEXTBUTTON1";
             this.textButton9.ButtonTextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.textButton9.ButtonType = LCARS.CoreUi.UiElements.Controls.TextButton.TextButtonType.DoublePills;
             this.textButton9.Clickable = true;
@@ -4135,7 +4135,7 @@
             // textButton19
             // 
             this.textButton19.AlertState = LCARS.CoreUi.Enums.LcarsAlert.Normal;
-            this.textButton19.ButtonText = "TEXTBUTTON1";
+            this.textButton19.Text = "TEXTBUTTON1";
             this.textButton19.ButtonTextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.textButton19.ButtonType = LCARS.CoreUi.UiElements.Controls.TextButton.TextButtonType.RightPill;
             this.textButton19.Clickable = true;
@@ -4160,7 +4160,7 @@
             // textButton30
             // 
             this.textButton30.AlertState = LCARS.CoreUi.Enums.LcarsAlert.Normal;
-            this.textButton30.ButtonText = "TEXTBUTTON1";
+            this.textButton30.Text = "TEXTBUTTON1";
             this.textButton30.ButtonTextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.textButton30.ButtonType = LCARS.CoreUi.UiElements.Controls.TextButton.TextButtonType.LeftPill;
             this.textButton30.Clickable = true;
@@ -4185,7 +4185,7 @@
             // textButton8
             // 
             this.textButton8.AlertState = LCARS.CoreUi.Enums.LcarsAlert.Normal;
-            this.textButton8.ButtonText = "TEXTBUTTON1";
+            this.textButton8.Text = "TEXTBUTTON1";
             this.textButton8.ButtonTextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.textButton8.ButtonType = LCARS.CoreUi.UiElements.Controls.TextButton.TextButtonType.DoublePills;
             this.textButton8.Clickable = true;
@@ -4210,7 +4210,7 @@
             // textButton18
             // 
             this.textButton18.AlertState = LCARS.CoreUi.Enums.LcarsAlert.Normal;
-            this.textButton18.ButtonText = "TEXTBUTTON1";
+            this.textButton18.Text = "TEXTBUTTON1";
             this.textButton18.ButtonTextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.textButton18.ButtonType = LCARS.CoreUi.UiElements.Controls.TextButton.TextButtonType.RightPill;
             this.textButton18.Clickable = true;
@@ -4235,7 +4235,7 @@
             // textButton29
             // 
             this.textButton29.AlertState = LCARS.CoreUi.Enums.LcarsAlert.Normal;
-            this.textButton29.ButtonText = "TEXTBUTTON1";
+            this.textButton29.Text = "TEXTBUTTON1";
             this.textButton29.ButtonTextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.textButton29.ButtonType = LCARS.CoreUi.UiElements.Controls.TextButton.TextButtonType.LeftPill;
             this.textButton29.Clickable = true;
@@ -4260,7 +4260,7 @@
             // textButton7
             // 
             this.textButton7.AlertState = LCARS.CoreUi.Enums.LcarsAlert.Normal;
-            this.textButton7.ButtonText = "TEXTBUTTON1";
+            this.textButton7.Text = "TEXTBUTTON1";
             this.textButton7.ButtonTextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.textButton7.ButtonType = LCARS.CoreUi.UiElements.Controls.TextButton.TextButtonType.DoublePills;
             this.textButton7.Clickable = true;
@@ -4285,7 +4285,7 @@
             // textButton17
             // 
             this.textButton17.AlertState = LCARS.CoreUi.Enums.LcarsAlert.Normal;
-            this.textButton17.ButtonText = "TEXTBUTTON1";
+            this.textButton17.Text = "TEXTBUTTON1";
             this.textButton17.ButtonTextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.textButton17.ButtonType = LCARS.CoreUi.UiElements.Controls.TextButton.TextButtonType.RightPill;
             this.textButton17.Clickable = true;
@@ -4310,7 +4310,7 @@
             // textButton28
             // 
             this.textButton28.AlertState = LCARS.CoreUi.Enums.LcarsAlert.Normal;
-            this.textButton28.ButtonText = "TEXTBUTTON1";
+            this.textButton28.Text = "TEXTBUTTON1";
             this.textButton28.ButtonTextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.textButton28.ButtonType = LCARS.CoreUi.UiElements.Controls.TextButton.TextButtonType.LeftPill;
             this.textButton28.Clickable = true;
@@ -4335,7 +4335,7 @@
             // textButton6
             // 
             this.textButton6.AlertState = LCARS.CoreUi.Enums.LcarsAlert.Normal;
-            this.textButton6.ButtonText = "TEXTBUTTON1";
+            this.textButton6.Text = "TEXTBUTTON1";
             this.textButton6.ButtonTextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.textButton6.ButtonType = LCARS.CoreUi.UiElements.Controls.TextButton.TextButtonType.DoublePills;
             this.textButton6.Clickable = true;
@@ -4360,7 +4360,7 @@
             // textButton16
             // 
             this.textButton16.AlertState = LCARS.CoreUi.Enums.LcarsAlert.Normal;
-            this.textButton16.ButtonText = "TEXTBUTTON1";
+            this.textButton16.Text = "TEXTBUTTON1";
             this.textButton16.ButtonTextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.textButton16.ButtonType = LCARS.CoreUi.UiElements.Controls.TextButton.TextButtonType.RightPill;
             this.textButton16.Clickable = true;
@@ -4385,7 +4385,7 @@
             // textButton27
             // 
             this.textButton27.AlertState = LCARS.CoreUi.Enums.LcarsAlert.Normal;
-            this.textButton27.ButtonText = "TEXTBUTTON1";
+            this.textButton27.Text = "TEXTBUTTON1";
             this.textButton27.ButtonTextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.textButton27.ButtonType = LCARS.CoreUi.UiElements.Controls.TextButton.TextButtonType.LeftPill;
             this.textButton27.Clickable = true;
@@ -4410,7 +4410,7 @@
             // textButton5
             // 
             this.textButton5.AlertState = LCARS.CoreUi.Enums.LcarsAlert.Normal;
-            this.textButton5.ButtonText = "TEXTBUTTON1";
+            this.textButton5.Text = "TEXTBUTTON1";
             this.textButton5.ButtonTextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.textButton5.ButtonType = LCARS.CoreUi.UiElements.Controls.TextButton.TextButtonType.DoublePills;
             this.textButton5.Clickable = true;
@@ -4435,7 +4435,7 @@
             // textButton15
             // 
             this.textButton15.AlertState = LCARS.CoreUi.Enums.LcarsAlert.Normal;
-            this.textButton15.ButtonText = "TEXTBUTTON1";
+            this.textButton15.Text = "TEXTBUTTON1";
             this.textButton15.ButtonTextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.textButton15.ButtonType = LCARS.CoreUi.UiElements.Controls.TextButton.TextButtonType.RightPill;
             this.textButton15.Clickable = true;
@@ -4460,7 +4460,7 @@
             // textButton26
             // 
             this.textButton26.AlertState = LCARS.CoreUi.Enums.LcarsAlert.Normal;
-            this.textButton26.ButtonText = "TEXTBUTTON1";
+            this.textButton26.Text = "TEXTBUTTON1";
             this.textButton26.ButtonTextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.textButton26.ButtonType = LCARS.CoreUi.UiElements.Controls.TextButton.TextButtonType.LeftPill;
             this.textButton26.Clickable = true;
@@ -4485,7 +4485,7 @@
             // textButton4
             // 
             this.textButton4.AlertState = LCARS.CoreUi.Enums.LcarsAlert.Normal;
-            this.textButton4.ButtonText = "TEXTBUTTON1";
+            this.textButton4.Text = "TEXTBUTTON1";
             this.textButton4.ButtonTextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.textButton4.ButtonType = LCARS.CoreUi.UiElements.Controls.TextButton.TextButtonType.DoublePills;
             this.textButton4.Clickable = true;
@@ -4510,7 +4510,7 @@
             // textButton14
             // 
             this.textButton14.AlertState = LCARS.CoreUi.Enums.LcarsAlert.Normal;
-            this.textButton14.ButtonText = "TEXTBUTTON1";
+            this.textButton14.Text = "TEXTBUTTON1";
             this.textButton14.ButtonTextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.textButton14.ButtonType = LCARS.CoreUi.UiElements.Controls.TextButton.TextButtonType.RightPill;
             this.textButton14.Clickable = true;
@@ -4535,7 +4535,7 @@
             // textButton25
             // 
             this.textButton25.AlertState = LCARS.CoreUi.Enums.LcarsAlert.Normal;
-            this.textButton25.ButtonText = "TEXTBUTTON1";
+            this.textButton25.Text = "TEXTBUTTON1";
             this.textButton25.ButtonTextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.textButton25.ButtonType = LCARS.CoreUi.UiElements.Controls.TextButton.TextButtonType.LeftPill;
             this.textButton25.Clickable = true;
@@ -4560,7 +4560,7 @@
             // textButton3
             // 
             this.textButton3.AlertState = LCARS.CoreUi.Enums.LcarsAlert.Normal;
-            this.textButton3.ButtonText = "TEXTBUTTON1";
+            this.textButton3.Text = "TEXTBUTTON1";
             this.textButton3.ButtonTextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.textButton3.ButtonType = LCARS.CoreUi.UiElements.Controls.TextButton.TextButtonType.DoublePills;
             this.textButton3.Clickable = true;
@@ -4585,7 +4585,7 @@
             // textButton13
             // 
             this.textButton13.AlertState = LCARS.CoreUi.Enums.LcarsAlert.Normal;
-            this.textButton13.ButtonText = "TEXTBUTTON1";
+            this.textButton13.Text = "TEXTBUTTON1";
             this.textButton13.ButtonTextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.textButton13.ButtonType = LCARS.CoreUi.UiElements.Controls.TextButton.TextButtonType.RightPill;
             this.textButton13.Clickable = true;
@@ -4610,7 +4610,7 @@
             // textButton24
             // 
             this.textButton24.AlertState = LCARS.CoreUi.Enums.LcarsAlert.Normal;
-            this.textButton24.ButtonText = "TEXTBUTTON1";
+            this.textButton24.Text = "TEXTBUTTON1";
             this.textButton24.ButtonTextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.textButton24.ButtonType = LCARS.CoreUi.UiElements.Controls.TextButton.TextButtonType.LeftPill;
             this.textButton24.Clickable = true;
@@ -4635,7 +4635,7 @@
             // textButton2
             // 
             this.textButton2.AlertState = LCARS.CoreUi.Enums.LcarsAlert.Normal;
-            this.textButton2.ButtonText = "TEXTBUTTON1";
+            this.textButton2.Text = "TEXTBUTTON1";
             this.textButton2.ButtonTextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.textButton2.ButtonType = LCARS.CoreUi.UiElements.Controls.TextButton.TextButtonType.DoublePills;
             this.textButton2.Clickable = true;
@@ -4660,7 +4660,7 @@
             // textButton12
             // 
             this.textButton12.AlertState = LCARS.CoreUi.Enums.LcarsAlert.Normal;
-            this.textButton12.ButtonText = "TEXTBUTTON1";
+            this.textButton12.Text = "TEXTBUTTON1";
             this.textButton12.ButtonTextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.textButton12.ButtonType = LCARS.CoreUi.UiElements.Controls.TextButton.TextButtonType.RightPill;
             this.textButton12.Clickable = true;
@@ -4685,7 +4685,7 @@
             // textButton23
             // 
             this.textButton23.AlertState = LCARS.CoreUi.Enums.LcarsAlert.Normal;
-            this.textButton23.ButtonText = "TEXTBUTTON1";
+            this.textButton23.Text = "TEXTBUTTON1";
             this.textButton23.ButtonTextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.textButton23.ButtonType = LCARS.CoreUi.UiElements.Controls.TextButton.TextButtonType.LeftPill;
             this.textButton23.Clickable = true;
@@ -4710,7 +4710,7 @@
             // textButton1
             // 
             this.textButton1.AlertState = LCARS.CoreUi.Enums.LcarsAlert.Normal;
-            this.textButton1.ButtonText = "TEXTBUTTON1";
+            this.textButton1.Text = "TEXTBUTTON1";
             this.textButton1.ButtonTextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.textButton1.ButtonType = LCARS.CoreUi.UiElements.Controls.TextButton.TextButtonType.DoublePills;
             this.textButton1.Clickable = true;
@@ -4808,7 +4808,7 @@
             // 
             this.levelIndicator3.AlertState = LCARS.CoreUi.Enums.LcarsAlert.Normal;
             this.levelIndicator3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.levelIndicator3.ButtonText = "LEVELINDICATOR1";
+            this.levelIndicator3.Text = "LEVELINDICATOR1";
             this.levelIndicator3.ButtonTextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.levelIndicator3.Clickable = false;
             this.levelIndicator3.ColorFunction = LCARS.CoreUi.Enums.LcarsColorFunction.MiscFunction;
@@ -4835,7 +4835,7 @@
             // 
             this.levelIndicator2.AlertState = LCARS.CoreUi.Enums.LcarsAlert.Normal;
             this.levelIndicator2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.levelIndicator2.ButtonText = "LEVELINDICATOR1";
+            this.levelIndicator2.Text = "LEVELINDICATOR1";
             this.levelIndicator2.ButtonTextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.levelIndicator2.Clickable = false;
             this.levelIndicator2.ColorFunction = LCARS.CoreUi.Enums.LcarsColorFunction.MiscFunction;
@@ -4861,7 +4861,7 @@
             // 
             this.levelIndicator1.AlertState = LCARS.CoreUi.Enums.LcarsAlert.Normal;
             this.levelIndicator1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.levelIndicator1.ButtonText = "LEVELINDICATOR1";
+            this.levelIndicator1.Text = "LEVELINDICATOR1";
             this.levelIndicator1.ButtonTextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.levelIndicator1.Clickable = false;
             this.levelIndicator1.ColorFunction = LCARS.CoreUi.Enums.LcarsColorFunction.MiscFunction;
@@ -4956,7 +4956,7 @@
             // elbow6
             // 
             this.elbow6.AlertState = LCARS.CoreUi.Enums.LcarsAlert.Normal;
-            this.elbow6.ButtonText = "ELBOW6";
+            this.elbow6.Text = "ELBOW6";
             this.elbow6.ButtonTextAlign = System.Drawing.ContentAlignment.TopLeft;
             this.elbow6.Clickable = true;
             this.elbow6.ColorFunction = LCARS.CoreUi.Enums.LcarsColorFunction.LCARSDisplayOnly;
@@ -5008,7 +5008,7 @@
             this.FullScreenButton.AlertState = LCARS.CoreUi.Enums.LcarsAlert.Normal;
             this.FullScreenButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.FullScreenButton.ButtonStyle = LCARS.CoreUi.Enums.LcarsButtonStyles.Pill;
-            this.FullScreenButton.ButtonText = "FULLSCREEN";
+            this.FullScreenButton.Text = "FULLSCREEN";
             this.FullScreenButton.ButtonTextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.FullScreenButton.Clickable = true;
             this.FullScreenButton.ColorFunction = LCARS.CoreUi.Enums.LcarsColorFunction.StaticTan;
@@ -5033,7 +5033,7 @@
             // 
             this.standardButton19.AlertState = LCARS.CoreUi.Enums.LcarsAlert.Normal;
             this.standardButton19.ButtonStyle = LCARS.CoreUi.Enums.LcarsButtonStyles.Pill;
-            this.standardButton19.ButtonText = "INPUT BOX";
+            this.standardButton19.Text = "INPUT BOX";
             this.standardButton19.ButtonTextAlign = System.Drawing.ContentAlignment.TopLeft;
             this.standardButton19.Clickable = true;
             this.standardButton19.ColorFunction = LCARS.CoreUi.Enums.LcarsColorFunction.StaticTan;
@@ -5058,7 +5058,7 @@
             // 
             this.standardButton18.AlertState = LCARS.CoreUi.Enums.LcarsAlert.Normal;
             this.standardButton18.ButtonStyle = LCARS.CoreUi.Enums.LcarsButtonStyles.Pill;
-            this.standardButton18.ButtonText = "MESSAGE BOX";
+            this.standardButton18.Text = "MESSAGE BOX";
             this.standardButton18.ButtonTextAlign = System.Drawing.ContentAlignment.TopLeft;
             this.standardButton18.Clickable = true;
             this.standardButton18.ColorFunction = LCARS.CoreUi.Enums.LcarsColorFunction.StaticBlue;

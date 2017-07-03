@@ -101,7 +101,7 @@ namespace LCARS.CoreUi.UiElements.Controls
             }
         }
 
-        public override string ButtonText
+        public override string Text
         {
             get { return buttonText; }
             set
@@ -172,7 +172,7 @@ namespace LCARS.CoreUi.UiElements.Controls
                     SolidBrush mybrush = new SolidBrush(GetButtonColor());
 
                     int drawHeight = 0;
-                    string drawString = ForceCaps ? ButtonText.ToUpper() : ButtonText;
+                    string drawString = ForceCaps ? Text.ToUpper() : Text;
 
                     FontData fontDims = GetFontDimensions(font, drawString);
                     if (fontDims.Height == 0)
@@ -184,7 +184,7 @@ namespace LCARS.CoreUi.UiElements.Controls
                     mybitmap = new Bitmap(Size.Width, fontDims.Height);
                     g = Graphics.FromImage(mybitmap);
 
-                    if (ButtonText.ToUpper().Contains("Q"))
+                    if (Text.ToUpper().Contains("Q"))
                     {
                         drawHeight = fontDims.Height - (fontDims.Height / 10);
                         Height = mybitmap.Height;
@@ -227,7 +227,7 @@ namespace LCARS.CoreUi.UiElements.Controls
                             break;
                     }
                     
-                    if (!string.IsNullOrEmpty(ButtonText))
+                    if (!string.IsNullOrEmpty(Text))
                     {
                         if (buttonTextAlign.ToString().ToLower().Contains("right"))
                         {

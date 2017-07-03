@@ -38,7 +38,6 @@ namespace LCARS.CoreUi.UiElements.Controls
             //
             Name = "ArrowButton";
             Size = new Size(50, 50);
-            ButtonText = "";
             Text = "";
             ResumeLayout(false);
         }
@@ -54,13 +53,6 @@ namespace LCARS.CoreUi.UiElements.Controls
         {
             get { return ""; }
             set { base.Text = ""; }
-        }
-
-        [Browsable(false), EditorBrowsable(EditorBrowsableState.Never)]
-        public override string ButtonText
-        {
-            get { return ""; }
-            set { base.ButtonText = ""; }
         }
 
         [Browsable(false), EditorBrowsable(EditorBrowsableState.Never)]

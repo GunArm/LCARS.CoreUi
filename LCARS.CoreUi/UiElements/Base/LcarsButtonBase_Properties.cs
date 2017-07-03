@@ -214,16 +214,12 @@ namespace LCARS.CoreUi.UiElements.Base
         public object Data2 { get; set; }
 
         /// <summary>
-        /// The text displayed on the button.
         /// The text of the control
         /// </summary>
-        /// <remarks>
-        /// The button's <see cref="Text">Text</see> property is an alias of this property.
-        /// </remarks>
         /// <value>New text to set</value>
         /// <returns>Current text of the control.</returns>
         [DefaultValue("LCARS Button")]
-        public virtual string ButtonText
+        public override string Text
         {
             get { return buttonText; }
             set
@@ -240,18 +236,6 @@ namespace LCARS.CoreUi.UiElements.Base
             }
         }
         protected string buttonText = "LCARS";
-
-        /// <summary>
-        /// The text of the control
-        /// </summary>
-        /// <value>New text to set</value>
-        /// <returns>Current text of the control.</returns>
-        /// <remarks>This property duplicates the functionality of the ButtonText property.</remarks>
-        public override string Text
-        {
-            get { return ButtonText; }
-            set { ButtonText = value; }
-        }
 
         /// <summary>
         /// Sets the visibility of the text

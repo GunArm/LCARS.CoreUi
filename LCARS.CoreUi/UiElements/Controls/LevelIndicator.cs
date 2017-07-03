@@ -86,8 +86,8 @@ namespace LCARS.CoreUi.UiElements.Controls
 
         private void UpdatePercentage()
         {
-            if (intMax - intMin > 0) ButtonText = ((intVal / (double)(intMax - intMin)) * 100) + "%";
-            else ButtonText = "0%";
+            if (intMax - intMin > 0) Text = ((intVal / (double)(intMax - intMin)) * 100) + "%";
+            else Text = "0%";
         }
 
         public LevelIndicator()

@@ -154,14 +154,14 @@ namespace LCARS.CoreUi.UiElements.Tabbing
             //Create the controls that make up the tabcontrol.  
 
             //The elbow in the top right of the tabcontrol,
-            elbow.ButtonText = "TABS";
+            elbow.Text = "TABS";
             elbow.TextVisible = false;
             elbow.ColorFunction = LcarsColorFunction.StaticTan;
             elbow.Clickable = false;
             Controls.Add(elbow);
 
             //The heading above the tab area (very top),
-            horizantalBar.ButtonText = "";
+            horizantalBar.Text = "";
             horizantalBar.ColorFunction = LcarsColorFunction.LCARSDisplayOnly;
             Controls.Add(horizantalBar);
 
@@ -350,7 +350,7 @@ namespace LCARS.CoreUi.UiElements.Tabbing
                 mybutton.Height = tabButtonHeight;
                 mybutton.Left = 0;
                 mybutton.ForceCaps = ForceCaps;
-                mybutton.ButtonText = mytab.Text;
+                mybutton.Text = mytab.Text;
                 mybutton.ButtonTextAlign = ContentAlignment.BottomRight;
                 mybutton.ColorFunction = mytab.ColorFunction;
 

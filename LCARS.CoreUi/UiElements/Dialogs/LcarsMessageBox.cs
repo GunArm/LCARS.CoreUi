@@ -106,7 +106,7 @@ namespace LCARS.CoreUi.UiElements.Dialogs
             elbow1.VerticalBarWidth = 10;
             elbow1.ElbowStyle = LcarsElbowStyle.UpperLeft;
             elbow1.ColorFunction = colorFunction;
-            elbow1.ButtonText = "";
+            elbow1.Text = "";
 
             Elbow elbow2 = new Elbow();
             Controls.Add(elbow2);
@@ -117,7 +117,7 @@ namespace LCARS.CoreUi.UiElements.Dialogs
             elbow2.Clickable = false;
             elbow2.ElbowStyle = LcarsElbowStyle.LowerLeft;
             elbow2.ColorFunction = colorFunction;
-            elbow2.ButtonText = "";
+            elbow2.Text = "";
 
             TextButton titleBar = new TextButton();
             Controls.Add(titleBar);
@@ -125,7 +125,7 @@ namespace LCARS.CoreUi.UiElements.Dialogs
             titleBar.Size = new Size(255, 30);
             titleBar.TextHeight = 31;
             titleBar.ColorFunction = colorFunction;
-            titleBar.ButtonText = title;
+            titleBar.Text = title;
 
             FlatButton vertBar = new FlatButton();
             Controls.Add(vertBar);
@@ -133,7 +133,7 @@ namespace LCARS.CoreUi.UiElements.Dialogs
             vertBar.Size = new Size(10, 68);
             vertBar.Clickable = false;
             vertBar.ColorFunction = colorFunction;
-            vertBar.ButtonText = "";
+            vertBar.Text = "";
 
             HalfPillButton bottomBar = new HalfPillButton();
             Controls.Add(bottomBar);
@@ -141,7 +141,7 @@ namespace LCARS.CoreUi.UiElements.Dialogs
             bottomBar.Size = new Size(217, 15);
             bottomBar.Clickable = false;
             bottomBar.ColorFunction = colorFunction;
-            bottomBar.ButtonText = "";
+            bottomBar.Text = "";
 
             //draw text
             RichTextBox errorTextBox = new RichTextBox();
@@ -169,17 +169,17 @@ namespace LCARS.CoreUi.UiElements.Dialogs
             yesOkRetryButton.Name = "yesOkRetryButton";
             if (yesVisible)
             {
-                yesOkRetryButton.ButtonText = "YES";
+                yesOkRetryButton.Text = "YES";
                 yesOkRetryButton.Click += OnYesClick;
             }
             else if (retryVisible)
             {
-                yesOkRetryButton.ButtonText = "RETRY";
+                yesOkRetryButton.Text = "RETRY";
                 yesOkRetryButton.Click += OnRetryClick;
             }
             else
             {
-                yesOkRetryButton.ButtonText = "OK";
+                yesOkRetryButton.Text = "OK";
                 yesOkRetryButton.Click += OnOkClick;
             }
             yesOkRetryButton.ButtonTextAlign = ContentAlignment.MiddleCenter;
@@ -196,12 +196,12 @@ namespace LCARS.CoreUi.UiElements.Dialogs
 
                 if (ignoreVisible)
                 {
-                    cancelIgnoreButton.ButtonText = "IGNORE";
+                    cancelIgnoreButton.Text = "IGNORE";
                     cancelIgnoreButton.Click += OnIgnoreClick;
                 }
                 else if (cancelVisible)
                 {
-                    cancelIgnoreButton.ButtonText = "CANCEL";
+                    cancelIgnoreButton.Text = "CANCEL";
                     cancelIgnoreButton.Click += OnCancelClick;
                 }
                 cancelIgnoreButton.ButtonTextAlign = ContentAlignment.MiddleCenter;
@@ -218,12 +218,12 @@ namespace LCARS.CoreUi.UiElements.Dialogs
                 noAbortButton.ColorFunction = LcarsColorFunction.CriticalFunction;
                 if (abortVisible)
                 {
-                    noAbortButton.ButtonText = "ABORT";
+                    noAbortButton.Text = "ABORT";
                     noAbortButton.Click += OnAbortClick;
                 }
                 else if (noVisible)
                 {
-                    noAbortButton.ButtonText = "NO";
+                    noAbortButton.Text = "NO";
                     noAbortButton.Click += OnNoClick;
                 }
                 noAbortButton.ButtonTextAlign = ContentAlignment.MiddleCenter;

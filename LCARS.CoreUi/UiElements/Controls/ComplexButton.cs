@@ -130,7 +130,7 @@ namespace LCARS.CoreUi.UiElements.Controls
             g.PixelOffsetMode = PixelOffsetMode.HighQuality;
 
             //get the width and height of the fonts
-            buttonTextSize = g.MeasureString(ButtonText.ToUpper(), textFont);
+            buttonTextSize = g.MeasureString(Text.ToUpper(), textFont);
             sideTextSize = g.MeasureString(sideText.ToUpper(), sideFont);
 
             //draw the left orange block.  If the mouse is down, draw it white.
