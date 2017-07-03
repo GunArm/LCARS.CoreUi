@@ -44,11 +44,6 @@ namespace LCARS.CoreUi.UiElements.Controls
         }
         #endregion
 
-        #region " Global Variables "
-        TextButtonType buttonType = TextButtonType.DoublePills;
-        ContentAlignment buttonTextAlign = ContentAlignment.MiddleRight;
-        #endregion
-
         #region " Enums"
         public enum TextButtonType
         {
@@ -80,6 +75,7 @@ namespace LCARS.CoreUi.UiElements.Controls
                 DrawAllButtons();
             }
         }
+        TextButtonType buttonType = TextButtonType.DoublePills;
 
         public override ContentAlignment ButtonTextAlign
         {
@@ -91,6 +87,7 @@ namespace LCARS.CoreUi.UiElements.Controls
                 DrawAllButtons();
             }
         }
+        ContentAlignment buttonTextAlign = ContentAlignment.MiddleRight;
 
         public new int TextHeight
         {
@@ -110,7 +107,7 @@ namespace LCARS.CoreUi.UiElements.Controls
             set
             {
                 if (buttonText == value) return;
-                buttonText = value.ToUpper();
+                buttonText = value;
                 DrawAllButtons();
             }
         }
@@ -175,8 +172,9 @@ namespace LCARS.CoreUi.UiElements.Controls
                     SolidBrush mybrush = new SolidBrush(GetButtonColor());
 
                     int drawHeight = 0;
+                    string drawString = ForceCaps ? ButtonText.ToUpper() : ButtonText;
 
-                    FontData fontDims = GetFontDimensions(font, ButtonText);
+                    FontData fontDims = GetFontDimensions(font, drawString);
                     if (fontDims.Height == 0)
                     {
                         fontDims = new FontData();
@@ -234,19 +232,19 @@ namespace LCARS.CoreUi.UiElements.Controls
                         if (buttonTextAlign.ToString().ToLower().Contains("right"))
                         {
                             g.FillRectangle(Brushes.Black, Width - ((fontDims.Width + drawHeight) + 12), 0, fontDims.Width + 6, drawHeight);
-                            g.DrawString(ButtonText, font, Brushes.Orange, Width - (((fontDims.Width + fontDims.Left) + drawHeight) + 6), -fontDims.Top);
+                            g.DrawString(drawString, font, Brushes.Orange, Width - (((fontDims.Width + fontDims.Left) + drawHeight) + 6), -fontDims.Top);
                         }
 
                         if (buttonTextAlign.ToString().ToLower().Contains("left"))
                         {
                             g.FillRectangle(Brushes.Black, drawHeight + 6, 0, fontDims.Width + 6, drawHeight);
-                            g.DrawString(ButtonText, font, Brushes.Orange, (drawHeight - fontDims.Left) + 6, -fontDims.Top);
+                            g.DrawString(drawString, font, Brushes.Orange, (drawHeight - fontDims.Left) + 6, -fontDims.Top);
                         }
 
                         if (buttonTextAlign.ToString().ToLower().Contains("center"))
                         {
                             g.FillRectangle(Brushes.Black, (Width / 2) - ((fontDims.Width + 12) / 2), 0, fontDims.Width + 12, drawHeight);
-                            g.DrawString(ButtonText, font, Brushes.Orange, ((Width / 2) - (fontDims.Width / 2)) - fontDims.Left, -fontDims.Top);
+                            g.DrawString(drawString, font, Brushes.Orange, ((Width / 2) - (fontDims.Width / 2)) - fontDims.Left, -fontDims.Top);
                         }
                     }
                 }

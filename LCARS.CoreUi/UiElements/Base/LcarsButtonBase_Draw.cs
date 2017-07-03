@@ -54,7 +54,6 @@ namespace LCARS.CoreUi.UiElements.Base
             return mybitmap;
         }
 
-
         protected Color GetButtonColor()
         {
             return GetButtonColor(ColorFunction);
