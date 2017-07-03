@@ -19,7 +19,7 @@ namespace LCARS.CoreUi.UiElements.Base
     /// dealing with. Almost everything in modBusiness is declared that way for exactly that reason. 
     /// </remarks>
     [DefaultEvent("Click"), Designer(typeof(LcarsButtonBaseDesigner))]
-    public partial class LcarsButtonBase : Control, IAlertable, IBeeping, IColorable
+    public partial class LcarsButtonBase : Control, IAlertable, ISounding, IColorable
     {
         /// <summary>
         /// Creates a new instance of the LcarsButtonBase object
@@ -34,13 +34,6 @@ namespace LCARS.CoreUi.UiElements.Base
             font = FontProvider.Lcars(textHeight);
             InitializeComponent();
             base.DoubleBuffered = true;
-            try
-            {
-                // try/catch because this pukes in the designer where SoundProvider ctor apparently gets omitted
-                sound = new System.Media.SoundPlayer(SoundProvider.PlainBeep);
-                sound.Load();
-            }
-            catch { }
         }
 
         public void DoClick()
@@ -67,7 +60,6 @@ namespace LCARS.CoreUi.UiElements.Base
         private Bitmap normalButton;
         private Bitmap unlitButton;
         private bool isPressed = false;
-        private static System.Media.SoundPlayer sound;
         private System.Windows.Forms.Timer textScrollTimer = new System.Windows.Forms.Timer();
         protected EllipsisModes ellipsisMode = EllipsisModes.Character;
 
@@ -95,18 +87,12 @@ namespace LCARS.CoreUi.UiElements.Base
 
         private void PlaySound()
         {
-            string soundPath = new SettingsStore("LCARS").Load("Application", "ButtonSound", "");
-            if (sound == null | sound.SoundLocation != soundPath)
-            {
-                if (System.IO.File.Exists(soundPath)) sound = new System.Media.SoundPlayer(soundPath);
-                else sound = new System.Media.SoundPlayer(SoundProvider.PlainBeep);
-            }
-            sound.Play();
+            LcarsSound.Play(soundAsset);
         }
 
         private void DoButtonDownActions()
         {
-            if (doesBeep) PlaySound();
+            PlaySound();
         }
     }
 }

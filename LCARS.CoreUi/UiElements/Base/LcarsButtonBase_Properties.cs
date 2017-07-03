@@ -389,12 +389,19 @@ namespace LCARS.CoreUi.UiElements.Base
         /// <remarks>
         /// This property should be set on application startup to match the global setting. This must be done manually.
         /// </remarks>
-        public virtual bool DoesBeep
+        public virtual bool DoesSound
         {
-            get { return doesBeep; }
-            set { doesBeep = value; }
+            get { return doesSound; }
+            set { doesSound = value; }
         }
-        private bool doesBeep = false;
+        private bool doesSound = false;
+
+        public virtual LcarsSoundAsset SoundAsset
+        {
+            get { return soundAsset; }
+            set { soundAsset = value; }
+        }
+        private LcarsSoundAsset soundAsset = LcarsSoundAsset.Unset;
 
         /// <summary>
         /// LcarsColorManager associated with this control.

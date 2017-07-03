@@ -19,7 +19,7 @@ namespace LCARS.CoreUi.UiElements.Lightweight
     /// <remarks>
     /// Several other controls derive from this one by overriding <see cref="LCFlatButton.Redraw">Redraw</see> and adding properties.
     /// </remarks>
-    public class LCFlatButton : ILightweightControl, IAlertable, IDisposable, IBeeping, IColorable
+    public class LCFlatButton : ILightweightControl, IAlertable, IDisposable, ISounding, IColorable
     {
 
         /// <summary>
@@ -37,8 +37,6 @@ namespace LCARS.CoreUi.UiElements.Lightweight
 
         private System.Timers.Timer textScrollTimer = new System.Timers.Timer(100);
         private System.Timers.Timer flashTimer = new System.Timers.Timer(1000);
-
-        protected static SoundPlayer sound;
 
         protected RectangleF textArea;
         protected Control parent;
@@ -293,19 +291,7 @@ namespace LCARS.CoreUi.UiElements.Lightweight
         private void Beep(object sender, System.EventArgs e)
         {
             if (!doesBeep) return;
-            string soundPath = new SettingsStore("LCARS").Load("Application", "ButtonSound", "");
-            if (sound == null || sound.SoundLocation != soundPath)
-            {
-                if (System.IO.File.Exists(soundPath))
-                {
-                    sound = new SoundPlayer(soundPath);
-                }
-                else
-                {
-                    sound = new SoundPlayer(SoundProvider.PlainBeep);
-                }
-            }
-            sound.Play();
+            LcarsSound.Play(soundAsset);
         }
 
         public void SetParent(Control NewParent)
@@ -669,12 +655,19 @@ namespace LCARS.CoreUi.UiElements.Lightweight
         /// <remarks>
         /// Warning: high-pitched beeps can cause irritation in users. Use with caution!
         /// </remarks>
-        public bool DoesBeep
+        public bool DoesSound
         {
             get { return doesBeep; }
             set { doesBeep = value; }
         }
         protected bool doesBeep = true;
+
+        public virtual LcarsSoundAsset SoundAsset
+        {
+            get { return soundAsset; }
+            set { soundAsset = value; }
+        }
+        private LcarsSoundAsset soundAsset = LcarsSoundAsset.Unset;
 
         /// <summary>
         /// Sets the clickable state of the control

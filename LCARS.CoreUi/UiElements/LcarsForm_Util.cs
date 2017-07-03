@@ -20,8 +20,8 @@ namespace LCARS.CoreUi.UiElements
         /// </remarks>
         public static void SetBeeping(System.Windows.Forms.Control Container, bool Beeping)
         {
-            IBeeping temp = Container as IBeeping;
-            if (temp != null) temp.DoesBeep = Beeping;
+            ISounding temp = Container as ISounding;
+            if (temp != null) temp.DoesSound = Beeping;
 
             foreach (System.Windows.Forms.Control myControl in Container.Controls)
             {

@@ -47,7 +47,6 @@
   <ItemGroup>
     <Compile Include="Assets\Access\FontProvider.cs" />
     <Compile Include="Assets\Access\LcarsSound.cs" />
-    <Compile Include="Assets\Access\SoundProvider.cs" />
     <Compile Include="Enums\EllipsisModes.cs" />
     <Compile Include="Enums\LcarsButtonStyles.cs" />
     <Compile Include="Enums\LcarsElbowStyle.cs" />
@@ -72,7 +71,7 @@
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Interfaces\IAlertable.cs" />
-    <Compile Include="Interfaces\IBeeping.cs" />
+    <Compile Include="Interfaces\ISounding.cs" />
     <Compile Include="Interfaces\IColorable.cs" />
     <Compile Include="Interfaces\ILightweightControl.cs" />
     <Compile Include="Helpers\Paths.cs" />

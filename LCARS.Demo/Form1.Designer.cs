@@ -411,7 +411,7 @@
             this.elbow5.CustomAlertColor = System.Drawing.Color.Empty;
             this.elbow5.Data = null;
             this.elbow5.Data2 = null;
-            this.elbow5.DoesBeep = false;
+            this.elbow5.DoesSound = false;
             this.elbow5.ElbowStyle = LCARS.CoreUi.Enums.LcarsElbowStyle.LowerRight;
             this.elbow5.FlashInterval = 500;
             this.elbow5.HoldDraw = false;
@@ -473,7 +473,7 @@
             this.elbow4.CustomAlertColor = System.Drawing.Color.Empty;
             this.elbow4.Data = null;
             this.elbow4.Data2 = null;
-            this.elbow4.DoesBeep = false;
+            this.elbow4.DoesSound = false;
             this.elbow4.ElbowStyle = LCARS.CoreUi.Enums.LcarsElbowStyle.UpperLeft;
             this.elbow4.FlashInterval = 500;
             this.elbow4.HoldDraw = false;
@@ -499,7 +499,7 @@
             this.elbow3.CustomAlertColor = System.Drawing.Color.Empty;
             this.elbow3.Data = null;
             this.elbow3.Data2 = null;
-            this.elbow3.DoesBeep = false;
+            this.elbow3.DoesSound = false;
             this.elbow3.ElbowStyle = LCARS.CoreUi.Enums.LcarsElbowStyle.LowerLeft;
             this.elbow3.FlashInterval = 500;
             this.elbow3.HoldDraw = false;
@@ -527,7 +527,7 @@
             this.elbow2.CustomAlertColor = System.Drawing.Color.Empty;
             this.elbow2.Data = null;
             this.elbow2.Data2 = null;
-            this.elbow2.DoesBeep = false;
+            this.elbow2.DoesSound = false;
             this.elbow2.ElbowStyle = LCARS.CoreUi.Enums.LcarsElbowStyle.LowerRight;
             this.elbow2.FlashInterval = 500;
             this.elbow2.HoldDraw = false;
@@ -553,7 +553,7 @@
             this.elbow1.CustomAlertColor = System.Drawing.Color.Empty;
             this.elbow1.Data = null;
             this.elbow1.Data2 = null;
-            this.elbow1.DoesBeep = false;
+            this.elbow1.DoesSound = false;
             this.elbow1.ElbowStyle = LCARS.CoreUi.Enums.LcarsElbowStyle.UpperRight;
             this.elbow1.FlashInterval = 500;
             this.elbow1.HoldDraw = false;
@@ -659,7 +659,7 @@
             this.lcarsButtonBase36.CustomAlertColor = System.Drawing.Color.Empty;
             this.lcarsButtonBase36.Data = null;
             this.lcarsButtonBase36.Data2 = null;
-            this.lcarsButtonBase36.DoesBeep = false;
+            this.lcarsButtonBase36.DoesSound = false;
             this.lcarsButtonBase36.FlashInterval = 500;
             this.lcarsButtonBase36.HoldDraw = false;
             this.lcarsButtonBase36.IsLit = true;
@@ -681,7 +681,7 @@
             this.lcarsButtonBase35.CustomAlertColor = System.Drawing.Color.Empty;
             this.lcarsButtonBase35.Data = null;
             this.lcarsButtonBase35.Data2 = null;
-            this.lcarsButtonBase35.DoesBeep = false;
+            this.lcarsButtonBase35.DoesSound = false;
             this.lcarsButtonBase35.FlashInterval = 500;
             this.lcarsButtonBase35.HoldDraw = false;
             this.lcarsButtonBase35.IsLit = true;
@@ -703,7 +703,7 @@
             this.lcarsButtonBase34.CustomAlertColor = System.Drawing.Color.Empty;
             this.lcarsButtonBase34.Data = null;
             this.lcarsButtonBase34.Data2 = null;
-            this.lcarsButtonBase34.DoesBeep = false;
+            this.lcarsButtonBase34.DoesSound = false;
             this.lcarsButtonBase34.FlashInterval = 500;
             this.lcarsButtonBase34.HoldDraw = false;
             this.lcarsButtonBase34.IsLit = true;
@@ -725,7 +725,7 @@
             this.lcarsButtonBase22.CustomAlertColor = System.Drawing.Color.Empty;
             this.lcarsButtonBase22.Data = null;
             this.lcarsButtonBase22.Data2 = null;
-            this.lcarsButtonBase22.DoesBeep = true;
+            this.lcarsButtonBase22.DoesSound = true;
             this.lcarsButtonBase22.FlashInterval = 500;
             this.lcarsButtonBase22.ForceCaps = false;
             this.lcarsButtonBase22.HoldDraw = false;
@@ -748,7 +748,7 @@
             this.lcarsButtonBase11.CustomAlertColor = System.Drawing.Color.Empty;
             this.lcarsButtonBase11.Data = null;
             this.lcarsButtonBase11.Data2 = null;
-            this.lcarsButtonBase11.DoesBeep = true;
+            this.lcarsButtonBase11.DoesSound = true;
             this.lcarsButtonBase11.FlashInterval = 500;
             this.lcarsButtonBase11.HoldDraw = false;
             this.lcarsButtonBase11.IsLit = true;
@@ -770,7 +770,7 @@
             this.lcarsButtonBase21.CustomAlertColor = System.Drawing.Color.Empty;
             this.lcarsButtonBase21.Data = null;
             this.lcarsButtonBase21.Data2 = null;
-            this.lcarsButtonBase21.DoesBeep = true;
+            this.lcarsButtonBase21.DoesSound = true;
             this.lcarsButtonBase21.FlashInterval = 500;
             this.lcarsButtonBase21.ForceCaps = false;
             this.lcarsButtonBase21.HoldDraw = false;
@@ -793,7 +793,7 @@
             this.lcarsButtonBase10.CustomAlertColor = System.Drawing.Color.Empty;
             this.lcarsButtonBase10.Data = null;
             this.lcarsButtonBase10.Data2 = null;
-            this.lcarsButtonBase10.DoesBeep = true;
+            this.lcarsButtonBase10.DoesSound = true;
             this.lcarsButtonBase10.FlashInterval = 500;
             this.lcarsButtonBase10.HoldDraw = false;
             this.lcarsButtonBase10.IsLit = true;
@@ -815,7 +815,7 @@
             this.lcarsButtonBase20.CustomAlertColor = System.Drawing.Color.Empty;
             this.lcarsButtonBase20.Data = null;
             this.lcarsButtonBase20.Data2 = null;
-            this.lcarsButtonBase20.DoesBeep = true;
+            this.lcarsButtonBase20.DoesSound = true;
             this.lcarsButtonBase20.FlashInterval = 500;
             this.lcarsButtonBase20.ForceCaps = false;
             this.lcarsButtonBase20.HoldDraw = false;
@@ -838,7 +838,7 @@
             this.lcarsButtonBase9.CustomAlertColor = System.Drawing.Color.Empty;
             this.lcarsButtonBase9.Data = null;
             this.lcarsButtonBase9.Data2 = null;
-            this.lcarsButtonBase9.DoesBeep = true;
+            this.lcarsButtonBase9.DoesSound = true;
             this.lcarsButtonBase9.FlashInterval = 500;
             this.lcarsButtonBase9.HoldDraw = false;
             this.lcarsButtonBase9.IsLit = true;
@@ -860,7 +860,7 @@
             this.lcarsButtonBase19.CustomAlertColor = System.Drawing.Color.Empty;
             this.lcarsButtonBase19.Data = null;
             this.lcarsButtonBase19.Data2 = null;
-            this.lcarsButtonBase19.DoesBeep = true;
+            this.lcarsButtonBase19.DoesSound = true;
             this.lcarsButtonBase19.FlashInterval = 500;
             this.lcarsButtonBase19.ForceCaps = false;
             this.lcarsButtonBase19.HoldDraw = false;
@@ -883,7 +883,7 @@
             this.lcarsButtonBase8.CustomAlertColor = System.Drawing.Color.Empty;
             this.lcarsButtonBase8.Data = null;
             this.lcarsButtonBase8.Data2 = null;
-            this.lcarsButtonBase8.DoesBeep = true;
+            this.lcarsButtonBase8.DoesSound = true;
             this.lcarsButtonBase8.FlashInterval = 500;
             this.lcarsButtonBase8.HoldDraw = false;
             this.lcarsButtonBase8.IsLit = true;
@@ -905,7 +905,7 @@
             this.lcarsButtonBase18.CustomAlertColor = System.Drawing.Color.Empty;
             this.lcarsButtonBase18.Data = null;
             this.lcarsButtonBase18.Data2 = null;
-            this.lcarsButtonBase18.DoesBeep = true;
+            this.lcarsButtonBase18.DoesSound = true;
             this.lcarsButtonBase18.FlashInterval = 500;
             this.lcarsButtonBase18.ForceCaps = false;
             this.lcarsButtonBase18.HoldDraw = false;
@@ -928,7 +928,7 @@
             this.lcarsButtonBase7.CustomAlertColor = System.Drawing.Color.Empty;
             this.lcarsButtonBase7.Data = null;
             this.lcarsButtonBase7.Data2 = null;
-            this.lcarsButtonBase7.DoesBeep = true;
+            this.lcarsButtonBase7.DoesSound = true;
             this.lcarsButtonBase7.FlashInterval = 500;
             this.lcarsButtonBase7.HoldDraw = false;
             this.lcarsButtonBase7.IsLit = true;
@@ -950,7 +950,7 @@
             this.lcarsButtonBase17.CustomAlertColor = System.Drawing.Color.Empty;
             this.lcarsButtonBase17.Data = null;
             this.lcarsButtonBase17.Data2 = null;
-            this.lcarsButtonBase17.DoesBeep = true;
+            this.lcarsButtonBase17.DoesSound = true;
             this.lcarsButtonBase17.FlashInterval = 500;
             this.lcarsButtonBase17.ForceCaps = false;
             this.lcarsButtonBase17.HoldDraw = false;
@@ -973,7 +973,7 @@
             this.lcarsButtonBase6.CustomAlertColor = System.Drawing.Color.Empty;
             this.lcarsButtonBase6.Data = null;
             this.lcarsButtonBase6.Data2 = null;
-            this.lcarsButtonBase6.DoesBeep = true;
+            this.lcarsButtonBase6.DoesSound = true;
             this.lcarsButtonBase6.FlashInterval = 500;
             this.lcarsButtonBase6.HoldDraw = false;
             this.lcarsButtonBase6.IsLit = true;
@@ -995,7 +995,7 @@
             this.lcarsButtonBase16.CustomAlertColor = System.Drawing.Color.Empty;
             this.lcarsButtonBase16.Data = null;
             this.lcarsButtonBase16.Data2 = null;
-            this.lcarsButtonBase16.DoesBeep = true;
+            this.lcarsButtonBase16.DoesSound = true;
             this.lcarsButtonBase16.FlashInterval = 500;
             this.lcarsButtonBase16.ForceCaps = false;
             this.lcarsButtonBase16.HoldDraw = false;
@@ -1018,7 +1018,7 @@
             this.lcarsButtonBase5.CustomAlertColor = System.Drawing.Color.Empty;
             this.lcarsButtonBase5.Data = null;
             this.lcarsButtonBase5.Data2 = null;
-            this.lcarsButtonBase5.DoesBeep = true;
+            this.lcarsButtonBase5.DoesSound = true;
             this.lcarsButtonBase5.FlashInterval = 500;
             this.lcarsButtonBase5.HoldDraw = false;
             this.lcarsButtonBase5.IsLit = true;
@@ -1040,7 +1040,7 @@
             this.lcarsButtonBase15.CustomAlertColor = System.Drawing.Color.Empty;
             this.lcarsButtonBase15.Data = null;
             this.lcarsButtonBase15.Data2 = null;
-            this.lcarsButtonBase15.DoesBeep = true;
+            this.lcarsButtonBase15.DoesSound = true;
             this.lcarsButtonBase15.FlashInterval = 500;
             this.lcarsButtonBase15.ForceCaps = false;
             this.lcarsButtonBase15.HoldDraw = false;
@@ -1063,7 +1063,7 @@
             this.lcarsButtonBase4.CustomAlertColor = System.Drawing.Color.Empty;
             this.lcarsButtonBase4.Data = null;
             this.lcarsButtonBase4.Data2 = null;
-            this.lcarsButtonBase4.DoesBeep = true;
+            this.lcarsButtonBase4.DoesSound = true;
             this.lcarsButtonBase4.FlashInterval = 500;
             this.lcarsButtonBase4.HoldDraw = false;
             this.lcarsButtonBase4.IsLit = true;
@@ -1085,7 +1085,7 @@
             this.lcarsButtonBase14.CustomAlertColor = System.Drawing.Color.Empty;
             this.lcarsButtonBase14.Data = null;
             this.lcarsButtonBase14.Data2 = null;
-            this.lcarsButtonBase14.DoesBeep = true;
+            this.lcarsButtonBase14.DoesSound = true;
             this.lcarsButtonBase14.FlashInterval = 500;
             this.lcarsButtonBase14.ForceCaps = false;
             this.lcarsButtonBase14.HoldDraw = false;
@@ -1108,7 +1108,7 @@
             this.lcarsButtonBase3.CustomAlertColor = System.Drawing.Color.Empty;
             this.lcarsButtonBase3.Data = null;
             this.lcarsButtonBase3.Data2 = null;
-            this.lcarsButtonBase3.DoesBeep = true;
+            this.lcarsButtonBase3.DoesSound = true;
             this.lcarsButtonBase3.FlashInterval = 500;
             this.lcarsButtonBase3.HoldDraw = false;
             this.lcarsButtonBase3.IsLit = true;
@@ -1130,7 +1130,7 @@
             this.lcarsButtonBase13.CustomAlertColor = System.Drawing.Color.Empty;
             this.lcarsButtonBase13.Data = null;
             this.lcarsButtonBase13.Data2 = null;
-            this.lcarsButtonBase13.DoesBeep = true;
+            this.lcarsButtonBase13.DoesSound = true;
             this.lcarsButtonBase13.FlashInterval = 500;
             this.lcarsButtonBase13.ForceCaps = false;
             this.lcarsButtonBase13.HoldDraw = false;
@@ -1153,7 +1153,7 @@
             this.lcarsButtonBase2.CustomAlertColor = System.Drawing.Color.Empty;
             this.lcarsButtonBase2.Data = null;
             this.lcarsButtonBase2.Data2 = null;
-            this.lcarsButtonBase2.DoesBeep = true;
+            this.lcarsButtonBase2.DoesSound = true;
             this.lcarsButtonBase2.FlashInterval = 500;
             this.lcarsButtonBase2.HoldDraw = false;
             this.lcarsButtonBase2.IsLit = true;
@@ -1175,7 +1175,7 @@
             this.lcarsButtonBase12.CustomAlertColor = System.Drawing.Color.Empty;
             this.lcarsButtonBase12.Data = null;
             this.lcarsButtonBase12.Data2 = null;
-            this.lcarsButtonBase12.DoesBeep = true;
+            this.lcarsButtonBase12.DoesSound = true;
             this.lcarsButtonBase12.FlashInterval = 500;
             this.lcarsButtonBase12.ForceCaps = false;
             this.lcarsButtonBase12.HoldDraw = false;
@@ -1198,7 +1198,7 @@
             this.lcarsButtonBase1.CustomAlertColor = System.Drawing.Color.Empty;
             this.lcarsButtonBase1.Data = null;
             this.lcarsButtonBase1.Data2 = null;
-            this.lcarsButtonBase1.DoesBeep = true;
+            this.lcarsButtonBase1.DoesSound = true;
             this.lcarsButtonBase1.FlashInterval = 500;
             this.lcarsButtonBase1.HoldDraw = false;
             this.lcarsButtonBase1.IsLit = true;
@@ -1250,7 +1250,7 @@
             this.standardButton16.CustomAlertColor = System.Drawing.Color.Empty;
             this.standardButton16.Data = null;
             this.standardButton16.Data2 = null;
-            this.standardButton16.DoesBeep = true;
+            this.standardButton16.DoesSound = true;
             this.standardButton16.FlashInterval = 500;
             this.standardButton16.HoldDraw = false;
             this.standardButton16.IsLit = true;
@@ -1275,7 +1275,7 @@
             this.standardButton15.CustomAlertColor = System.Drawing.Color.Empty;
             this.standardButton15.Data = null;
             this.standardButton15.Data2 = null;
-            this.standardButton15.DoesBeep = true;
+            this.standardButton15.DoesSound = true;
             this.standardButton15.FlashInterval = 500;
             this.standardButton15.HoldDraw = false;
             this.standardButton15.IsLit = true;
@@ -1300,7 +1300,7 @@
             this.standardButton14.CustomAlertColor = System.Drawing.Color.Empty;
             this.standardButton14.Data = null;
             this.standardButton14.Data2 = null;
-            this.standardButton14.DoesBeep = true;
+            this.standardButton14.DoesSound = true;
             this.standardButton14.FlashInterval = 500;
             this.standardButton14.HoldDraw = false;
             this.standardButton14.IsLit = true;
@@ -1325,7 +1325,7 @@
             this.standardButton13.CustomAlertColor = System.Drawing.Color.Empty;
             this.standardButton13.Data = null;
             this.standardButton13.Data2 = null;
-            this.standardButton13.DoesBeep = true;
+            this.standardButton13.DoesSound = true;
             this.standardButton13.FlashInterval = 500;
             this.standardButton13.HoldDraw = false;
             this.standardButton13.IsLit = true;
@@ -1350,7 +1350,7 @@
             this.standardButton12.CustomAlertColor = System.Drawing.Color.Empty;
             this.standardButton12.Data = null;
             this.standardButton12.Data2 = null;
-            this.standardButton12.DoesBeep = true;
+            this.standardButton12.DoesSound = true;
             this.standardButton12.FlashInterval = 500;
             this.standardButton12.HoldDraw = false;
             this.standardButton12.IsLit = true;
@@ -1374,7 +1374,7 @@
             this.standardButton8.CustomAlertColor = System.Drawing.Color.Empty;
             this.standardButton8.Data = null;
             this.standardButton8.Data2 = null;
-            this.standardButton8.DoesBeep = true;
+            this.standardButton8.DoesSound = true;
             this.standardButton8.FlashInterval = 500;
             this.standardButton8.HoldDraw = false;
             this.standardButton8.IsLit = true;
@@ -1398,7 +1398,7 @@
             this.standardButton4.CustomAlertColor = System.Drawing.Color.Empty;
             this.standardButton4.Data = null;
             this.standardButton4.Data2 = null;
-            this.standardButton4.DoesBeep = true;
+            this.standardButton4.DoesSound = true;
             this.standardButton4.FlashInterval = 500;
             this.standardButton4.HoldDraw = false;
             this.standardButton4.IsLit = true;
@@ -1422,7 +1422,7 @@
             this.standardButton11.CustomAlertColor = System.Drawing.Color.Empty;
             this.standardButton11.Data = null;
             this.standardButton11.Data2 = null;
-            this.standardButton11.DoesBeep = true;
+            this.standardButton11.DoesSound = true;
             this.standardButton11.FlashInterval = 500;
             this.standardButton11.HoldDraw = false;
             this.standardButton11.IsLit = true;
@@ -1446,7 +1446,7 @@
             this.standardButton7.CustomAlertColor = System.Drawing.Color.Empty;
             this.standardButton7.Data = null;
             this.standardButton7.Data2 = null;
-            this.standardButton7.DoesBeep = true;
+            this.standardButton7.DoesSound = true;
             this.standardButton7.FlashInterval = 500;
             this.standardButton7.HoldDraw = false;
             this.standardButton7.IsLit = true;
@@ -1470,7 +1470,7 @@
             this.standardButton2.CustomAlertColor = System.Drawing.Color.Empty;
             this.standardButton2.Data = null;
             this.standardButton2.Data2 = null;
-            this.standardButton2.DoesBeep = true;
+            this.standardButton2.DoesSound = true;
             this.standardButton2.FlashInterval = 500;
             this.standardButton2.HoldDraw = false;
             this.standardButton2.IsLit = true;
@@ -1494,7 +1494,7 @@
             this.standardButton10.CustomAlertColor = System.Drawing.Color.Empty;
             this.standardButton10.Data = null;
             this.standardButton10.Data2 = null;
-            this.standardButton10.DoesBeep = true;
+            this.standardButton10.DoesSound = true;
             this.standardButton10.FlashInterval = 500;
             this.standardButton10.HoldDraw = false;
             this.standardButton10.IsLit = true;
@@ -1518,7 +1518,7 @@
             this.standardButton6.CustomAlertColor = System.Drawing.Color.Empty;
             this.standardButton6.Data = null;
             this.standardButton6.Data2 = null;
-            this.standardButton6.DoesBeep = true;
+            this.standardButton6.DoesSound = true;
             this.standardButton6.FlashInterval = 500;
             this.standardButton6.HoldDraw = false;
             this.standardButton6.IsLit = true;
@@ -1542,7 +1542,7 @@
             this.standardButton3.CustomAlertColor = System.Drawing.Color.Empty;
             this.standardButton3.Data = null;
             this.standardButton3.Data2 = null;
-            this.standardButton3.DoesBeep = true;
+            this.standardButton3.DoesSound = true;
             this.standardButton3.FlashInterval = 500;
             this.standardButton3.HoldDraw = false;
             this.standardButton3.IsLit = true;
@@ -1566,7 +1566,7 @@
             this.standardButton9.CustomAlertColor = System.Drawing.Color.Empty;
             this.standardButton9.Data = null;
             this.standardButton9.Data2 = null;
-            this.standardButton9.DoesBeep = true;
+            this.standardButton9.DoesSound = true;
             this.standardButton9.FlashInterval = 500;
             this.standardButton9.HoldDraw = false;
             this.standardButton9.IsLit = true;
@@ -1590,7 +1590,7 @@
             this.standardButton5.CustomAlertColor = System.Drawing.Color.Empty;
             this.standardButton5.Data = null;
             this.standardButton5.Data2 = null;
-            this.standardButton5.DoesBeep = true;
+            this.standardButton5.DoesSound = true;
             this.standardButton5.FlashInterval = 500;
             this.standardButton5.HoldDraw = false;
             this.standardButton5.IsLit = true;
@@ -1614,7 +1614,7 @@
             this.standardButton1.CustomAlertColor = System.Drawing.Color.Empty;
             this.standardButton1.Data = null;
             this.standardButton1.Data2 = null;
-            this.standardButton1.DoesBeep = true;
+            this.standardButton1.DoesSound = true;
             this.standardButton1.FlashInterval = 500;
             this.standardButton1.HoldDraw = false;
             this.standardButton1.IsLit = true;
@@ -1697,7 +1697,7 @@
             this.arrowButton44.CustomAlertColor = System.Drawing.Color.Empty;
             this.arrowButton44.Data = null;
             this.arrowButton44.Data2 = null;
-            this.arrowButton44.DoesBeep = false;
+            this.arrowButton44.DoesSound = false;
             this.arrowButton44.FlashInterval = 500;
             this.arrowButton44.HoldDraw = false;
             this.arrowButton44.IsLit = true;
@@ -1720,7 +1720,7 @@
             this.arrowButton33.CustomAlertColor = System.Drawing.Color.Empty;
             this.arrowButton33.Data = null;
             this.arrowButton33.Data2 = null;
-            this.arrowButton33.DoesBeep = false;
+            this.arrowButton33.DoesSound = false;
             this.arrowButton33.FlashInterval = 500;
             this.arrowButton33.HoldDraw = false;
             this.arrowButton33.IsLit = true;
@@ -1743,7 +1743,7 @@
             this.arrowButton22.CustomAlertColor = System.Drawing.Color.Empty;
             this.arrowButton22.Data = null;
             this.arrowButton22.Data2 = null;
-            this.arrowButton22.DoesBeep = false;
+            this.arrowButton22.DoesSound = false;
             this.arrowButton22.FlashInterval = 500;
             this.arrowButton22.HoldDraw = false;
             this.arrowButton22.IsLit = true;
@@ -1766,7 +1766,7 @@
             this.arrowButton11.CustomAlertColor = System.Drawing.Color.Empty;
             this.arrowButton11.Data = null;
             this.arrowButton11.Data2 = null;
-            this.arrowButton11.DoesBeep = false;
+            this.arrowButton11.DoesSound = false;
             this.arrowButton11.FlashInterval = 500;
             this.arrowButton11.HoldDraw = false;
             this.arrowButton11.IsLit = true;
@@ -1789,7 +1789,7 @@
             this.arrowButton43.CustomAlertColor = System.Drawing.Color.Empty;
             this.arrowButton43.Data = null;
             this.arrowButton43.Data2 = null;
-            this.arrowButton43.DoesBeep = false;
+            this.arrowButton43.DoesSound = false;
             this.arrowButton43.FlashInterval = 500;
             this.arrowButton43.HoldDraw = false;
             this.arrowButton43.IsLit = true;
@@ -1812,7 +1812,7 @@
             this.arrowButton32.CustomAlertColor = System.Drawing.Color.Empty;
             this.arrowButton32.Data = null;
             this.arrowButton32.Data2 = null;
-            this.arrowButton32.DoesBeep = false;
+            this.arrowButton32.DoesSound = false;
             this.arrowButton32.FlashInterval = 500;
             this.arrowButton32.HoldDraw = false;
             this.arrowButton32.IsLit = true;
@@ -1835,7 +1835,7 @@
             this.arrowButton21.CustomAlertColor = System.Drawing.Color.Empty;
             this.arrowButton21.Data = null;
             this.arrowButton21.Data2 = null;
-            this.arrowButton21.DoesBeep = false;
+            this.arrowButton21.DoesSound = false;
             this.arrowButton21.FlashInterval = 500;
             this.arrowButton21.HoldDraw = false;
             this.arrowButton21.IsLit = true;
@@ -1858,7 +1858,7 @@
             this.arrowButton10.CustomAlertColor = System.Drawing.Color.Empty;
             this.arrowButton10.Data = null;
             this.arrowButton10.Data2 = null;
-            this.arrowButton10.DoesBeep = false;
+            this.arrowButton10.DoesSound = false;
             this.arrowButton10.FlashInterval = 500;
             this.arrowButton10.HoldDraw = false;
             this.arrowButton10.IsLit = true;
@@ -1881,7 +1881,7 @@
             this.arrowButton42.CustomAlertColor = System.Drawing.Color.Empty;
             this.arrowButton42.Data = null;
             this.arrowButton42.Data2 = null;
-            this.arrowButton42.DoesBeep = false;
+            this.arrowButton42.DoesSound = false;
             this.arrowButton42.FlashInterval = 500;
             this.arrowButton42.HoldDraw = false;
             this.arrowButton42.IsLit = true;
@@ -1904,7 +1904,7 @@
             this.arrowButton31.CustomAlertColor = System.Drawing.Color.Empty;
             this.arrowButton31.Data = null;
             this.arrowButton31.Data2 = null;
-            this.arrowButton31.DoesBeep = false;
+            this.arrowButton31.DoesSound = false;
             this.arrowButton31.FlashInterval = 500;
             this.arrowButton31.HoldDraw = false;
             this.arrowButton31.IsLit = true;
@@ -1927,7 +1927,7 @@
             this.arrowButton20.CustomAlertColor = System.Drawing.Color.Empty;
             this.arrowButton20.Data = null;
             this.arrowButton20.Data2 = null;
-            this.arrowButton20.DoesBeep = false;
+            this.arrowButton20.DoesSound = false;
             this.arrowButton20.FlashInterval = 500;
             this.arrowButton20.HoldDraw = false;
             this.arrowButton20.IsLit = true;
@@ -1950,7 +1950,7 @@
             this.arrowButton9.CustomAlertColor = System.Drawing.Color.Empty;
             this.arrowButton9.Data = null;
             this.arrowButton9.Data2 = null;
-            this.arrowButton9.DoesBeep = false;
+            this.arrowButton9.DoesSound = false;
             this.arrowButton9.FlashInterval = 500;
             this.arrowButton9.HoldDraw = false;
             this.arrowButton9.IsLit = true;
@@ -1973,7 +1973,7 @@
             this.arrowButton41.CustomAlertColor = System.Drawing.Color.Empty;
             this.arrowButton41.Data = null;
             this.arrowButton41.Data2 = null;
-            this.arrowButton41.DoesBeep = false;
+            this.arrowButton41.DoesSound = false;
             this.arrowButton41.FlashInterval = 500;
             this.arrowButton41.HoldDraw = false;
             this.arrowButton41.IsLit = true;
@@ -1996,7 +1996,7 @@
             this.arrowButton30.CustomAlertColor = System.Drawing.Color.Empty;
             this.arrowButton30.Data = null;
             this.arrowButton30.Data2 = null;
-            this.arrowButton30.DoesBeep = false;
+            this.arrowButton30.DoesSound = false;
             this.arrowButton30.FlashInterval = 500;
             this.arrowButton30.HoldDraw = false;
             this.arrowButton30.IsLit = true;
@@ -2019,7 +2019,7 @@
             this.arrowButton19.CustomAlertColor = System.Drawing.Color.Empty;
             this.arrowButton19.Data = null;
             this.arrowButton19.Data2 = null;
-            this.arrowButton19.DoesBeep = false;
+            this.arrowButton19.DoesSound = false;
             this.arrowButton19.FlashInterval = 500;
             this.arrowButton19.HoldDraw = false;
             this.arrowButton19.IsLit = true;
@@ -2042,7 +2042,7 @@
             this.arrowButton8.CustomAlertColor = System.Drawing.Color.Empty;
             this.arrowButton8.Data = null;
             this.arrowButton8.Data2 = null;
-            this.arrowButton8.DoesBeep = false;
+            this.arrowButton8.DoesSound = false;
             this.arrowButton8.FlashInterval = 500;
             this.arrowButton8.HoldDraw = false;
             this.arrowButton8.IsLit = true;
@@ -2065,7 +2065,7 @@
             this.arrowButton40.CustomAlertColor = System.Drawing.Color.Empty;
             this.arrowButton40.Data = null;
             this.arrowButton40.Data2 = null;
-            this.arrowButton40.DoesBeep = false;
+            this.arrowButton40.DoesSound = false;
             this.arrowButton40.FlashInterval = 500;
             this.arrowButton40.HoldDraw = false;
             this.arrowButton40.IsLit = true;
@@ -2088,7 +2088,7 @@
             this.arrowButton29.CustomAlertColor = System.Drawing.Color.Empty;
             this.arrowButton29.Data = null;
             this.arrowButton29.Data2 = null;
-            this.arrowButton29.DoesBeep = false;
+            this.arrowButton29.DoesSound = false;
             this.arrowButton29.FlashInterval = 500;
             this.arrowButton29.HoldDraw = false;
             this.arrowButton29.IsLit = true;
@@ -2111,7 +2111,7 @@
             this.arrowButton18.CustomAlertColor = System.Drawing.Color.Empty;
             this.arrowButton18.Data = null;
             this.arrowButton18.Data2 = null;
-            this.arrowButton18.DoesBeep = false;
+            this.arrowButton18.DoesSound = false;
             this.arrowButton18.FlashInterval = 500;
             this.arrowButton18.HoldDraw = false;
             this.arrowButton18.IsLit = true;
@@ -2134,7 +2134,7 @@
             this.arrowButton7.CustomAlertColor = System.Drawing.Color.Empty;
             this.arrowButton7.Data = null;
             this.arrowButton7.Data2 = null;
-            this.arrowButton7.DoesBeep = false;
+            this.arrowButton7.DoesSound = false;
             this.arrowButton7.FlashInterval = 500;
             this.arrowButton7.HoldDraw = false;
             this.arrowButton7.IsLit = true;
@@ -2157,7 +2157,7 @@
             this.arrowButton39.CustomAlertColor = System.Drawing.Color.Empty;
             this.arrowButton39.Data = null;
             this.arrowButton39.Data2 = null;
-            this.arrowButton39.DoesBeep = false;
+            this.arrowButton39.DoesSound = false;
             this.arrowButton39.FlashInterval = 500;
             this.arrowButton39.HoldDraw = false;
             this.arrowButton39.IsLit = true;
@@ -2180,7 +2180,7 @@
             this.arrowButton28.CustomAlertColor = System.Drawing.Color.Empty;
             this.arrowButton28.Data = null;
             this.arrowButton28.Data2 = null;
-            this.arrowButton28.DoesBeep = false;
+            this.arrowButton28.DoesSound = false;
             this.arrowButton28.FlashInterval = 500;
             this.arrowButton28.HoldDraw = false;
             this.arrowButton28.IsLit = true;
@@ -2203,7 +2203,7 @@
             this.arrowButton17.CustomAlertColor = System.Drawing.Color.Empty;
             this.arrowButton17.Data = null;
             this.arrowButton17.Data2 = null;
-            this.arrowButton17.DoesBeep = false;
+            this.arrowButton17.DoesSound = false;
             this.arrowButton17.FlashInterval = 500;
             this.arrowButton17.HoldDraw = false;
             this.arrowButton17.IsLit = true;
@@ -2226,7 +2226,7 @@
             this.arrowButton6.CustomAlertColor = System.Drawing.Color.Empty;
             this.arrowButton6.Data = null;
             this.arrowButton6.Data2 = null;
-            this.arrowButton6.DoesBeep = false;
+            this.arrowButton6.DoesSound = false;
             this.arrowButton6.FlashInterval = 500;
             this.arrowButton6.HoldDraw = false;
             this.arrowButton6.IsLit = true;
@@ -2249,7 +2249,7 @@
             this.arrowButton38.CustomAlertColor = System.Drawing.Color.Empty;
             this.arrowButton38.Data = null;
             this.arrowButton38.Data2 = null;
-            this.arrowButton38.DoesBeep = false;
+            this.arrowButton38.DoesSound = false;
             this.arrowButton38.FlashInterval = 500;
             this.arrowButton38.HoldDraw = false;
             this.arrowButton38.IsLit = true;
@@ -2272,7 +2272,7 @@
             this.arrowButton27.CustomAlertColor = System.Drawing.Color.Empty;
             this.arrowButton27.Data = null;
             this.arrowButton27.Data2 = null;
-            this.arrowButton27.DoesBeep = false;
+            this.arrowButton27.DoesSound = false;
             this.arrowButton27.FlashInterval = 500;
             this.arrowButton27.HoldDraw = false;
             this.arrowButton27.IsLit = true;
@@ -2295,7 +2295,7 @@
             this.arrowButton16.CustomAlertColor = System.Drawing.Color.Empty;
             this.arrowButton16.Data = null;
             this.arrowButton16.Data2 = null;
-            this.arrowButton16.DoesBeep = false;
+            this.arrowButton16.DoesSound = false;
             this.arrowButton16.FlashInterval = 500;
             this.arrowButton16.HoldDraw = false;
             this.arrowButton16.IsLit = true;
@@ -2318,7 +2318,7 @@
             this.arrowButton37.CustomAlertColor = System.Drawing.Color.Empty;
             this.arrowButton37.Data = null;
             this.arrowButton37.Data2 = null;
-            this.arrowButton37.DoesBeep = false;
+            this.arrowButton37.DoesSound = false;
             this.arrowButton37.FlashInterval = 500;
             this.arrowButton37.HoldDraw = false;
             this.arrowButton37.IsLit = true;
@@ -2341,7 +2341,7 @@
             this.arrowButton26.CustomAlertColor = System.Drawing.Color.Empty;
             this.arrowButton26.Data = null;
             this.arrowButton26.Data2 = null;
-            this.arrowButton26.DoesBeep = false;
+            this.arrowButton26.DoesSound = false;
             this.arrowButton26.FlashInterval = 500;
             this.arrowButton26.HoldDraw = false;
             this.arrowButton26.IsLit = true;
@@ -2364,7 +2364,7 @@
             this.arrowButton15.CustomAlertColor = System.Drawing.Color.Empty;
             this.arrowButton15.Data = null;
             this.arrowButton15.Data2 = null;
-            this.arrowButton15.DoesBeep = false;
+            this.arrowButton15.DoesSound = false;
             this.arrowButton15.FlashInterval = 500;
             this.arrowButton15.HoldDraw = false;
             this.arrowButton15.IsLit = true;
@@ -2387,7 +2387,7 @@
             this.arrowButton58.CustomAlertColor = System.Drawing.Color.Empty;
             this.arrowButton58.Data = null;
             this.arrowButton58.Data2 = null;
-            this.arrowButton58.DoesBeep = false;
+            this.arrowButton58.DoesSound = false;
             this.arrowButton58.FlashInterval = 500;
             this.arrowButton58.HoldDraw = false;
             this.arrowButton58.IsLit = true;
@@ -2410,7 +2410,7 @@
             this.arrowButton5.CustomAlertColor = System.Drawing.Color.Empty;
             this.arrowButton5.Data = null;
             this.arrowButton5.Data2 = null;
-            this.arrowButton5.DoesBeep = false;
+            this.arrowButton5.DoesSound = false;
             this.arrowButton5.FlashInterval = 500;
             this.arrowButton5.HoldDraw = false;
             this.arrowButton5.IsLit = true;
@@ -2433,7 +2433,7 @@
             this.arrowButton36.CustomAlertColor = System.Drawing.Color.Empty;
             this.arrowButton36.Data = null;
             this.arrowButton36.Data2 = null;
-            this.arrowButton36.DoesBeep = false;
+            this.arrowButton36.DoesSound = false;
             this.arrowButton36.FlashInterval = 500;
             this.arrowButton36.HoldDraw = false;
             this.arrowButton36.IsLit = true;
@@ -2456,7 +2456,7 @@
             this.arrowButton25.CustomAlertColor = System.Drawing.Color.Empty;
             this.arrowButton25.Data = null;
             this.arrowButton25.Data2 = null;
-            this.arrowButton25.DoesBeep = false;
+            this.arrowButton25.DoesSound = false;
             this.arrowButton25.FlashInterval = 500;
             this.arrowButton25.HoldDraw = false;
             this.arrowButton25.IsLit = true;
@@ -2479,7 +2479,7 @@
             this.arrowButton14.CustomAlertColor = System.Drawing.Color.Empty;
             this.arrowButton14.Data = null;
             this.arrowButton14.Data2 = null;
-            this.arrowButton14.DoesBeep = false;
+            this.arrowButton14.DoesSound = false;
             this.arrowButton14.FlashInterval = 500;
             this.arrowButton14.HoldDraw = false;
             this.arrowButton14.IsLit = true;
@@ -2502,7 +2502,7 @@
             this.arrowButton4.CustomAlertColor = System.Drawing.Color.Empty;
             this.arrowButton4.Data = null;
             this.arrowButton4.Data2 = null;
-            this.arrowButton4.DoesBeep = false;
+            this.arrowButton4.DoesSound = false;
             this.arrowButton4.FlashInterval = 500;
             this.arrowButton4.HoldDraw = false;
             this.arrowButton4.IsLit = true;
@@ -2525,7 +2525,7 @@
             this.arrowButton35.CustomAlertColor = System.Drawing.Color.Empty;
             this.arrowButton35.Data = null;
             this.arrowButton35.Data2 = null;
-            this.arrowButton35.DoesBeep = false;
+            this.arrowButton35.DoesSound = false;
             this.arrowButton35.FlashInterval = 500;
             this.arrowButton35.HoldDraw = false;
             this.arrowButton35.IsLit = true;
@@ -2548,7 +2548,7 @@
             this.arrowButton56.CustomAlertColor = System.Drawing.Color.Empty;
             this.arrowButton56.Data = null;
             this.arrowButton56.Data2 = null;
-            this.arrowButton56.DoesBeep = false;
+            this.arrowButton56.DoesSound = false;
             this.arrowButton56.FlashInterval = 500;
             this.arrowButton56.HoldDraw = false;
             this.arrowButton56.IsLit = true;
@@ -2571,7 +2571,7 @@
             this.arrowButton24.CustomAlertColor = System.Drawing.Color.Empty;
             this.arrowButton24.Data = null;
             this.arrowButton24.Data2 = null;
-            this.arrowButton24.DoesBeep = false;
+            this.arrowButton24.DoesSound = false;
             this.arrowButton24.FlashInterval = 500;
             this.arrowButton24.HoldDraw = false;
             this.arrowButton24.IsLit = true;
@@ -2594,7 +2594,7 @@
             this.arrowButton13.CustomAlertColor = System.Drawing.Color.Empty;
             this.arrowButton13.Data = null;
             this.arrowButton13.Data2 = null;
-            this.arrowButton13.DoesBeep = false;
+            this.arrowButton13.DoesSound = false;
             this.arrowButton13.FlashInterval = 500;
             this.arrowButton13.HoldDraw = false;
             this.arrowButton13.IsLit = true;
@@ -2617,7 +2617,7 @@
             this.arrowButton34.CustomAlertColor = System.Drawing.Color.Empty;
             this.arrowButton34.Data = null;
             this.arrowButton34.Data2 = null;
-            this.arrowButton34.DoesBeep = false;
+            this.arrowButton34.DoesSound = false;
             this.arrowButton34.FlashInterval = 500;
             this.arrowButton34.HoldDraw = false;
             this.arrowButton34.IsLit = true;
@@ -2640,7 +2640,7 @@
             this.arrowButton3.CustomAlertColor = System.Drawing.Color.Empty;
             this.arrowButton3.Data = null;
             this.arrowButton3.Data2 = null;
-            this.arrowButton3.DoesBeep = false;
+            this.arrowButton3.DoesSound = false;
             this.arrowButton3.FlashInterval = 500;
             this.arrowButton3.HoldDraw = false;
             this.arrowButton3.IsLit = true;
@@ -2663,7 +2663,7 @@
             this.arrowButton23.CustomAlertColor = System.Drawing.Color.Empty;
             this.arrowButton23.Data = null;
             this.arrowButton23.Data2 = null;
-            this.arrowButton23.DoesBeep = false;
+            this.arrowButton23.DoesSound = false;
             this.arrowButton23.FlashInterval = 500;
             this.arrowButton23.HoldDraw = false;
             this.arrowButton23.IsLit = true;
@@ -2686,7 +2686,7 @@
             this.arrowButton12.CustomAlertColor = System.Drawing.Color.Empty;
             this.arrowButton12.Data = null;
             this.arrowButton12.Data2 = null;
-            this.arrowButton12.DoesBeep = false;
+            this.arrowButton12.DoesSound = false;
             this.arrowButton12.FlashInterval = 500;
             this.arrowButton12.HoldDraw = false;
             this.arrowButton12.IsLit = true;
@@ -2709,7 +2709,7 @@
             this.arrowButton2.CustomAlertColor = System.Drawing.Color.Empty;
             this.arrowButton2.Data = null;
             this.arrowButton2.Data2 = null;
-            this.arrowButton2.DoesBeep = false;
+            this.arrowButton2.DoesSound = false;
             this.arrowButton2.FlashInterval = 500;
             this.arrowButton2.HoldDraw = false;
             this.arrowButton2.IsLit = true;
@@ -2732,7 +2732,7 @@
             this.arrowButton1.CustomAlertColor = System.Drawing.Color.Empty;
             this.arrowButton1.Data = null;
             this.arrowButton1.Data2 = null;
-            this.arrowButton1.DoesBeep = false;
+            this.arrowButton1.DoesSound = false;
             this.arrowButton1.FlashInterval = 500;
             this.arrowButton1.HoldDraw = false;
             this.arrowButton1.IsLit = true;
@@ -2777,7 +2777,7 @@
             this.complexButton12.CustomAlertColor = System.Drawing.Color.Empty;
             this.complexButton12.Data = null;
             this.complexButton12.Data2 = null;
-            this.complexButton12.DoesBeep = true;
+            this.complexButton12.DoesSound = true;
             this.complexButton12.FlashInterval = 500;
             this.complexButton12.HoldDraw = false;
             this.complexButton12.IsLit = true;
@@ -2804,7 +2804,7 @@
             this.complexButton8.CustomAlertColor = System.Drawing.Color.Empty;
             this.complexButton8.Data = null;
             this.complexButton8.Data2 = null;
-            this.complexButton8.DoesBeep = true;
+            this.complexButton8.DoesSound = true;
             this.complexButton8.FlashInterval = 500;
             this.complexButton8.HoldDraw = false;
             this.complexButton8.IsLit = true;
@@ -2831,7 +2831,7 @@
             this.complexButton4.CustomAlertColor = System.Drawing.Color.Empty;
             this.complexButton4.Data = null;
             this.complexButton4.Data2 = null;
-            this.complexButton4.DoesBeep = true;
+            this.complexButton4.DoesSound = true;
             this.complexButton4.FlashInterval = 500;
             this.complexButton4.HoldDraw = false;
             this.complexButton4.IsLit = true;
@@ -2858,7 +2858,7 @@
             this.complexButton11.CustomAlertColor = System.Drawing.Color.Empty;
             this.complexButton11.Data = null;
             this.complexButton11.Data2 = null;
-            this.complexButton11.DoesBeep = true;
+            this.complexButton11.DoesSound = true;
             this.complexButton11.FlashInterval = 500;
             this.complexButton11.HoldDraw = false;
             this.complexButton11.IsLit = true;
@@ -2885,7 +2885,7 @@
             this.complexButton7.CustomAlertColor = System.Drawing.Color.Empty;
             this.complexButton7.Data = null;
             this.complexButton7.Data2 = null;
-            this.complexButton7.DoesBeep = true;
+            this.complexButton7.DoesSound = true;
             this.complexButton7.FlashInterval = 500;
             this.complexButton7.HoldDraw = false;
             this.complexButton7.IsLit = true;
@@ -2912,7 +2912,7 @@
             this.complexButton3.CustomAlertColor = System.Drawing.Color.Empty;
             this.complexButton3.Data = null;
             this.complexButton3.Data2 = null;
-            this.complexButton3.DoesBeep = true;
+            this.complexButton3.DoesSound = true;
             this.complexButton3.FlashInterval = 500;
             this.complexButton3.HoldDraw = false;
             this.complexButton3.IsLit = true;
@@ -2939,7 +2939,7 @@
             this.complexButton10.CustomAlertColor = System.Drawing.Color.Empty;
             this.complexButton10.Data = null;
             this.complexButton10.Data2 = null;
-            this.complexButton10.DoesBeep = true;
+            this.complexButton10.DoesSound = true;
             this.complexButton10.FlashInterval = 500;
             this.complexButton10.HoldDraw = false;
             this.complexButton10.IsLit = true;
@@ -2966,7 +2966,7 @@
             this.complexButton6.CustomAlertColor = System.Drawing.Color.Empty;
             this.complexButton6.Data = null;
             this.complexButton6.Data2 = null;
-            this.complexButton6.DoesBeep = true;
+            this.complexButton6.DoesSound = true;
             this.complexButton6.FlashInterval = 500;
             this.complexButton6.HoldDraw = false;
             this.complexButton6.IsLit = true;
@@ -2993,7 +2993,7 @@
             this.complexButton2.CustomAlertColor = System.Drawing.Color.Empty;
             this.complexButton2.Data = null;
             this.complexButton2.Data2 = null;
-            this.complexButton2.DoesBeep = true;
+            this.complexButton2.DoesSound = true;
             this.complexButton2.FlashInterval = 500;
             this.complexButton2.HoldDraw = false;
             this.complexButton2.IsLit = true;
@@ -3020,7 +3020,7 @@
             this.complexButton9.CustomAlertColor = System.Drawing.Color.Empty;
             this.complexButton9.Data = null;
             this.complexButton9.Data2 = null;
-            this.complexButton9.DoesBeep = true;
+            this.complexButton9.DoesSound = true;
             this.complexButton9.FlashInterval = 500;
             this.complexButton9.HoldDraw = false;
             this.complexButton9.IsLit = true;
@@ -3047,7 +3047,7 @@
             this.complexButton5.CustomAlertColor = System.Drawing.Color.Empty;
             this.complexButton5.Data = null;
             this.complexButton5.Data2 = null;
-            this.complexButton5.DoesBeep = true;
+            this.complexButton5.DoesSound = true;
             this.complexButton5.FlashInterval = 500;
             this.complexButton5.HoldDraw = false;
             this.complexButton5.IsLit = true;
@@ -3074,7 +3074,7 @@
             this.complexButton1.CustomAlertColor = System.Drawing.Color.Empty;
             this.complexButton1.Data = null;
             this.complexButton1.Data2 = null;
-            this.complexButton1.DoesBeep = true;
+            this.complexButton1.DoesSound = true;
             this.complexButton1.FlashInterval = 500;
             this.complexButton1.HoldDraw = false;
             this.complexButton1.IsLit = true;
@@ -3128,7 +3128,7 @@
             this.flatButton15.CustomAlertColor = System.Drawing.Color.Empty;
             this.flatButton15.Data = null;
             this.flatButton15.Data2 = null;
-            this.flatButton15.DoesBeep = true;
+            this.flatButton15.DoesSound = true;
             this.flatButton15.FlashInterval = 500;
             this.flatButton15.HoldDraw = false;
             this.flatButton15.IsLit = true;
@@ -3151,7 +3151,7 @@
             this.flatButton14.CustomAlertColor = System.Drawing.Color.Empty;
             this.flatButton14.Data = null;
             this.flatButton14.Data2 = null;
-            this.flatButton14.DoesBeep = true;
+            this.flatButton14.DoesSound = true;
             this.flatButton14.FlashInterval = 500;
             this.flatButton14.HoldDraw = false;
             this.flatButton14.IsLit = true;
@@ -3174,7 +3174,7 @@
             this.flatButton13.CustomAlertColor = System.Drawing.Color.Empty;
             this.flatButton13.Data = null;
             this.flatButton13.Data2 = null;
-            this.flatButton13.DoesBeep = true;
+            this.flatButton13.DoesSound = true;
             this.flatButton13.FlashInterval = 500;
             this.flatButton13.HoldDraw = false;
             this.flatButton13.IsLit = true;
@@ -3197,7 +3197,7 @@
             this.flatButton12.CustomAlertColor = System.Drawing.Color.Empty;
             this.flatButton12.Data = null;
             this.flatButton12.Data2 = null;
-            this.flatButton12.DoesBeep = true;
+            this.flatButton12.DoesSound = true;
             this.flatButton12.Flash = true;
             this.flatButton12.FlashInterval = 500;
             this.flatButton12.HoldDraw = false;
@@ -3221,7 +3221,7 @@
             this.flatButton11.CustomAlertColor = System.Drawing.Color.Empty;
             this.flatButton11.Data = null;
             this.flatButton11.Data2 = null;
-            this.flatButton11.DoesBeep = true;
+            this.flatButton11.DoesSound = true;
             this.flatButton11.FlashInterval = 500;
             this.flatButton11.HoldDraw = false;
             this.flatButton11.IsLit = true;
@@ -3244,7 +3244,7 @@
             this.flatButton10.CustomAlertColor = System.Drawing.Color.Empty;
             this.flatButton10.Data = null;
             this.flatButton10.Data2 = null;
-            this.flatButton10.DoesBeep = true;
+            this.flatButton10.DoesSound = true;
             this.flatButton10.FlashInterval = 500;
             this.flatButton10.HoldDraw = false;
             this.flatButton10.IsLit = true;
@@ -3267,7 +3267,7 @@
             this.flatButton9.CustomAlertColor = System.Drawing.Color.Empty;
             this.flatButton9.Data = null;
             this.flatButton9.Data2 = null;
-            this.flatButton9.DoesBeep = true;
+            this.flatButton9.DoesSound = true;
             this.flatButton9.Flash = true;
             this.flatButton9.FlashInterval = 500;
             this.flatButton9.HoldDraw = false;
@@ -3291,7 +3291,7 @@
             this.flatButton8.CustomAlertColor = System.Drawing.Color.Empty;
             this.flatButton8.Data = null;
             this.flatButton8.Data2 = null;
-            this.flatButton8.DoesBeep = true;
+            this.flatButton8.DoesSound = true;
             this.flatButton8.FlashInterval = 500;
             this.flatButton8.HoldDraw = false;
             this.flatButton8.IsLit = true;
@@ -3314,7 +3314,7 @@
             this.flatButton7.CustomAlertColor = System.Drawing.Color.Empty;
             this.flatButton7.Data = null;
             this.flatButton7.Data2 = null;
-            this.flatButton7.DoesBeep = true;
+            this.flatButton7.DoesSound = true;
             this.flatButton7.FlashInterval = 500;
             this.flatButton7.HoldDraw = false;
             this.flatButton7.IsLit = true;
@@ -3337,7 +3337,7 @@
             this.flatButton6.CustomAlertColor = System.Drawing.Color.Empty;
             this.flatButton6.Data = null;
             this.flatButton6.Data2 = null;
-            this.flatButton6.DoesBeep = true;
+            this.flatButton6.DoesSound = true;
             this.flatButton6.FlashInterval = 500;
             this.flatButton6.HoldDraw = false;
             this.flatButton6.IsLit = true;
@@ -3360,7 +3360,7 @@
             this.flatButton5.CustomAlertColor = System.Drawing.Color.Empty;
             this.flatButton5.Data = null;
             this.flatButton5.Data2 = null;
-            this.flatButton5.DoesBeep = true;
+            this.flatButton5.DoesSound = true;
             this.flatButton5.FlashInterval = 500;
             this.flatButton5.HoldDraw = false;
             this.flatButton5.IsLit = true;
@@ -3383,7 +3383,7 @@
             this.flatButton4.CustomAlertColor = System.Drawing.Color.Empty;
             this.flatButton4.Data = null;
             this.flatButton4.Data2 = null;
-            this.flatButton4.DoesBeep = true;
+            this.flatButton4.DoesSound = true;
             this.flatButton4.FlashInterval = 500;
             this.flatButton4.HoldDraw = false;
             this.flatButton4.IsLit = true;
@@ -3406,7 +3406,7 @@
             this.flatButton3.CustomAlertColor = System.Drawing.Color.Empty;
             this.flatButton3.Data = null;
             this.flatButton3.Data2 = null;
-            this.flatButton3.DoesBeep = true;
+            this.flatButton3.DoesSound = true;
             this.flatButton3.Flash = true;
             this.flatButton3.FlashInterval = 500;
             this.flatButton3.HoldDraw = false;
@@ -3430,7 +3430,7 @@
             this.flatButton2.CustomAlertColor = System.Drawing.Color.Empty;
             this.flatButton2.Data = null;
             this.flatButton2.Data2 = null;
-            this.flatButton2.DoesBeep = true;
+            this.flatButton2.DoesSound = true;
             this.flatButton2.FlashInterval = 500;
             this.flatButton2.HoldDraw = false;
             this.flatButton2.IsLit = true;
@@ -3453,7 +3453,7 @@
             this.flatButton1.CustomAlertColor = System.Drawing.Color.Empty;
             this.flatButton1.Data = null;
             this.flatButton1.Data2 = null;
-            this.flatButton1.DoesBeep = true;
+            this.flatButton1.DoesSound = true;
             this.flatButton1.FlashInterval = 500;
             this.flatButton1.HoldDraw = false;
             this.flatButton1.IsLit = true;
@@ -3500,7 +3500,7 @@
             this.halfPillButton10.CustomAlertColor = System.Drawing.Color.Empty;
             this.halfPillButton10.Data = null;
             this.halfPillButton10.Data2 = null;
-            this.halfPillButton10.DoesBeep = true;
+            this.halfPillButton10.DoesSound = true;
             this.halfPillButton10.FlashInterval = 500;
             this.halfPillButton10.HoldDraw = false;
             this.halfPillButton10.IsLit = true;
@@ -3525,7 +3525,7 @@
             this.halfPillButton8.CustomAlertColor = System.Drawing.Color.Empty;
             this.halfPillButton8.Data = null;
             this.halfPillButton8.Data2 = null;
-            this.halfPillButton8.DoesBeep = true;
+            this.halfPillButton8.DoesSound = true;
             this.halfPillButton8.FlashInterval = 500;
             this.halfPillButton8.HoldDraw = false;
             this.halfPillButton8.IsLit = true;
@@ -3550,7 +3550,7 @@
             this.halfPillButton6.CustomAlertColor = System.Drawing.Color.Empty;
             this.halfPillButton6.Data = null;
             this.halfPillButton6.Data2 = null;
-            this.halfPillButton6.DoesBeep = true;
+            this.halfPillButton6.DoesSound = true;
             this.halfPillButton6.FlashInterval = 500;
             this.halfPillButton6.HoldDraw = false;
             this.halfPillButton6.IsLit = true;
@@ -3574,7 +3574,7 @@
             this.halfPillButton9.CustomAlertColor = System.Drawing.Color.Empty;
             this.halfPillButton9.Data = null;
             this.halfPillButton9.Data2 = null;
-            this.halfPillButton9.DoesBeep = true;
+            this.halfPillButton9.DoesSound = true;
             this.halfPillButton9.FlashInterval = 500;
             this.halfPillButton9.HoldDraw = false;
             this.halfPillButton9.IsLit = true;
@@ -3599,7 +3599,7 @@
             this.halfPillButton4.CustomAlertColor = System.Drawing.Color.Empty;
             this.halfPillButton4.Data = null;
             this.halfPillButton4.Data2 = null;
-            this.halfPillButton4.DoesBeep = true;
+            this.halfPillButton4.DoesSound = true;
             this.halfPillButton4.FlashInterval = 500;
             this.halfPillButton4.HoldDraw = false;
             this.halfPillButton4.IsLit = true;
@@ -3623,7 +3623,7 @@
             this.halfPillButton7.CustomAlertColor = System.Drawing.Color.Empty;
             this.halfPillButton7.Data = null;
             this.halfPillButton7.Data2 = null;
-            this.halfPillButton7.DoesBeep = true;
+            this.halfPillButton7.DoesSound = true;
             this.halfPillButton7.FlashInterval = 500;
             this.halfPillButton7.HoldDraw = false;
             this.halfPillButton7.IsLit = true;
@@ -3647,7 +3647,7 @@
             this.halfPillButton5.CustomAlertColor = System.Drawing.Color.Empty;
             this.halfPillButton5.Data = null;
             this.halfPillButton5.Data2 = null;
-            this.halfPillButton5.DoesBeep = true;
+            this.halfPillButton5.DoesSound = true;
             this.halfPillButton5.FlashInterval = 500;
             this.halfPillButton5.HoldDraw = false;
             this.halfPillButton5.IsLit = true;
@@ -3671,7 +3671,7 @@
             this.halfPillButton3.CustomAlertColor = System.Drawing.Color.Empty;
             this.halfPillButton3.Data = null;
             this.halfPillButton3.Data2 = null;
-            this.halfPillButton3.DoesBeep = true;
+            this.halfPillButton3.DoesSound = true;
             this.halfPillButton3.FlashInterval = 500;
             this.halfPillButton3.HoldDraw = false;
             this.halfPillButton3.IsLit = true;
@@ -3696,7 +3696,7 @@
             this.halfPillButton2.CustomAlertColor = System.Drawing.Color.Empty;
             this.halfPillButton2.Data = null;
             this.halfPillButton2.Data2 = null;
-            this.halfPillButton2.DoesBeep = true;
+            this.halfPillButton2.DoesSound = true;
             this.halfPillButton2.FlashInterval = 500;
             this.halfPillButton2.HoldDraw = false;
             this.halfPillButton2.IsLit = true;
@@ -3720,7 +3720,7 @@
             this.halfPillButton1.CustomAlertColor = System.Drawing.Color.Empty;
             this.halfPillButton1.Data = null;
             this.halfPillButton1.Data2 = null;
-            this.halfPillButton1.DoesBeep = true;
+            this.halfPillButton1.DoesSound = true;
             this.halfPillButton1.FlashInterval = 500;
             this.halfPillButton1.HoldDraw = false;
             this.halfPillButton1.IsLit = true;
@@ -3789,7 +3789,7 @@
             this.textButton22.CustomAlertColor = System.Drawing.Color.Empty;
             this.textButton22.Data = null;
             this.textButton22.Data2 = null;
-            this.textButton22.DoesBeep = false;
+            this.textButton22.DoesSound = false;
             this.textButton22.FlashInterval = 500;
             this.textButton22.HoldDraw = false;
             this.textButton22.IsLit = true;
@@ -3813,7 +3813,7 @@
             this.textButton33.CustomAlertColor = System.Drawing.Color.Empty;
             this.textButton33.Data = null;
             this.textButton33.Data2 = null;
-            this.textButton33.DoesBeep = false;
+            this.textButton33.DoesSound = false;
             this.textButton33.FlashInterval = 500;
             this.textButton33.HoldDraw = false;
             this.textButton33.IsLit = true;
@@ -3837,7 +3837,7 @@
             this.textButton11.CustomAlertColor = System.Drawing.Color.Empty;
             this.textButton11.Data = null;
             this.textButton11.Data2 = null;
-            this.textButton11.DoesBeep = false;
+            this.textButton11.DoesSound = false;
             this.textButton11.FlashInterval = 500;
             this.textButton11.HoldDraw = false;
             this.textButton11.IsLit = true;
@@ -3861,7 +3861,7 @@
             this.textButton21.CustomAlertColor = System.Drawing.Color.Empty;
             this.textButton21.Data = null;
             this.textButton21.Data2 = null;
-            this.textButton21.DoesBeep = false;
+            this.textButton21.DoesSound = false;
             this.textButton21.FlashInterval = 500;
             this.textButton21.HoldDraw = false;
             this.textButton21.IsLit = true;
@@ -3885,7 +3885,7 @@
             this.textButton32.CustomAlertColor = System.Drawing.Color.Empty;
             this.textButton32.Data = null;
             this.textButton32.Data2 = null;
-            this.textButton32.DoesBeep = false;
+            this.textButton32.DoesSound = false;
             this.textButton32.FlashInterval = 500;
             this.textButton32.HoldDraw = false;
             this.textButton32.IsLit = true;
@@ -3909,7 +3909,7 @@
             this.textButton10.CustomAlertColor = System.Drawing.Color.Empty;
             this.textButton10.Data = null;
             this.textButton10.Data2 = null;
-            this.textButton10.DoesBeep = false;
+            this.textButton10.DoesSound = false;
             this.textButton10.FlashInterval = 500;
             this.textButton10.HoldDraw = false;
             this.textButton10.IsLit = true;
@@ -3933,7 +3933,7 @@
             this.textButton20.CustomAlertColor = System.Drawing.Color.Empty;
             this.textButton20.Data = null;
             this.textButton20.Data2 = null;
-            this.textButton20.DoesBeep = false;
+            this.textButton20.DoesSound = false;
             this.textButton20.FlashInterval = 500;
             this.textButton20.HoldDraw = false;
             this.textButton20.IsLit = true;
@@ -3957,7 +3957,7 @@
             this.textButton31.CustomAlertColor = System.Drawing.Color.Empty;
             this.textButton31.Data = null;
             this.textButton31.Data2 = null;
-            this.textButton31.DoesBeep = false;
+            this.textButton31.DoesSound = false;
             this.textButton31.FlashInterval = 500;
             this.textButton31.HoldDraw = false;
             this.textButton31.IsLit = true;
@@ -3981,7 +3981,7 @@
             this.textButton9.CustomAlertColor = System.Drawing.Color.Empty;
             this.textButton9.Data = null;
             this.textButton9.Data2 = null;
-            this.textButton9.DoesBeep = false;
+            this.textButton9.DoesSound = false;
             this.textButton9.FlashInterval = 500;
             this.textButton9.HoldDraw = false;
             this.textButton9.IsLit = true;
@@ -4005,7 +4005,7 @@
             this.textButton19.CustomAlertColor = System.Drawing.Color.Empty;
             this.textButton19.Data = null;
             this.textButton19.Data2 = null;
-            this.textButton19.DoesBeep = false;
+            this.textButton19.DoesSound = false;
             this.textButton19.FlashInterval = 500;
             this.textButton19.HoldDraw = false;
             this.textButton19.IsLit = true;
@@ -4029,7 +4029,7 @@
             this.textButton30.CustomAlertColor = System.Drawing.Color.Empty;
             this.textButton30.Data = null;
             this.textButton30.Data2 = null;
-            this.textButton30.DoesBeep = false;
+            this.textButton30.DoesSound = false;
             this.textButton30.FlashInterval = 500;
             this.textButton30.HoldDraw = false;
             this.textButton30.IsLit = true;
@@ -4053,7 +4053,7 @@
             this.textButton8.CustomAlertColor = System.Drawing.Color.Empty;
             this.textButton8.Data = null;
             this.textButton8.Data2 = null;
-            this.textButton8.DoesBeep = false;
+            this.textButton8.DoesSound = false;
             this.textButton8.FlashInterval = 500;
             this.textButton8.HoldDraw = false;
             this.textButton8.IsLit = true;
@@ -4077,7 +4077,7 @@
             this.textButton18.CustomAlertColor = System.Drawing.Color.Empty;
             this.textButton18.Data = null;
             this.textButton18.Data2 = null;
-            this.textButton18.DoesBeep = false;
+            this.textButton18.DoesSound = false;
             this.textButton18.FlashInterval = 500;
             this.textButton18.HoldDraw = false;
             this.textButton18.IsLit = true;
@@ -4101,7 +4101,7 @@
             this.textButton29.CustomAlertColor = System.Drawing.Color.Empty;
             this.textButton29.Data = null;
             this.textButton29.Data2 = null;
-            this.textButton29.DoesBeep = false;
+            this.textButton29.DoesSound = false;
             this.textButton29.FlashInterval = 500;
             this.textButton29.HoldDraw = false;
             this.textButton29.IsLit = true;
@@ -4125,7 +4125,7 @@
             this.textButton7.CustomAlertColor = System.Drawing.Color.Empty;
             this.textButton7.Data = null;
             this.textButton7.Data2 = null;
-            this.textButton7.DoesBeep = false;
+            this.textButton7.DoesSound = false;
             this.textButton7.FlashInterval = 500;
             this.textButton7.HoldDraw = false;
             this.textButton7.IsLit = true;
@@ -4149,7 +4149,7 @@
             this.textButton17.CustomAlertColor = System.Drawing.Color.Empty;
             this.textButton17.Data = null;
             this.textButton17.Data2 = null;
-            this.textButton17.DoesBeep = false;
+            this.textButton17.DoesSound = false;
             this.textButton17.FlashInterval = 500;
             this.textButton17.HoldDraw = false;
             this.textButton17.IsLit = true;
@@ -4173,7 +4173,7 @@
             this.textButton28.CustomAlertColor = System.Drawing.Color.Empty;
             this.textButton28.Data = null;
             this.textButton28.Data2 = null;
-            this.textButton28.DoesBeep = false;
+            this.textButton28.DoesSound = false;
             this.textButton28.FlashInterval = 500;
             this.textButton28.HoldDraw = false;
             this.textButton28.IsLit = true;
@@ -4197,7 +4197,7 @@
             this.textButton6.CustomAlertColor = System.Drawing.Color.Empty;
             this.textButton6.Data = null;
             this.textButton6.Data2 = null;
-            this.textButton6.DoesBeep = false;
+            this.textButton6.DoesSound = false;
             this.textButton6.FlashInterval = 500;
             this.textButton6.HoldDraw = false;
             this.textButton6.IsLit = true;
@@ -4221,7 +4221,7 @@
             this.textButton16.CustomAlertColor = System.Drawing.Color.Empty;
             this.textButton16.Data = null;
             this.textButton16.Data2 = null;
-            this.textButton16.DoesBeep = false;
+            this.textButton16.DoesSound = false;
             this.textButton16.FlashInterval = 500;
             this.textButton16.HoldDraw = false;
             this.textButton16.IsLit = true;
@@ -4245,7 +4245,7 @@
             this.textButton27.CustomAlertColor = System.Drawing.Color.Empty;
             this.textButton27.Data = null;
             this.textButton27.Data2 = null;
-            this.textButton27.DoesBeep = false;
+            this.textButton27.DoesSound = false;
             this.textButton27.FlashInterval = 500;
             this.textButton27.HoldDraw = false;
             this.textButton27.IsLit = true;
@@ -4269,7 +4269,7 @@
             this.textButton5.CustomAlertColor = System.Drawing.Color.Empty;
             this.textButton5.Data = null;
             this.textButton5.Data2 = null;
-            this.textButton5.DoesBeep = false;
+            this.textButton5.DoesSound = false;
             this.textButton5.FlashInterval = 500;
             this.textButton5.HoldDraw = false;
             this.textButton5.IsLit = true;
@@ -4293,7 +4293,7 @@
             this.textButton15.CustomAlertColor = System.Drawing.Color.Empty;
             this.textButton15.Data = null;
             this.textButton15.Data2 = null;
-            this.textButton15.DoesBeep = false;
+            this.textButton15.DoesSound = false;
             this.textButton15.FlashInterval = 500;
             this.textButton15.HoldDraw = false;
             this.textButton15.IsLit = true;
@@ -4317,7 +4317,7 @@
             this.textButton26.CustomAlertColor = System.Drawing.Color.Empty;
             this.textButton26.Data = null;
             this.textButton26.Data2 = null;
-            this.textButton26.DoesBeep = false;
+            this.textButton26.DoesSound = false;
             this.textButton26.FlashInterval = 500;
             this.textButton26.HoldDraw = false;
             this.textButton26.IsLit = true;
@@ -4341,7 +4341,7 @@
             this.textButton4.CustomAlertColor = System.Drawing.Color.Empty;
             this.textButton4.Data = null;
             this.textButton4.Data2 = null;
-            this.textButton4.DoesBeep = false;
+            this.textButton4.DoesSound = false;
             this.textButton4.FlashInterval = 500;
             this.textButton4.HoldDraw = false;
             this.textButton4.IsLit = true;
@@ -4365,7 +4365,7 @@
             this.textButton14.CustomAlertColor = System.Drawing.Color.Empty;
             this.textButton14.Data = null;
             this.textButton14.Data2 = null;
-            this.textButton14.DoesBeep = false;
+            this.textButton14.DoesSound = false;
             this.textButton14.FlashInterval = 500;
             this.textButton14.HoldDraw = false;
             this.textButton14.IsLit = true;
@@ -4389,7 +4389,7 @@
             this.textButton25.CustomAlertColor = System.Drawing.Color.Empty;
             this.textButton25.Data = null;
             this.textButton25.Data2 = null;
-            this.textButton25.DoesBeep = false;
+            this.textButton25.DoesSound = false;
             this.textButton25.FlashInterval = 500;
             this.textButton25.HoldDraw = false;
             this.textButton25.IsLit = true;
@@ -4413,7 +4413,7 @@
             this.textButton3.CustomAlertColor = System.Drawing.Color.Empty;
             this.textButton3.Data = null;
             this.textButton3.Data2 = null;
-            this.textButton3.DoesBeep = false;
+            this.textButton3.DoesSound = false;
             this.textButton3.FlashInterval = 500;
             this.textButton3.HoldDraw = false;
             this.textButton3.IsLit = true;
@@ -4437,7 +4437,7 @@
             this.textButton13.CustomAlertColor = System.Drawing.Color.Empty;
             this.textButton13.Data = null;
             this.textButton13.Data2 = null;
-            this.textButton13.DoesBeep = false;
+            this.textButton13.DoesSound = false;
             this.textButton13.FlashInterval = 500;
             this.textButton13.HoldDraw = false;
             this.textButton13.IsLit = true;
@@ -4461,7 +4461,7 @@
             this.textButton24.CustomAlertColor = System.Drawing.Color.Empty;
             this.textButton24.Data = null;
             this.textButton24.Data2 = null;
-            this.textButton24.DoesBeep = false;
+            this.textButton24.DoesSound = false;
             this.textButton24.FlashInterval = 500;
             this.textButton24.HoldDraw = false;
             this.textButton24.IsLit = true;
@@ -4485,7 +4485,7 @@
             this.textButton2.CustomAlertColor = System.Drawing.Color.Empty;
             this.textButton2.Data = null;
             this.textButton2.Data2 = null;
-            this.textButton2.DoesBeep = false;
+            this.textButton2.DoesSound = false;
             this.textButton2.FlashInterval = 500;
             this.textButton2.HoldDraw = false;
             this.textButton2.IsLit = true;
@@ -4509,7 +4509,7 @@
             this.textButton12.CustomAlertColor = System.Drawing.Color.Empty;
             this.textButton12.Data = null;
             this.textButton12.Data2 = null;
-            this.textButton12.DoesBeep = false;
+            this.textButton12.DoesSound = false;
             this.textButton12.FlashInterval = 500;
             this.textButton12.HoldDraw = false;
             this.textButton12.IsLit = true;
@@ -4533,7 +4533,7 @@
             this.textButton23.CustomAlertColor = System.Drawing.Color.Empty;
             this.textButton23.Data = null;
             this.textButton23.Data2 = null;
-            this.textButton23.DoesBeep = false;
+            this.textButton23.DoesSound = false;
             this.textButton23.FlashInterval = 500;
             this.textButton23.HoldDraw = false;
             this.textButton23.IsLit = true;
@@ -4557,7 +4557,7 @@
             this.textButton1.CustomAlertColor = System.Drawing.Color.Empty;
             this.textButton1.Data = null;
             this.textButton1.Data2 = null;
-            this.textButton1.DoesBeep = false;
+            this.textButton1.DoesSound = false;
             this.textButton1.FlashInterval = 500;
             this.textButton1.HoldDraw = false;
             this.textButton1.IsLit = true;
@@ -4654,7 +4654,7 @@
             this.levelIndicator3.CustomAlertColor = System.Drawing.Color.Empty;
             this.levelIndicator3.Data = null;
             this.levelIndicator3.Data2 = null;
-            this.levelIndicator3.DoesBeep = false;
+            this.levelIndicator3.DoesSound = false;
             this.levelIndicator3.FlashInterval = 500;
             this.levelIndicator3.HoldDraw = false;
             this.levelIndicator3.IsLit = true;
@@ -4680,7 +4680,7 @@
             this.levelIndicator2.CustomAlertColor = System.Drawing.Color.Empty;
             this.levelIndicator2.Data = null;
             this.levelIndicator2.Data2 = null;
-            this.levelIndicator2.DoesBeep = false;
+            this.levelIndicator2.DoesSound = false;
             this.levelIndicator2.FlashInterval = 500;
             this.levelIndicator2.HoldDraw = false;
             this.levelIndicator2.IsLit = true;
@@ -4705,7 +4705,7 @@
             this.levelIndicator1.CustomAlertColor = System.Drawing.Color.Empty;
             this.levelIndicator1.Data = null;
             this.levelIndicator1.Data2 = null;
-            this.levelIndicator1.DoesBeep = false;
+            this.levelIndicator1.DoesSound = false;
             this.levelIndicator1.FlashInterval = 500;
             this.levelIndicator1.HoldDraw = false;
             this.levelIndicator1.IsLit = true;
@@ -4738,7 +4738,7 @@
             this.buttonGrid1.ControlSize = new System.Drawing.Size(150, 70);
             this.buttonGrid1.CurrentPage = 1;
             this.buttonGrid1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.buttonGrid1.DoesBeep = true;
+            this.buttonGrid1.DoesSound = true;
             this.buttonGrid1.Location = new System.Drawing.Point(0, 0);
             this.buttonGrid1.MinimumSize = new System.Drawing.Size(50, 50);
             this.buttonGrid1.Name = "buttonGrid1";
@@ -4798,7 +4798,7 @@
             this.elbow6.Data = null;
             this.elbow6.Data2 = null;
             this.elbow6.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.elbow6.DoesBeep = false;
+            this.elbow6.DoesSound = false;
             this.elbow6.ElbowStyle = LCARS.CoreUi.Enums.LcarsElbowStyle.LowerLeft;
             this.elbow6.FlashInterval = 500;
             this.elbow6.HoldDraw = false;
@@ -4847,7 +4847,7 @@
             this.standardButton19.CustomAlertColor = System.Drawing.Color.Empty;
             this.standardButton19.Data = null;
             this.standardButton19.Data2 = null;
-            this.standardButton19.DoesBeep = false;
+            this.standardButton19.DoesSound = false;
             this.standardButton19.FlashInterval = 500;
             this.standardButton19.HoldDraw = false;
             this.standardButton19.IsLit = true;
@@ -4871,7 +4871,7 @@
             this.standardButton18.CustomAlertColor = System.Drawing.Color.Empty;
             this.standardButton18.Data = null;
             this.standardButton18.Data2 = null;
-            this.standardButton18.DoesBeep = false;
+            this.standardButton18.DoesSound = false;
             this.standardButton18.FlashInterval = 500;
             this.standardButton18.HoldDraw = false;
             this.standardButton18.IsLit = true;
@@ -4896,7 +4896,7 @@
             this.FullScreenButton.CustomAlertColor = System.Drawing.Color.Empty;
             this.FullScreenButton.Data = null;
             this.FullScreenButton.Data2 = null;
-            this.FullScreenButton.DoesBeep = false;
+            this.FullScreenButton.DoesSound = false;
             this.FullScreenButton.FlashInterval = 500;
             this.FullScreenButton.HoldDraw = false;
             this.FullScreenButton.IsLit = false;

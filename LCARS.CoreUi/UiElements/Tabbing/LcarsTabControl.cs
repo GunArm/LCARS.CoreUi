@@ -345,7 +345,7 @@ namespace LCARS.CoreUi.UiElements.Tabbing
                 //Button beeping also needs to be handled.  I'm working on a way for new controls
                 //and community made programs to easily interface with LCARSmain so they know when
                 //they need to turn beeping on/off or when the colors have changed.
-                mybutton.DoesBeep = false;
+                mybutton.DoesSound = false;
 
                 //position the button based on how many buttons are already there.
                 switch (elbowStyle)

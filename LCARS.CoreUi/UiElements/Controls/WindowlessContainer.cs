@@ -1,4 +1,5 @@
-﻿using LCARS.CoreUi.Colors;
+﻿using LCARS.CoreUi.Assets.Access;
+using LCARS.CoreUi.Colors;
 using LCARS.CoreUi.Enums;
 using LCARS.CoreUi.Helpers;
 using LCARS.CoreUi.Interfaces;
@@ -17,7 +18,7 @@ namespace LCARS.CoreUi.UiElements.Controls
     /// <remarks>
     /// </remarks>
     [Designer(typeof(WindowlessDesigner))]
-    public class WindowlessContainer : Control, IColorable, IBeeping
+    public class WindowlessContainer : Control, IColorable, ISounding
     {
         //Global Variables
         protected List<ILightweightControl> myList = new List<ILightweightControl>();
@@ -270,21 +271,37 @@ namespace LCARS.CoreUi.UiElements.Controls
         /// <summary>
         /// Allows beeping to be set for all current windowless controls
         /// </summary>
-        public bool DoesBeep
+        public bool DoesSound
         {
-            get { return doesBeep; }
+            get { return doesSound; }
             set
             {
-                doesBeep = value;
-                IBeeping temp = null;
+                doesSound = value;
+                ISounding temp = null;
                 foreach (ILightweightControl mycontrol in myList)
                 {
-                    temp = mycontrol as IBeeping;
-                    if (temp != null) temp.DoesBeep = value;
+                    temp = mycontrol as ISounding;
+                    if (temp != null) temp.DoesSound = value;
                 }
             }
         }
-        bool doesBeep = bool.Parse(new SettingsStore("LCARS").Load("Application", "ButtonBeep", "TRUE"));
+        bool doesSound = bool.Parse(new SettingsStore("LCARS").Load("Application", "ButtonBeep", "TRUE"));
+
+        public virtual LcarsSoundAsset SoundAsset
+        {
+            get { return soundAsset; }
+            set
+            {
+                soundAsset = value;
+                ISounding temp = null;
+                foreach (ILightweightControl mycontrol in myList)
+                {
+                    temp = mycontrol as ISounding;
+                    if (temp != null) temp.SoundAsset = value;
+                }
+            }
+        }
+        private LcarsSoundAsset soundAsset = LcarsSoundAsset.Unset;
 
         public WindowlessContainer()
         {

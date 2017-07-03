@@ -40,14 +40,14 @@ namespace LCARS.Demo
                         control0.ArrowDirection = Enum<LcarsArrowDirection>.Random();
                         control0.ColorFunction = Enum<LcarsColorFunction>.Random();
                         control0.IsLit = Randomizer.NextBool();
-                        control0.DoesBeep = true;
+                        control0.DoesSound = true;
                         buttonGrid1.Add(control0);
                         break;
                     case 1:
                         LCComplexButton control1 = new LCComplexButton();
                         control1.ColorFunction = Enum<LcarsColorFunction>.Random();
                         control1.IsLit = Randomizer.NextBool();
-                        control1.DoesBeep = true;
+                        control1.DoesSound = true;
                         control1.Text = Randomizer.NextInt(int.MaxValue).ToString();
                         control1.SideText = Randomizer.NextInt(1000).ToString();
                         control1.SideBlockColor = Enum<LcarsColorFunction>.Random();
@@ -57,7 +57,7 @@ namespace LCARS.Demo
                         LCFlatButton control2 = new LCFlatButton();
                         control2.ColorFunction = Enum<LcarsColorFunction>.Random();
                         control2.IsLit = Randomizer.NextBool();
-                        control2.DoesBeep = true;
+                        control2.DoesSound = true;
                         control2.Text = Randomizer.NextInt(int.MaxValue).ToString();
                         buttonGrid1.Add(control2);
                         break;
@@ -65,7 +65,7 @@ namespace LCARS.Demo
                         LCHalfPillButton control3 = new LCHalfPillButton();
                         control3.ColorFunction = Enum<LcarsColorFunction>.Random();
                         control3.IsLit = Randomizer.NextBool();
-                        control3.DoesBeep = true;
+                        control3.DoesSound = true;
                         control3.Text = Randomizer.NextInt(int.MaxValue).ToString();
                         control3.ButtonStyle = Enum<LcarsButtonStyles>.Random();
                         buttonGrid1.Add(control3);
@@ -74,7 +74,7 @@ namespace LCARS.Demo
                         LCStandardButton control4 = new LCStandardButton();
                         control4.ColorFunction = Enum<LcarsColorFunction>.Random();
                         control4.IsLit = Randomizer.NextBool();
-                        control4.DoesBeep = true;
+                        control4.DoesSound = true;
                         control4.Text = Randomizer.NextInt(int.MaxValue).ToString();
                         buttonGrid1.Add(control4);
                         break;

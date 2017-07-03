@@ -147,7 +147,7 @@ namespace LCARS.CoreUi.UiElements.Controls
             movingButton.Top = 0;
             movingButton.Text = "";
             movingButton.Visible = false;
-            movingButton.DoesBeep = false;
+            movingButton.DoesSound = false;
             movingButton.MouseDown += Button_Mouse_Down;
             movingButton.MouseUp += Button_Mouse_Up;
             movingButton.MouseMove += Button_Mouse_Move;
